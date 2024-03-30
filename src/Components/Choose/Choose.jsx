@@ -2,10 +2,11 @@ import React from 'react';
 import './Choose.scss';
 
 const Choose = (props) => {
+    let classnames = props.classes == null ? "" : props.classes;
     return (
-        <div className="choose-sec">
+        <div className={`choose-sec ${classnames}`}>
             <div className="choose-container">
-                <div className="choose-wrapper">
+                <div className={`choose-wrapper ${classnames}`}>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6">

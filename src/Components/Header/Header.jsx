@@ -27,7 +27,7 @@ const Header = () => {
                             <Link to="/" className='nav-link'>
                                 Professionals
                             </Link>
-                            <Link to="/" className='nav-link'>
+                            <Link to="/facilities" className='nav-link'>
                                 Facilities
                             </Link>
                             <Link to="/about" className='nav-link'>

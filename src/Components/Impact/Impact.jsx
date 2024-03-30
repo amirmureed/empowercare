@@ -1,9 +1,10 @@
 import React from 'react';
 import './Impact.scss';
 
-const Impact = () => {
+const Impact = (props) => {
+    let classnames = props.position == null ? "" : props.position;
     return (
-        <div className="Impact-sec">
+        <div className={`Impact-sec ${classnames}`}>
             <div className="container">
                 <div className="Impact-wrapper">
                     <div className="top-content">

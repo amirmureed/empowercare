@@ -5,6 +5,10 @@
         max-width: 1470px;
         margin: auto;
 
+        .black-bg{
+            background-color: black !important;
+        }
+
         .choose-wrapper {
             padding: 140px 0;
             border-radius: 50px;
@@ -201,6 +205,21 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.choose-sec.black-bg{
+    background-color: black;
+
+    .left-content{
+
+        .heading {
+            color: white !important;
+        }
+
+        .description{
+            color: white !important;
         }
     }
 }

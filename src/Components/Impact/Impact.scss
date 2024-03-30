@@ -243,3 +243,25 @@
         }
     }
 }
+
+
+.Impact-sec.box-center-aligned{
+    
+    .col-md-4:nth-child(3){
+        margin-top: 0px !important;
+    }
+
+    .col-md-4:nth-child(2){
+        margin-top: -30px !important;
+    }
+
+    .top-content{
+        margin: 0 auto;
+        text-align: center !important;
+        width: 60% !important;
+
+        h2.heading, p.description{
+            text-align: center !important;
+        }
+    }
+}
