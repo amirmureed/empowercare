@@ -1,15 +1,15 @@
-.banner_varient .main-banner {
-    background-image: url(../../Assets/bannerbg.png);
-    background-position: center center;
+.banner_varient_2 .main-banner {
+    background-image: url(../../Assets/banner3.png);
+    background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -126px;
+    margin-top: -204px;
     background-color: #EBE0D3;
 
     .container {
 
         .banner-wrapper {
-            padding: 300px 10px 10px;
+            padding: 415px 10px 10px;
 
             .row {
                 margin-bottom: 200px;
@@ -31,11 +31,11 @@
 
                         h1.heading {
                             font-size: 77px;
-                            font-weight: normal;
+                            font-weight: 600;
                             line-height: 75px;
                             font-style: normal;
                             text-align: left;
-                            color: #000000;
+                            color: #ffffff;
                             margin-bottom: 50px;
 
                             @media (max-width: 1200px) {
@@ -73,7 +73,7 @@
                             font-weight: 500;
                             font-style: normal;
                             text-align: left;
-                            color: #000000;
+                            color: #ffffff;
                             margin-bottom: 20px;
 
                             @media (max-width: 575px) {
@@ -87,7 +87,7 @@
                             font-weight: normal;
                             font-style: normal;
                             text-align: left;
-                            color: #202020;
+                            color: #ffffff;
                         }
 
                         .banner-btns {
@@ -97,7 +97,7 @@
                             gap: 28px;
                             margin: 40px 0 20px;
 
-                            a.btn {
+                            button.btn {
                                 width: 196px;
                                 height: 66px;
                                 border-radius: 19px;
@@ -127,22 +127,20 @@
                             }
                             .quick-btn {
                                 background: #71ba32;
-                                background: linear-gradient(-130deg, 
-                                #71ba32 0.00%, 
-                                #4eb3e8 100.00%);
+                                background: #ffffff;
 
                                 span {
-                                    color: #ebe0d3;
+                                    color: #000000;
                                 }
                             }
                             .contact-btn {
-                                border-color: #000000;
+                                border-color: #ffffff;
                                 border-width: 2px;
                                 border-style: solid;
                                 background-color: transparent;
 
                                 span {
-                                    color: #000000;
+                                    color: #ffffff;
                                 }
                             }
                         }
@@ -215,7 +213,7 @@
                         }
                     }
 
-                    a.btn.available-btn {
+                    button.available-btn {
                         width: 241px;
                         height: 59px;
                         border-radius: 19px;

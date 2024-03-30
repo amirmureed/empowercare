@@ -29,3 +29,37 @@ a.btn.quick-btn{
   justify-content: center;
   color: #ffffff;
 }
+
+span.text_grad_red {
+  background: linear-gradient(90deg, 
+  #e6632a 0.00%, 
+  #ee8d80 100.00%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a.btn_red{
+  background: #ee8d80;
+  background: linear-gradient(-130deg, 
+  #ee8d80 0.00%, 
+  #e6632a 100.00%);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 18px 50px;
+  border-radius: 19px;
+}
+
+.btn_cta{
+  display: flex;
+  gap: 10px;
+}
+
+.btn_cta a{
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
+  text-decoration: none;
+}

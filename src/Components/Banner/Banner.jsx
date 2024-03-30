@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import bannerImg from '../../Assets/banner1.png';
 import './Banner.scss';
 
 const Banner = () => {
     return (
       <>
+      <div className='banner_varient'>
         <div className="main-banner">
           <div className="container">
             <div className="banner-wrapper">
@@ -18,12 +20,12 @@ const Banner = () => {
                     <p className="description">Your Gateway to Rewarding Contract Healthcare Careers</p>
                     <span className="meta">Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description</span>
                     <div className="banner-btns">
-                      <button className='btn quick-btn'>
+                      <Link to="/" className='btn quick-btn'>
                         <span>Quick Apply</span>
-                      </button>
-                      <button className='btn contact-btn'>
+                      </Link>
+                      <Link to="/" className='btn contact-btn'>
                         <span>Contact us</span>
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -51,13 +53,14 @@ const Banner = () => {
                     <option value="Select city/state1">Select city/state1</option>
                     <option value="Select city/state2">Select city/state2</option>
                   </select>
-                  <button className='btn available-btn'>
+                  <Link className='btn available-btn'>
                     <span>Find available positions</span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </>
     )
