@@ -40,6 +40,14 @@ span.text_grad_red {
   font-weight: bold;
 }
 
+.priemer-cta{
+  position: relative;
+}
+.priemer-cta a{
+  position: absolute;
+  top: 30px;
+}
+
 a.btn_red{
   background: #ee8d80;
   background: linear-gradient(-130deg, 
@@ -51,7 +59,13 @@ a.btn_red{
   border-radius: 19px;
 }
 
-.btn_cta{
+@media (max-width: 480px) {
+  a.btn_red {
+    padding: 16px 24px;
+  }
+}
+
+.btn_cta {
   display: flex;
   gap: 10px;
 }
