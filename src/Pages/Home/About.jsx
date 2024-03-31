@@ -9,10 +9,12 @@ import PriemerBlack from '../../Components/PremierHealthcareBlack/PriemerBlack';
 import Footer from '../../Components/Footer/Footer';
 
 const About = () => {
+  const heading='ABOUT EMPOWERCARE HEALTHCARE'
+  const description='We ensure that every patient receives exceptional care, aiding in their swift recovery and promoting healthier lives.'
     return (
         <>
           <Header />
-          <Banner2 />
+          <Banner2 heading={heading} description={description} />
           <LeftRightContent />
           <TextImageGroup />
           <TextImageGroupV2 />
