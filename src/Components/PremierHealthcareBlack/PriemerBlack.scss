@@ -66,12 +66,11 @@
                     }
 
                     .priemer-cta{
-                        position: relative;
-                    }
-                    .priemer-cta a{
-                        position: absolute;
-                        top: 30px;
-                        left: 33%;
+                        left: -18%;
+
+                        @media (max-width: 480px) {
+                            left: -25%;
+                        }
                     }
 
                     span.meta {

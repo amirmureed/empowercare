@@ -1,11 +1,11 @@
 import React from 'react';
-import bannerImg from '../../Assets/elipse2.png';
-import './Banner2.scss';
+import bannerImg from '../../Assets/elipse1.png';
+import './Banner3.scss';
 
-const Banner2 = ({heading,description,img}) => {
+const Banner3 = () => {
     return (
       <>
-      <div className='banner_varient_2'>
+      <div className='banner_varient_3'>
           <div className="main-banner">
             <div className="container">
               <div className="banner-wrapper">
@@ -13,10 +13,10 @@ const Banner2 = ({heading,description,img}) => {
                   <div className="col-lg-6 col-md-6">
                     <div className="banner-content">
                       <h1 className="heading">
-                       <b>{heading}</b>
+                        Healthcare Career
                       </h1>
                       {/* <p className="description">Your Gateway to Rewarding Contract Healthcare Careers</p> */}
-                      <span className="meta">{description}.</span>
+                      <span className="meta">At EmpowerCare, we're not just a staffing agency; we're a catalyst for change in the healthcare industry.</span>
                       <div className="banner-btns">
                         <button className='btn quick-btn'>
                           <span>Quick Apply</span>
@@ -29,7 +29,7 @@ const Banner2 = ({heading,description,img}) => {
                   </div>
                   <div className="col-lg-6 col-md-6">
                     <div className="banner-img">
-                      <img src={img} alt="bannerImg" />
+                      <img src={bannerImg} alt="bannerImg" />
                     </div>
                   </div>
                 </div>
@@ -64,4 +64,4 @@ const Banner2 = ({heading,description,img}) => {
     )
 }
 
-export default Banner2
+export default Banner3
