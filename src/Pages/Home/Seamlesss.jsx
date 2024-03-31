@@ -7,6 +7,7 @@ import Choose from '../../Components/Choose/Choose';
 import Footer from '../../Components/Footer/Footer';
 import Choose1 from '../../Components/Choose1/Choose1';
 import Empowercare from '../../Components/Empowercare/Empowercare';
+import PriemerBlack from '../../Components/PremierHealthcareBlack/PriemerBlack';
 import Userslider from '../../Components/Userslider/Userslider';
 
 const Seamlesss = () => {
@@ -37,6 +38,7 @@ const Seamlesss = () => {
             headingafter = "Make an impact with every shift"
             description1 = "We believe that every shift is an opportunity to make a difference in people's lives. Our Seamless Pledge ensures that you can focus on what matters most - providing exceptional care and making a lasting impact."
           />
+          <PriemerBlack />
           <Empowercare />
           <Userslider />
           <Footer />
