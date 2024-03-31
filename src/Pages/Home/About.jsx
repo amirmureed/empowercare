@@ -12,7 +12,7 @@ const About = () => {
     return (
         <>
           <Header />
-          <Banner2 />
+          <Banner2 heading={'ABOUT EMPOWERCARE HEALTHCARE'} description={'We ensure that every patient receives exceptional care, aiding in their swift recovery and promoting healthier lives.'}/>
           <LeftRightContent />
           <TextImageGroup />
           <TextImageGroupV2 />
