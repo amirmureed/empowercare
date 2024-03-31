@@ -5,6 +5,8 @@ import ApproachRed from '../../Components/ApproachRed/ApproachRed';
 import LeftContentRightImage from '../../Components/LeftContentRightImage/LeftContentRightImage';
 import Footer from '../../Components/Footer/Footer';
 import OurWorking from '../../Components/OurWorking/OurWorking';
+import TrustedRed from '../../Components/TrustedRed/TrustedRed';
+import CenterContent from '../../Components/CenterContent/CenterContent';
 import Userslider from '../../Components/Userslider/Userslider';
 
 const Career = () => {
@@ -15,6 +17,8 @@ const Career = () => {
           <LeftContentRightImage />
           <ApproachRed />
           <OurWorking />
+          <CenterContent />
+          <TrustedRed />
           <Userslider />
           <Footer />
         </>
