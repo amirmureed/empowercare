@@ -1,8 +1,16 @@
+.container{
+    display: flex;
+    direction: row;
+    
+    
+        justify-content: center; /* Center the buttons horizontally */
+        gap: 10px; /* Adjusted gap between buttons */
+}
 .bottom-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 70px 20px 20px;
+    margin: 100px 20px 10px;
 
     @media (max-width: 992px) {
         margin: 50px 20px 20px;
@@ -15,10 +23,7 @@
         width: 196px;
         height: 66px;
         border-radius: 19px;
-        background: #71ba32;
-        background: linear-gradient(-130deg, 
-        #71ba32 0.00%, 
-        #4eb3e8 100.00%);
+        background: linear-gradient(-130deg, #ee8d80 0.00%, #e6632a 100.00%);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -43,6 +48,38 @@
             font-style: normal;
             text-align: center;
             color: #ebe0d3;
+        }
+    }
+    button.learnmore{
+        width: 196px;
+        height: 66px;
+        border-radius: 19px;
+        background: inherit;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        outline: none;
+
+        @media (max-width: 992px) {
+            width: max-content;
+            height: max-content;
+            padding: 15px 20px;
+        }
+        @media (max-width: 450px) {
+            height: max-content;
+            padding: 10px 10px;
+            border-radius: 5px;
+            height: 48px;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            text-align: center;
+            color: inherit;
         }
     }
 }

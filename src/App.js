@@ -19,7 +19,7 @@ function App() {
           <Route path='/about' element={<About/>} />
           <Route path='/seamless' element={<Seamlesss/>} />
           <Route path='/facilities' element={<Facilities />} />
-          <Route path='/career' element={<Community/>}/>
+          <Route path='/community' element={<Community/>}/>
           <Route path='/about/career' element={<Career />} />
         </Routes>
       </BrowserRouter>
