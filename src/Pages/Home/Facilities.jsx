@@ -12,6 +12,7 @@ import Facilitynetwork from '../../Components/Facilitynetwork/Facilitynetwork'
 import Staffingsolutions from '../../Components/Staffingsolutions/Staffingsolutions'
 import Staffingsoptions from '../../Components/Staffingoptions/Staffingoptions'
 import Empowercareacademy from '../../Components/Empowercareacademy/Empowercareacademy'
+import Realstoriesimpact from '../../Components/Realstoriesimpact/Realstoriesimpact'
 import './Home.scss';
      
 const Home = () => {
@@ -37,6 +38,7 @@ const Home = () => {
       <Staffingsolutions />
       <Staffingsoptions />
       <Empowercareacademy />
+      <Realstoriesimpact />
       <Footer />
     </>
   )
