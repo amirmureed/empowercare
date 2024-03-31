@@ -2,6 +2,11 @@
     background-color: #EBE0D3;
     overflow: hidden;
 
+    .react-multi-carousel-track li.react-multi-carousel-item--active:first-child .user-box {
+        background: linear-gradient(-130deg,#71ba32,#4eb3e8) !important;
+        border-color: unset;
+    }
+
     .user-slider-container {
         max-width: 1774px;
         margin: auto;

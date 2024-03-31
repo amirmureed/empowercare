@@ -91,7 +91,7 @@ const Userslider = () => {
                                 autoPlay={true}
                                 swipeable={true}
                                 draggable={true}
-                                autoPlaySpeed={1000}
+                                autoPlaySpeed={3000}
                                 removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
                                 showDots={false}
                                 infinite={true}
