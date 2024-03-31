@@ -1,0 +1,73 @@
+.RevolutionCard {
+    background-color: #EBE0D3;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+    .container {
+        max-width: 1574px;
+        margin: auto;
+        padding: 140px 0;
+
+        @media (max-width: 1200px) {
+            padding: 120px 0;
+        }
+        @media (max-width: 992px) {
+            padding: 80px 0;
+        }
+        @media (max-width: 767.5px) {
+            padding: 60px 0;
+        }
+
+        .wrapper {
+            padding: 40px 0 0px;
+            background: linear-gradient(-130deg, #ee8d80 0.00%, #e6632a 100.00%);
+            border-radius: 50px;
+            position: relative;
+
+            @media (max-width: 1200px) {
+                padding: 120px 0;
+            }
+            @media (max-width: 992px) {
+                padding: 80px 0 150px;
+            }
+            @media (max-width: 767.5px) {
+                padding: 60px 0 60px;
+            }
+        }
+    }
+    .container2{
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
+        padding: 50px;
+        
+    }
+    .image{
+        width: 380px;
+    }
+    .heading{
+        color: white;
+        font-size: 40px;
+    }
+    .text_grad_black{
+        color: black;
+    }
+    .description{
+        color: white;
+        
+    }
+    .top-content{
+      padding: 90px;
+    }
+    .button{
+        border: none;
+        border-radius: 15px;
+       padding: 15px,
+    }
+    .btn-container{
+        margin-top: 5%;
+    }
+    .text1{
+        color:white;
+    }
+}
