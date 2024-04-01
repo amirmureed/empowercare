@@ -2,7 +2,7 @@ import React from 'react';
 import bannerImg from '../../Assets/elipse2.png';
 import './Banner2.scss';
 
-const Banner2 = () => {
+const Banner2 = ({heading,description}) => {
     return (
       <>
       <div className='banner_varient_2'>
@@ -13,10 +13,10 @@ const Banner2 = () => {
                   <div className="col-lg-6 col-md-6">
                     <div className="banner-content">
                       <h1 className="heading">
-                        About Empower Healthcare
+                        <b>{heading}</b>
                       </h1>
                       {/* <p className="description">Your Gateway to Rewarding Contract Healthcare Careers</p> */}
-                      <span className="meta">We ensure that every patient receives exceptional care, aiding in their swift recovery and promoting healthier lives.</span>
+                      <span className="meta">{description}</span>
                       <div className="banner-btns">
                         <button className='btn quick-btn'>
                           <span>Quick Apply</span>

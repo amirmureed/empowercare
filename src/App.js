@@ -7,6 +7,7 @@ import About from './Pages/Home/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
+import Community from './Pages/Home/Community';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path='/seamless' element={<Seamlesss/>} />
           <Route path='/facilities' element={<Facilities />} />
           <Route path='/about/career' element={<Career />} />
-        </Routes>
+          <Route path='/about/community' element={<Community/>} />
+        </Routes >
       </BrowserRouter>
     </>
   );
