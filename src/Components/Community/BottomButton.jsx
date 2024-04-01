@@ -2,7 +2,7 @@ import './BottomButton.scss'
 const BottomButton=()=>{
     return(<>
     <div className="bottom-btn">
-        <div className='buttons-container'>
+        <div className='container'>
                             <button className="signup">
                                 <span>Sign up</span>
                             </button>

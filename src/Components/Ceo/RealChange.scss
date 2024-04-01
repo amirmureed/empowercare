@@ -1,10 +1,10 @@
 .Realchange-sec {
     background-color: #EBE0D3;
 
-    .Realchange-container {
+    .container {
         max-width: 1500px;
         margin: auto;
-        padding: 40px 20px 150px;
+        padding: 40px 20px 19px;
 
         @media (max-width: 1200px) {
             padding: 0px 0px 120px;
@@ -16,7 +16,7 @@
             padding: 0px 0px 60px;
         }
 
-        .Realchange-wrapper {
+        .wrapper {
             padding: 120px 0px;
             border-radius: 50px;
             background: #5c5e62;
@@ -41,10 +41,14 @@
                 }
                 .col-md-6 {
                     .left-content {
-                        padding-left: 40px;
+                        padding-left: 90px;
 
                         @media (max-width: 767.5px) {
                             padding-right: 0px;
+                            padding-top: 60px;
+                        }
+                        @media (max-width: 490.5px) {
+                            padding-left: 50px;
                             padding-top: 60px;
                         }
                         
@@ -131,6 +135,9 @@
                             @media (max-width: 767.5px) {
                                 margin-top: 30px;
                             }
+                            @media (max-width: 490.5px) {
+                                padding-right: 30px;
+                            }
 
                             button {
                                 width: 390px;
@@ -149,6 +156,7 @@
                                     width: max-content;
                                     padding: 10px 40px 10px 20px;
                                 }
+                               
 
                                 span {
                                     font-size: 16px;

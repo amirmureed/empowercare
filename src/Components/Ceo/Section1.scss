@@ -7,7 +7,7 @@
     padding: 20px;
   
 
-  .inner-container {
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ color: blue;
   }
 
   @media (max-width: 768px) { /* Media query for smaller screens */
-    .inner-container {
+    .container {
       flex-direction: column;
     }
 
@@ -53,8 +53,11 @@ h6{
   .p-txt{
     max-width: 39%;
 text-align: center;
-    margin: auto
+    margin: auto;
+    @media (max-width: 490px) { 
+     max-width: 100%;
   }
+}
 .arrow_img{
     margin-top: 5%;
     transform: translateX(60%); 
@@ -66,5 +69,8 @@ text-align: center;
     display: flex;
     justify-content: center;
     margin-left: 5%;
+    @media (max-width: 490px) { 
+      margin-left: 15%;
+   }
 }
 }
