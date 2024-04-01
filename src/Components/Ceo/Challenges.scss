@@ -1,0 +1,59 @@
+.main-div{
+    background:#ece0d4 ; /* Background color of the main container */
+
+.challenge-container {
+    margin: auto;
+    display: block;
+    padding: 50px;
+    max-width: 55%;
+   background: white;
+   border-radius: 10px;
+  }
+  
+  .txt_content {
+   
+    padding: 10px;
+    
+    max-width: 760px; /* Maximum width of the content */
+ h6{
+    color: blue;
+ }
+  }
+  
+  .sub-container {
+    display: flex;
+
+    gap: 1px;
+   
+    flex-direction: column;
+    margin-top: 10px; /* Margin between main content and sub-containers */
+    p{
+        padding: 16px;
+        border-radius: 15px;
+        border: 1px solid grey;
+        background-color: #ece0d4;
+        color: black;
+      }
+  }
+  
+  .sub-content {
+    flex-basis: 23%; /* Each sub-content takes up 23% of the width with space between */
+    background-color: white; /* Background color of the sub-content */
+    padding: 5px;
+   
+  }
+  .sub-content3{
+    flex-basis: 23%; /* Each sub-content takes up 23% of the width with space between */
+    background-color: white; /* Background color of the sub-content */
+    padding: 5px;
+    p{
+        color: white;
+        background: linear-gradient(-130deg, 
+  #ee8d80 0.00%, 
+  #e6632a 100.00%);
+    }
+  }
+.last-btn{
+    margin-top: 10%;
+}
+}
