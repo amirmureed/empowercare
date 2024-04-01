@@ -3,7 +3,7 @@ import { FiArrowDownRight } from "react-icons/fi";
 const Challenges=()=>{
     return(<>
     <div className='main-div'><br />
-   <div className="challenge-container">
+   <div className="container">
   <div className="txt_content">
     <h6><b>OUR CEO & FOUNDER</b></h6>
     <h1><b>WE <span className='text-grad'>UNDERSTAND</span><span><br />YOUR CHALLENGES</span></b></h1><br />

@@ -4,7 +4,7 @@ import activearrow from '../../Assets/active-arrow.png'
 const Section1=()=>{
     return(<>
     <div class="sec1-container">
-  <div class="inner-container">
+  <div class="container">
     <div class="image-container">
       <img src={Ceo} alt="Ceo"/>
     </div>

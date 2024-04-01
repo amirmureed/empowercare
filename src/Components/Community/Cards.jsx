@@ -61,11 +61,7 @@ const Cards = ({description1,description2,description3,description4}) => {
                                 
                             </div>
                         </div>
-                        {/* <div className="bottom-btn">
-                            <button className="signup">
-                                <span>Sign up</span>
-                            </button>
-                        </div> */}
+                    
                     </div>
                 </div>
             </div>

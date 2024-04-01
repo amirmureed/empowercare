@@ -5,7 +5,7 @@ import downarrow from '../../Assets/down-link-arrow.svg';
 const Content1=()=>{
     return(  <>
          <div className="left_image_right_content1">
-            <div className="content-container">
+            <div className="container">
                 <div className="empowercare-wrapper">
                     <div className="row">
                         <div className="col-md-6">

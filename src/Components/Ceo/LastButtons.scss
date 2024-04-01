@@ -1,11 +1,12 @@
 
 .parent_btn{
-.button-container {
+.container {
     display: flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
   justify-content: center;
+  margin-top: 3%;
 }
   .button1{
     width: 300px;
@@ -41,7 +42,7 @@
     font-size: 13px;
   }
   @media (max-width: 550px) {
-    .button-container {
+    .container {
       flex-direction: column;
     }
   }
