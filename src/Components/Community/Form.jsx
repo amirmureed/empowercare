@@ -2,7 +2,7 @@ import './Form.scss'
 const Form=()=>{
     return (<>
  <div className="formcontainer">
-      <div className="container">
+      <div className="content">
         <div className="text-content">
           <h6><b>JOIN US NOW</b></h6>
           <h1><b>READY TO <span className='text-grad'>DIVE IN</span><br />& MAKE A SPLASH</b></h1>
@@ -38,7 +38,7 @@ const Form=()=>{
               <option value="option2">Option 2</option>
               <option value="option3">Option 3</option>
             </select>
-            <button className='submit-btn' type="submit">JOIN NOW</button>
+            <button className='btn' type="submit">JOIN NOW</button>
           </form>
         </div>
       </div>

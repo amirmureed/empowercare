@@ -4,8 +4,8 @@ import './RealChange.scss'
 const RealChange=()=>{
     return(<>
     <div className="Realchange-sec">
-            <div className="container">
-                <div className="wrapper">
+            <div className="Realchange-container">
+                <div className="Realchange-wrapper">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6">
