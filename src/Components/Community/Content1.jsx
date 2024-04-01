@@ -4,7 +4,7 @@ import activearrow from '../../Assets/active-arrow.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
 const Content1=()=>{
     return(  <>
-         <div className="left_image_right_content1">
+         <div className="left_image_right_content">
             <div className="container">
                 <div className="empowercare-wrapper">
                     <div className="row">
