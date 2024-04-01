@@ -16,6 +16,7 @@
         }
         @media (max-width: 767.5px) {
             padding: 60px 0;
+            max-width: 100%;
         }
 
         .wrapper {
@@ -40,7 +41,13 @@
         align-items: center; 
         justify-content: space-between;
         padding: 50px;
-        
+        flex-direction: row;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+        @media (max-width: 450.5px) {
+            flex-direction: column;
+    }
     }
     .image{
         width: 380px;

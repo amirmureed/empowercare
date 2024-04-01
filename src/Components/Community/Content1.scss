@@ -1,6 +1,6 @@
-.left_image_right_content {
+.left_image_right_content1 {
     background-color: #EBE0D3;
-
+   
     .content-container {
         padding: 60px;
         .empowercare-wrapper {
@@ -24,9 +24,14 @@
                 .col-md-6 {
                     .left-content {
                         padding-right: 25px;
+                        margin-left: 50px;
 
                         @media (max-width: 767.5px) {
                             padding: 0px;
+                        }
+                        @media (max-width: 490.5px) {
+                            padding: 0px;
+                            margin-left: 10px;
                         }
                         
                         span.meta {
@@ -106,9 +111,10 @@
                         @media (max-width: 767.5px) {
                             padding: 115px 0px 10px;
                         }
+                        
                         .section-img {
                             text-align: left;
-
+                            margin-left: 50px;
                             img {
                                 @media (max-width: 1600px) {
                                     width: 100%;

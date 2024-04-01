@@ -3,7 +3,7 @@ import './Cards.scss'
 const Cards = ({description1,description2,description3,description4}) => {
     return (
         <>
-<div className="approach-sec">
+<div className="cards_sec">
                 <div className="container">
                     <div className="approach-wrapper">
                        
