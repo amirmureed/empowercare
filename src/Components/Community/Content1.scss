@@ -1,7 +1,7 @@
 .left_image_right_content1 {
     background-color: #EBE0D3;
    
-    .container {
+    .content-container {
         padding: 60px;
         .empowercare-wrapper {
             padding: 10px 0 140px;
@@ -114,6 +114,7 @@
                         
                         .section-img {
                             text-align: left;
+                            margin-left: 50px;
                             img {
                                 @media (max-width: 1600px) {
                                     width: 100%;

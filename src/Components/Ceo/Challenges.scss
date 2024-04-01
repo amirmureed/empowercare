@@ -1,13 +1,13 @@
 .main-div {
   background: #ece0d4; /* Background color of the main container */
-
+}
 
 @media (max-width: 992px) {
   .txt_content {
       max-width: 100%;
   }
 
-  .container {
+  .challenge-container {
       padding: 2%;
       width: 100%; /* Adjusted max-width for responsiveness */
   }
@@ -21,7 +21,7 @@
     margin-top: 20%;
   }
 
-  .container {  
+  .challenge-container {  
       width: 100%;
       display: none;
       flex-direction: column;
@@ -44,7 +44,7 @@
   }
 }
 
-.container {
+.challenge-container {
   margin: auto;
   display: block;
   padding: 5%; 
@@ -123,5 +123,4 @@
     cursor: pointer;
     font-size: 16px;
   }
-}
 }
