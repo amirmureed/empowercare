@@ -18,7 +18,7 @@ const Challenges=()=>{
     
     </div><br />
     <p><b><i>With EmpowerCare, you can achieve all of this while meeting your financial goals, gaining autonomy, flexibility, and freedom.</i></b></p>
-    <div className='last-btn'><a className='btn_red'><b>Real Stories Real Impact <FiArrowDownRight/></b></a> </div>
+    <div className='last-btn'><a className='red-btn'><b>Real Stories Real Impact <FiArrowDownRight/></b></a> </div>
   </div>
 </div><br />
 </div>

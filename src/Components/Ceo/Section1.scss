@@ -1,11 +1,11 @@
-.parent-container {
+.sec1-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 20px;
-  }
+  
 
   .inner-container {
     display: flex;
@@ -66,4 +66,5 @@ text-align: center;
     display: flex;
     justify-content: center;
     margin-left: 5%;
+}
 }

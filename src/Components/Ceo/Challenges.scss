@@ -1,59 +1,126 @@
-.main-div{
-    background:#ece0d4 ; /* Background color of the main container */
+.main-div {
+  background: #ece0d4; /* Background color of the main container */
+}
+
+@media (max-width: 992px) {
+  .txt_content {
+      max-width: 100%;
+  }
+
+  .challenge-container {
+      padding: 2%;
+      width: 100%; /* Adjusted max-width for responsiveness */
+  }
+}
+
+@media (max-width: 450px) {
+  .txt_content {
+      padding: 10px;
+  }
+  .last-btn{
+    margin-top: 20%;
+  }
+
+  .challenge-container {  
+      width: 100%;
+      display: none;
+      flex-direction: column;
+
+  }
+ 
+  .txt_content h6 {
+    font-size: 0.7rem;
+  }
+
+  .txt_content h1 {
+    font-size: 1rem;
+  }
+  .txt_content p{
+    font-size: 0.6rem;
+  }
+  .red-btn{
+    padding: 0px;
+    
+  }
+}
 
 .challenge-container {
-    margin: auto;
-    display: block;
-    padding: 50px;
-    max-width: 55%;
-   background: white;
-   border-radius: 10px;
-  }
-  
-  .txt_content {
-   
-    padding: 10px;
-    
-    max-width: 760px; /* Maximum width of the content */
- h6{
-    color: blue;
- }
-  }
-  
-  .sub-container {
-    display: flex;
-
-    gap: 1px;
-   
-    flex-direction: column;
-    margin-top: 10px; /* Margin between main content and sub-containers */
-    p{
-        padding: 16px;
-        border-radius: 15px;
-        border: 1px solid grey;
-        background-color: #ece0d4;
-        color: black;
-      }
-  }
-  
-  .sub-content {
-    flex-basis: 23%; /* Each sub-content takes up 23% of the width with space between */
-    background-color: white; /* Background color of the sub-content */
-    padding: 5px;
-   
-  }
-  .sub-content3{
-    flex-basis: 23%; /* Each sub-content takes up 23% of the width with space between */
-    background-color: white; /* Background color of the sub-content */
-    padding: 5px;
-    p{
-        color: white;
-        background: linear-gradient(-130deg, 
-  #ee8d80 0.00%, 
-  #e6632a 100.00%);
-    }
-  }
-.last-btn{
-    margin-top: 10%;
+  margin: auto;
+  display: block;
+  padding: 5%; 
+  width: 70%;
+  background: white;
+  border-radius: 10px;
 }
+
+.txt_content {
+  padding: 10px;
+  max-width: 760px; 
+}
+
+.txt_content h6 {
+  color: blue;
+}
+
+.sub-container {
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+  margin-top: 10px; /* Margin between main content and sub-containers */
+}
+
+.sub-container p {
+  padding: 16px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  background-color: #ece0d4;
+  color: black;
+}
+
+.sub-content {
+  flex-basis: 23%; /* Each sub-content takes up 23% of the width with space between */
+  background-color: white; /* Background color of the sub-content */
+  padding: 5px;
+}
+
+.sub-content3 {
+  flex-basis: 23%; /* Each sub-content takes up 23% of the width with space between */
+  background-color: white; /* Background color of the sub-content */
+  padding: 5px;
+}
+
+.sub-content3 p {
+  color: white;
+  background: linear-gradient(-130deg, #ee8d80 0.00%, #e6632a 100.00%);
+}
+
+.last-btn {
+  margin-top: 10%;
+  .red-btn{
+    background: #ee8d80;
+    background: linear-gradient(-130deg, 
+    #ee8d80 0.00%, 
+    #e6632a 100.00%);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 10px;
+   font-weight: 100;
+    border-radius: 19px;
+  }
+  button-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .button2 {
+    padding: 10px 20px;
+    background: linear-gradient(-130deg, 
+    #ee8d80 0.00%, 
+    #e6632a 100.00%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
 }

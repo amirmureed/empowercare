@@ -3,7 +3,7 @@ import Ceo from '../../Assets/Mask Group 24.png'
 import activearrow from '../../Assets/active-arrow.png'
 const Section1=()=>{
     return(<>
-    <div class="parent-container">
+    <div class="sec1-container">
   <div class="inner-container">
     <div class="image-container">
       <img src={Ceo} alt="Ceo"/>

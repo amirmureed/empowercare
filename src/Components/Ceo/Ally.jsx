@@ -4,7 +4,7 @@ import healthcareimg from '../../Assets/healthcareimg.png';
 
 const Ally=()=>{
     return(<>
-    <div className="healthcare-sec">
+    <div className="ally-sec">
             <div className="container">
                 <div className="healthcare-wrapper">
                     <div className="row">
