@@ -116,12 +116,21 @@
             align-items: center;
             gap: 100px;
 
+            @media (max-width: 767.5px){
+                flex-direction: column;
+                gap: 10px;
+            }
+
             .section-img img {
                 height: 370px !important;
             }
 
             .left-content {
                 width: 60% !important;
+
+                @media (max-width: 767.5px){
+                    width: 95% !important;
+                }
             }
 
             span.meta {
@@ -141,6 +150,11 @@
                 text-align: left;
                 color: #000;
                 margin-bottom: 20px;
+
+                @media (max-width: 767.5px){
+                    font-size: 30px;
+                    line-height: 40px;
+                }
 
                 span{
                     background: linear-gradient(90deg, #71ba32 0.00%, #4eb3e8 100.00%);
