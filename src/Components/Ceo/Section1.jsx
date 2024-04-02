@@ -1,5 +1,5 @@
 import './Section1.scss'
-import Ceo from '../../Assets/Mask Group 24.png'
+import Ceo from '../../Assets/team3.png'
 import activearrow from '../../Assets/active-arrow.png'
 const Section1=()=>{
     return(<>
