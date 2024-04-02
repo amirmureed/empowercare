@@ -6,7 +6,7 @@
         margin: auto;
 
         .black-bg{
-            background-color: black !important;
+            background: radial-gradient(farthest-corner at 82% 8%, #5c5e62 0%, #0c0f14 100%) !important;
         }
 
         .choose-wrapper {
@@ -94,7 +94,7 @@
                             gap: 28px;
 
                             button {
-                                width: 196px;
+                                width: 195px !important;
                                 height: 66px;
                                 border-radius: 19px;
                                 display: flex;
@@ -210,7 +210,6 @@
 }
 
 .choose-sec.black-bg{
-    background-color: black;
 
     .left-content{
 
@@ -221,5 +220,14 @@
         .description{
             color: white !important;
         }
+    }
+}
+
+.choose-wrapper.black-bg{
+    margin-inline: 30px;
+
+    @media (max-width: 767.5px){
+        margin-inline: 15px;
+        border-radius: 10px !important;
     }
 }

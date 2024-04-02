@@ -7,6 +7,10 @@
         padding-inline: 100px;
         display: block;
 
+        @media (max-width: 767.5px){
+            padding-inline: 10px;
+        }
+
         .empowercare-wrapper {
             padding: 90px 0px;
 
@@ -84,6 +88,11 @@
                 background-color: #EBE0D3;
                 padding: 35px 10px;
                 border-radius: 16px;
+
+                @media (max-width: 767.5px){
+                    padding: 8px 10px;
+                    border-radius: 10px;
+                }
             }
 
             .accordian-open{
@@ -102,11 +111,20 @@
                 align-items: center;
                 margin-inline: 55px;
 
+                @media (max-width: 767px){
+                    margin-inline: 10px;
+                    flex-direction: column;
+                }
+
                 .card-content-left {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 30px;
+
+                    @media (max-width: 767px){
+                        gap: 10px;
+                    }
                 }
             }
 
@@ -153,6 +171,12 @@
                 color: #000;
                 margin-bottom: 20px;
                 width: 800px;
+
+                @media (max-width: 767.5px){
+                    font-size: 32px;
+                    line-height: 40px;
+                    width: 100%;
+                }
 
                 span{
                     background: linear-gradient(90deg, #71ba32 0.00%, #4eb3e8 100.00%);
