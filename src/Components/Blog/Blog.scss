@@ -3,9 +3,9 @@
     overflow: hidden;
 
     .blog-container {
-        max-width: 1774px;
+        width: 100%;
         margin: auto;
-        padding: 140px 0 10px;
+        padding: 140px 3% 10px;
 
         @media (max-width: 1200px) {
             padding: 120px 0;

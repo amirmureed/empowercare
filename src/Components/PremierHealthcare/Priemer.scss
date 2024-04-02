@@ -3,9 +3,9 @@
     overflow: hidden;
 
     .priemer-container {
-        max-width: 1774px;
+        width: 100%;
         margin: auto;
-        padding: 140px 0;
+        padding: 140px 3%;
 
         @media (max-width: 1200px) {
             padding: 120px 0;
