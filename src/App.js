@@ -9,6 +9,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Community from './Pages/Home/Community';
 import Ceo from './Pages/Home/Ceo';
+import Leadership from './Pages/Home/Leadership';
+import ReferralProgram from './Pages/Home/ReferralProgram';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path='/about/career' element={<Career />} />
           <Route path='/about/community' element={<Community/>} />
           <Route path='/about/ceo' element={<Ceo/>}/>
+          <Route path='/about/leadership' element={<Leadership/>}/>
+          <Route path='/resources/referral-program' element={<ReferralProgram/>}/>
         </Routes >
       </BrowserRouter>
     </>
