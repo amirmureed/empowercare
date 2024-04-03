@@ -1,5 +1,10 @@
 .content_with_form {
   background-color: #EBE0D3;
+  padding-top: 80px;
+
+  @media (max-width: 480px) {
+    padding-top: 50px;
+  }
 
   .container {
 
@@ -102,9 +107,22 @@
 
                   .right-content {
 
+                    position: relative;
+
                       @media (max-width: 767.5px) {
                           padding: 115px 0px 10px;
                       }
+                        img.form-icon {
+                            position: absolute;
+                            position: absolute;
+                            right: -35px;
+                            top: -27px;
+                            
+                            @media (max-width: 480px) {
+                                right: -23px;
+                                top: 90px;
+                            }
+                        }
                       .form-wrapper {
                           padding: 30px 20px;
                           background: #f4f4f4;
@@ -137,12 +155,14 @@
                         }
 
                         .contact-submit-btn {
+                          width: 60%;
                           background: linear-gradient(-130deg, #ee8d80 0.00%, #e6632a 100.00%);
                           color: #ffffff;
                           text-decoration: none;
                           padding: 18px 50px;
                           border-radius: 19px;
                           border: none;
+                          margin-top: 15px;
                         }
 
                       }

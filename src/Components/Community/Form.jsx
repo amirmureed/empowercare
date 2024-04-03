@@ -1,5 +1,6 @@
 import React from 'react';
 import activearrow from '../../Assets/active-arrow.png';
+import newsletterarrow from '../../Assets/h3_newsletter_shape0.png';
 import './Form.scss';
 
 const Form = () => {
@@ -28,8 +29,9 @@ const Form = () => {
                   </div>
                   <div className="col-md-6">
                       <div className="right-content">
+                        <img className='form-icon' src={newsletterarrow} alt="" />
                         <div className='form-wrapper'>
-                        <h4>JOIN EMPOWERCARE</h4>
+                          <h4>JOIN EMPOWERCARE</h4>
                           <form className='contact_form'>
                             <div className='row-input'>
                               <input type="text" placeholder="Input 1" className="rounded-input" />

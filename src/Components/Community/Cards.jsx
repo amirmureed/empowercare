@@ -22,9 +22,9 @@ const Cards = ({description1,description2,description3,description4}) => {
                                 </div>
                                 <div className="approach-box active">
                                     <div className="left-sec">
-                                        <div className="sec-img">
+                                        {/* <div className="sec-img">
                                             <img src={approach1} alt="approach1" />
-                                        </div>
+                                        </div> */}
                                         <div className="text-area">
                                             <h6 className="heading">{description2}</h6>
                                             
@@ -34,9 +34,9 @@ const Cards = ({description1,description2,description3,description4}) => {
                                 </div>
                                 <div className="approach-box active">
                                     <div className="left-sec">
-                                        <div className="sec-img">
+                                        {/* <div className="sec-img">
                                             <img src={approach1} alt="approach1" />
-                                        </div>
+                                        </div> */}
                                         <div className="text-area">
                                             <h6 className="heading">{description3}</h6>
                                             
@@ -46,9 +46,9 @@ const Cards = ({description1,description2,description3,description4}) => {
                                 </div>
                                 <div className="approach-box active">
                                     <div className="left-sec">
-                                        <div className="sec-img">
+                                        {/* <div className="sec-img">
                                             <img src={approach1} alt="approach1" />
-                                        </div>
+                                        </div> */}
                                         <div className="text-area">
                                             <h6 className="heading">{description4}</h6>
                                             
