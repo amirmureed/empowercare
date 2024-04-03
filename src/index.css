@@ -58,6 +58,15 @@ a.btn_red{
   padding: 18px 50px;
   border-radius: 19px;
 }
+a.learn_more{
+  background: transparent;
+  color:black;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 19px;
+  border: 1px solid black;
+  margin-left: 30px;
+}
 
 @media (max-width: 480px) {
   a.btn_red {

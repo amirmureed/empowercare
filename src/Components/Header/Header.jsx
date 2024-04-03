@@ -44,11 +44,17 @@ const Header = () => {
                             <Link to="/facilities" className='nav-link'>
                                 Facilities
                             </Link>
-                            <Link to="/about" className='nav-link' onMouseEnter={OnMouseEnter} OnMouseLeave={OnMouseLeave}>
+                            <Link to="/about" className='nav-link' >
                                 About Us
                                 {isMobile ?(<> <IconButton onClick={()=>setOpen(true)} >
                         <IoMdArrowDropright color='black' />
                     </IconButton></>):(<></>)}
+                    <div className='dropdown'>
+                        <span className='d-span'></span><br />
+                        <div className='dropdown-content'>
+                <PopoverContent/>
+                </div>
+            </div>
                             </Link>
                            
                         </Nav>):(<>
@@ -77,10 +83,9 @@ const Header = () => {
                         </Form>
                     </Navbar.Collapse>
                 </Container>
+               
             </Navbar>
-            {openModal && !SmallView && !isMobile? (<>
-            <ModalComponent open={openModal} onToggle={()=>setOpenModal(!openModal)}/>
-            </>):(<></>)}
+          
         </header>
     )
 }

@@ -1,60 +1,56 @@
 import { Box, Button, IconButton, Stack, Typography } from "@mui/material"
-import {  FaRegNewspaper } from "react-icons/fa";
-import { HiOutlineRocketLaunch } from "react-icons/hi2";
-import { LuBookPlus } from "react-icons/lu";
-import { SlDiamond } from "react-icons/sl";
-import { GoPencil } from "react-icons/go"
 import { Link, useNavigate } from "react-router-dom";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 const PopoverContent=()=>{
     const navigate=useNavigate()
     return(
         <Stack direction={'column'} px={6} spacing={4} marginTop={'5%'}>
-        
-    <Link  to='/about' style={{textDecoration:'none',color:'black'}}>
+        <br />
+    <Link  to='/about/ceo' style={{textDecoration:'none',color:'black'}}>
     <Stack direction={'row'} spacing={1}>
-<IconButton sx={{width: '50px',
-                height: '60px',borderRadius:'47%',backgroundColor:'#f2f2f2'}}><Typography variant="h5"><LuBookPlus/></Typography></IconButton>
+
+{/* <IconButton sx={{width: '50px',
+                height: '60px',borderRadius:'47%',backgroundColor:'#f2f2f2'}}><Typography variant="h5"><LuBookPlus/></Typography></IconButton> */}
+<Typography>
+<IoIosArrowDroprightCircle/></Typography>
 <Box>
 <p style={{ margin:'0',fontFamily:'sans-serif',}}>
-<b>About </b>
+<b>Ceo </b>
 </p>
-<p style={{ margin:'0',fontFamily:'sans-serif' }} >
-Learn about who we are and work we do.
-</p>
+
 </Box>
 </Stack>
     </Link>
      
-    <Link style={{textDecoration:'none',color:'black'}}>
+    <Link to='/about/community' style={{textDecoration:'none',color:'black'}}>
     <Stack direction={'row'} spacing={1}>
-<IconButton sx={{width: '50px',
-                height: '60px',borderRadius:'50%',backgroundColor:'#f2f2f2'}}><Typography variant="h5"><GoPencil/></Typography></IconButton>
+{/* <IconButton sx={{width: '50px',
+                height: '60px',borderRadius:'50%',backgroundColor:'#f2f2f2'}}><Typography variant="h5"><GoPencil/></Typography></IconButton> */}
+<Typography><IoIosArrowDroprightCircle/></Typography>
 <Box>
 <p style={{ margin:'0',fontFamily:'sans-serif',}}>
-<b>Called to Care</b>
+<b>Community</b>
 </p>
-<p style={{ margin:'0',fontFamily:'sans-serif' }} >
-Read about those making a difference in healthcare.</p>
+
 </Box>
 </Stack>
     </Link>
 
-    <Link style={{textDecoration:'none',color:'black'}}>
+    <Link to='/about/career' style={{textDecoration:'none',color:'black'}}>
     <Stack direction={'row'} spacing={1}>
-<IconButton sx={{width: '50px',
-                height: '60px',borderRadius:'47%',backgroundColor:'#f2f2f2'}}><Typography variant="h5"><HiOutlineRocketLaunch/></Typography></IconButton>
+{/* <IconButton sx={{width: '50px',
+                height: '60px',borderRadius:'47%',backgroundColor:'#f2f2f2'}}><Typography variant="h5"><HiOutlineRocketLaunch/></Typography></IconButton> */}
+<Typography><IoIosArrowDroprightCircle/></Typography>
 <Box>
-<p style={{ margin:'0',fontFamily:'sans-serif',}}>
-<b>Corporate Careers </b>
+<p style={{ fontFamily:'sans-serif',}}>
+<b>Careers </b>
 </p>
-<p style={{ margin:'0',fontFamily:'sans-serif' }} >
-We have jobs available across all areas of our company and our brands.
-</p>
+
 </Box>
 </Stack>
     </Link>
 
-    <Link style={{textDecoration:'none',color:'black'}}>
+    {/* <Link style={{textDecoration:'none',color:'black'}}>
     <Stack direction={'row'} spacing={1}>
 <IconButton sx={{width: '50px',
                 height: '60px',borderRadius:'47%',backgroundColor:'#f2f2f2'}}><Typography variant="h5">< FaRegNewspaper/></Typography></IconButton>
@@ -82,7 +78,7 @@ We’re a great place to work and have the accolades to show it.
 </p>
 </Box>
 </Stack>
-    </Link>
+    </Link> */}
     <br/>
 </Stack>
 

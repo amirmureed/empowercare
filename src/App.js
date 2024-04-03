@@ -10,6 +10,8 @@ import './App.scss';
 import Community from './Pages/Home/Community';
 import Shiftmakers from './Pages/Home/Shiftmakers';
 import Ceo from './Pages/Home/Ceo';
+import Leadership from './Pages/Home/Leadership';
+import ReferralProgram from './Pages/Home/ReferralProgram';
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
           <Route path='/about/career' element={<Career />} />
           <Route path='/about/community' element={<Community/>} />
           <Route path='/about/ceo' element={<Ceo/>}/>
-          <Route path='/resources/refferal-program' element={<Shiftmakers/>}/>
+          <Route path='/resources/shift-makers' element={<Shiftmakers/>}/>
+          <Route path='/about/leadership' element={<Leadership/>}/>
+          <Route path='/resources/referral-program' element={<ReferralProgram/>}/>
         </Routes >
       </BrowserRouter>
     </>
