@@ -19,7 +19,7 @@
     flex-basis: 45%; /* Each div takes up 45% of the container */
     max-width: 500px; /* Max width of each div */
    h6{
-color: blue;
+    color: #4eb3e8;
    }
    text-align: justify;
   }
@@ -38,6 +38,7 @@ color: blue;
       flex-basis: 100%; /* Each div takes up 100% of the container */
     }
   }
+  
   .last-container{
     margin-top: 7%;
     justify-content: center;
@@ -45,30 +46,28 @@ color: blue;
    
     text-align: center;
 h6{
-    color: blue;
+    color: #4eb3e8;
 }
  
 
   }
   .p-txt{
-    max-width: 39%;
-text-align: center;
+    max-width: 60%;
+    text-align: center;
     margin: auto;
     @media (max-width: 490px) { 
      max-width: 100%;
   }
 }
 .arrow_img{
-    margin-top: 5%;
     transform: translateX(60%); 
 }
 .btn-wrapper{
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .su-btn{
     display: flex;
     justify-content: center;
-    margin-left: 5%;
     @media (max-width: 490px) { 
       margin-left: 15%;
    }
