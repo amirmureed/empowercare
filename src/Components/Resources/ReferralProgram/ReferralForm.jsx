@@ -11,7 +11,7 @@ const ReferralForm=()=>{
           <div className="empowercare-wrapper">
             
               <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-lg-6 col-md-12">
                       <div className="left-content">
                           <span  className="meta"><b>TRAVEL NURSES</b></span>
                           <h5 className="heading">
@@ -37,7 +37,7 @@ const ReferralForm=()=>{
                       </div>
                      
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-lg-6 col-md-12">
                       <div className="right-content">
                         <img className='form-icon' src={newsletterarrow} alt="" />
                         <div className='form-wrapper'>
