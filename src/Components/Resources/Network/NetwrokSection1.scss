@@ -1,24 +1,22 @@
 .Network {
     background-color: #EBE0D3;
-    padding: 30px;
     .container {
 
         .network-wrapper {
-            padding: 10px 0 140px;
+            // padding: 10px 0 140px;
 
-            @media (max-width: 1200px) {
-                padding: 10px 0 120px;
-            }
-            @media (max-width: 992px) {
-                padding: 10px 0 80px;
-            }
-            @media (max-width: 767.5px) {
-                padding: 10px 0 60px;
-            }
+            // @media (max-width: 1200px) {
+            //     padding: 10px 0 120px;
+            // }
+            // @media (max-width: 992px) {
+            //     padding: 10px 0 80px;
+            // }
+            // @media (max-width: 767.5px) {
+            //     padding: 10px 0 60px;
+            // }
 
             .row {
-                padding-left: 50px;
-                align-items: center;
+                // align-items: center;
                 @media (max-width: 767.5px) {
                     margin: 0;
                 }
@@ -85,18 +83,19 @@
                         @media (max-width: 767.5px) {
                             padding: 115px 0px 10px;
                         }
-                        .section-img {
-                            text-align: left;
-
-                            img {
-                                @media (max-width: 1600px) {
-                                    width: 100%;
-                                }
-                            }
+                        .section-img img {
+                            width: 100% !important;
                         }
+                        
                     }
                 }
             }
         }
+    }
+}
+
+@media (max-width: 480px) {
+    .network .section-img img {
+        width: 410px;
     }
 }

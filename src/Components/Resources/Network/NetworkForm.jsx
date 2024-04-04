@@ -4,8 +4,8 @@ import { FiArrowDownRight } from "react-icons/fi";
 const NetworkForm=()=>{
     return (<>
     <div className="network-form">
-                        
-                        <div className='network-form-wrapper'>
+                  <div className='container'>
+                      <div className='network-form-wrapper'>
                         <img className='form-icon' src={newsletter} alt="" />
                           <br /><h6>Your Information</h6>
                           <form className='contact_form'>
@@ -35,6 +35,7 @@ const NetworkForm=()=>{
                             <button className='contact-submit-btn' type="submit">SUBMIT REFERRAL <FiArrowDownRight /></button></div>
                           </form>
                         </div>
+                      </div>
                     </div>
     </>
     )
