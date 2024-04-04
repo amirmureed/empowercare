@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Community from './Pages/Home/Community';
+import Shiftmakers from './Pages/Home/Shiftmakers';
 import Ceo from './Pages/Home/Ceo';
 import Leadership from './Pages/Home/Leadership';
 import ReferralProgram from './Pages/Home/ReferralProgram';
@@ -25,6 +26,7 @@ function App() {
           <Route path='/about/career' element={<Career />} />
           <Route path='/about/community' element={<Community/>} />
           <Route path='/about/ceo' element={<Ceo/>}/>
+          <Route path='/resources/shift-makers' element={<Shiftmakers/>}/>
           <Route path='/about/leadership' element={<Leadership/>}/>
           <Route path='/resources/referral-program' element={<ReferralProgram/>}/>
           <Route path='/resources/network' element={<Network/>}/>
