@@ -2,11 +2,11 @@ import './NetwrokSection1.scss'
 import networkImg from '../../../Assets/NetworkImg.png'
 const NetworkSection1=()=>{
     return (<>
-    <div className="Network">
+    <div className="network">
             <div className="container">
                 <div className="network-wrapper">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-lg-7 col-md-12">
                             <div className="left-content">
                                 <p className="meta">PROGRAM FOR NURSES</p>
                                 <h2 className="heading">
@@ -19,7 +19,7 @@ const NetworkSection1=()=>{
                                 
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-lg-5 col-md-12">
                             <div className="right-content">
                                 <div className="section-img">
                                     <img src={networkImg} alt="networkImage" />
