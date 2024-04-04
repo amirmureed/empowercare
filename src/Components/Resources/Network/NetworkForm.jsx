@@ -4,9 +4,10 @@ import { FiArrowDownRight } from "react-icons/fi";
 const NetworkForm=()=>{
     return (<>
     <div className="network-form">
-                        <img className='form-icon' src={newsletter} alt="" />
+                        
                         <div className='network-form-wrapper'>
-                          <h6>Your Information</h6>
+                        <img className='form-icon' src={newsletter} alt="" />
+                          <br /><h6>Your Information</h6>
                           <form className='contact_form'>
                           <div className='row-input'>
                               <input type="text" placeholder="First Name" className="rounded-input" />

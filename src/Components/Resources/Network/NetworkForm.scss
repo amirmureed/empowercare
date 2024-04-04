@@ -1,33 +1,38 @@
 .network-form {
- padding: 150px;
+ padding: 120px;
     
 
       @media (max-width: 767.5px) {
           padding: 115px 0px 10px;
       }
-        img.form-icon {
-            
-           position: relative;
-             left: 1300px;
-            top: 1520px;
-            
-            @media (max-width: 480px) {
-                right: -23px;
-                top: 90px;
-            }
-        }
+      @media (max-width: 480px) {
+                padding:20px
+      }
+        
       .network-form-wrapper {
+        position: relative;
           padding: 30px 20px;
           background: #f4f4f4;
           border-radius: 20px;
           height: 600px;
+          img.form-icon {
+            
+            position: absolute;
+            top: -20px;
+            right: -12px;
+            width: 50px; 
+            height: auto; 
+             @media (max-width: 480px) {
+                
+             }
+         }
       
       }
       .contact_form {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        margin-top: 5%;
+        gap: 5px;
+        margin-top: 2%;
 
         .row-input { 
               display: flex;
