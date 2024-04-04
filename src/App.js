@@ -11,6 +11,7 @@ import Community from './Pages/Home/Community';
 import Ceo from './Pages/Home/Ceo';
 import Leadership from './Pages/Home/Leadership';
 import ReferralProgram from './Pages/Home/ReferralProgram';
+import Network from './Pages/Home/Network';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/about/ceo' element={<Ceo/>}/>
           <Route path='/about/leadership' element={<Leadership/>}/>
           <Route path='/resources/referral-program' element={<ReferralProgram/>}/>
+          <Route path='/resources/network' element={<Network/>}/>
         </Routes >
       </BrowserRouter>
     </>
