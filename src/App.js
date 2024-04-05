@@ -13,8 +13,8 @@ import Ceo from './Pages/Home/Ceo';
 import Leadership from './Pages/Home/Leadership';
 import ReferralProgram from './Pages/Home/ReferralProgram';
 import Network from './Pages/Home/Network';
+import Benefits from './Pages/Home/Benefits';
 import Signup from './Pages/Home/Signup';
-
 function App() {
   return (
     <>
@@ -24,7 +24,7 @@ function App() {
           <Route path='/about' element={<About/>} />
           <Route path='/seamless' element={<Seamlesss/>} />
           <Route path='/facilities' element={<Facilities />} />
-          <Route path='/signup' element={<Signup />} />
+          <Route path='/signup' element={<Signup/>} />
           <Route path='/about/career' element={<Career />} />
           <Route path='/about/community' element={<Community/>} />
           <Route path='/about/ceo' element={<Ceo/>}/>
@@ -32,6 +32,7 @@ function App() {
           <Route path='/about/leadership' element={<Leadership/>}/>
           <Route path='/resources/referral-program' element={<ReferralProgram/>}/>
           <Route path='/resources/network' element={<Network/>}/>
+          <Route path='/resources/benefits' element={<Benefits/>}/>
         </Routes >
       </BrowserRouter>
     </>
