@@ -18,7 +18,7 @@ code {
   margin-top: 3%;
 }
 
-a.btn.quick-btn{
+.btn.quick-btn{
   background: linear-gradient(-130deg, #71ba32 0%, #4eb3e8 100%);
   width: 196px;
   height: 66px;
