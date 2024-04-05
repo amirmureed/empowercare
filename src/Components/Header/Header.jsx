@@ -107,12 +107,8 @@ const Header = () => {
                                     <SearchIcon />
                                 </Col>
                                 <Col xs="auto">
-                                    <Button className='apply-btn' type="submit">
-                                        <span>Quick Apply</span>
-                                    </Button>
-                                    <Button className='contact-btn' type="submit">
-                                        <span>Contact us</span>
-                                    </Button>
+                                    <Link to="/signup" className='apply-btn btn btn-primary'>Quick Apply</Link>
+                                    <Link to="/" className='contact-btn btn btn-primary'>Contact us</Link>
                                 </Col>
                             </Row>
                         </Form>

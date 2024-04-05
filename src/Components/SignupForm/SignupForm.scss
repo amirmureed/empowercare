@@ -1,5 +1,5 @@
 .signup_form .trusted-sec {
-    background-image: url(../../Assets/bodybg1.png);
+    // background-image: url(../../Assets/bodybg1.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
@@ -10,12 +10,12 @@
         .trusted-wrapper {
             padding: 30px 0;
 
-            @media (max-width: 992px) {
-                padding: 50px 0 80px;
-            }
-            @media (max-width: 575px) {
-                padding: 50px 0 0px;
-            }
+            // @media (max-width: 992px) {
+            //     padding: 50px 0 80px;
+            // }
+            // @media (max-width: 575px) {
+            //     padding: 50px 0 0px;
+            // }
             .top-content {
                 text-align: center;
                 margin-bottom: 20px;
@@ -39,15 +39,13 @@
                     // margin-bottom: 20px;
 
                     @media (min-width: 992px) {
-                        padding: 1% 17%;
+                        padding: 1% 23%;
                     }
                     @media (max-width: 992px) {
                         font-size: 40px;
                     }
                     @media (max-width: 767.5px) {
                         font-size: 35px;
-                        // margin-bottom: 30px;
-
                         br {
                             display: none;
                         }
@@ -106,16 +104,19 @@
             }
         }
         .signup_form_controller {
-            .form_desc{
-                margin-bottom: 3%;
+
+            .signup_checkboxes {
+                margin-bottom: 10%;
             }
+
             .checkbox_wrapper {
+                padding-top: 3%;
 
                 .checkboxes_container {
                     display: flex;
                     gap: 20px;
 
-                    @media (max-width: 480px){
+                    @media (max-width: 821px){
                         flex-direction: column;
                     }
                 }
@@ -126,10 +127,76 @@
                     border-color: #000000;
                     border-width: 1px;
                     border-style: solid;
-                    border-radius: 19px;
+                    border-radius: 15px;
+                    cursor: pointer;
+
+                    @media (max-width: 1024px) {
+                        padding: 10px 8px;
+                    }
+
                 }
+                label.active {
+                    background: linear-gradient(-130deg, #71ba32 0%, #4eb3e8 100%);
+                    border: none;
+                    color: #ffffff;
+                    padding: 11px 26px;
+                }
+
                 input {
                     opacity: 0;
+                }
+            }
+
+            .signup_container {
+                position: relative;
+                background: #f4f4f4;
+                border-radius: 20px;
+                padding: 6% 0%;
+
+                .top-content {
+                    // padding: 7% 0px 0px 0px;
+                    p {
+                        padding: 1% 13%;
+                    }
+                }
+
+                .form_fields {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 13px;
+                    text-align: center;
+                    padding: 0px 8%;
+
+                    .row-input {
+                        display: flex;
+                        gap: 10px;
+                    }
+
+                    .rounded-input {
+                        border-color: #d5d5d5;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-radius: 15px;
+                        background: #eeeeee;
+                        padding: 12px;
+                        width: 50%;
+                    }
+                }
+
+                img.form-icon {
+                    position: absolute;
+                    top: 95px;
+                    right: 13%;
+
+                    @media (max-width: 821px){
+                        top: 15px;
+                        right: 3%;
+                    }
+                    
+                    @media (max-width: 480px){
+                        top: 10px;
+                        right: 3%;
+                    }
                 }
             }
         }

@@ -30,6 +30,13 @@ code {
   color: #ffffff;
 }
 
+@media (max-width: 480px){
+  .btn.quick-btn{
+    width: 156px;
+    height: 50px;
+  }
+}
+
 span.text_grad_red {
   background: linear-gradient(90deg, 
   #e6632a 0.00%, 
