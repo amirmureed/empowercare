@@ -53,8 +53,8 @@ const Header = () => {
                         <span className='d-span'></span><br />
                         <div className='dropdown-content'>
                 <PopoverContent
-                 route1={'/about/ceo'} route2={'/about/community'} route3={'/about/career'}
-                 name1={'Ceo'} name2={'Community'} name3={'Career'}
+                 route1={'/about/ceo'} route2={'/about/community'} route3={'/about/career'} route4={'/about/leadership'}
+                 name1={'Ceo'} name2={'Community'} name3={'Career'} name4={'Leadership'}
                 />
                 </div>
             </div>
@@ -70,8 +70,8 @@ const Header = () => {
                         <span className='d-span'></span><br />
                         <div className='dropdown-content'>
                 <PopoverContent
-                  route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'}
-                  name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'}
+                  route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'} route4={'/resources/benefits'}
+                  name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'} name4={'Benefits'}
                 />
                 </div>
             </div>
@@ -84,14 +84,14 @@ const Header = () => {
                         </Nav>): open?(<>
                             <IconButton onClick={()=>setOpen(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
                         <PopoverContent
-                         route1={'/about/ceo'} route2={'/about/community'} route3={'/about/career'}
-                         name1={'Ceo'} name2={'Community'} name3={'Career'}
+                         route1={'/about/ceo'} route2={'/about/community'} route3={'/about/career'} route4={'/about/leadership'}
+                         name1={'Ceo'} name2={'Community'} name3={'Career'} name4={'Leadership'}
                         /></>)
                     :openResources?(<>
                      <IconButton onClick={()=>setOpenResources(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
                         <PopoverContent
-                         route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'}
-                         name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'}
+                         route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'} route4={'/resources/benefits'}
+                         name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'} name4={'Benefits'}
                         /></>
                     ):(<></>)
                     }
