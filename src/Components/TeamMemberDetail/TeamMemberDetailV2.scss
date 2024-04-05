@@ -1,10 +1,10 @@
-.team_member_detail {
+.team_member_detailV2 {
 
     width: 100%;
 
     @media ( min-width: 1024px ){
-        padding-bottom: 70px;
-        margin-bottom: -20%;
+        margin-bottom: 13%;
+        
     }
 
     .healthcare-sec {
@@ -21,7 +21,7 @@
 
                 align-items: center;
                 position: relative;
-                padding-bottom: 10%;
+                
 
                 @media (max-width: 767.5px) {
                     margin: 0;
@@ -32,9 +32,11 @@
                         background-color: #f4f4f4;
                         border-radius: 50px;
                         width: 93%;
-                        margin-left: 7%;
+                        padding-right: 24%;
                         margin-top: 7%;
-                        padding: 7% 7% 5% 28%;
+                        padding-left: 4%;
+                        padding-top: 8%;
+                        
 
                         @media (max-width: 1025px) {
                             padding: 10%;
@@ -171,7 +173,7 @@
                         .section-img {
                             @media (min-width: 1025px) {
                                 position: relative;
-                                text-align: left;
+                                text-align: right;
                             }
 
                             img {
@@ -180,9 +182,10 @@
                                 }
                                 @media(min-width: 1025px) {
                                     width: 30%;
-                                    position: absolute;
+                                    position: relative;
                                     right: 0;
                                     left: 0;
+                                    top: 330px;
                                 }
                                 border-radius: 50px;
                             }
