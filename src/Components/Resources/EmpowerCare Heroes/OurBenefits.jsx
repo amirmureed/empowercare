@@ -1,25 +1,21 @@
-import './CoolBenefits.scss'
-const CoolBenefits = (props) => {
+import './OurBenefits.scss'
+const OurBenefits = () => {
   
     return (
-      <div className="cool-benefits">
+      <div className="our-benefits">
         <div className="container">
-          <div className="cool-wrapper">
+          <div className="our-benefits-wrapper">
             <div class="top-content">
                 <br />
                 <span className="meta"><b>OUR BENEFITS</b></span>
               <h2 class="heading">
-                HERE ARE SOME OF THE 
-                <span class="text_grad_red"> COOL BENEFITS </span>
-                YOU <br />GET WITH EMPOWERCARE
-              </h2>
+                
+                <span class="text_grad_red">  BENEFITS </span>
+                THAT PUT <br />YOU FIRST </h2>
               <p className="description">
-              We want you to feel your best while you're helping others feel better. That's why we give you benefits that take care of you in every way.
+              We believe that when you're at your best, you can provide the best care to your patients. That's why we offer a comprehensive benefits package designed to support your well-being and success:
               </p>
-              <p className="description">
-                  Some staffing agencies don't think about what their employees need, but we're different. We care about you and want to make sure you
-                  have everything you need to be successful.
-              </p><br />
+              <br />
               <h3 className="sub-heading">
               WHEN YOU WORK WITH EMPOWERCARE, YOU'LL GET.
             </h3>
@@ -29,9 +25,9 @@ const CoolBenefits = (props) => {
               <div className="working-col col-12">
                 <div className="row">
                   <div className="working_content col-12">
-                    <h3>●    Health Insurance</h3>
+                    <h3>● Health and Wellness</h3>
                     <p>
-                    We help you stay healthy with medical, dental, and vision insurance.
+                    Your health is our priority. Enjoy medical, dental, and vision insurance that keeps you covered, so you can focus on caring for others.
                     </p>
                   </div>
                 </div>
@@ -39,9 +35,9 @@ const CoolBenefits = (props) => {
               <div className="working-col col-12">
                 <div className="row">
                   <div className="working_content col-12">
-                    <h3>●    401K Programs</h3>
+                    <h3>●  Financial Security</h3>
                     <p>
-                    We make it easy for you to save money for the future.
+                    Plan for your future with our 401K programs, which make saving for retirement easy and accessible.
                     </p>
                   </div>
                 </div>
@@ -49,9 +45,9 @@ const CoolBenefits = (props) => {
               <div className="working-col col-12">
                 <div className="row">
                   <div className="working_content col-12">
-                    <h3>●    Paid Time Off </h3>
+                    <h3>● Work-Life Balance</h3>
                     <p>
-                    You can take breaks when you need them and still get paid. The more you work, the more time off you get!
+                    We understand the importance of rest and rejuvenation. Our paid time off program allows you to take breaks when you need them, without sacrificing your financial stability. The more you work with us, the more paid time off you accrue!
                     </p>
                   </div>
                 </div>
@@ -59,7 +55,7 @@ const CoolBenefits = (props) => {
               <div className="working-col col-12">
                 <div className="row">
                   <div className="working_content col-12">
-                    <h3>●  Bonuses </h3>
+                    <h3>● Recognition and Rewards </h3>
                     <p>
                     Content When you do a great job, we reward you with bonuses and even give you extra money when you refer your friends to work with us.
                     </p>
@@ -69,9 +65,9 @@ const CoolBenefits = (props) => {
               <div className="working-col col-12">
                 <div className="row">
                   <div className="working_content col-12">
-                    <h3>● Spotlight! Shift Champions </h3>
+                    <h3>● Professional Growth</h3>
                     <p>
-                    Unsung Heroes No More
+                    We invest in your career development through our EmpowerCare Academy, offering training and resources to help you expand your skills and knowledge.
                     </p>
                   </div>
                 </div>
@@ -93,4 +89,4 @@ const CoolBenefits = (props) => {
     );
   };
   
-  export default CoolBenefits;
+  export default OurBenefits;

@@ -15,6 +15,7 @@ import ReferralProgram from './Pages/Home/ReferralProgram';
 import Network from './Pages/Home/Network';
 import Benefits from './Pages/Home/Benefits';
 import Signup from './Pages/Home/Signup';
+import Heroes from './Pages/Home/Heroes';
 function App() {
   return (
     <>
@@ -33,6 +34,7 @@ function App() {
           <Route path='/resources/referral-program' element={<ReferralProgram/>}/>
           <Route path='/resources/network' element={<Network/>}/>
           <Route path='/resources/benefits' element={<Benefits/>}/>
+          <Route path='/resources/empowercare-heroes' element={<Heroes/>}/>
         </Routes >
       </BrowserRouter>
     </>
