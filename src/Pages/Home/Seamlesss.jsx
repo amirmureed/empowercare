@@ -9,6 +9,7 @@ import Choose1 from '../../Components/Choose1/Choose1';
 import Empowercare from '../../Components/Empowercare/Empowercare';
 import PriemerBlack from '../../Components/PremierHealthcareBlack/PriemerBlack';
 import Userslider from '../../Components/Userslider/Userslider';
+import FaqAccordian from '../../Components/FaqAccordian/FaqAccordian';
 
 const Seamlesss = () => {
     return (
@@ -40,6 +41,7 @@ const Seamlesss = () => {
           />
           <PriemerBlack />
           <Empowercare />
+          <FaqAccordian />
           <Userslider />
           <Footer />
         </>
