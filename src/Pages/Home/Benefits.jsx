@@ -12,7 +12,7 @@ const Benefits=()=>{
     <Header/>
     <Banner8/>
     <EnjoyBenefits/>
-    <CoolBenefits/>
+    <CoolBenefits />
     <CareAbout/>
     <BenefitForm/>
     <Userslider2/>
