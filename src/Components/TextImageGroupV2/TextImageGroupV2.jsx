@@ -10,7 +10,7 @@ const TextImageGroupV2 = () => {
                 <div className="container">
                     <div className="healthcare-wrapper">
                         <div className="row">
-                            <div className="col-md-6 left-content-container">
+                            <div className="col-lg-6 col-md-12 left-content-container">
                                 <div className='test'>
                                     <div className="left-content">
                                         <h2 className="heading">
@@ -28,7 +28,7 @@ const TextImageGroupV2 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-lg-6 col-md-12">
                                 <div className="right-content">
                                     <div className="section-img">
                                         <img src={secImage} alt="healthcareimg" />

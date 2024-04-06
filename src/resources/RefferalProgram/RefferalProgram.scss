@@ -24,7 +24,7 @@
                 @media (max-width: 767.5px) {
                     margin: 0;
                 }
-                .col-md-7 {
+                .col-md-12 {
                     .left-content {
                         padding-right: 25px;
 
@@ -151,19 +151,20 @@
 
                 }
 
-                .col-md-5{
+                .col-md-12{
                     .right-content {
 
-                        @media (max-width: 767.5px) {
-                            padding: 115px 0px 10px;
-                        }
+                        // @media (max-width: 767.5px) {
+                        //     padding: 115px 0px 10px;
+                        // }
                         .section-img {
                             text-align: center;
 
                             img {
-                                @media (max-width: 1600px) {
-                                    width: 70%;
-                                    height: 335px;
+                                width: 100%;
+                                @media (max-width: 480px) {
+                                    width: 95%;
+                                    padding-bottom: 50px;
                                 }
                             }
                         }

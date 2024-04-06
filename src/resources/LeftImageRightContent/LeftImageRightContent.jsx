@@ -4,18 +4,18 @@ import empowercareimg from "../../Assets/start-by-following.png";
 
 const LeftImageRightContent = () => {
   return (
-    <div className="left_image_right_content_wrapper">
+    <div className="left_image_right_content_wrapper 1">
       <div className="container">
         <div className="empowercare-wrapper">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-lg-6 col-md-12">
               <div className="right-content">
                 <div className="section-img">
                   <img src={empowercareimg} alt="empowercareimg" />
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6 col-md-12">
               <div className="left-content">
                 <span className="meta text-black">Why Choose Us</span>
                 <h2 className="heading">
