@@ -6,7 +6,7 @@ const EnjoyBenefits=()=>{
             <div className="container">
                 <div className="empowercare-wrapper">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-lg-6 col-md-12">
                             <div className="left-content">
                                 <span className="meta"><b>REWARDS AND BENEFITS</b></span>
                                 <h2 className="heading">
@@ -24,7 +24,7 @@ const EnjoyBenefits=()=>{
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-lg-6 col-md-12">
                             <div className="right-content">
                                 <div className="section-img">
                                     <img src={img} alt="empowercareimg" />

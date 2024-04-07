@@ -63,7 +63,7 @@ const Header = () => {
                     </IconButton></>):(<></>)} 
                             </Link>  
                     
-                        <Link to="/resources/referral-program" className='nav-link'>
+                        <Link to="/resources" className='nav-link'>
                             Resources
                            
                     <div className='dropdown'>

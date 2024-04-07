@@ -19,9 +19,10 @@
             right: -20px;
             width: 60px; 
             height: auto; 
-             @media (max-width: 480px) {
-                
-             }
+            @media (max-width: 480px) {
+                top: 2px;
+                right: 3px;
+            }
          }
       
       }
