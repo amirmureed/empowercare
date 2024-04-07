@@ -17,6 +17,7 @@ import Benefits from './Pages/Home/Benefits';
 import Signup from './Pages/Home/Signup';
 import Heroes from './Pages/Home/Heroes';
 import Resources from './Pages/Home/Resources';
+import DirectCareCareers from './Pages/Home/DirectCareCareers';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path='/resources/benefits' element={<Benefits/>}/>
           <Route path='/resources/empowercare-heroes' element={<Heroes/>}/>
           <Route path='/resources' element={<Resources/>}/>
+          <Route path='/facilities/directcare-careers' element={<DirectCareCareers/>}/>
         </Routes >
       </BrowserRouter>
     </>
