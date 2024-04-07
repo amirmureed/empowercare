@@ -162,16 +162,16 @@
             display: block;
             position: absolute; /* Position the dropdown relative to the .nav-link */
             top: 50%; /* Position it below the .nav-link */
-            left: 780px; /* Align it with the left edge of the .nav-link */
+            left: 700px; /* Align it with the left edge of the .nav-link */
             z-index: 999;
            
            
             width: 25%;
             @media (max-width:1355px) {
-                left: 550px;
+                left: 450px;
             }
             @media (max-width:1200px) {
-                left: 650px;
+                left: 750px;
             }
             @media (max-width:1025px) {
                 width: 37%;
@@ -184,8 +184,70 @@
          .dropdown{
             display: none
          }
+         .nav-link:hover .dropdown-resources{
+            display: block;
+            position: absolute; /* Position the dropdown relative to the .nav-link */
+            top: 50%; /* Position it below the .nav-link */
+            left: 780px; /* Align it with the left edge of the .nav-link */
+            z-index: 999;
+           
+           
+            width: 25%;
+            @media (max-width:1355px) {
+                left: 550px;
+            }
+            @media (max-width:1200px) {
+                left: 850px;
+            }
+            @media (max-width:1025px) {
+                width: 37%;
+                left: 600px;
+            }
+         }
+         .nav-link:hover .dropdown-facilities{
+            display: block;
+            position: absolute; /* Position the dropdown relative to the .nav-link */
+            top: 50%; /* Position it below the .nav-link */
+            left: 520px; /* Align it with the left edge of the .nav-link */
+            z-index: 999;
+           
+           
+            width: 25%;
+            @media (max-width:1355px) {
+                left: 350px;
+            }
+            @media (max-width:1200px) {
+                left: 650px;
+            }
+            @media (max-width:1025px) {
+                width: 37%;
+                left: 400px;
+            }
+         }
+         .dropdown-resources .dropdown{
+            display: block;
+         }
+         .dropdown-resources{
+            display: none
+         }
+         .dropdown-facilites .dropdown{
+            display: block;
+         }
+         .dropdown-facilities{
+            display: none
+         }
          .dropdown .d-span{
             background-color: transparent;
+         }
+         .dropdown-resources .dropdown-content{
+            background-color: #fff;
+            border-radius: 20px;
+        
+         }
+         .dropdown-facilities .dropdown-content{
+            background-color: #fff;
+            border-radius: 20px;
+        
          }
          .dropdown .dropdown-content{
             background-color: #fff;

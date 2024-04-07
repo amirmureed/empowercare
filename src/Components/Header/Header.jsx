@@ -22,6 +22,7 @@ const Header = () => {
     const OnMouseLeave=()=> {setOpenModal(false)}
     const [open,setOpen]=useState(false)
     const [openResources,setOpenResources]=useState(false)
+    const [openFacilities,setOpenFacilities]=useState(false)
     const theme=useTheme()
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     const SmallView=useMediaQuery(theme.breakpoints.down('xs'))
@@ -38,12 +39,25 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     
                     <Navbar.Collapse id="basic-navbar-nav">
-                        {!open && !openResources ? ( <Nav className="mr-auto">
+                        {!open && !openResources && !openFacilities ? ( <Nav className="mr-auto">
                          <Link to="/" className='nav-link'>
                                 Professionals
                             </Link>
                             <Link to="/facilities" className='nav-link'>
                                 Facilities
+                                <div className='dropdown-facilities'>
+                        <span className='d-span'></span><br />
+                        <div className='dropdown-content'>
+                        <PopoverContent
+                         route1={'/facilities/directcare-careers'}
+                         name1={'Careers'}
+                        />
+                </div>
+            </div>
+                                {isMobile ?(<> <IconButton onClick={()=>setOpenFacilities(true)} >
+                        <IoMdArrowDropright color='black' />
+                    </IconButton></>):(<></>)} 
+                            
                             </Link>
                             
                             <Link to="/about" className='nav-link' >
@@ -66,7 +80,7 @@ const Header = () => {
                         <Link to="/resources" className='nav-link'>
                             Resources
                            
-                    <div className='dropdown'>
+                    <div className='dropdown-resources'>
                         <span className='d-span'></span><br />
                         <div className='dropdown-content'>
                 <PopoverContent
@@ -93,7 +107,13 @@ const Header = () => {
                          route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'} route4={'/resources/benefits'} route5={'/resources/empowercare-heroes'}
                          name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'} name4={'Benefits'} name5={'Heroes'}
                         /></>
-                    ):(<></>)
+                    ):openFacilities?(<>
+                     <IconButton onClick={()=>setOpenFacilities(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
+                        <PopoverContent
+                         route1={'/facilities/directcare-careers'}
+                         name1={'Careers'}
+                        />
+                    </>):(<></>)
                     }
                        
                         <Form inline>
