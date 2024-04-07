@@ -1,10 +1,13 @@
 .banner_varient .main-banner {
     background-image: url(../../Assets/bannerbg.png);
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
+    margin-top: -121px;
     background-size: cover;
-    margin-top: -126px;
-    background-color: #EBE0D3;
+
+    @media ( max-width: 950px ) {
+        margin-top: -20px;
+    }
 
     .container {
 

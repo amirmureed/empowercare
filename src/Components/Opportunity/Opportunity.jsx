@@ -15,9 +15,8 @@ const Opportunity = () => {
                                     <span className="meta">Dynamic Squads</span>
                                     <h2 className="heading">
                                         Finding 
-                                        <span> The Right </span> <br />
-                                        Opportunities For <br />
-                                        You, Confidently
+                                        <span> The Right </span>
+                                        Opportunities For You, Confidently
                                     </h2>
                                     <p className="description">With 18+ years of experience, EmpowerCare's mission is empowering healthcare institutions and professionals through top-tier staffing solutions that transform lives, elevate care, and promote societal well-being. </p>
                                     <p className="description">Celebrating over 1,000,000 shifts served, our vision is doubling the impact to 2 million by 2031 - ensuring seamless operations for institutions and fulfilling opportunities for every healthcare professional</p>

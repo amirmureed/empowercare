@@ -21,8 +21,8 @@ const Healthcare = () => {
                                 <span className="meta">Who We Are</span>
                                 <h2 className="heading">
                                     Join 
-                                    <span> EmpowerCare </span> <br />
-                                     & Make a Difference <br />
+                                    <span> EmpowerCare </span>
+                                     & Make a Difference
                                     in Healthcare
                                 </h2>
                                 <ul>
