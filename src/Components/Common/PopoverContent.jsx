@@ -2,7 +2,7 @@ import { Box, Button, IconButton, Stack, Typography } from "@mui/material"
 import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 const PopoverContent=(props)=>{
-    const {route1,route2,route3,route4,name1,name2,name3,name4}=props
+    const {route1,route2,route3,route4,route5,name1,name2,name3,name4,name5}=props
     return(
 
         <Stack classname="test" direction={'column'} px={6} spacing={4} marginTop={'5%'}>
@@ -46,6 +46,18 @@ const PopoverContent=(props)=>{
                 </Box>
                 </Stack>
             </Link>
+
+            {route5 && name5 ?(<>
+            <Link  to={route5}>
+                <Stack direction={'row'} spacing={1}>
+                <Typography>
+                <IoIosArrowDroprightCircle/></Typography>
+                <Box>
+                    <span>{name5}</span>
+                </Box>
+                </Stack>
+            </Link>
+          </>):(<></>)} 
 
         </Stack>
     )

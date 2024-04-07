@@ -70,8 +70,8 @@ const Header = () => {
                         <span className='d-span'></span><br />
                         <div className='dropdown-content'>
                 <PopoverContent
-                  route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'} route4={'/resources/benefits'}
-                  name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'} name4={'Benefits'}
+                  route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'} route4={'/resources/benefits'} route5={'/resources/empowercare-heroes'}
+                  name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'} name4={'Benefits'} name5={'Heroes'}
                 />
                 </div>
             </div>
@@ -90,8 +90,8 @@ const Header = () => {
                     :openResources?(<>
                      <IconButton onClick={()=>setOpenResources(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
                         <PopoverContent
-                         route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'} route4={'/resources/benefits'}
-                         name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'} name4={'Benefits'}
+                         route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'} route4={'/resources/benefits'} route5={'/resources/empowercare-heroes'}
+                         name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'} name4={'Benefits'} name5={'Heroes'}
                         /></>
                     ):(<></>)
                     }
