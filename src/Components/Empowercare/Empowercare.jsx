@@ -15,7 +15,7 @@ const Empowercare = () => {
                                 <span className="meta">Who We Are</span>
                                 <h2 className="heading">
                                     Tailored
-                                    <span> EmpowerCare </span> <br />
+                                    <span> EmpowerCare </span>
                                     Career Paths
                                 </h2>
                                 <p className="description">At EmpowerCare, we offer a wide range of staffing options to meet your unique needs. Our extensive network of pre-screened healthcare opportunities includes:</p>

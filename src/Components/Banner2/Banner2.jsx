@@ -5,7 +5,7 @@ import './Banner2.scss';
 const Banner2 = ({heading,description}) => {
     return (
       <>
-      <div className='banner_varient_2'>
+      <div className='banner_varient_2 about'>
           <div className="main-banner">
             <div className="container">
               <div className="banner-wrapper">
