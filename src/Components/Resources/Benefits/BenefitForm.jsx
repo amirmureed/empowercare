@@ -6,7 +6,7 @@ const BenefitForm=()=>{
       <div className="container">
           <div className="benefit-form-wrapper">
               <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-lg-6 col-md-12">
                       <div className="left-content">
                           <span className="meta">JOIN US NOW</span>
                           <h2 className="heading">
@@ -25,7 +25,7 @@ const BenefitForm=()=>{
                           
                       </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-lg-6 col-md-12">
                       <div className="right-content">
                         <img className='form-icon' src={newsletterarrow} alt="" />
                         <div className='form-wrapper'>

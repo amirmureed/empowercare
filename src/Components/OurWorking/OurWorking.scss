@@ -2,7 +2,7 @@
     background-color: #EBE0D3;
     .container {
         .working-wrapper {
-            padding: 20px 0;
+            padding: 20px 0 !important;
 
             .working-col {
                 background: #f4f4f4;
@@ -29,6 +29,7 @@
                     @media (max-width: 767.5px) {
                         font-size: 35px;
                         margin-bottom: 30px;
+                        padding-top: 40px;
 
                         br {
                             display: none;
