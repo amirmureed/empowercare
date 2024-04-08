@@ -1,5 +1,5 @@
 import Approach from "../../Components/Approach/Approach"
-import Banner1 from "../../Components/Banner1/Banner1"
+import Banner10 from "../../Components/Banner10/Banner10"
 import Banner5 from "../../Components/Banner5/Banner5"
 import Guaranty from "../../Components/Facilities/TruePartner/Guaranty"
 import TrustedPartner from "../../Components/Facilities/TruePartner/TrustedPartner"
@@ -9,16 +9,18 @@ import Header from "../../Components/Header/Header"
 import Toptalent from "../../Components/Toptalent/Toptalent"
 import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
+import CareerSlider from '../../Components/CareerSlider/CareerSlider';
 
 const NonClinical=()=>{
 return(<>
 <Header/>
-<Banner5/>
+<Banner10/>
 <TrustedPartner/>
 <Guaranty/>
 <Approach/>
 <Toptalent/>
 <Trusted/>
+<CareerSlider/>
 <FaqAccordian/>
 <Userslider/>
 <Footer/>

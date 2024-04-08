@@ -6,8 +6,8 @@ import RevolutionCard from "../../Components/Community/RevolutionCard"
 import Form from "../../Components/Community/Form"
 import Banner2 from "../../Components/Banner2/Banner2"
 import Content1 from "../../Components/Community/Content1"
-import Userslider from "../../Components/Userslider/Userslider"
 import Footer from "../../Components/Footer/Footer"
+import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 const Community=()=>{
     const heading='OUR COMMUNITY'
     const description='At EmpowerCare, we believe every job has the power to create a positive impact that ripples far beyond the workplace.'
@@ -39,7 +39,7 @@ const Community=()=>{
     <BottomButton/>
     <RevolutionCard/>
     <Form/>
-    <Userslider/>
+    <Userslider2/>
     <Footer/>
     </>)
 }

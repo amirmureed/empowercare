@@ -1,16 +1,18 @@
-.banner_varient_8 .main-banner {
-    background-image: url(../../Assets/BenefitBanner.png);
-    background-position: center right;
+.banner_varient10 .main-banner {
+    background-image: url(../../Assets/Path51.png);
+    background-position: center top;
     background-repeat: no-repeat;
+    margin-top: -121px;
     background-size: cover;
-    margin-top: -390px;
-    background-color: #EBE0D3;
-    
+
+    @media ( max-width: 950px ) {
+        margin-top: -20px;
+    }
 
     .container {
 
-        .banner-wrapper {
-            padding: 415px 10px 10px;
+        .banner10-wrapper {
+            padding: 300px 10px 10px;
 
             .row {
                 margin-bottom: 200px;
@@ -31,13 +33,13 @@
                     .banner-content {
 
                         h1.heading {
-                            font-size: 62px;
-                            font-weight: 500;
+                            font-size: 77px;
+                            font-weight: normal;
                             line-height: 75px;
                             font-style: normal;
                             text-align: left;
-                            color: #ffffff;
-                            margin-bottom: 20px;
+                            color: white;
+                            margin-bottom: 50px;
 
                             @media (max-width: 1200px) {
                                 font-size: 60px;
@@ -60,7 +62,13 @@
                                 line-height: 45px;
                             }
 
-                           
+                            span {
+                                background: -webkit-linear-gradient(180deg, #71ba32, #4eb3e8);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                            }
                         }
 
                         p.description {
@@ -68,7 +76,7 @@
                             font-weight: 500;
                             font-style: normal;
                             text-align: left;
-                            color: #ffffff;
+                            color: white;
                             margin-bottom: 20px;
 
                             @media (max-width: 575px) {
@@ -82,7 +90,7 @@
                             font-weight: normal;
                             font-style: normal;
                             text-align: left;
-                            color: #ffffff;
+                            color:  white;
                         }
 
                         .banner-btns {
@@ -92,7 +100,7 @@
                             gap: 28px;
                             margin: 40px 0 20px;
 
-                            button.btn {
+                            a.btn {
                                 width: 196px;
                                 height: 66px;
                                 border-radius: 19px;
@@ -122,20 +130,22 @@
                             }
                             .quick-btn {
                                 background: #71ba32;
-                                background: #ffffff;
+                                background: linear-gradient(-130deg, 
+                                #71ba32 0.00%, 
+                                #4eb3e8 100.00%);
 
                                 span {
-                                    color: #000000;
+                                    color: #ebe0d3;
                                 }
                             }
                             .contact-btn {
-                                border-color: #ffffff;
+                                border-color: #000000;
                                 border-width: 2px;
                                 border-style: solid;
                                 background-color: transparent;
 
                                 span {
-                                    color: #ffffff;
+                                    color: #000000;
                                 }
                             }
                         }
@@ -143,8 +153,6 @@
                 }
                 .col-lg-6 {
                     .banner-img {
-                      padding-top: 20px;
-                        
                         @media (max-width: 767.2px) {
                             padding: 50px 20px;
                         }
@@ -210,7 +218,7 @@
                         }
                     }
 
-                    button.available-btn {
+                    a.btn.available-btn {
                         width: 241px;
                         height: 59px;
                         border-radius: 19px;

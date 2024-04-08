@@ -6,7 +6,8 @@ import RealChange from "../../Components/Ceo/RealChange"
 import Section1 from "../../Components/Ceo/Section1"
 import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
-import Userslider from "../../Components/Userslider/Userslider"
+import Userslider2 from "../../Components/UserSlider2/UserSlider2"
+
 
 const Ceo=()=>{
     return (<>
@@ -17,7 +18,7 @@ const Ceo=()=>{
     <Ally/>
     <RealChange/>
     <LastButtons/>
-    <Userslider/>
+    <Userslider2/>
     <Footer/>
     </>)
 }

@@ -10,7 +10,7 @@ import TrustedRed from '../../Components/TrustedRed/TrustedRed';
 import CenterContent from '../../Components/CenterContent/CenterContent';
 import Form from "../../Components/Community/Form"
 import OurTeam from "../../Components/OurTeam/OurTeam"
-import Userslider from '../../Components/Userslider/Userslider';
+import Userslider2 from '../../Components/UserSlider2/UserSlider2';
 
 const Career = () => {
     return (
@@ -25,7 +25,7 @@ const Career = () => {
           <OurTeam />
           <Healthcare />
           <Form/>
-          <Userslider />
+          <Userslider2/>
           <Footer />
         </>
     )
