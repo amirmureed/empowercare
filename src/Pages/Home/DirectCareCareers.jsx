@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
-import Banner from '../../Components/Banner/Banner';
+import Banner1 from '../../directcare/Banner1/Banner1';
 import Trusted from '../../Components/Trusted/Trusted';
 import CareerSlider from '../../Components/CareerSlider/CareerSlider';
 import Userslider from '../../Components/Userslider/Userslider';
@@ -19,7 +19,7 @@ const DirectCareCareers = () => {
   return (
     <>
         <Header />
-        <Banner />
+        <Banner1 />
         <Trusted />
         <PremierNuring />
         <CprStaffing />
