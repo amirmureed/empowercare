@@ -8,12 +8,29 @@ import TextImageGroupV3 from '../../Components/TextImageGroupV3/TextImageGroupV3
 import PriemerBlack from '../../Components/PremierHealthcareBlack/PriemerBlack';
 import Form from "../../Components/Community/Form"
 import Footer from '../../Components/Footer/Footer';
+import bannerImg from '../../Assets/elipse2.png';
+import img from '../../Assets/banner3.png'
 
 const About = () => {
+
+  const bannerStyles = {
+    backgroundImage: `url(${img})`,
+    backgroundPosition: 'center right',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    marginTop: '-225px',
+    backgroundColor: '#EBE0D3'
+};
+
     return (
         <>
           <Header />
-          <Banner2 heading={'ABOUT EMPOWERCARE HEALTHCARE'} description={'We ensure that every patient receives exceptional care, aiding in their swift recovery and promoting healthier lives.'}/>
+          <Banner2 heading={'ABOUT EMPOWERCARE HEALTHCARE'} 
+          description={'We ensure that every patient receives exceptional care, aiding in their swift recovery and promoting healthier lives.'}
+          img={bannerImg}
+          styles={bannerStyles}
+          />
+          
           <LeftRightContent />
           <TextImageGroup />
           <TextImageGroupV2 />

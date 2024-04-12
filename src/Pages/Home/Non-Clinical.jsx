@@ -10,6 +10,7 @@ import Toptalent from "../../Components/Toptalent/Toptalent"
 import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import CareerSlider from '../../Components/CareerSlider/CareerSlider';
+import SolutionsDesign from "../../Components/SolutionsDesign/SolutionsDesign"
 
 const NonClinical=()=>{
 return(<>
@@ -21,6 +22,7 @@ return(<>
 <Toptalent/>
 <Trusted/>
 <CareerSlider/>
+<SolutionsDesign/>
 <FaqAccordian/>
 <Userslider/>
 <Footer/>

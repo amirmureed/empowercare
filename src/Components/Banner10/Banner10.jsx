@@ -9,7 +9,7 @@ const Banner = () => {
       <div className='banner_varient10'>
         <div className="main-banner">
           <div className="container">
-            <div className="banner10-wrapper">
+            <div className="banner-wrapper">
               <div className="row">
               <div className="col-lg-6 col-md-6">
                   <div className="banner-img">

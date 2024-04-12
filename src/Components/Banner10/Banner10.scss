@@ -11,7 +11,7 @@
 
     .container {
 
-        .banner10-wrapper {
+        .banner-wrapper {
             padding: 300px 10px 10px;
 
             .row {
@@ -129,23 +129,21 @@
                                 }
                             }
                             .quick-btn {
-                                background: #71ba32;
-                                background: linear-gradient(-130deg, 
-                                #71ba32 0.00%, 
-                                #4eb3e8 100.00%);
+                                background: white;
+                               
 
                                 span {
-                                    color: #ebe0d3;
+                                    color: black;
                                 }
                             }
                             .contact-btn {
-                                border-color: #000000;
+                                border-color: white;
                                 border-width: 2px;
                                 border-style: solid;
                                 background-color: transparent;
 
                                 span {
-                                    color: #000000;
+                                    color: black;
                                 }
                             }
                         }
@@ -218,7 +216,7 @@
                         }
                     }
 
-                    a.btn.available-btn {
+                    a.available-btn {
                         width: 241px;
                         height: 59px;
                         border-radius: 19px;

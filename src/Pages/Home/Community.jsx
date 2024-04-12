@@ -1,5 +1,5 @@
 import Header from "../../Components/Header/Header"
-import mask7 from '../../Assets/mask7.png'
+import bannerImg from '../../Assets/Group2311.png';
 import Cards from "../../Components/Community/Cards"
 import BottomButton from "../../Components/Community/BottomButton"
 import RevolutionCard from "../../Components/Community/RevolutionCard"
@@ -8,12 +8,23 @@ import Banner2 from "../../Components/Banner2/Banner2"
 import Content1 from "../../Components/Community/Content1"
 import Footer from "../../Components/Footer/Footer"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
+import img from '../../Assets/Group125.png'
 const Community=()=>{
     const heading='OUR COMMUNITY'
     const description='At EmpowerCare, we believe every job has the power to create a positive impact that ripples far beyond the workplace.'
-    return(<>
+    const bannerStyles = {
+       backgroundImage: `url(${img})`,
+       backgroundPosition: 'center right',
+       backgroundRepeat: 'no-repeat',
+       backgroundSize: 'cover',
+       marginTop: '-225px',
+       backgroundColor: '#EBE0D3'
+   };
+   return(<>
     <Header/>
-    <Banner2 heading={heading} description={description} img={mask7}/>
+    <Banner2 heading={heading} description={description} img={bannerImg} styles={bannerStyles}
+    
+    />
     <Content1/>
     <Cards description1={'CLEAN WATER INITIATIVE:MAKING WAVES OF CHANGE'}
            description2={'Access to clean and safe drinking water is a basic human right, yet millions of people worldwide face the daily struggle of water scarcity. At EmpowerCare, we refuse to stand by idly. Were diving in to make a splash!'}

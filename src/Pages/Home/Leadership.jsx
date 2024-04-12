@@ -7,11 +7,24 @@ import directorImg from '../../Assets/Mask Group 25.png'
 import salesImg from '../../Assets/salesImage.png'
 import Footer from "../../Components/Footer/Footer"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
+import bannerImg from '../../Assets/Group232.png';
+import img from '../../Assets/banner3.png'
 const Leadership=()=>{
+    const bannerStyles = {
+        backgroundImage: `url(${img})`,
+        backgroundPosition: 'center right',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        marginTop: '-225px',
+        backgroundColor: '#EBE0D3'
+    };
     return(
     <>
         <Header/>
-        <Banner2 heading={'OUR LEADERSHIP'} description={'EMPOWERING HEALTHCARE PROFESSIONALS AND TRANSFORMING LIVES'}/>
+        <Banner2 heading={'OUR LEADERSHIP'} description={'EMPOWERING HEALTHCARE PROFESSIONALS AND TRANSFORMING LIVES'}
+         img={bannerImg}
+         styles={bannerStyles}
+        />
         <TeamMemberDetail />
         <TeamMemberDetailV2
         image={directorImg}

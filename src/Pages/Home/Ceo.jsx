@@ -7,12 +7,25 @@ import Section1 from "../../Components/Ceo/Section1"
 import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
+import bannerImg from '../../Assets/Group231.png';
+import img from '../../Assets/Group579.png'
 
 
 const Ceo=()=>{
+    const bannerStyles = {
+        backgroundImage: `url(${img})`,
+        backgroundPosition: 'center right',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        marginTop: '-265px',
+        backgroundColor: '#EBE0D3'
+    };
     return (<>
     <Header/>
-    <Banner2 heading={'CEO LETTER'} description={'FOR NEARLY TWO DECADES MSG STAFFING HAS HAD A PROFOUND IMPACT ON MY LIFE.'}/>
+    <Banner2 heading={'CEO LETTER'} description={'FOR NEARLY TWO DECADES MSG STAFFING HAS HAD A PROFOUND IMPACT ON MY LIFE.'}
+    img={bannerImg}
+    styles={bannerStyles}
+    />
     <Section1/>
     <Challenges/>
     <Ally/>
