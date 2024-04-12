@@ -8,7 +8,7 @@ const SolutionsDesign = () => {
                 <div className="sd-wrapper ">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-6 col-sm-12">
                                 <div className="left-content">
                                     <span className="meta">ABOUT US</span>
                                     <h2 className="heading">

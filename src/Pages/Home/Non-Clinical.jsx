@@ -11,6 +11,13 @@ import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import CareerSlider from '../../Components/CareerSlider/CareerSlider';
 import SolutionsDesign from "../../Components/SolutionsDesign/SolutionsDesign"
+import StaffingServices from "../../Components/StaffingServices/StaffingServices"
+import PartneringBenefits from "../../Components/PartneringBenefits/PartneringBenefits"
+import Spotlights from "../../Components/Spotlights/Spotlights"
+import AboutusSnippet from "../../Components/AboutUsSnippet/AboutusSnippet"
+import FacilityOperations from "../../Components/FacilityOperations/FacilityOperations"
+import JoiningForm from "../../directcare/JoiningForm/JoiningForm"
+import Blog from "../../Components/Blog/Blog"
 
 const NonClinical=()=>{
 return(<>
@@ -18,11 +25,18 @@ return(<>
 <Banner10/>
 <TrustedPartner/>
 <Guaranty/>
+<StaffingServices/>
+<FacilityOperations/>
 <Approach/>
 <Toptalent/>
-<Trusted/>
-<CareerSlider/>
+<Spotlights/>
 <SolutionsDesign/>
+<PartneringBenefits/>
+<AboutusSnippet/>
+<Trusted/>
+<JoiningForm/>
+<CareerSlider/>
+<Blog/>
 <FaqAccordian/>
 <Userslider/>
 <Footer/>

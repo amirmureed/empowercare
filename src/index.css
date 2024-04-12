@@ -34,6 +34,7 @@ code {
   color: #ffffff;
 }
 
+
 @media (max-width: 480px){
   .btn.quick-btn{
     width: 156px;
@@ -83,7 +84,7 @@ a.learn_more{
   background: transparent;
   color:black;
   text-decoration: none;
-  padding: 18px 40px;
+  padding: 18px 30px;
   border-radius: 19px;
   border: 1px solid black;
   margin-left: 5px;

@@ -1,5 +1,5 @@
 import './Guaranty.scss';
-import storiesimg from '../../../Assets/Mask Group 24.png';
+import storiesimg from '../../../Assets/guaranty.png';
 const Guaranty=()=>{
     return(<>
     <div className="guaranty-sec">

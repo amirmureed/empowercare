@@ -6,15 +6,13 @@
         padding: 0% 3%;
         margin: auto;
 
-        .black-bg {
-            background: radial-gradient(farthest-corner at 82% 8%, #5c5e62 0%, #0c0f14 100%) !important;
-        }
+       
 
         .sd-wrapper {
             padding: 140px 0;
             border-radius: 50px;
             background: black;
-
+         .container{
 
             @media (max-width: 1200px) {
                 padding: 120px 0;
@@ -168,10 +166,10 @@
 
                     .right-content {
                         display: flex;
-        justify-content: center;
-        align-items: center;
+         justify-content: center;
+         align-items: center;
        
-        margin: 0 auto;
+         margin: 0 auto;
 
                         @media (max-width: 767.5px) {
                             
@@ -193,6 +191,7 @@
                 }
             }
         }
+    }
     }
 }
 
