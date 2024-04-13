@@ -1,12 +1,14 @@
 import './Guaranty.scss';
 import storiesimg from '../../../Assets/guaranty.png';
+
 const Guaranty=()=>{
-    return(<>
+    return(
+    <>
     <div className="guaranty-sec">
             <div className="container">
                 <div className="guaranty-wrapper">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-lg-6 col-md-12">
                             <div className="left-content">
                                
                                 <h2 className="heading">
@@ -24,7 +26,7 @@ healthcare staffing needs are met carefully."</p><br />
                                 
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-lg-6 col-md-12">
                             <div className="right-content">
                                 <div className="section-img">
                                     <img src={storiesimg} alt="storiesimg" />
