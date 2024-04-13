@@ -19,6 +19,7 @@ import Heroes from './Pages/Home/Heroes';
 import Resources from './Pages/Home/Resources';
 import NonClinical from './Pages/Home/Non-Clinical';
 import DirectCareCareers from './Pages/Home/DirectCareCareers';
+import Faqs from './Pages/Home/Faqs';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path='/resources/empowercare-heroes' element={<Heroes/>}/>
           <Route path='/resources' element={<Resources/>}/>
           <Route path='/facilities/directcare-careers' element={<DirectCareCareers/>}/>
+          <Route path='/professionals/advantages' element={<Faqs/>}/>
         </Routes >
       </BrowserRouter>
     </>
