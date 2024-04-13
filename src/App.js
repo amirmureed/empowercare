@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './Pages/Home/Home';
 import Seamlesss from './Pages/Home/Seamlesss';
+import SeamlesssFacilities from './Pages/Home/SeamlesssFacilities';
 import Facilities from './Pages/Home/Facilities';
 import Career from './Pages/Home/Career';
 import About from './Pages/Home/About';
@@ -42,6 +43,7 @@ function App() {
           <Route path='/resources/empowercare-heroes' element={<Heroes/>}/>
           <Route path='/resources' element={<Resources/>}/>
           <Route path='/facilities/directcare-careers' element={<DirectCareCareers/>}/>
+          <Route path='/facilities/seamless' element={<SeamlesssFacilities/>}/>
         </Routes >
       </BrowserRouter>
     </>

@@ -10,7 +10,7 @@ const TrustedPartner = () => {
         <div className="container">
             <div className="empowercare-wrapper">
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12">
                         <div className="left-content">
                             <span className="meta">Who We Are</span>
                             <h2 className="heading">
@@ -38,7 +38,7 @@ facility's operational efficiency and patient experience.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12">
                         <div className="right-content">
                             <div className="section-img">
                                 <img src={empowercareimg} alt="empowercareimg" />

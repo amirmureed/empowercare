@@ -53,9 +53,9 @@ const Banner = () => {
                       <option value="Select city/state1">Select city/state1</option>
                       <option value="Select city/state2">Select city/state2</option>
                     </select>
-                    <button className='btn available-btn'>
+                    <a className='btn available-btn'>
                       <span>Find available positions</span>
-                    </button>
+                    </a>
                   </div>
                 </div>
              
