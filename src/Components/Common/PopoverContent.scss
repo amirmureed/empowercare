@@ -6,15 +6,18 @@
 }
 
 .popover-link {
+    
     text-decoration: none;
     color: #333;
-    transition: all 0.3s ease;
+    transition: all 0.8s ease;
    padding: 3px;
+   font-weight: bold;
 }
 
 .popover-link:hover {
-    background-color: #f0f0f0;
-    color: #007bff
+    background: linear-gradient(to right, #76caa3, #f0f0f0);
+    color:white;
+    font-weight: bold;
 }
 
 .arrow-icon {

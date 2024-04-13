@@ -17,6 +17,7 @@ import Benefits from './Pages/Home/Benefits';
 import Signup from './Pages/Home/Signup';
 import Heroes from './Pages/Home/Heroes';
 import Resources from './Pages/Home/Resources';
+import NonClinical from './Pages/Home/Non-Clinical';
 import DirectCareCareers from './Pages/Home/DirectCareCareers';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path='/about' element={<About/>} />
           <Route path='/seamless' element={<Seamlesss/>} />
           <Route path='/facilities' element={<Facilities />} />
+          <Route path='/facilities/non-clinical-staffing' element={<NonClinical/>} />
           <Route path='/signup' element={<Signup/>} />
           <Route path='/about/career' element={<Career />} />
           <Route path='/about/community' element={<Community/>} />

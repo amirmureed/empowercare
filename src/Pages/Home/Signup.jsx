@@ -5,16 +5,26 @@ import SignupForm from '../../Components/SignupForm/SignupForm';
 import OurAccess from '../../Components/OurAccess/OurAccess';
 import Banner2 from "../../Components/Banner2/Banner2"
 import Content1 from "../../Components/Community/Content1"
-import mask7 from '../../Assets/mask7.png'
-
+import bannerImg from '../../Assets/elipse2.png'
+import img from '../../Assets/banner3.png'
 const Signup=()=>{
     
     const heading='SIGN UP FOR FREE NOW!'
     const description='Join empowercare now to be the part of the biggest staffing agency!'
+    const bannerStyles = {
+        backgroundImage: `url(${img})`,
+        backgroundPosition: 'center right',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        marginTop: '-255px',
+        backgroundColor: '#EBE0D3'
+    };
     return(
     <>
         <Header/>
-        <Banner2 heading={heading} description={description} img={mask7} />
+        <Banner2 heading={heading} description={description} img={bannerImg} styles={bannerStyles} 
+        
+        />
         <SignupForm />
         <OurAccess />
         <Content1/>

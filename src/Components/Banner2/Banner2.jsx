@@ -2,11 +2,16 @@ import React from 'react';
 import bannerImg from '../../Assets/elipse2.png';
 import './Banner2.scss';
 
-const Banner2 = ({heading,description}) => {
+const Banner2 = (props) => {
+  const {heading,description,img,styles}=props
     return (
       <>
-      <div className='banner_varient_2 about'>
-          <div className="main-banner">
+      <div className='banner_varient_2 about'
+      
+      >
+          <div className="main-banner"
+          style={styles}
+          >
             <div className="container">
               <div className="banner-wrapper">
                 <div className="row">
@@ -29,7 +34,7 @@ const Banner2 = ({heading,description}) => {
                   </div>
                   <div className="col-lg-6 col-md-6">
                     <div className="banner-img">
-                      <img src={bannerImg} alt="bannerImg" />
+                      <img src={img} alt="bannerImg" />
                     </div>
                   </div>
                 </div>

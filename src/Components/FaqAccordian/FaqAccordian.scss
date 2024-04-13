@@ -5,17 +5,29 @@
         .working-wrapper {
             padding: 20px 0;
             padding: 50px 50px;
-
+            @media (max-width:480px) {
+                padding: unset;
+            }
 
             .reletive{
                 position: relative;
+                padding: 20px;
+                @media (max-width:480px) {
+                    padding: unset;
+                }
 
                 .plus-icon{
                     font-size: 25px;
                     position: absolute;
                     right: 25px;
                     top: 15%;
+                    @media (max-width:480px) {
+                        position: unset;
+                       margin-left: 45%;
+                    }
                 }
+               
+                
             }
 
 
@@ -47,6 +59,7 @@
 
                 p{
                     color: white;
+                    padding: 20px;
                 }
 
                 .plus-icon{
@@ -63,6 +76,7 @@
                 .working_content{
                     padding: 20px;
                     border-radius: 20px;
+                    
                 }
             }
 

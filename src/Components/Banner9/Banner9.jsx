@@ -1,4 +1,4 @@
-import bannerImg from '../../Assets/benefit.png'
+import bannerImg from '../../Assets/Group 675.png'
 import './Banner9.scss'
 const Banner9=()=>{
     return(<>

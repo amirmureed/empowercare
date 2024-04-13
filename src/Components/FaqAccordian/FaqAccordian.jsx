@@ -3,9 +3,11 @@ import "./FaqAccordian.scss";
 import icon1 from "../../Assets/Group530.png";
 import icon2 from "../../Assets/Group531.png";
 import icon3 from "../../Assets/Group532.png";
+import { IconButton, useMediaQuery, useTheme } from '@mui/material';
 
-const OurWorking = () => {
-
+const FaqAccordian = () => {
+  
+  
   const[isAccordianOpen, setIsAccordianOpen] = useState(null);
 
   function toggleAccodian(index){
@@ -23,7 +25,7 @@ const OurWorking = () => {
         <div className="working-wrapper">
           <div class="top-content">
             <h2 class="heading">
-              Frequently Asked Questions<span class="text_grad_red"> (FAQ) </span>
+              Frequently Asked Questions<span class="text_grad_green"> (FAQ) </span>
             </h2>
           </div>
 
@@ -34,6 +36,7 @@ const OurWorking = () => {
                   <div className="reletive">
                     <h3>We Care About You</h3>
                     <span className="plus-icon" onClick={() => toggleAccodian(1)}>+</span>
+                    
                   </div>
                   <p>
                     We put our employees first, providing the support,
@@ -50,6 +53,7 @@ const OurWorking = () => {
                   <div className="reletive">
                     <h3>We're Driven by Impact</h3>
                     <span className="plus-icon" onClick={() => toggleAccodian(2)}>+</span>
+                    
                   </div>
                   <p>
                     Every placement, every shift, every interaction is an
@@ -82,4 +86,4 @@ const OurWorking = () => {
   );
 };
 
-export default OurWorking;
+export default FaqAccordian;

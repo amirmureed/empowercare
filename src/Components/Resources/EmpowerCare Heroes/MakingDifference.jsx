@@ -23,7 +23,7 @@ const MakingDifference= () => {
                 </h2>
                 <p className="description">
                 As a healthcare professional, you're driven by a desire to make a positive impact
-on patients' lives. At EmpowerCare, we share that commitment.
+                on patients' lives. At EmpowerCare, we share that commitment.
                 </p><br />
                 <p>Through our Ripple Effect initiative, a portion of the revenue generated from
                   every shift you work goes towards community health projects, amplifying your

@@ -1,0 +1,117 @@
+.services-div {
+    position: relative;
+   
+  .container{
+
+    .text-sec{
+      h1.heading{
+        text-align: center;
+        font-weight: bold;
+        @media (max-width:768px) {
+            text-align: unset;
+        }
+      }
+    }
+  .image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+ 
+    
+  }
+
+  .left-box {
+    position: absolute;
+    top: 30%;
+    transform: translateX(10%);
+    display: flex;
+    flex-direction: column;    
+    height: 100px;
+    padding: 10px;
+    @media (max-width: 1150px) {
+        // Adjusting the left and right boxes
+       
+            position: static; // Remove absolute positioning
+            width: 100%; // Use full width of the screen
+            transform: unset;
+            height: 100%;
+        }
+   
+    .content-box{
+        padding: 20px;
+        background-color: #F4F4F4;
+        border-radius: 30px;
+        width: 70%;
+        @media (max-width:1150px) {
+            width: 100%;
+        }
+    }
+  }
+  
+  .right-box {
+    position: absolute;
+    top: 30%;
+    transform: translateX(127%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1150px) {
+        // Adjusting the left and right boxes
+        
+            position: static; // Remove absolute positioning
+            width: 100%; // Use full width of the screen
+            margin-bottom: 20px; // Add margin between boxes
+            transform: unset;
+        }
+    
+    .content-box{
+        padding: 20px;
+        background-color: #F4F4F4;
+        border-radius: 30px;
+        width: 70%;
+        @media (max-width:1150px) {
+            width: 100%;
+        }
+    }
+    .content-box2{
+        background: linear-gradient(-134deg, #29be36 0.00%,#71ba32 100.00%);
+        padding: 20px;
+        background-color: #F4F4F4;
+        border-radius: 30px;
+        width: 70%;
+        @media (max-width:1150px) {
+            width: 100%;
+        }
+        p{
+            color: white;
+        }
+    }
+  }
+
+ 
+}
+}
+@media (max-width: 768px) {
+    // Adjusting the left and right boxes
+    .left-box, .right-box {
+        position: static; // Remove absolute positioning
+        width: 100%; // Use full width of the screen
+        margin-bottom: 20px; // Add margin between boxes
+        transform: unset;
+    }
+
+    // Ensure image stays centered
+    .image {
+        margin: 20px auto;
+    }
+    
+    // Center text for smaller screens
+    .text-sec {
+        h1.heading {
+            text-align: center;
+        }
+    }
+}

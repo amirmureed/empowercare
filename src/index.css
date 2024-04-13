@@ -34,6 +34,7 @@ code {
   color: #ffffff;
 }
 
+
 @media (max-width: 480px){
   .btn.quick-btn{
     width: 156px;
@@ -49,7 +50,16 @@ span.text_grad_red {
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   font-weight: bold;
+
 }
+
+  span.text_grad_green{
+    background: linear-gradient(-134deg, #4eb3e8 0.00%,#71ba32 100.00%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 
 .priemer-cta{
   position: relative;
@@ -74,10 +84,19 @@ a.learn_more{
   background: transparent;
   color:black;
   text-decoration: none;
-  padding: 18px 40px;
+  padding: 18px 30px;
   border-radius: 19px;
   border: 1px solid black;
   margin-left: 5px;
+  text-align: center;
+}
+a.btn_green{
+  background: #ee8d80;
+  background: linear-gradient(-134deg, #4eb3e8 0.00%,#71ba32 100.00%);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 18px 50px;
+  border-radius: 19px;
   text-align: center;
 }
 
