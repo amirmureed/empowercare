@@ -9,7 +9,7 @@ const Choose = (props) => {
                 <div className={`choose-wrapper ${classnames}`}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-lg-6 col-md-12">
                                 <div className="left-content">
                                     <span className="meta">{props.meta}</span>
                                     <h2 className="heading">
@@ -28,7 +28,7 @@ const Choose = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-lg-6 col-md-12">
                                 <div className="right-content">
                                     <div className="content-row">
                                         <div className="content-box active">

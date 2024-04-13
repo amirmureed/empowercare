@@ -3,15 +3,18 @@ import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import Banner1 from '../../Components/Banner1/Banner1';
 import Trusted from '../../Components/Trusted/Trusted';
-import Contractjob from '../../Components/Contractjobs/Contractjob';
 import Toptalent from '../../Components/Toptalent/Toptalent';
 import Choose from '../../Components/Choose/Choose';
 import Impact from '../../Components/Impact/Impact';
+import BoxesWithIcons from '../../Components/BoxesWithIcons/BoxesWithIcons';
 import Careerpaths from '../../Components/Empowercarefacilities/Careerpaths'
 import Facilitynetwork from '../../Components/Facilitynetwork/Facilitynetwork'
 import Staffingsolutions from '../../Components/Staffingsolutions/Staffingsolutions'
 import Staffingsoptions from '../../Components/Staffingoptions/Staffingoptions'
 import Empowercareacademy from '../../Components/Empowercareacademy/Empowercareacademy'
+import CareerSlider from '../../Components/CareerSlider/CareerSlider';
+import Blog from '../../Components/Blog/Blog';
+import Userslider from '../../Components/Userslider/Userslider';
 import Realstoriesimpact from '../../Components/Realstoriesimpact/Realstoriesimpact'
 import bannerImg from '../../Assets/facility.png';
 import img from '../../Assets/banner5.png'
@@ -36,7 +39,7 @@ const Home = () => {
           />
       
       <Trusted />
-      <Contractjob />
+      <BoxesWithIcons />
       <Choose 
           meta="Dynamic Squads"
           spantext = "Squads:"
@@ -54,6 +57,9 @@ const Home = () => {
       <Staffingsoptions />
       <Empowercareacademy />
       <Realstoriesimpact />
+      <CareerSlider />
+      <Blog />
+      <Userslider />
       <Footer />
     </>
   )

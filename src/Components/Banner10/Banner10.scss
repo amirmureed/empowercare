@@ -15,7 +15,6 @@
             padding: 300px 10px 10px;
 
             .row {
-                margin-bottom: 200px;
                 align-items: center;
 
                 @media (max-width: 1200px) {
@@ -130,8 +129,7 @@
                             }
                             .quick-btn {
                                 background: white;
-                               
-
+            
                                 span {
                                     color: black;
                                 }
@@ -143,7 +141,7 @@
                                 background-color: transparent;
 
                                 span {
-                                    color: black;
+                                    color: #ffffff;
                                 }
                             }
                         }
