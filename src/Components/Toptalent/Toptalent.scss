@@ -1,41 +1,27 @@
-.contractjob-sec {
-    background-image: url(../../Assets/bodybg2.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    overflow: hidden;
+.toptalent-sec {
     background-color: #EBE0D3;
 
-    .container {
+    .toptalent-container {
+        width: 100%;
+        padding: 0% 2%;
+        
+    .contractjob-wrapper {
+        background: radial-gradient(farthest-corner at 8% 8%, #4eb3e8 0%, #71ba32 100%);
+        border-radius: 50px;
 
-        .contractjob-wrapper {
-            padding: 10px 0 140px;
-
-            @media (max-width: 1200px) {
-                padding: 10px 0 120px;
-            }
-            @media (max-width: 992px) {
-                padding: 10px 0 80px;
-            }
-            @media (max-width: 767.5px) {
-                padding: 10px 0 60px;
-            }
+        .container {
+            padding: 100px 0 80px;
 
             .top-content {
                 margin-bottom: 80px;
                 text-align: center;
-
-                @media (max-width: 767.5px){
-                    margin-bottom: 35px;
-                }
-
                 h2.heading {
                     font-size: 49px;
                     font-weight: normal;
                     line-height: 51px;
                     font-style: normal;
                     text-align: center;
-                    color: #000;
+                    color: #ffffff;
                     margin-bottom: 20px;
 
                     @media (max-width: 992px) {
@@ -56,7 +42,7 @@
                     }
 
                     span {
-                        background: -webkit-linear-gradient(180deg, #71ba32, #4eb3e8);
+                        background: #000;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         text-transform: uppercase;
@@ -65,11 +51,11 @@
                 }
                 p.description {
                     font-size: 16px;
-                    font-weight: normal;
+                    font-weight: bold;
                     line-height: 26px;
                     font-style: normal;
                     text-align: center;
-                    color: #202020;
+                    color: #ffffff;
                 }
             }
             .row {
@@ -142,8 +128,8 @@
                     .job-box.active {
                         background: #a9dbf5;
                         background: radial-gradient(farthest-corner at 98% 3%, 
-                        #a9dbf5 0%, 
-                        #4eb3e8 100%);
+                                #71ba32 0%, 
+                                #56892a 100%);
 
                         .job-logo {
                             background-color: #fff;
@@ -162,31 +148,27 @@
                 align-items: center;
                 justify-content: center;
                 gap: 28px;
-                margin: 40px 20px 10px;
+                margin: 70px 20px 10px;
 
-                @media (max-width: 550px) {
-                    flex-direction: column;
-                }
-
-                button {
-                    width: 196px;
-                    height: 66px;
+                a {
                     border-radius: 19px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    text-decoration: unset;
+                    padding: 15px 45px;
+                    color: #ffffff;
 
                     @media (max-width: 992px) {
                         width: max-content;
                         height: max-content;
                         padding: 15px 20px;
                     }
-                    @media (max-width: 550px) {
+                    @media (max-width: 450px) {
                         height: max-content;
                         padding: 10px 10px;
                         border-radius: 5px;
                         height: 48px;
-                        width: 300px !important;
                     }
 
                     span {
@@ -198,93 +180,24 @@
                     }
                 }
 
-                button.signup-btn {
+                a.signup-btn {
                     background: #71ba32;
-                    background: linear-gradient(-130deg, 
-                    #71ba32 0.00%, 
-                    #4eb3e8 100.00%);
-                    border: none;
-
-                    span {
-                        color: #fff;
-                    }
+                    background: transparent;
+                    border: 2px solid #ffffff;
                 }
-                button.learnmore-btn {
-                    border-color: #000000;
-                    border-width: 2px;
-                    border-style: solid;
-                    background-color: transparent;
-
-                    span {
-                        color: #000;
+                a.learnmore-btn {
+                    border: 2px solid #ffffff;
+                    background-color: #ffffff;
+                    color: #000;
+                    position: relative;
+                    
+                    img {
+                        position: absolute;
+                        right: 15px;
                     }
                 }
             }
         }
     }
 }
-
-
-.container.toptalent-wrapper {
-    background: radial-gradient(farthest-corner at 83% 8%, #4eb3e8 0%, #71ba32 100%);
-    max-width: 1550px;
-    border-radius: 40px;
-
-    .row {
-        padding-inline: 185px;
-
-        @media (max-width: 767.5px){
-            padding-inline: 5px;
-        }
-    }
-
-    .contractjob-wrapper {
-        padding: unset !important;
-        padding: 75px 0px !important;
-        margin-bottom: 50px;
-    }
-
-    .job-box.active {
-        background: #71ba32 !important;
-        background: radial-gradient(farthest-corner at 98% 3%, #71ba32 0%, #56892a 100%) !important;
-    }
-
-    button.transparent-btn {
-        background: transparent;
-        border: 2px solid white;
-        color: white !important;
-
-        span {
-            color: white !important;
-        }
-    }
-
-    button.white-bg-btn {
-        background: white;
-        color: black;
-        width: 287px !important;
-        border: none;
-    }
-
-    .top-content {
-        width: 50%;
-        margin: auto;
-
-        @media (max-width: 767.5px){
-            width: 100%;
-        }
-    }
-
-    p.description.sub-heading{
-        font-size: 20px !important;
-    }
-
-    p.description.sub-heading, .heading.main-heading{
-        color: white !important;
-
-        span {
-            all: unset !important;
-            color: black !important;
-        }
-    }
 }
