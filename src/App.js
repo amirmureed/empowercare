@@ -26,11 +26,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/professionals' element={<Home/>}/>
           <Route path='/about' element={<About/>} />
-          <Route path='/seamless' element={<Seamlesss/>} />
+          <Route path='professionals/seamless' element={<Seamlesss/>} />
           <Route path='/facilities' element={<Facilities />} />
-          <Route path='/facilities/non-clinical-staffing' element={<NonClinical/>} />
+          <Route path='/facilities/staffing-solutions' element={<NonClinical/>} />
           <Route path='/signup' element={<Signup/>} />
           <Route path='/about/career' element={<Career />} />
           <Route path='/about/community' element={<Community/>} />
@@ -43,7 +43,7 @@ function App() {
           <Route path='/resources/empowercare-heroes' element={<Heroes/>}/>
           <Route path='/resources' element={<Resources/>}/>
           <Route path='/facilities/directcare-careers' element={<DirectCareCareers/>}/>
-          <Route path='/professionals/advantages' element={<Faqs/>}/>
+          <Route path='/professionals/faqs' element={<Faqs/>}/>
         </Routes >
       </BrowserRouter>
     </>
