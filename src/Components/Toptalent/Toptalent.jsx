@@ -3,17 +3,21 @@ import './Toptalent.scss';
 import job1 from '../../Assets/job1.png';
 import job2 from '../../Assets/job2.png';
 import job3 from '../../Assets/job3.png';
+import arrow from '../../Assets/anchor-arrow.png';
 
 const Toptalent = () => {
     return (
-        <div className="contractjob-sec">
-            <div className="container toptalent-wrapper">
-                <div className="contractjob-wrapper">
+    <div className="toptalent-sec">
+        <div className="toptalent-container">    
+            <div className="contractjob-wrapper">
+                <div className="container">
                     <div className="top-content">
-                        <p className="description sub-heading">Join EmpowerCare for Free</p>
-                        <h2 className="heading main-heading">
-                            Empower <span className='span-style'>Your Facility</span> with Top Talent, Effortlessly
-                        </h2>
+                    <p className="description">Join EmpowerCare for Free</p>
+                        <h2 className="heading">
+                            empower 
+                            <span> your Facility </span>
+                            with top talent, effortlessly
+                        </h2>  
                     </div>
                     <div className="row">
                         <div className="col-md-4">
@@ -45,15 +49,17 @@ const Toptalent = () => {
                         </div>
                     </div>
                     <div className="bottom-btns-row">
-                        <button className="transparent-btn">
-                            <span>Sign up</span>
-                        </button>
-                        <button className="white-bg-btn">
-                            <span>Learn how to find talent</span>
-                        </button>
+                        <a href="/" className="signup-btn">
+                            Sign up
+                        </a>
+                        <a href="/" className="learnmore-btn">
+                            Lean more how to find talent
+                            <img src={arrow} />
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

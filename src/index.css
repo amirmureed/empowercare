@@ -118,3 +118,17 @@ a.btn_green{
   color: #000000;
   text-decoration: none;
 }
+
+.btn_facilities_grad {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.btn_facilities_grad a {
+  background: #ee8d80;
+  background: linear-gradient(-130deg, #71ba32 0%, #4eb3e8 100%);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 18px 50px;
+  border-radius: 19px;
+}
