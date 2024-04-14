@@ -1,12 +1,16 @@
 import './Initiative.scss'
 import trophy from '../../Assets/trophy.png'
-const Initiative = ({heading,heading1,heading2,heading3,heading4,description1,description2,description3,description4}) => {
+const Initiative = ({button,mainHeading,heading,heading1,heading2,heading3,heading4,description1,description2,description3,description4}) => {
     return (
         <>
 <div className="initiative_sec">
                 <div className="container">
                     <div className="initiative-wrapper">
-                       
+                       {mainHeading  ? (<>
+                       <div className='top-content'>
+                        <h2 className='top-heading'>WHY CHOOSE <span className='text_grad_green'>EMPOWERCARE</span> <br />FOR PER DIEM POSITIONS?</h2>
+                       </div><br />
+                       </>):(<></>)}
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="initiative-box">
@@ -24,8 +28,15 @@ const Initiative = ({heading,heading1,heading2,heading3,heading4,description1,de
                                     <div className="left-sec">
                                         
                                         <div className="text-area">
+                                            <div className='content'>
                                             <h6 className="heading">{heading1}</h6>
                                             <p className="description">{description1}</p>
+                                            </div>
+                                            {button?(<>
+                                            <div className='btn'>
+                                                <a className='learn_more' href="">Learn More</a>
+                                            </div>
+                                            </>):(<></>)}
                                             
                                         </div>
                                     </div>
@@ -35,8 +46,15 @@ const Initiative = ({heading,heading1,heading2,heading3,heading4,description1,de
                                     <div className="left-sec">
                                         
                                         <div className="text-area">
+                                        <div className='content'>
                                             <h6 className="heading">{heading2}</h6>
                                             <p className="description">{description2}</p>
+                                            </div>
+                                            {button?(<>
+                                            <div className='btn'>
+                                                <a className='learn_more' href="">Learn More</a>
+                                            </div>
+                                            </>):(<></>)}
                                         </div>
                                     </div>
                                     
@@ -45,8 +63,15 @@ const Initiative = ({heading,heading1,heading2,heading3,heading4,description1,de
                                     <div className="left-sec">
                                         
                                         <div className="text-area">
+                                        <div className='content'>
                                             <h6 className="heading">{heading3}</h6>
                                             <p className="description">{description3}</p>
+                                            </div>
+                                            {button?(<>
+                                            <div className='btn'>
+                                                <a className='learn_more' href="">Learn More</a>
+                                            </div>
+                                            </>):(<></>)}
                                         </div>
                                     </div>
                                     
@@ -55,8 +80,15 @@ const Initiative = ({heading,heading1,heading2,heading3,heading4,description1,de
                                     <div className="left-sec">
                                         
                                         <div className="text-area">
+                                        <div className='content'>
                                             <h6 className="heading">{heading4}</h6>
                                             <p className="description">{description4}</p>
+                                            </div>
+                                            {button?(<>
+                                            <div className='btn'>
+                                                <a className='learn_more' href="">Learn More</a>
+                                            </div>
+                                            </>):(<></>)}
                                         </div>
                                     </div>
                                     

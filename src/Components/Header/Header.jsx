@@ -53,6 +53,8 @@ const Header = () => {
                                             name2={'Faqs'}
                                             route3={'/professionals/unsung-heroes'}
                                             name3={'Unsung Heroes'}
+                                            route4={'/professionals/advantages'}
+                                            name4={'Advantages'}
                                         />
                                     </div>
                                 </div>
@@ -147,6 +149,8 @@ const Header = () => {
                                     name2={'Faqs'}
                                     route3={'/professionals/unsung-heroes'}
                                     name3={'Unsung Heroes'}
+                                    route4={'/professionals/advantages'}
+                                    name4={'Advantages'}
                                 />
                             </>) : (<></>)
                         }
