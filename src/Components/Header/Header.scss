@@ -224,6 +224,26 @@
                 left: 400px;
             }
          }
+         .nav-link:hover .dropdown-professionals{
+            display: block;
+            position: absolute; /* Position the dropdown relative to the .nav-link */
+            top: 50%; /* Position it below the .nav-link */
+            left: 360px; /* Align it with the left edge of the .nav-link */
+            
+           
+           
+            width: 25%;
+            @media (max-width:1355px) {
+                left: 180px;
+            }
+            @media (max-width:1200px) {
+                left: 450px;
+            }
+            @media (max-width:1025px) {
+                width: 37%;
+                left: 230px;
+            }
+         }
          .dropdown-resources .dropdown{
             display: block;
          }
@@ -236,18 +256,27 @@
          .dropdown-facilities{
             display: none
          }
+         .dropdown-professionals .dropdown{
+            display: block;
+         }
+         .dropdown-professionals{
+            display: none
+         }
          .dropdown .d-span{
             background-color: transparent;
          }
          .dropdown-resources .dropdown-content{
             background-color: #fff;
             border-radius: 20px;
-        
          }
          .dropdown-facilities .dropdown-content{
             background-color: #fff;
             border-radius: 20px;
         
+         }
+         .dropdown-professionals .dropdown-content{
+            background-color: #fff;
+            border-radius: 20px;
          }
          .dropdown .dropdown-content{
             background-color: #fff;

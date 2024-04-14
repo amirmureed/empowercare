@@ -1,22 +1,25 @@
 import React from 'react';
-import bannerImg from '../../Assets/banner1.png';
+// import bannerImg from '../../Assets/banner1.png';
 import './Banner1.scss';
 
-const Banner1 = () => {
-    return (
+const Banner1 = (props) => {
+  const {heading,description,meta,bannerImg,styles}=props  
+  return (
       <>
       <div className='banner_varient_1'>
-          <div className="main-banner">
+          <div className="main-banner"
+          style={styles}
+          >
             <div className="container">
               <div className="banner-wrapper">
                 <div className="row">
                   <div className="col-lg-6 col-md-6">
                     <div className="banner-content">
                       <h1 className="heading">
-                        Seamless & Impactful
+                        {heading}
                       </h1>
-                      <p className="description">Your Gateway to Rewarding Contract Healthcare Careers</p>
-                      <span className="meta">Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description</span>
+                      <p className="description">{description}</p>
+                      <span className="meta">{meta}</span>
                       <div className="banner-btns">
                         <button className='btn quick-btn'>
                           <span>Quick Apply</span>

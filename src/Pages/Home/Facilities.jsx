@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
-import Banner5 from '../../Components/Banner5/Banner5';
+import Banner1 from '../../Components/Banner1/Banner1';
 import Trusted from '../../Components/Trusted/Trusted';
 import Toptalent from '../../Components/Toptalent/Toptalent';
 import Choose from '../../Components/Choose/Choose';
@@ -16,13 +16,28 @@ import CareerSlider from '../../Components/CareerSlider/CareerSlider';
 import Blog from '../../Components/Blog/Blog';
 import Userslider from '../../Components/Userslider/Userslider';
 import Realstoriesimpact from '../../Components/Realstoriesimpact/Realstoriesimpact'
+import bannerImg from '../../Assets/facility.png';
+import img from '../../Assets/banner5.png'
 import './Home.scss';
      
 const Home = () => {
+  const bannerStyles = {
+    backgroundImage: `url(${img})`,
+    backgroundPosition: 'center right',
+    backgroundRepeat: 'no-repeat',
+    marginTop: '-270px',
+    backgroundColor: '#EBE0D3'
+};
   return (
     <>
       <Header />
-      <Banner5 />
+      <Banner1 heading={'Elevate Your Facility With Us'} 
+          description={'Elevate Your Facility with EmpowerCares Staffing Solutions'}
+          meta={'Empowering Healthcare Excellence for Over 18 Years'}
+          bannerImg={bannerImg}
+          styles={bannerStyles}
+          />
+      
       <Trusted />
       <BoxesWithIcons />
       <Choose 
