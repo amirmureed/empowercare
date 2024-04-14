@@ -10,7 +10,7 @@ import Empowercare from '../../Components/Empowercare/Empowercare';
 import PriemerBlack from '../../Components/PremierHealthcareBlack/PriemerBlack';
 import Userslider from '../../Components/Userslider/Userslider';
 import FaqAccordian from '../../Components/FaqAccordian/FaqAccordian';
-import bannerImg from '../../Assets/banner1.png';
+import bannerImg from '../../Assets/seamless_banner_img.png';
 import img from '../../Assets/bannerbg1.png'
 const Seamlesss = () => {
   const bannerStyles = {

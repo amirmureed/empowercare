@@ -9,6 +9,17 @@
         background-color: #fff;
     }
 
+    .logo {
+        img {
+            position: absolute;
+            top: 15px;
+            width: 200px;
+            @media (max-width: 480px) {
+                top: 8px;
+            }
+        }
+    }
+
     .navbar {
         .container {
             max-width: 1770px;
@@ -23,11 +34,9 @@
                     color: #000;
                     width: 100%;
                 }
-              .col-sm-6{
-                   
-                    display: inline-flex;
-                    
-              }
+                .col-sm-6{
+                    display: inline-flex;   
+                }
                 .navbar-nav {
                     a.nav-link {
                         font-size: 15px;
