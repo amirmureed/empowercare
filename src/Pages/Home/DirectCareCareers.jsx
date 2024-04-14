@@ -13,6 +13,7 @@ import Staffingsolutions from '../../Components/Staffingsolutions/Staffingsoluti
 import Guaranty from "../../Components/Facilities/TruePartner/Guaranty"
 import AboutEmpower from '../../directcare/AboutEmpower/AboutEmpower';
 import JoiningForm from '../../directcare/JoiningForm/JoiningForm';
+import StaffingProcess from '../../Components/StaffingProcess/StaffingProcess';
 import FaqAccordian from '../../directcare/FaqAccordian/FaqAccordian';
 import './Home.scss';
 
@@ -44,7 +45,8 @@ const DirectCareCareers = () => {
         <SolutionsDesign/>
         <Empowercare />
         <Staffingsolutions />
-        <Guaranty/>
+        <StaffingProcess />
+        <Guaranty />
         <AboutEmpower />
         <JoiningForm />
         <CareerSlider />

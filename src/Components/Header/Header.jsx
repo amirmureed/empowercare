@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import logo from '../../Assets/logo.png';
+import logo from '../../Assets/logo.svg';
 import SearchIcon from '@mui/icons-material/Search';
 import './Header.scss';
 import ModalComponent from '../Common/Popover';
@@ -31,7 +31,6 @@ const Header = () => {
         <header className='main-header'>
             <Navbar expand="lg">
                 <Container>
-
                     <Link to="/">
                         <div className="logo">
                             <img src={logo} alt="logo" />

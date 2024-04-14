@@ -1,24 +1,26 @@
 import React from 'react';
 import './AboutEmpower.scss';
-import opportunityimg from '../../Assets/opportunity-img.png';
-import downarrow from '../../Assets/down-link-arrow.svg';
+import empower from '../../Assets/empower1.png';
+import empower2 from '../../Assets/empower2.png';
 
 const AboutEmpower = () => {
     return (
         <div className="about-empower-sec">
             <div className="opportunity-container">
                 <div className="opportunity-wrapper">
+                    <div className='img_wrapper'>
+                        <img className='img1' src={empower} />
+                        <img className='img2' src={empower2} />
+                    </div>
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
                                 <div className="left-content">
                                     <span className="meta">About Us</span>
-                                    <h2 className="heading text-white">
-                                        About <span className='text-black'>EmpowerCare</span>
+                                    <h2 className="heading">
+                                        About <span>EmpowerCare</span>
                                     </h2>
-                                    <p className="description">With 18+ years of experience, EmpowerCare's mission is empowering healthcare institutions and professionals through top-tier staffing solutions that transform lives, elevate care, and promote societal well-being. </p>
-                                    <p className="description">Celebrating over 1,000,000 shifts served, our vision is doubling the impact to 2 million by 2031 - ensuring seamless operations for institutions and fulfilling opportunities for every healthcare professional</p>
-                                
+                                    <p className="description">EmpowerCare is a leading nursing and healthcare agency specializing in temp-to-hire staffing solutions for healthcare facilities nationwide. With years of experience and a deep understanding of the healthcare industry, we are committed to helping facilities find the perfect long-term fit while maintaining staffing flexibility.</p>
                                     <div className="sec-btns">
                                         <button className="learn-btn bg-white">
                                             <span>Contact Us</span>
