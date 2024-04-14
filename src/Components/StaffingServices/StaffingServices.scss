@@ -17,8 +17,16 @@
         .services_wrapper {
             padding: 70px 0px;
 
+            @media (max-width: 480px){
+                padding: unset;
+            }
+
             .content_boxes {
                 margin-top: 100px;
+
+                @media (max-width: 480px){
+                    margin-top: 20px;
+                }
 
                 .content_box {
                     p {
@@ -28,6 +36,11 @@
                         filter: drop-shadow(40px 40px 20px rgba(0, 0, 0, 0.04));
                         background: #f4f4f4;
                     }
+                }
+            }
+            .last_content_box {
+                @media (max-width: 480px){
+                    margin-top: 67%;
                 }
             }
             .img_content_box {

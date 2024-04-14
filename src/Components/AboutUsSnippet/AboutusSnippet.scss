@@ -1,8 +1,10 @@
 .about-us-snippet{
+
     margin-top: 90px;
+
     .container{
-        .content
-        {
+
+        .content {
           
             display: block;
             margin: auto;
@@ -22,33 +24,35 @@
             font-weight: normal;
             line-height: 51px;
             font-style: normal;
-            
-            
            }
            p.description{
             text-align: center;
             font-weight: normal;
             line-height: 21px;
+            padding-bottom: 40px;
            }
-          .butns{
+          .butns {
             display: flex;
             justify-content: center;
             gap: 2px;
            
             @media (max-width:800px) {
                 flex-direction: column;
-                
             }
-            @media (max-width:480px) {
-                width: 75%;
-
-            }
-           
           }
-          .arrow_img{
-            transform: translateX(80%); 
-            
-        }
+            .arrow_img{
+                position: relative;
+
+                @media ( max-width: 480px ){
+                    display: none;            
+                }
+
+                img {
+                    position: absolute;
+                    right: 50px;
+                    bottom: -36px;
+                }
+            }
         }
     }
 }

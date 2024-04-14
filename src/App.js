@@ -28,6 +28,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route exact path='' element={<Home/>}/>
           <Route exact path='/professionals' element={<Home/>}/>
           <Route path='/about' element={<About/>} />
           <Route path='professionals/seamless' element={<Seamlesss/>} />

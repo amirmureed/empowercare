@@ -6,32 +6,16 @@
         padding: 0% 3%;
         margin: auto;
 
-       
-
         .sd-wrapper {
             padding: 140px 0;
             border-radius: 50px;
             background: black;
+
          .container{
 
-            @media (max-width: 1200px) {
-                padding: 120px 0;
-            }
-
-            @media (max-width: 992px) {
-                padding: 80px 0;
-            }
-
-            @media (max-width: 767.5px) {
-                padding: 60px 0;
-            }
-
             .row {
-                @media (max-width: 767.5px) {
-                    margin: 0;
-                }
 
-                .col-md-6 {
+                .col-md-12 {
                     .left-content {
                         padding-right: 70px;
                         padding: 20px;
@@ -165,56 +149,40 @@
                     }
 
                     .right-content {
-                        display: flex;
-         justify-content: center;
-         align-items: center;
-       
-         margin: 0 auto;
 
-                        @media (max-width: 767.5px) {
-                            
-                           
+                       .image-sec {
+                        
+                        img {
+                            width: 100%;
                         }
-                       image-sec{
-                        @media (max-width: 767.5px) {
-
-                        max-width: 80%;
-                        margin: 0 auto;
-                       }
-                    img.sd-img{
-                        @media (max-width: 480px) {
-                            width: 110%;
-                    }
-                    }
-                       
                     }
                 }
             }
         }
     }
-    }
+}
 }
 
-.choose-sec.black-bg {
+    .choose-sec.black-bg {
 
-    .left-content {
+        .left-content {
 
-        .heading {
-            color: white !important;
+            .heading {
+                color: white !important;
+            }
+
+            .description {
+                color: white !important;
+            }
         }
+    }
 
-        .description {
-            color: white !important;
+    .choose-wrapper.black-bg {
+        margin-inline: 30px;
+
+        @media (max-width: 767.5px) {
+            margin-inline: 15px;
+            border-radius: 10px !important;
         }
     }
-}
-
-.choose-wrapper.black-bg {
-    margin-inline: 30px;
-
-    @media (max-width: 767.5px) {
-        margin-inline: 15px;
-        border-radius: 10px !important;
-    }
-}
 }
