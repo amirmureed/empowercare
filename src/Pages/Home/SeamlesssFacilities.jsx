@@ -10,12 +10,28 @@ import Userslider from '../../Components/Userslider/Userslider';
 import OurWorkingGreen from '../../Components/OurWorkingGreen/OurWorkingGreen';
 import Careerpaths from '../../Components/Empowercarefacilities/Careerpaths'
 import FaqAccordian from '../../Components/FaqAccordian/FaqAccordian';
+import bannerImg from '../../Assets/banner1.png';
+import img from '../../Assets/bannerbg1.png'
 
 const SeamlesssFacilities = () => {
+  const bannerStyles = {
+    backgroundImage: `url(${img})`,
+    backgroundPosition: 'center right',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    marginTop: '-225px',
+    backgroundColor: '#EBE0D3'
+};
     return (
         <>
           <Header />
-          <Banner1 />
+          <Banner1 
+          heading={'Seamless & Impactful'} 
+          description={'Your Gateway to Rewarding Contract Healthcare Careers'}
+          meta={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+          bannerImg={bannerImg}
+          styles={bannerStyles}
+          />
           <Trusted />
           <OurWorkingGreen />
           <Choose

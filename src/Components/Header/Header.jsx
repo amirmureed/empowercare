@@ -51,6 +51,8 @@ const Header = () => {
                                             name1={'Seamless'}
                                             route2={'/professionals/faqs'}
                                             name2={'Faqs'}
+                                            route3={'/professionals/unsung-heroes'}
+                                            name3={'Unsung Heroes'}
                                         />
                                     </div>
                                 </div>
@@ -68,6 +70,8 @@ const Header = () => {
                                             name1={'Careers'}
                                             route2={'/facilities/staffing-solutions'}
                                             name2={'Staffing Solutions'}
+                                            route3={'/facilities/seamless'}
+                                            name3={'Seamless'}
                                         />
                                     </div>
                                 </div>
@@ -131,6 +135,8 @@ const Header = () => {
                                     name1={'Careers'}
                                     route2={'/facilities/staffing-solutions'}
                                     name2={'Staffing Solutions'}
+                                    route3={'/facilities/seamless'}
+                                    name3={'Seamless'}
                                 />
                             </>) : openProfessionals ? (<>
                                 <IconButton onClick={() => setOpenProfessionals(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
@@ -139,6 +145,8 @@ const Header = () => {
                                     name1={'Seamless'}
                                     route2={'/professionals/faqs'}
                                     name2={'Faqs'}
+                                    route3={'/professionals/unsung-heroes'}
+                                    name3={'Unsung Heroes'}
                                 />
                             </>) : (<></>)
                         }

@@ -21,6 +21,7 @@ import Resources from './Pages/Home/Resources';
 import NonClinical from './Pages/Home/Non-Clinical';
 import DirectCareCareers from './Pages/Home/DirectCareCareers';
 import Faqs from './Pages/Home/Faqs';
+import UnsungHeroes from './Pages/Home/UnsungHeroes';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path='/facilities/directcare-careers' element={<DirectCareCareers/>}/>
           <Route path='/professionals/faqs' element={<Faqs/>}/>
           <Route path='/facilities/seamless' element={<SeamlesssFacilities/>}/>
+          <Route path='/professionals/unsung-heroes' element={<UnsungHeroes/>}/>
         </Routes >
       </BrowserRouter>
     </>
