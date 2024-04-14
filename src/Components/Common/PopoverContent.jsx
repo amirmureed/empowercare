@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import './PopoverContent.scss'
 const PopoverContent=(props)=>{
-    const {route1,route2,route3,route4,route5,name1,name2,name3,name4,name5}=props
+    const {route1,route2,route3,route4,route5,route6,name1,name2,name3,name4,name5,name6}=props
     return(
 
         <Stack classname="popover" direction={'column'} px={6} spacing={4} marginTop={'5%'} py={3}>
@@ -64,6 +64,18 @@ const PopoverContent=(props)=>{
                 <IoIosArrowDroprightCircle className="arrow-icon"/></Typography>
                 <Box>
                     <span>{name5}</span>
+                </Box>
+                </Stack>
+            </Link>
+          </>):(<></>)} 
+
+          {route6 && name6 ?(<>
+            <Link className="popover-link"  to={route6}>
+                <Stack direction={'row'} spacing={1}>
+                <Typography>
+                <IoIosArrowDroprightCircle className="arrow-icon"/></Typography>
+                <Box>
+                    <span>{name6}</span>
                 </Box>
                 </Stack>
             </Link>

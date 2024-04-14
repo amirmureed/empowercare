@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom';
 import bannerImg from '../../Assets/Group 581.png';
 import './Banner10.scss';
 
-const Banner = () => {
+const Banner10 = (props) => {
+  const {bannerImg,heading,heading2,description,span,bannerStyles}=props
+
     return (
       <>
       <div className='banner_varient10'>
-        <div className="main-banner">
+        <div className="main-banner"
+        style={bannerStyles}
+        >
           <div className="container">
             <div className="banner-wrapper">
               <div className="row">
@@ -19,11 +23,11 @@ const Banner = () => {
                 <div className="col-lg-6 col-md-6">
                   <div className="banner-content">
                     <h1 className="heading">
-                      HEALTHCARE  <br />
-                      STAFFING BY US
+                      {heading}  <br />
+                      {heading2}
                     </h1>
-                    <p className="description">NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE</p>
-                    <span className="meta">Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description</span>
+                    <p className="description">{description}</p>
+                    <span className="meta">{span}</span>
                     <div className="banner-btns">
                       <Link to="/" className='btn quick-btn'>
                         <span>Quick Apply</span>
@@ -67,4 +71,4 @@ const Banner = () => {
     )
 }
 
-export default Banner
+export default Banner10

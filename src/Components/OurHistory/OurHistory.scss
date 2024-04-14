@@ -1,0 +1,51 @@
+.our-history {
+
+    padding-top: 50px;
+    padding-bottom: 70px;
+    .container {
+        .our-history-wrapper {
+            background-color: black;
+            padding: 120px;
+            border-radius: 60px;
+            @media (max-width:480px) {
+                padding: 20px;
+            }
+
+            .row {
+                .col-lg-6 {
+                    .content {
+                        padding-top: 30px;
+                        text-align: left;
+
+                        .meta {
+                            color: blue;
+                            font-size: 16px;
+                        }
+
+                        .heading {
+                            color: white;
+                            font-size: 40px;
+                            font-weight: bold;
+                        }
+
+                        .description {
+                            color: white;
+                            font-size: 14px;
+                        }
+
+                        a.learn_btn {
+                            background: transparent;
+                            color: white;
+                            text-decoration: none;
+                            padding: 18px 30px;
+                            border-radius: 19px;
+                            border: 1px solid white;
+                            
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

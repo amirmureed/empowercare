@@ -1,5 +1,6 @@
 .trustedpartner-sec {
     background-color: #EBE0D3;
+    padding-top: 20px;
      
     .container {
 
@@ -28,7 +29,12 @@
                         @media (max-width: 767.5px) {
                             padding: 0px;
                         }
+                        a.anchor{
+                            color: #4EB3E8;
                         
+                            font-size:18px ;
+                            text-decoration: none;
+                        }
                         span.meta {
                             font-size: 20px;
                             font-weight: normal;
