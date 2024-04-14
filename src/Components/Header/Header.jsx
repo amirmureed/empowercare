@@ -56,6 +56,8 @@ const Header = () => {
                                             name4={'Advantages'}
                                             route5={'/professionals/guide'}
                                             name5={'Guide to Nursing Careers'}
+                                            route6={'/professionals/directcare-career'}
+                                            name6={'Direct Care Careers'}
                                         />
                                     </div>
                                 </div>
@@ -154,6 +156,8 @@ const Header = () => {
                                     name4={'Advantages'}
                                     route5={'/professionals/guide'}
                                     name5={'Guide to Nursing Careers'}
+                                    route6={'/professionals/directcare-career'}
+                                    name6={'Direct Care Careers'}
                                 />
                             </>) : (<></>)
                         }

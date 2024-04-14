@@ -15,6 +15,7 @@ import AboutEmpower from '../../directcare/AboutEmpower/AboutEmpower';
 import JoiningForm from '../../directcare/JoiningForm/JoiningForm';
 import StaffingProcess from '../../Components/StaffingProcess/StaffingProcess';
 import FaqAccordian from '../../directcare/FaqAccordian/FaqAccordian';
+import empowercareimg from '../../Assets/In the office-amico.png';
 import './Home.scss';
 
 const DirectCareCareers = () => {
@@ -23,7 +24,19 @@ const DirectCareCareers = () => {
         <Header />
         <Banner1 />
         <Trusted />
-        <TrustedPartner />
+        <TrustedPartner 
+        button={true}
+        anchor={false}
+        img={empowercareimg}
+        meta={'Who We Are'} 
+        heading1={'EMPOWERCARE IS YOUR'} 
+        heading2={'TRUSTED'}
+         heading3={'PARTNER'} 
+         description1={'EmpowerCare is your trusted partner for non-clinical staffing services. We understand the crucial role that skilled non-clinical professionals play in ensuring the smooth operation of your healthcare facility.'} 
+         description2={'Our extensive network of pre-screened, highly trained sitters, compassionate professionals, receptionists, administrative staff, and experienced nurses and CNAs for non-clinical roles ensures you have the right talent to support your facility  operational efficiency and patient experience.'}
+        
+        
+        />
         <CardsGreen description1={'Unparalleled benefits of our per diem services include'}
            description2={'● Highly Skilled Healthcare Professionals'}
            description3={'● Skills Within Your Organization'}

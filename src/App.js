@@ -24,6 +24,7 @@ import Faqs from './Pages/Home/Faqs';
 import UnsungHeroes from './Pages/Home/UnsungHeroes';
 import Advantages from './Pages/Home/Advantages';
 import Guide from './Pages/Home/Guide';
+import ProfessionalsCareer from './Pages/Home/ProfessionalsCareer';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
           <Route path='/professionals/unsung-heroes' element={<UnsungHeroes/>}/>
           <Route path='/professionals/advantages' element={<Advantages/>}/>
           <Route path='/professionals/guide' element={<Guide/>}/>
+          <Route path='/professionals/directcare-career' element={<ProfessionalsCareer/>}/>
         </Routes >
       </BrowserRouter>
     </>
