@@ -54,6 +54,8 @@ const Header = () => {
                                             name3={'Unsung Heroes'}
                                             route4={'/professionals/advantages'}
                                             name4={'Advantages'}
+                                            route5={'/professionals/guide'}
+                                            name5={'Guide to Nursing Careers'}
                                         />
                                     </div>
                                 </div>
@@ -150,6 +152,8 @@ const Header = () => {
                                     name3={'Unsung Heroes'}
                                     route4={'/professionals/advantages'}
                                     name4={'Advantages'}
+                                    route5={'/professionals/guide'}
+                                    name5={'Guide to Nursing Careers'}
                                 />
                             </>) : (<></>)
                         }

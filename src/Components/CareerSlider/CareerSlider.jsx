@@ -71,7 +71,7 @@ const CareerSlider = () => {
                                         partialVisible={false}
                                         dotListClass="custom-dot-list-style"
                                     >
-                                        {sliderImageUrl.map((imageUrl, index) => {
+                                          {sliderImageUrl.map((imageUrl, index) => {
                                         return (
                                             <div className="slider" key={index}>
                                             <img src={imageUrl.userImg} alt="career" />
@@ -80,12 +80,12 @@ const CareerSlider = () => {
                                         })}
                                     </Carousel>
                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 
