@@ -11,6 +11,10 @@ body * {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+.banner-img img {
+  width: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
