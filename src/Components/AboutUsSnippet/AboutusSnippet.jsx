@@ -16,7 +16,6 @@ const AboutusSnippet = () => {
                     <div className="butns">
                         <a className='btn_green' href="">CONTACT US</a><br />
                         <a className='learn_more' href="">LEARN MORE</a>
-                       
                     </div>
                    
                 </div>

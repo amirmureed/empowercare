@@ -3,12 +3,12 @@ import './SolutionsDesign.scss'
 const SolutionsDesign = () => {
     
     return (
-        <div className="sd-sec" >
+        <div className="sd-sec">
             <div className="sd-container">
                 <div className="sd-wrapper ">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6 col-sm-12">
+                            <div className="col-lg-6 col-md-12 col-sm-12">
                                 <div className="left-content">
                                     <span className="meta">ABOUT US</span>
                                     <h2 className="heading">
@@ -21,9 +21,8 @@ const SolutionsDesign = () => {
                                             <li>LONG TERM CARE FACILITY DIRECTORS</li>
                                             <li>BEHAVIORAL HEALTH CENTER ADMINISTRATORS</li>
                                         </ul>
-                                    </p><br />
+                                    </p>
                                     
-                                
                                     <div className="sec-btns">
                                         <button className="learn-btn">
                                             <span>SIGN UP</span>
@@ -34,10 +33,10 @@ const SolutionsDesign = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-lg-6 col-md-12 col-sm-12">
                                 <div className="right-content">
                                    <div className="image-sec">
-                                    <img className='sd-img' src={image} alt="image" />
+                                        <img className='sd-img' src={image} alt="image" />
                                    </div>
                                 </div>
                             </div>

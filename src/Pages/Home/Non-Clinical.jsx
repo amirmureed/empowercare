@@ -1,6 +1,5 @@
 import Approach from "../../Components/Approach/Approach"
 import Banner10 from "../../Components/Banner10/Banner10"
-import Banner5 from "../../Components/Banner5/Banner5"
 import Guaranty from "../../Components/Facilities/TruePartner/Guaranty"
 import TrustedPartner from "../../Components/Facilities/TruePartner/TrustedPartner"
 import FaqAccordian from "../../Components/FaqAccordian/FaqAccordian"
@@ -19,27 +18,29 @@ import FacilityOperations from "../../Components/FacilityOperations/FacilityOper
 import JoiningForm from "../../directcare/JoiningForm/JoiningForm"
 import Blog from "../../Components/Blog/Blog"
 
-const NonClinical=()=>{
-return(<>
-<Header/>
-<Banner10/>
-<TrustedPartner/>
-<Guaranty/>
-<StaffingServices/>
-<FacilityOperations/>
-<Approach/>
-<Toptalent/>
-<Spotlights/>
-<SolutionsDesign/>
-<PartneringBenefits/>
-<AboutusSnippet/>
-<Trusted/>
-<JoiningForm/>
-<CareerSlider/>
-<Blog/>
-<FaqAccordian/>
-<Userslider/>
-<Footer/>
-</>)
+const NonClinical = () => {
+    return(
+    <>
+        <Header/>
+        <Banner10/>
+        <TrustedPartner/>
+        <Approach/>
+        <Toptalent/>
+        <Guaranty/>
+        <StaffingServices/>
+        <FacilityOperations/>
+        <Spotlights/>
+        <SolutionsDesign/>
+        <PartneringBenefits/>
+        <AboutusSnippet/>
+        <Trusted/>
+        <JoiningForm/>
+        <CareerSlider/>
+        <Blog/>
+        <FaqAccordian/>
+        <Userslider/>
+        <Footer/>
+    </>
+    )
 }
 export default NonClinical

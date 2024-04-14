@@ -1,58 +1,22 @@
-.approach-sec {
+.cards_green_sec {
+
+    padding-bottom: 250px;
+
     background-color: #EBE0D3;
-    .container {
+       .container {
+
+        @media (max-width: 767.5px) {
+            margin-top: 25%;
+        }
+        @media (max-width: 490px) {
+            margin-top: 38%;
+        }
+        margin-bottom: -180px;
+        h6{
+            color: #202020;
+        }
         .approach-wrapper {
             
-            .top-content {
-                text-align: center;
-                margin-bottom: 50px;
-
-                h2.heading {
-                    font-size: 49px;
-                    font-weight: normal;
-                    line-height: 51px;
-                    font-style: normal;
-                    text-align: center;
-                    color: #000000;
-                    margin-bottom: 20px;
-
-                    @media (max-width: 992px) {
-                        font-size: 40px;
-                    }
-                    @media (max-width: 767.5px) {
-                        font-size: 35px;
-                        margin-bottom: 30px;
-
-                        br {
-                            display: none;
-                        }
-                    }
-
-                    @media (max-width: 575px) {
-                        font-size: 30px;
-                        line-height: 35px;
-                        margin-bottom: 15px;
-                    }
-
-                    span {
-                        background: -webkit-linear-gradient(180deg, #71ba32, #4eb3e8);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                    }
-                }
-                p.description {
-                    font-size: 16px;
-                    font-weight: normal;
-                    line-height: 26px;
-                    font-style: normal;
-                    text-align: center;
-                    color: #202020;
-                }
-                
-            }
-
             .row {
                 width: 100%;
 
@@ -68,7 +32,7 @@
                         border-width: 1px;
                         border-style: solid;
                         border-radius: 22px;
-                        background: #f4f4f4;
+                        background: linear-gradient(90deg, #71ba32 0.00%, #4eb3e8 100.00%);
                         padding: 20px 50px;
                         display: flex;
                         align-items: center;
@@ -82,34 +46,34 @@
                         @media (max-width: 575px) {
                             flex-direction: column;
                         }
-                        &:nth-child(odd) {
-                            margin-right: 62px;
+                        // &:nth-child(even) {
+                        //     margin-left: 62px;
 
-                            @media (max-width: 992px) {
-                                margin-right: 30px;
-                            }
+                        //     @media (max-width: 992px) {
+                        //         margin-right: 30px;
+                        //     }
 
-                            @media (max-width: 767.5px) {
-                                margin-right: 0px;
-                            }
-                        }
+                        //     @media (max-width: 767.5px) {
+                        //         margin-right: 0px;
+                        //     }
+                        // }
 
-                        &:nth-child(even) {
-                            margin-left: 62px;
+                        // &:nth-child(3) {
+                        //     margin-left: 62px;
 
-                            @media (max-width: 992px) {
-                                margin-left: 30px;
-                            }
+                        //     @media (max-width: 992px) {
+                        //         margin-right: 30px;
+                        //     }
 
-                            @media (max-width: 767.5px) {
-                                margin-left: 0px;
-                            }
-                        }
+                        //     @media (max-width: 767.5px) {
+                        //         margin-right: 0px;
+                        //     }
+                        // }
 
                         .left-sec {
                             display: flex;
                             align-items: center;
-                            gap: 50px;
+                            gap: 20px;
 
                             @media (max-width: 992px) {
                                 flex-direction: column;
@@ -117,7 +81,7 @@
                                 align-items: flex-start;
                             }
 
-                            @media (max-width: 575px) {
+                            @media (max-width: 480px) {
                                 align-items: center;
                             }
 
@@ -129,20 +93,20 @@
                                 border-radius: 50%;
 
                                 img {
-                                    height: 86%;
+                                    height: 100%;
                                     width: 100%;
-                                    // border-radius: 50%;
+                                    border-radius: 50%;
                                 }
                             }
 
                             .text-area {
-                                h3.heading {
+                                h2.heading {
                                     font-size: 22px;
                                     font-weight: normal;
                                     line-height: 30px;
                                     font-style: normal;
                                     text-align: left;
-                                    color: #000000;
+                                    color: white;
                                     margin-bottom: 0px;
                                 }
                                 p.description {
@@ -194,12 +158,21 @@
                     }
 
                     .approach-box.active {
-                        background: #4eb3e8;
-                        background: linear-gradient(-135deg, 
-                        #4eb3e8 0.00%, 
-                        #71ba32 100.00%);
+                        background: #f4f4f4;
+                        margin-left: 62px;
+
+                        @media (max-width: 480px){
+                            margin-left: unset; 
+                        }
 
                         .left-sec {
+                            padding: 20px;
+                            gap: 245px;
+                            
+                            @media (max-width: 480px) {
+                                align-items: center;
+                                gap: 20px;
+                            }
 
                             .text-area {
                                 h3.heading {
@@ -211,41 +184,23 @@
                             }
                         }
 
-                        .right-sec {
-                            .approach-btn {
-                                border-color: #fff;
-                            }
-                        }
                     }
                 }
             }
-
-            .bottom-btn {
+            .sec-btns {
                 display: flex;
                 align-items: center;
+                gap: 28px;
                 justify-content: center;
-                margin: 70px 20px 20px;
+                padding-top: 35px;
 
-                @media (max-width: 992px) {
-                    margin: 50px 20px 20px;
-                }
-                @media (max-width: 767.5px) {
-                    margin: 30px 20px 20px;
-                }
-
-                button.signup {
-                    width: 196px;
+                button {
+                    width: 195px !important;
                     height: 66px;
                     border-radius: 19px;
-                    background: #71ba32;
-                    background: linear-gradient(-130deg, 
-                    #71ba32 0.00%, 
-                    #4eb3e8 100.00%);
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    border: none;
-                    outline: none;
 
                     @media (max-width: 992px) {
                         width: max-content;
@@ -264,7 +219,28 @@
                         font-weight: 500;
                         font-style: normal;
                         text-align: center;
-                        color: #ebe0d3;
+                        color: #000000;
+                    }
+                }
+
+                .learn-btn {
+                    background: #71ba32;
+                    background: linear-gradient(-130deg, 
+                    #71ba32 0.00%, 
+                    #4eb3e8 100.00%);
+                    border: none;
+                    
+                    span {
+                        color: #EBE0D3;
+                    }
+                }
+
+                .signup-btn {
+                    border: 2px solid black;
+                    background: transparent;
+
+                    span {
+                        color: #000000;
                     }
                 }
             }

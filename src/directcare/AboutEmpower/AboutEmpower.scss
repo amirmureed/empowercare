@@ -10,17 +10,7 @@
     .opportunity-container {
         width: 100%;
         margin: auto;
-        padding: 140px 3%;
-
-        @media (max-width: 1200px) {
-            padding: 120px 0;
-        }
-        @media (max-width: 992px) {
-            padding: 80px 0;
-        }
-        @media (max-width: 767.5px) {
-            padding: 60px 0;
-        }
+        padding: 0px 3% 140px;
 
         .opportunity-wrapper {
             border-radius: 35px;

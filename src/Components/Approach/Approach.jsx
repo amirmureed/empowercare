@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Approach.scss';
-import approach1 from '../../Assets/approach1.png';
+import approach1 from '../../Assets/Group 595.png';
+import approach2 from '../../Assets/Group 598.png';
 
 const Approach = () => {
     return (
@@ -38,7 +39,7 @@ const Approach = () => {
                                 <div className="approach-box active">
                                     <div className="left-sec">
                                         <div className="sec-img">
-                                            <img src={approach1} alt="approach1" />
+                                            <img src={approach2} alt="approach2" />
                                         </div>
                                         <div className="text-area">
                                             <h3 className="heading">Finding the Perfect Match Made Easy! Dynamic Squads</h3>

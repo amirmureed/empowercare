@@ -26,7 +26,7 @@ const StaffingServices=()=>{
                 <img src={img} />
               </div>
             </div>
-            <div className='content_boxes col-lg-4 col-md-4 col-sm-12'>
+            <div className='last_content_box content_boxes col-lg-4 col-md-4 col-sm-12'>
               <div className='content_box'>
                 <p>Sitters and Compassionate Professionals for Patient Support</p>
               </div>

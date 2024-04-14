@@ -4,11 +4,14 @@ import logo2 from '../../Assets/logo2.png'
 import logo3 from '../../Assets/logo3.png'
 import logo4 from '../../Assets/logo4.png'
 import { FiArrowDownRight } from "react-icons/fi";
+
 const FacilityOperations=()=>{
-    return(<>
+    return(
+    <>
     <div className="faciityOperations-sec">
-            <div className="container faciityOperations-wrapper">
-                <div className="faciityOperations-wrapper">
+        <div className="faciityOperations-wrapper">
+            <div className="faciityOperations-container">    
+                <div className="container">
                     <div className="top-content">
                         <p className="description-sub-heading">LIMITED TIME OFFER</p>
                         <h2 className="heading main-heading">
@@ -87,6 +90,7 @@ operations with EmpowerCare's help.</p></div>
                 </div>
             </div>
         </div>
+    </div>
     </>)
 }
 export default FacilityOperations
