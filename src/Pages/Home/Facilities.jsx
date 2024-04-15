@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../Components/Header/Header';
+import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import Footer from '../../Components/Footer/Footer';
 import Banner1 from '../../Components/Banner1/Banner1';
 import Trusted from '../../Components/Trusted/Trusted';
@@ -21,12 +21,13 @@ import img from '../../Assets/banner5.png'
 import empowercareimg from '../../Assets/Hiring-amico.png';
 import empowercareimg2 from '../../Assets/man_6 copy.png';
 import empowercareimg3 from "../../Assets/staff-solutions.png";
+import img from '../../Assets/banner52.png'
 import './Home.scss';
      
 const Home = () => {
   const bannerStyles = {
     backgroundImage: `url(${img})`,
-    backgroundPosition: 'center right',
+    backgroundPosition: '50% 50%',
     backgroundRepeat: 'no-repeat',
     marginTop: '-270px',
     backgroundColor: '#EBE0D3'
@@ -56,7 +57,7 @@ const content2={
 }
   return (
     <>
-      <Header />
+      <HeaderWhite />
       <Banner1 heading={'Elevate Your Facility With Us'} 
           description={'Elevate Your Facility with EmpowerCares Staffing Solutions'}
           meta={'Empowering Healthcare Excellence for Over 18 Years'}

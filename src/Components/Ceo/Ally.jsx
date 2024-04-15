@@ -1,5 +1,5 @@
 import './Ally.scss'
-import healthcareimg from '../../Assets/healthcareimg.png';
+import healthcareimg from '../../Assets/home-img-copyright-1.png';
 
 
 const Ally=()=>{
@@ -33,7 +33,6 @@ const Ally=()=>{
                               <p>
                               We strive to help you turn your vision into reality by connecting you with the right talent and resources. The impact is both professional and personal, in the everyday and in the long run. With the right staffing partner, you stop merely filling roles and start strategically building a team that transforms lives.
                               </p>
-                            
                             </div>
                         </div>
                     </div>

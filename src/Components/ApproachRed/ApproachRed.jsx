@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ApproachRed.scss';
-import approach1 from '../../Assets/approach1.png';
+import approach1 from '../../Assets/approach_red_1.jpeg';
+import approach2 from '../../Assets/approach_red_2.jpeg';
+import approach3 from '../../Assets/approach_red_3.jpeg';
 
 const ApproachRed = () => {
     return (
@@ -37,7 +39,7 @@ const ApproachRed = () => {
                                 <div className="approach-box active">
                                     <div className="left-sec">
                                         <div className="sec-img">
-                                            <img src={approach1} alt="approach1" />
+                                            <img src={approach2} alt="approach1" />
                                         </div>
                                         <div className="text-area">
                                             <h3 className="heading">Finding the Perfect Match Made Easy! Dynamic Squads</h3>
@@ -53,7 +55,7 @@ const ApproachRed = () => {
                                 <div className="approach-box">
                                     <div className="left-sec">
                                         <div className="sec-img">
-                                            <img src={approach1} alt="approach1" />
+                                            <img src={approach3} alt="approach1" />
                                         </div>
                                         <div className="text-area">
                                             <h3 className="heading">Gain a Winning Edge: Excel with EmpowerCare Academy!</h3>

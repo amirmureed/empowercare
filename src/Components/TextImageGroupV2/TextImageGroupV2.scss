@@ -4,7 +4,7 @@
         padding-bottom: 70px;
     }
 
-    .healthcare-sec {
+    .healthcare-sec1 {
         background-image: url(../../Assets/bodybg2.png);
         background-position: right;
         background-repeat: no-repeat;
@@ -36,7 +36,7 @@
                 .col-md-12 {
                     .left-content {
                         background-color: white;
-                        padding: 35px;
+                        padding: 30px;
                         border-radius: 50px;
 
                         // @media (max-width: 767.5px) {
@@ -83,6 +83,11 @@
                                 -webkit-text-fill-color: transparent;
                                 text-transform: uppercase;
                                 font-weight: bold;
+                            }
+                        }
+                        p {
+                            @media (max-width: 480px) {
+                                font-size: 14px;
                             }
                         }
                         ul {
@@ -158,6 +163,9 @@
                     .right-content {
                         @media (max-width: 767.5px) {
                             padding: 60px 0px 10px;
+                        }
+                        @media (max-width: 480px){
+                            padding: 195px 0px 10px;
                         }
                         .section-img {
                             @media (min-width: 1025px) {

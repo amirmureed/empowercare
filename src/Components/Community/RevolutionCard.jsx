@@ -19,7 +19,7 @@ const RevolutionCard=()=>{
                         <br />
                         <div className='btn-container'>
                             <button className='button' >
-                                <b> LETS PROMOTE WELL BEING</b> <span><FiArrowDownRight/></span>
+                                LETS PROMOTE WELL BEING<span><FiArrowDownRight/></span>
                             </button>
                         </div>
                     </div>

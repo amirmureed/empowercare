@@ -1,4 +1,4 @@
-import Header from "../../Components/Header/Header"
+import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import bannerImg from '../../Assets/Group2311.png';
 import Cards from "../../Components/Community/Cards"
 import BottomButton from "../../Components/Community/BottomButton"
@@ -9,19 +9,20 @@ import Content1 from "../../Components/Community/Content1"
 import Footer from "../../Components/Footer/Footer"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import img from '../../Assets/Group125.png'
+
 const Community=()=>{
     const heading='OUR COMMUNITY'
     const description='At EmpowerCare, we believe every job has the power to create a positive impact that ripples far beyond the workplace.'
     const bannerStyles = {
        backgroundImage: `url(${img})`,
-       backgroundPosition: 'center right',
+       backgroundPosition: '50% 36%',
        backgroundRepeat: 'no-repeat',
-       backgroundSize: 'cover',
+       backgroundSize: 'contain',
        marginTop: '-225px',
        backgroundColor: '#EBE0D3'
    };
    return(<>
-    <Header/>
+    <HeaderWhite/>
     <Banner2 heading={heading} description={description} img={bannerImg} styles={bannerStyles}
     
     />
@@ -34,7 +35,7 @@ const Community=()=>{
      <Cards description1={'Empowering Orphaned Children: Nurturing the Next Generation'}
            description2={'Every child deserves a chance to dream big and reach for the stars. At EmpowerCare, we believe in empowering orphaned and vulnerable children to build a brighter future.'}
            description3={'Through partnerships with local organizations, we fund educational programs, healthcare services, and nutritional support, ensuring that these children have the tools they need to thrive.'}
-           description4={'●	Our team members volunteer their time and skills to organize recreational activities, tutoring sessions, and mentorship programs, creating a nurturing environment that fosters growth, learning, and endless possibilities.'}    
+           description4={'Our team members volunteer their time and skills to organize recreational activities, tutoring sessions, and mentorship programs, creating a nurturing environment that fosters growth, learning, and endless possibilities.'}    
     />
      <Cards description1={'Emergency Relief Efforts: Answering the Call in Times of Crisis'}
            description2={'When disaster strikes, EmpowerCare is ready to answer the call. We believe that every job we fill can help make a difference in the lives of those affected by crises.'}

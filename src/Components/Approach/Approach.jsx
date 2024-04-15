@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Approach.scss';
-import approach1 from '../../Assets/Group 595.png';
-import approach2 from '../../Assets/Group 598.png';
+import circle1 from '../../Assets/circle1.png';
+import circle2 from '../../Assets/circle2.png';
+import circle3 from '../../Assets/circle3.png';
+import circle4 from '../../Assets/circle4.png';
 
 const Approach = () => {
     return (
@@ -23,7 +25,7 @@ const Approach = () => {
                                 <div className="approach-box">
                                     <div className="left-sec">
                                         <div className="sec-img">
-                                            <img src={approach1} alt="approach1" />
+                                            <img src={circle1} alt="approach1" />
                                         </div>
                                         <div className="text-area">
                                             <h3 className="heading">Every Job Helps the World</h3>
@@ -39,7 +41,7 @@ const Approach = () => {
                                 <div className="approach-box active">
                                     <div className="left-sec">
                                         <div className="sec-img">
-                                            <img src={approach2} alt="approach2" />
+                                            <img src={circle2} alt="approach2" />
                                         </div>
                                         <div className="text-area">
                                             <h3 className="heading">Finding the Perfect Match Made Easy! Dynamic Squads</h3>
@@ -55,7 +57,7 @@ const Approach = () => {
                                 <div className="approach-box">
                                     <div className="left-sec">
                                         <div className="sec-img">
-                                            <img src={approach1} alt="approach1" />
+                                            <img src={circle3} alt="approach1" />
                                         </div>
                                         <div className="text-area">
                                             <h3 className="heading">Gain a Winning Edge: Excel with EmpowerCare Academy!</h3>
@@ -71,7 +73,7 @@ const Approach = () => {
                                 <div className="approach-box">
                                     <div className="left-sec">
                                         <div className="sec-img">
-                                            <img src={approach1} alt="approach1" />
+                                            <img src={circle4} alt="approach1" />
                                         </div>
                                         <div className="text-area">
                                             <h3 className="heading">Unsung Heroes No More: in the Spotlight! Shift Champions</h3>

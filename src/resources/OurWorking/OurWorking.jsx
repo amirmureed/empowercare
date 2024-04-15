@@ -6,7 +6,7 @@ import icon3 from "../../Assets/Group532.png";
 
 const OurWorking = () => {
   return (
-    <div className="our-working">
+    <div className="our-working_icon">
       <div className="container">
         <div className="working-wrapper">
           <div class="top-content">

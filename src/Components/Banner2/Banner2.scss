@@ -6,14 +6,18 @@
     // margin-top: -225px;
     // background-color: #EBE0D3;
 
+    @media (max-width:850px){
+        background-size: cover !important;
+    }
+
     .container {
 
         .banner-wrapper {
             padding: 415px 10px 10px;
 
             .row {
-                margin-bottom: 200px;
-                align-items: center;
+                margin-bottom: 100px;
+                align-items: flex-start;
 
                 @media (max-width: 1200px) {
                     margin-bottom: 150px;
@@ -36,11 +40,11 @@
                             font-style: normal;
                             text-align: left;
                             color: #ffffff;
-                            margin-bottom: 50px;
+                            margin-bottom: 10px;
 
                             @media (max-width: 1200px) {
                                 font-size: 60px;
-                                margin-bottom: 40px;
+                                margin-bottom: 10px;
                             }
 
                             @media (max-width: 992px) {
@@ -54,7 +58,7 @@
                                 }
                             }
                             @media (max-width: 575px) {
-                                font-size: 40px;
+                                font-size: 35px;
                                 margin-bottom: 20px;
                                 line-height: 45px;
                             }
