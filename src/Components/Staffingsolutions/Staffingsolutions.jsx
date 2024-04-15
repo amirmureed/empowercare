@@ -3,7 +3,7 @@ import "./Staffingsolutions.scss";
 import downarrow from '../../Assets/down-link-arrow.svg';
 import empowercareimg from "../../Assets/staff-solutions.png";
 
-const Staffingsolutions = () => {
+const Staffingsolutions = ({content,img}) => {
   return (
       <div className="staffing-sol">
         <div className="staffing-sol-container">
@@ -12,21 +12,16 @@ const Staffingsolutions = () => {
               <div className="row">
                 <div className="col-lg-8 col-md-12">
                   <div className="left-content">
-                    <span className="meta">STAFFING SOLUTIONS</span>
+                    <span className="meta">{content.meta}</span>
                     <h2 className="heading">
-                        EmpowerCare delivers a <span>wide range of</span> healthcare staffing solutions
+                    {content.heading1} <span>{content.heading2}</span> {content.heading3}
                     </h2>
                     <p className="description">
-                        From single shifts to crisis staffing, EmpowerCare delivers a
-                        wide range of healthcare staffing solutions. We listen, work
-                        together, give advice, and assist your team in finding the
-                        best solutions for your staffing needs. With our Seamless
-                        Pledge and CPR Approach, we guarantee a hassle-free and
-                        Convenient, Personable, and Responsive staffing experience.
+                    {content.description}
                     </p>
                     <div className="sec-btns">
                         <a href="/" className="learn-btn">
-                          Request Staffing Solutions
+                          {content.btn}
                         <img src={downarrow} alt="downarrow" />
                         </a>
                     </div>
@@ -34,7 +29,7 @@ const Staffingsolutions = () => {
                 </div>
                 <div className="col-lg-4 col-md-12">
                   <div className="section-img">
-                      <img src={empowercareimg} alt="empowercareimg" />
+                      <img src={img} alt="empowercareimg" />
                   </div>    
                 </div>
               </div>

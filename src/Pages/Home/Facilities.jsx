@@ -18,6 +18,9 @@ import Userslider from '../../Components/Userslider/Userslider';
 import Realstoriesimpact from '../../Components/Realstoriesimpact/Realstoriesimpact'
 import bannerImg from '../../Assets/facility.png';
 import img from '../../Assets/banner5.png'
+import empowercareimg from '../../Assets/Hiring-amico.png';
+import empowercareimg2 from '../../Assets/man_6 copy.png';
+import empowercareimg3 from "../../Assets/staff-solutions.png";
 import './Home.scss';
      
 const Home = () => {
@@ -28,6 +31,29 @@ const Home = () => {
     marginTop: '-270px',
     backgroundColor: '#EBE0D3'
 };
+const content={
+  "meta": "Who We Are",
+  "heading1": "An",
+  "heading2": "Extensive Network",
+  "heading3": "Of PreScreened and",
+  "heading4": "HIGHLY TRAINED HEALTHCARE PROFESSIONALS",
+  "description": "At EmpowerCare, we offer a wide range of staffing options to meet your unique needs. Our extensive network of pre-screened healthcare opportunities includes:",
+  "bullet1": "● Nursing Professionals",
+  "bullet2": "● Allied Professionals",
+  "bullet3": "● Advanced Practice",
+  "bullet4": "● Mental Health Professionals",
+  "bullet5": "● Direct Care Professionals",
+  "bullet6": "● Non-Clinical Professionals",
+  "bullet7": "● Executive Interim Leaders"
+}
+const content2={
+  "meta": "STAFFING SOLUTIONS  ",
+  "heading1": "EMPOWERCARE DELIVERS A ",
+  "heading2": "WIDE RANGE OF",
+  "heading3": "HEALTHCARE STAFFING SOLUTIONS",
+  "description":"From single shifts to crisis staffing, EmpowerCare delivers a wide range of healthcare staffing solutions. We listen, work together, give advice, and assist your team in finding the best solutions for your staffing needs. With our Seamless Pledge and CPR Approach, we guarantee a hassle-free and Convenient, Personable, and Responsive staffing experience.",
+   "btn":"Request Staffing Solutions"
+}
   return (
     <>
       <Header />
@@ -50,11 +76,31 @@ const Home = () => {
           classes      = "black-bg"
       />
       <Impact position="box-center-aligned" />
-      <Careerpaths />
+      <Careerpaths
+      heading1={'Finding the right Staff'}
+      heading2={'For your'}
+      heading3={'Facility,Confidently'}
+      description={'With 18+ years of experience, EmpowerCares mission is empowering healthcare institutions and professionals through top-tier staffing solutions that transform lives, elevate care, and promote societal well-being.'}
+      description2={'Celebrating over 1,000,000 shifts served, our vision is doubling theimpact to 2 million by 2031 - ensuring seamless operations forinstitutions and fulfilling opportunities for every healthcare professional'}
+      img={empowercareimg}  
+      btn1={'SIGNUP TO ELEVATE CARE WITH US'}    
+            />
       <Toptalent />
-      <Facilitynetwork />
-      <Staffingsolutions />
-      <Staffingsoptions />
+      <Facilitynetwork 
+      content={content}
+      button = {true}
+      img={empowercareimg2}
+      
+      
+      
+      />
+      <Staffingsolutions 
+      img={empowercareimg3}
+      content={content2}
+      />
+      <Staffingsoptions 
+      
+      />
       <Empowercareacademy />
       <Realstoriesimpact />
       <CareerSlider />
