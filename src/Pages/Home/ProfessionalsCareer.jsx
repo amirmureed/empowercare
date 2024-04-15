@@ -14,6 +14,7 @@ import Toptalent from "../../Components/Toptalent/Toptalent"
 import Stories from "../../Components/Stories/Stories"
 import { FaBullseye } from "react-icons/fa"
 import OurHistory from "../../Components/OurHistory/OurHistory"
+import EmpowercarePremier from "../../Components/EmpowercarePremier/EmpowercarePremier"
 const ProfessionalsCareer=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -47,6 +48,7 @@ const ProfessionalsCareer=()=>{
       description3={'This will help you succeed in your career. Positions available include direct      care contracts and overnight support roles.'}
     />
 <Toptalent/>
+<EmpowercarePremier/>
 <TrustedPartner
     anchor={true}
      button={false}
