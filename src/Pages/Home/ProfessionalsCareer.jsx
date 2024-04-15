@@ -36,6 +36,7 @@ const ProfessionalsCareer=()=>{
     />
     <Trusted/>
     <TrustedPartner
+    simpleButton={false}
     anchor={false}
      button={true}
      img={empowercareimg}
@@ -50,6 +51,7 @@ const ProfessionalsCareer=()=>{
 <Toptalent/>
 <EmpowercarePremier/>
 <TrustedPartner
+simpleButton={false}
     anchor={true}
      button={false}
      img={empowercareimg2}
