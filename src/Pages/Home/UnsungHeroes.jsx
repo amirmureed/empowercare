@@ -10,6 +10,7 @@ import Stories from "../../Components/Stories/Stories"
 import FaqAccordian from "../../Components/FaqAccordian/FaqAccordian"
 import Initiative from "../../Components/Initiative/Initiative"
 import ShiftChampions from "../../Components/ShiftChampions/ShiftChampions"
+import Benefits from "../../Components/Benefits/Benefits"
 const UnsungHeroes=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -41,6 +42,7 @@ const UnsungHeroes=()=>{
     description3={'We support you in doing your best work, and we celebrate your efforts.'}
     description4={'As part of EmpowerCares dynamic squads, your fantastic work will be highlighted, no matter if you are a CNA, LPN, travel nurse, or direct care professional.'}
     />
+    <Benefits/>
     <FaqAccordian/>
     <Stories/>
     <Userslider/>
