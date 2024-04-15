@@ -10,7 +10,7 @@ const Impact = (props) => {
                     <div className="top-content">
                         <span className="meta">Dynamic Squads</span>
                         <h2 className="heading">
-                           Make a Meaningful 
+                            Meaningful 
                             <span> Impact </span>
                             with Every Shift
                         </h2>
@@ -19,7 +19,7 @@ const Impact = (props) => {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="job-box">
-                                <h4 className="heading">Meaningful Work</h4>
+                                <h4 className="heading">Transformative Placements</h4>
                                 <p className="description">Every job matters, and we ensure that each placement contributes to the EmpowerCare ripple effect of transforming lives and elevating care.</p>
                                 <button className='impact-btn'>
                                     <span>Learn More</span>

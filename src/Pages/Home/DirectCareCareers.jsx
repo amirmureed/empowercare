@@ -15,61 +15,27 @@ import AboutEmpower from '../../directcare/AboutEmpower/AboutEmpower';
 import JoiningForm from '../../directcare/JoiningForm/JoiningForm';
 import StaffingProcess from '../../Components/StaffingProcess/StaffingProcess';
 import FaqAccordian from '../../directcare/FaqAccordian/FaqAccordian';
-import empowercareimg from '../../Assets/directcare.png';
-import image from '../../Assets/CPR.png'
-import empowercareimg2 from '../../Assets/healthcare-roles.png';
+import empowercareimg from '../../Assets/In the office-amico.png';
 import './Home.scss';
-import Facilitynetwork from '../../Components/Facilitynetwork/Facilitynetwork';
-import empowercareimg3 from '../../Assets/pledge.png'
+
 const DirectCareCareers = () => {
-   const content={
-      "meta": "Why Choose Us",
-      
-      "heading2": "TEMP-TO-HIRE",
-      "heading3": "STAFFING FOR HEALTHCARE ROLES",
-     
-      "description": "EmpowerCare offers temp-to-hire staffing solutions for a wide range ofpositions, including:",
-      "bullet1": "● Registered Nurses (RNs)",
-      "bullet2": "● Allied Health Professionals",
-      "bullet3": "● Certified Nursing Assistants (CNAs)",
-      "bullet4": "● Licensed Practical Nurses (LPNs)",
-      "bullet5": "● Non-Clinical Healthcare Roles",
-      
-    }
-    const content2={
-      "meta": "SEAMLESS PLEDGE ",
-      "heading1": "SEAMLESS PLEDGE: MAKE A ",
-      "heading2": "MEANINGFULL ",
-      "heading3": "IMPACT WITH EVERY SHIFT",
-      "description":"We view every shift as a chance to make a positive difference. Our Seamless Pledgeguarantees hassle-free staffing and meaningful placements, reflecting our belief inthe power of each job to contribute to the EmpowerCare ripple effect of transforminglives and elevating care",
-       "btn":"SEAMLESS SQUADS"
-    }
   return (
     <>
         <Header />
         <Banner1 />
         <Trusted />
         <TrustedPartner 
-        simpleButton={true}
-        button={false}
+        button={true}
         anchor={false}
         img={empowercareimg}
-        meta={'ABOUT US'} 
-        heading1={'PREMIER'} 
-        heading2={' NURSING'}
-         heading3={'AND HEALTHCARE AGENCY'} 
-         description1={'EmpowerCare is your premier nursing and healthcare agency for effective and flexible temp-to-hire staffing solutions. We understand the value of finding the right long-term fit for your healthcare facility while maintaining the flexibility to ensure a smooth transition.'} 
-         description2={'Our temp-to-hire staffing options allow you to evaluate potential permanenthires on the job before making a commitment.'}
+        meta={'Who We Are'} 
+        heading1={'EMPOWERCARE IS YOUR'} 
+        heading2={'TRUSTED'}
+         heading3={'PARTNER'} 
+         description1={'EmpowerCare is your trusted partner for non-clinical staffing services. We understand the crucial role that skilled non-clinical professionals play in ensuring the smooth operation of your healthcare facility.'} 
+         description2={'Our extensive network of pre-screened, highly trained sitters, compassionate professionals, receptionists, administrative staff, and experienced nurses and CNAs for non-clinical roles ensures you have the right talent to support your facility  operational efficiency and patient experience.'}
         
         
-        />
-        <CardsGreen 
-        heading1={'true'}
-        description1={'Unparalleled benefits of our per diem services include'}
-           description2={'● Highly Skilled Healthcare Professionals'}
-           description3={'● Skills Within Your Organization'}
-           description4={'● Reduced Risk of Turnover'}
-           description5={'● Immediate Staffing'}  
         />
         <CardsGreen description1={'Unparalleled benefits of our per diem services include'}
            description2={'● Highly Skilled Healthcare Professionals'}
@@ -83,27 +49,15 @@ const DirectCareCareers = () => {
            description4={'● Reduced Risk of Turnover'}
            description5={'● Immediate Staffing'}  
         />
-        <SolutionsDesign
-         img = {image}
-         meta = {'ABOUT US'}
-         heading1 = {'YOUR CPR STAFFING '}
-         heading2 = {'SOLUTION'}
-         
-         
-         description1 = {'EmpowerCares Dynamic Squads encapsulate our commitment to meeting your staffing needs comprehensively.'}
-         description2 = {'Our personalized solutions, designed for convenience, personalconnection, and responsibility, breathe new life into your staffingstrategy, ensuring you achieve your patient care objectivesefficiently.'}
-         btn1 = {'DYNAMIC SQUADS'}
-         btn2 = {'ABOUT US'}
+        <CardsGreen description1={'Unparalleled benefits of our per diem services include'}
+           description2={'● Highly Skilled Healthcare Professionals'}
+           description3={'● Skills Within Your Organization'}
+           description4={'● Reduced Risk of Turnover'}
+           description5={'● Immediate Staffing'}  
         />
-        {/* <Empowercare /> */}
-        <Facilitynetwork 
-      content={content}
-      button = {false}
-      img={empowercareimg2}/>
-        <Staffingsolutions 
-        img={empowercareimg3}
-        content={content2}
-        />
+        <SolutionsDesign/>
+        <Empowercare />
+        <Staffingsolutions />
         <StaffingProcess />
         <Guaranty />
         <AboutEmpower />

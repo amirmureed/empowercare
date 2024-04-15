@@ -10,12 +10,12 @@ const LeftContentRightImage = () => {
             <div className="container">
                 <div className="empowercare-wrapper">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-lg-6 col-md-12">
                             <div className="left-content">
                                 <span className="meta">Who We Are</span>
                                 <h2 className="heading">
                                     Transform
-                                    <span className='text_grad_red'> EmpowerCare </span> Staffing, Empower Lives
+                                    <span className='text_grad_red'> Healthcare </span> Staffing, Empower Lives
                                 </h2>
                                 <p className="description">At EmpowerCare, we offer a wide range of staffing options to meet your unique needs. Our extensive network of pre-screened healthcare opportunities includes:</p>
                             
@@ -27,7 +27,7 @@ const LeftContentRightImage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-lg-6 col-md-12">
                             <div className="right-content">
                                 <div className="section-img">
                                     <img src={empowercareimg} alt="empowercareimg" />

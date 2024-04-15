@@ -73,6 +73,17 @@ span.text_grad_red {
   top: 30px;
 }
 
+.btn_cta a.btn_red{
+  background: #ee8d80;
+  background: linear-gradient(-130deg, 
+  #ee8d80 0.00%, 
+  #e6632a 100.00%);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 18px 50px;
+  border-radius: 19px;
+  text-align: center;
+}
 a.btn_red{
   background: #ee8d80;
   background: linear-gradient(-130deg, 

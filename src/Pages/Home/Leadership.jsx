@@ -1,9 +1,9 @@
 import Banner2 from "../../Components/Banner2/Banner2"
-import Header from "../../Components/Header/Header"
+import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import TeamMemberDetail from "../../Components/TeamMemberDetail/TeamMemberDetail"
 import TeamMemberDetailV3 from "../../Components/TeamMemberDetail/TeamMemberDetailV3"
 import TeamMemberDetailV2 from "../../Components/TeamMemberDetail/TeamMmemberDetailV2"
-import directorImg from '../../Assets/Mask Group 25.png'
+import directorImg from '../../Assets/team3.png'
 import salesImg from '../../Assets/salesImage.png'
 import Footer from "../../Components/Footer/Footer"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
@@ -12,15 +12,17 @@ import img from '../../Assets/banner3.png'
 const Leadership=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
-        backgroundPosition: 'center right',
+        backgroundPosition: '50% 34%',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         marginTop: '-225px',
         backgroundColor: '#EBE0D3'
     };
+    
+
     return(
     <>
-        <Header/>
+        <HeaderWhite/>
         <Banner2 heading={'OUR LEADERSHIP'} description={'EMPOWERING HEALTHCARE PROFESSIONALS AND TRANSFORMING LIVES'}
          img={bannerImg}
          styles={bannerStyles}

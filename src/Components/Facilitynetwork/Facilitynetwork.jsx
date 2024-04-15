@@ -1,11 +1,10 @@
 import React from 'react';
 import './Facilitynetwork.scss';
-import empowercareimg from '../../Assets/man_6 copy.png';
+import empowercareimg from '../../Assets/empowercareimg.png';
 import activearrow from '../../Assets/active-arrow.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
-import { FiArrowDownRight } from 'react-icons/fi';
 
-const Facilitynetwork = ({ img, content,button }) => {
+const Facilitynetwork = () => {
     return (
         <div className="empowercare-sec">
             <div className="container">
@@ -13,57 +12,46 @@ const Facilitynetwork = ({ img, content,button }) => {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="left-content">
-                                <span className="meta">{content.meta}</span>
+                                <span className="meta">Who We Are</span>
                                 <h2 className="heading">
-                                    {content.heading1}
-                                    <span> {content.heading2} </span> <br />
-                                    {content.heading3}
+                                    Tailored
+                                    <span> EmpowerCare </span> <br />
+                                    Career Paths
                                 </h2>
-
-                                <h5><b>{content.heading4}</b></h5><br />
-                                <p className="description">{content.description}</p><br />
+                                <p className="description">At EmpowerCare, we offer a wide range of staffing options to meet your unique needs. Our extensive network of pre-screened healthcare opportunities includes:</p>
                                 <ul>
                                     <li>
-                                        <span>{content.bullet1} <span className='sp1'>➔</span></span>
-                                    </li><br />
+                                       <span>Travel Nursing Jobs ➔</span>
+                                    </li>
                                     <li>
-                                        <span>{content.bullet2}<span className='sp2'> ➔</span> </span>
-                                    </li><br />
+                                       <span>Per Diem Nursing Jobs ➔</span>
+                                    </li>
                                     <li>
-                                        <span> {content.bullet3} <span className='sp3'>➔</span></span>
-                                    </li><br />
+                                       <span>Temporary-to-Permanent Positions ➔</span>
+                                    </li>
                                     <li>
-                                        <span>{content.bullet4} <span className='sp4'> ➔</span></span>
-                                    </li><br />
+                                       <span>Permanent Placement ➔</span>
+                                    </li>
                                     <li>
-                                        <span> {content.bullet5}<span className='sp5'> ➔</span></span>
-                                    </li><br />
-                                    {content.bullet6 && content.bullet7 ?(<>
-                                        <li>
-                                        <span>{content.bullet6}<span className='sp6'> ➔</span></span>
-                                    </li><br />
-                                    <li>
-                                        <span>{content.bullet7} <span className='sp7'>➔</span></span>
-                                    </li><br />
-                                    </>):(<></>)}
-                                   
+                                       <span>Local Contract Jobs ➔</span>
+                                    </li>
                                 </ul>
-                                {button && ( <div className="sec-btns">
-                                    <a className="btn_green">
-                                        BROWSE OUR HEALTHCARE PROFESSIONALS
-                                        <FiArrowDownRight />
-                                    </a>
+                            
+                                <div className="sec-btns">
+                                    <button className="learn-btn">
+                                        <span>Explore Career Path Options</span>
+                                        <img src={downarrow} alt="downarrow" />
+                                    </button>
                                     <div className="active-img">
                                         <img src={activearrow} alt="activearrow" />
                                     </div>
-                                </div>)}
-
+                                </div>
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className="right-content">
                                 <div className="section-img">
-                                    <img src={img} alt="empowercareimg" />
+                                    <img src={empowercareimg} alt="empowercareimg" />
                                 </div>
                             </div>
                         </div>

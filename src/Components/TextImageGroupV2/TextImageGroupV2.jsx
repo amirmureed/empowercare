@@ -6,7 +6,7 @@ import activearrow from '../../Assets/Path 1810.png';
 const TextImageGroupV2 = () => {
     return (
         <div className='text_image_group_v2'>
-            <div className="healthcare-sec">
+            <div className="healthcare-sec1">
                 <div className="container">
                     <div className="healthcare-wrapper">
                         <div className="row">

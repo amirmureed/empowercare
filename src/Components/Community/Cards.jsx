@@ -1,4 +1,4 @@
-import approach1 from '../../Assets/approach1.png'
+import approach1 from '../../Assets/diamond.jpeg'
 import './Cards.scss'
 const Cards = ({ description1, description2, description3, description4 }) => {
     return (
@@ -25,7 +25,7 @@ const Cards = ({ description1, description2, description3, description4 }) => {
                                             <img src={approach1} alt="approach1" />
                                         </div> */}
                                         <div className="text-area">
-                                            <h6 className="heading">{description2}</h6>
+                                            <h6>{description2}</h6>
                                             
                                         </div>
                                     </div>
@@ -37,7 +37,7 @@ const Cards = ({ description1, description2, description3, description4 }) => {
                                             <img src={approach1} alt="approach1" />
                                         </div> */}
                                         <div className="text-area">
-                                            <h6 className="heading">{description3}</h6>
+                                            <h6>{description3}</h6>
                                             
                                         </div>
                                     </div>
@@ -49,7 +49,7 @@ const Cards = ({ description1, description2, description3, description4 }) => {
                                             <img src={approach1} alt="approach1" />
                                         </div> */}
                                         <div className="text-area">
-                                            <h6 className="heading">{description4}</h6>
+                                            <h6>{description4}</h6>
                                             
                                         </div>
                                     </div>

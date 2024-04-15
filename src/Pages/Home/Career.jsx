@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../Components/Header/Header';
+import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import ApproachRed from '../../Components/ApproachRed/ApproachRed';
 import LeftContentRightImage from '../../Components/LeftContentRightImage/LeftContentRightImage';
 import Footer from '../../Components/Footer/Footer';
@@ -17,15 +17,15 @@ import img from '../../Assets/career.png'
 const Career = () => {
   const bannerStyles = {
     backgroundImage: `url(${img})`,
-    backgroundPosition: 'center right',
+    backgroundPosition: '50% 44%',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundSize: 'contain',
     marginTop: '-250px',
     backgroundColor: '#EBE0D3'
 };
     return (
         <>
-          <Header />
+          <HeaderWhite />
           <Banner2 heading={'HEALTHCARE CAREER'} 
           description={'AT EMPOWERCARE, WE ARE NOT JUST A STAFFING AGENCY, WE ARE A CATALYST FOR CHANGE IN THE HEALTHCARE INDUSTRY.'}
           img={bannerImg}
