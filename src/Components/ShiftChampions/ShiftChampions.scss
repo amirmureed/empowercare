@@ -1,8 +1,12 @@
 .shift-champions {
     background-color: #EBE0D3;
-   
+    padding: 60px;
+    @media (max-width:480px) {
+        padding: unset;
+        padding-top: 20px;
+    }
     .container {
-        padding: 60px;
+        
         .empowercare-wrapper {
             padding: 10px 0 140px;
 
