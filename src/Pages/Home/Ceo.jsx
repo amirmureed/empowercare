@@ -7,7 +7,7 @@ import Section1 from "../../Components/Ceo/Section1"
 import Footer from "../../Components/Footer/Footer"
 import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
-import bannerImg from '../../Assets/group231.png';
+import bannerImg from '../../Assets/Group231.png';
 import img from '../../Assets/Group579.png'
 
 

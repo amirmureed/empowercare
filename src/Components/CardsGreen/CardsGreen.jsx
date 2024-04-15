@@ -1,18 +1,11 @@
 import approach1 from '../../Assets/approach1.png'
 import './CardsGreen.scss'
-const CardsGreen = ({heading1, description1, description2, description3, description4, description5 }) => {
+const CardsGreen = ({ description1, description2, description3, description4, description5 }) => {
     return (
         <>
             <div className="cards_green_sec">
                 <div className="container">
                     <div className="approach-wrapper">
-                        {heading1 && (<>
-                        <h2 className='heading1'>
-                            WHY EMPOWERCARE IS YOUR <br />
-                            <span className='text_grad_green'>TEMP-TO-HIRE </span>
-                            IDEAL PARTNER
-                        </h2><br />
-                        </>)}
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="approach-box">

@@ -1,6 +1,6 @@
 import image from '../../Assets/staff.png'
 import './SolutionsDesign.scss'
-const SolutionsDesign = ({img,meta,heading1,heading2,heading3,bullet1,bullet2,bullet3,bullet4,description1,description2,btn1,btn2}) => {
+const SolutionsDesign = () => {
     
     return (
         <div className="sd-sec">
@@ -10,32 +10,25 @@ const SolutionsDesign = ({img,meta,heading1,heading2,heading3,bullet1,bullet2,bu
                         <div className="row">
                             <div className="col-lg-6 col-md-12 col-sm-12">
                                 <div className="left-content">
-                                    <span className="meta">{meta}</span>
+                                    <span className="meta">ABOUT US</span>
                                     <h2 className="heading">
-                                     {heading1}   <span>{heading2}  </span> 
-                                     {heading3 && (<>{heading3}</>)}  
+                                        OUR NON-CLINICAL <span>STAFFING SOLUTIONS</span> ARE DESIGNED FOR:
                                     </h2>
                                     <p className="description">
-                                        {bullet1 && bullet2 && bullet3 && bullet4 ?(<>
-                                            <ul>
-                                            <li>{bullet1}</li>
-                                            <li>{bullet2}</li>
-                                            <li>{bullet3}</li>
-                                            <li>{bullet4}</li>
+                                        <ul>
+                                            <li>HOSPITAL ADMINISTRATORS AND DEPARTMENT HEADS</li>
+                                            <li>OUTPATIENT CLICNIC MANAGERS AND SUPERVISORS</li>
+                                            <li>LONG TERM CARE FACILITY DIRECTORS</li>
+                                            <li>BEHAVIORAL HEALTH CENTER ADMINISTRATORS</li>
                                         </ul>
-                                        </>):(<>
-                                        <p className='description1'>{description1}</p> <br />
-                                        <p className='description1'>{description2}</p>
-                                        </>)}
-                                       
                                     </p>
                                     
                                     <div className="sec-btns">
                                         <button className="learn-btn">
-                                            <span>{btn1}</span>
+                                            <span>SIGN UP</span>
                                         </button>
                                         <button className="signup-btn">
-                                            <span>{btn2}</span>
+                                            <span>ABOUT US</span>
                                         </button>
                                     </div>
                                 </div>
@@ -43,7 +36,7 @@ const SolutionsDesign = ({img,meta,heading1,heading2,heading3,bullet1,bullet2,bu
                             <div className="col-lg-6 col-md-12 col-sm-12">
                                 <div className="right-content">
                                    <div className="image-sec">
-                                        <img className='sd-img' src={img} alt="image" />
+                                        <img className='sd-img' src={image} alt="image" />
                                    </div>
                                 </div>
                             </div>

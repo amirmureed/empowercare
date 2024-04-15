@@ -114,10 +114,6 @@
                             @media (max-width: 767.5px) {
                                 margin-top: 30px;
                             }
-                            @media (max-width:480px) {
-                                flex-direction: column;
-                                gap: 10px;
-                            }
 
                             button.btn.contact-btn {
                                 width: 200px !important;
@@ -127,7 +123,7 @@
                             }
 
                             button {
-                                width: 400px;
+                                width: 357px;
                                 height: 66px;
                                 border-radius: 19px;
                                 display: flex;
@@ -167,8 +163,8 @@
                             .active-img {
                                 position: absolute;
                                 top: -45px;
-                                right: -90px;
-                                margin-left: 50px;
+                                right: -130px;
+
                                 @media (max-width: 767px) {
                                     display: none;
                                 }

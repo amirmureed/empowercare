@@ -2,10 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './BoxesWithIcons.scss';
 import "react-multi-carousel/lib/styles.css";
-import job1 from '../../Assets/logo1.png';
-import job2 from '../../Assets/logo2.png';
-import job3 from '../../Assets/logo3.png';
-import job4 from '../../Assets/logo4.png';
+import job1 from '../../Assets/job1.png';
+import job2 from '../../Assets/job2.png';
+import job3 from '../../Assets/job3.png';
 import rightarrow from '../../Assets/right-arrow.svg';
 import empower1img from '../../Assets/empower1.png';
 import empower2img from '../../Assets/empower2.png';
@@ -41,8 +40,8 @@ const BoxesWithIcons = () => {
                                     <div className="job-logo">
                                         <img src={job1} alt="job1" />
                                     </div>
-                                    <h4 className="heading">Seamless Pledge</h4>
-                                    <p className="description">We guarantee a hassle-free and efficient staffing experience, ensuring your facility has the right professionals at the right time, every time.</p>
+                                    <h4 className="heading">Priority Job Access</h4>
+                                    <p className="description">Be first in line for the most coveted healthcare roles across hospitals, clinics, labs and more, including contract positions, ensuring the widest array of opportunities.</p>
                                     <Link to="/" className="learn-more">
                                         <span>Learn More</span>
                                         <img src={rightarrow} alt="rightarrow" />
@@ -54,8 +53,8 @@ const BoxesWithIcons = () => {
                                     <div className="job-logo">
                                         <img src={job2} alt="job2" />
                                     </div>
-                                    <h4 className="heading">Community Impact</h4>
-                                    <p className="description">Our Ripple Effect initiative contributes to community healthcare projects, demonstrating our commitment to making a positive impact.</p>
+                                    <h4 className="heading">Tailored Benefits Package</h4>
+                                    <p className="description">Choose from a range of benefits curated for your needs - competitive compensation, flexible schedules, health insurance for contract roles, and more.</p>
                                     <Link to="/" className="learn-more">
                                         <span>Learn More</span>
                                         <img src={rightarrow} alt="rightarrow" />
@@ -67,8 +66,8 @@ const BoxesWithIcons = () => {
                                     <div className="job-logo">
                                         <img src={job3} alt="job3" />
                                     </div>
-                                    <h4 className="heading">CPR Approach</h4>
-                                    <p className="description">Our Convenient, Personable, and Responsive approach ensures a staffing experience tailored to your facility's unique needs, with unparalleled service and support.</p>
+                                    <h4 className="heading">Personal Career Mentor</h4>
+                                    <p className="description">Work hand-in-hand with a dedicated mentor providing personalized guidance, interview prep, and strategic career planning</p>
                                     <Link to="/" className="learn-more">
                                         <span>Learn More</span>
                                         <img src={rightarrow} alt="rightarrow" />
@@ -78,10 +77,10 @@ const BoxesWithIcons = () => {
                             <div className="col-lg-6 col-md-6">
                                 <div className="job-box">
                                     <div className="job-logo">
-                                        <img src={job4} alt="job3" />
+                                        <img src={job3} alt="job3" />
                                     </div>
-                                    <h4 className="heading">Cutting-Edge Technology</h4>
-                                    <p className="description">Our advanced matching technology connects you with ideal healthcare professionals based on your specific requirements.</p>
+                                    <h4 className="heading">Personal Career Mentor</h4>
+                                    <p className="description">Work hand-in-hand with a dedicated mentor providing personalized guidance, interview prep, and strategic career planning</p>
                                     <Link to="/" className="learn-more">
                                         <span>Learn More</span>
                                         <img src={rightarrow} alt="rightarrow" />
