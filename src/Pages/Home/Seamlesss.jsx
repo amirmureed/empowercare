@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../Components/Header/Header';
+import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import Banner1 from '../../Components/Banner1/Banner1';
 import Trusted from '../../Components/Trusted/Trusted';
 import Content_With_Button from '../../Components/Content_With_Button/Content_With_Button';
@@ -15,15 +15,15 @@ import img from '../../Assets/bannerbg1.png'
 const Seamlesss = () => {
   const bannerStyles = {
     backgroundImage: `url(${img})`,
-    backgroundPosition: 'center right',
+    backgroundPosition: '50% 30%',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundSize: 'contain',
     marginTop: '-225px',
     backgroundColor: '#EBE0D3'
 };
     return (
         <>
-          <Header />
+          <HeaderWhite />
           <Banner1 heading={'Seamless & Impactful'} 
           description={'Your Gateway to Rewarding Contract Healthcare Careers'}
           meta={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}

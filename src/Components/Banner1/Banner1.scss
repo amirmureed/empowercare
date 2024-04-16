@@ -6,6 +6,10 @@
     // margin-top: -270px;
     // background-color: #EBE0D3;
 
+    @media (max-width:850px){
+        background-size: cover !important;
+    }
+
     .container {
 
         .banner-wrapper {

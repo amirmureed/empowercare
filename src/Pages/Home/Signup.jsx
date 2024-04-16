@@ -1,4 +1,4 @@
-import Header from "../../Components/Header/Header"
+import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 import Userslider from "../../Components/Userslider/Userslider"
 import Footer from "../../Components/Footer/Footer"
 import SignupForm from '../../Components/SignupForm/SignupForm';
@@ -13,15 +13,15 @@ const Signup=()=>{
     const description='Join empowercare now to be the part of the biggest staffing agency!'
     const bannerStyles = {
         backgroundImage: `url(${img})`,
-        backgroundPosition: 'center right',
+        backgroundPosition: '50%',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         marginTop: '-255px',
         backgroundColor: '#EBE0D3'
     };
     return(
     <>
-        <Header/>
+        <HeaderWhite/>
         <Banner2 heading={heading} description={description} img={bannerImg} styles={bannerStyles} 
         
         />

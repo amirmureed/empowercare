@@ -4,7 +4,7 @@ import Guaranty from "../../Components/Facilities/TruePartner/Guaranty"
 import TrustedPartner from "../../Components/Facilities/TruePartner/TrustedPartner"
 import FaqAccordian from "../../Components/FaqAccordian/FaqAccordian"
 import Footer from "../../Components/Footer/Footer"
-import Header from "../../Components/Header/Header"
+import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 import Toptalent from "../../Components/Toptalent/Toptalent"
 import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
@@ -18,21 +18,21 @@ import FacilityOperations from "../../Components/FacilityOperations/FacilityOper
 import JoiningForm from "../../directcare/JoiningForm/JoiningForm"
 import Blog from "../../Components/Blog/Blog"
 import bannerImg from '../../Assets/Group 581.png';
-import img from '../../Assets/Path51.png'
+import img from '../../Assets/staffing_banner.png'
 import image from '../../Assets/staff.png'
 import empowercareimg from '../../Assets/In the office-amico.png'
 const NonClinical = () => {
     const bannerStyles = {
         backgroundImage: `url(${img})`,
-        backgroundPosition: 'center right',
+        backgroundPosition: '50%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'auto',
-        marginTop: '-178px',
+        marginTop: '-190px',
         backgroundColor: '#EBE0D3'
     };
     return(
     <>
-        <Header/>
+        <HeaderWhite/>
         <Banner10
         bannerStyles={bannerStyles}
         bannerImg={bannerImg}

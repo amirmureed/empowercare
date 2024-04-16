@@ -16,6 +16,7 @@
 
             .row {
                 align-items: center;
+                padding-top: 100px;
 
                 @media (max-width: 1200px) {
                     margin-bottom: 150px;
@@ -27,18 +28,21 @@
                     margin-bottom: 50px;
                     margin: 0;
                 }
+                @media (max-width: 480px) {
+                    padding-top: unset;
+                }
                 .col-lg-6 {
 
                     .banner-content {
 
                         h1.heading {
-                            font-size: 77px;
+                            font-size: 57px;
                             font-weight: normal;
                             line-height: 75px;
                             font-style: normal;
                             text-align: left;
                             color: white;
-                            margin-bottom: 50px;
+                            margin-bottom: 20px;
 
                             @media (max-width: 1200px) {
                                 font-size: 60px;
