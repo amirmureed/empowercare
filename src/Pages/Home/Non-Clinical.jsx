@@ -20,6 +20,7 @@ import Blog from "../../Components/Blog/Blog"
 import bannerImg from '../../Assets/Group 581.png';
 import img from '../../Assets/Path51.png'
 import image from '../../Assets/staff.png'
+import empowercareimg from '../../Assets/In the office-amico.png'
 const NonClinical = () => {
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -40,7 +41,18 @@ const NonClinical = () => {
         description={'NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE'}
         span={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
         />
-        <TrustedPartner/>
+        <TrustedPartner
+         simpleButton={false}
+         anchor={false}
+          button={true}
+          img={empowercareimg}
+          meta={'Who We Are'} 
+          heading1={'EMPOWERCARE IS YOUR'} 
+          heading2={'TRUSTED'}
+           heading3={'PARTNER'} 
+           description1={'EmpowerCare is your trusted partner for non-clinical staffing services. We understand the crucial role that skilled non-clinical professionals play in ensuring the smooth operation of your healthcare facility.'} 
+           description2={'Our extensive network of pre-screened, highly trained sitters, compassionate professionals, receptionists, administrative staff, and experienced nurses and CNAs for non-clinical roles ensures you have the right talent to support your facility operational efficiency and patient experience.'}
+        />
         <Approach/>
         <Toptalent/>
         <Guaranty/>
