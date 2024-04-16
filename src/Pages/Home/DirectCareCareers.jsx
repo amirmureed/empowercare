@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../../Components/Header/Header';
+import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import Footer from '../../Components/Footer/Footer';
-import Banner1 from '../../directcare/Banner1/Banner1';
+import Banner2 from '../../Components/Banner2/Banner2';
 import TrustedPartner from "../../Components/Facilities/TruePartner/TrustedPartner"
 import Trusted from '../../Components/Trusted/Trusted';
 import CareerSlider from '../../Components/CareerSlider/CareerSlider';
@@ -21,7 +21,18 @@ import empowercareimg2 from '../../Assets/healthcare-roles.png';
 import './Home.scss';
 import Facilitynetwork from '../../Components/Facilitynetwork/Facilitynetwork';
 import empowercareimg3 from '../../Assets/pledge.png'
+import bannerImg from '../../Assets/Group230.png';
+import img from '../../Assets/Group707.png'
+
 const DirectCareCareers = () => {
+   const bannerStyles = {
+      backgroundImage: `url(${img})`,
+      backgroundPosition: '50% 44%',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'contain',
+      marginTop: '-250px',
+      backgroundColor: '#EBE0D3'
+  };
    const content={
       "meta": "Why Choose Us",
       
@@ -46,8 +57,12 @@ const DirectCareCareers = () => {
     }
   return (
     <>
-        <Header />
-        <Banner1 />
+        <HeaderWhite />
+        <Banner2 heading={'TEMP-TO-HIRE STAFFING SOLUTIONS'} 
+          description={"Your Trusted Partner for Temp-to-Hire Staffing Solutions Evaluate Talent Before Hiring with EmpowerCare's Temp-to-Hire"}
+          img={bannerImg}
+          styles={bannerStyles}
+         />
         <Trusted />
         <TrustedPartner 
         simpleButton={true}

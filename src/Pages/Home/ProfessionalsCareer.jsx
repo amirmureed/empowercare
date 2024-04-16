@@ -18,10 +18,10 @@ import EmpowercarePremier from "../../Components/EmpowercarePremier/EmpowercareP
 const ProfessionalsCareer=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
-        backgroundPosition: 'center right',
+        backgroundPosition: '50%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'auto',
-        marginTop: '-225px',
+        marginTop: '-245px',
         backgroundColor: '#EBE0D3'
     };
     return(<>

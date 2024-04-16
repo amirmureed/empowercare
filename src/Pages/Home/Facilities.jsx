@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../Components/Header/Header';
+import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import Footer from '../../Components/Footer/Footer';
 import Banner1 from '../../Components/Banner1/Banner1';
 import Trusted from '../../Components/Trusted/Trusted';
@@ -26,7 +26,7 @@ import './Home.scss';
 const Home = () => {
   const bannerStyles = {
     backgroundImage: `url(${img})`,
-    backgroundPosition: 'center right',
+    backgroundPosition: '50%',
     backgroundRepeat: 'no-repeat',
     marginTop: '-270px',
     backgroundColor: '#EBE0D3'
@@ -56,7 +56,7 @@ const content2={
 }
   return (
     <>
-      <Header />
+      <HeaderWhite />
       <Banner1 heading={'Elevate Your Facility With Us'} 
           description={'Elevate Your Facility with EmpowerCares Staffing Solutions'}
           meta={'Empowering Healthcare Excellence for Over 18 Years'}
