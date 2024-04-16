@@ -3,10 +3,10 @@ import './TrustedPartner.scss';
 import empowercareimg from '../../../Assets/In the office-amico.png';
 import activearrow from '../../../Assets/active-arrow.png';
 import downarrow from '../../../Assets/down-link-arrow.svg';
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowDownRight, FiArrowRight } from 'react-icons/fi';
 
 const TrustedPartner = (props) => {
-    const{button,anchor,img,meta,heading1,heading2,heading3,description1,description2,description3}=props
+    const{button,anchor,img,meta,heading1,heading2,heading3,description1,description2,description3,simpleButton}=props
     return (
         <div className="trustedpartner-sec">
         <div className="container">
@@ -40,7 +40,10 @@ const TrustedPartner = (props) => {
                             <>
                             <a className='anchor' href="">TAKE THE FIRST STEP TODAY! <FiArrowRight/></a>
                             </>
-                          ):(<></>)}  
+                          ):simpleButton?(<>
+                          <br />
+                          <a className='btn_green' href="">REQUEST STAFFING <FiArrowDownRight/> </a>
+                          </>):(<></>)}  
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12">

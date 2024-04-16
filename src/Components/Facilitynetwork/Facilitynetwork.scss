@@ -1,5 +1,6 @@
 .empowercare-sec {
     background-color: #EBE0D3;
+    padding-top: 60px;
 
     .container {
 
@@ -38,7 +39,7 @@
                             margin-bottom: 7px;
                         }
                         h2.heading {
-                            font-size: 49px;
+                            font-size: 46px;
                             font-weight: normal;
                             line-height: 51px;
                             font-style: normal;
@@ -80,8 +81,7 @@
                             color: #202020;
                         }
                         ul {
-                            padding-left: 18px;
-                            color: #4EB3E8;
+                            list-style-type: none;
                             li {
                                 span {
                                     font-size: 16px;
@@ -90,6 +90,42 @@
                                     font-style: normal;
                                     text-align: left;
                                     color: #202020;
+                                    padding: 10px;
+                                    background-color: white;
+                                    border-radius: 10px;
+                                    width: 100%;
+                                   span.sp1{
+                                    margin-left: 8%;
+                                    @media (max-width:480px) {
+                                        margin-left: 14%;
+                                    }
+                                   } span.sp2{
+                                    margin-left: 11%;
+                                    @media (max-width:480px) {
+                                        margin-left: 20%;
+                                    }
+                                   } span.sp3{
+                                    margin-left: 12%;
+                                    @media (max-width:480px) {
+                                        margin-left: 21%;
+                                    }
+                                   }  span.sp5{
+                                    margin-left: 4%;
+                                    @media (max-width:480px) {
+                                        margin-left: 7%;
+                                    }
+                                   } span.sp6{
+                                    margin-left: 3%;
+                                    @media (max-width:480px) {
+                                        margin-left: 5%;
+                                    }
+                                   } span.sp7{
+                                    margin-left: 3%;
+                                    @media (max-width:480px) {
+                                        margin-left: 5%;
+                                    }
+                                   }
+                                    
                                 }
                             }
                         }
@@ -99,7 +135,8 @@
                             align-items: center;
                             margin-top: 80px;
                             position: relative;
-                            width: max-content;
+                            
+                            
 
                             @media (max-width: 500px) {
                                 width: 100%;
@@ -122,55 +159,31 @@
                                 border: 3px solid black !important;
                             }
 
-                            button {
-                                width: 357px;
-                                height: 66px;
-                                border-radius: 19px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                background: #71ba32;
-                                background: linear-gradient(-130deg, 
-                                #71ba32 0.00%, 
-                                #4eb3e8 100.00%);
-                                border: 1px solid #fff;
-                                border: none;
-                                position: relative;
-
-                                @media (max-width: 992px) {
-                                    width: max-content;
-                                    padding: 10px 40px 10px 20px;
-                                    white-space: pre-wrap;
-                                }
+                           
 
                                 span {
-                                    font-size: 16px;
-                                    font-weight: 500;
+                                    font-size: 13px;
+                                    font-weight: normal;
                                     font-style: normal;
-                                    text-align: center;
+                                    
                                     color: #fff;
+                                    
                                 }
 
-                                img {
-                                    position: absolute;
-                                    top: 25px;
-                                    right: 20px;
-                                    height: 18px;
-                                    width: 18px;
-                                }
+                               
                             }
 
                             .active-img {
                                 position: absolute;
                                 top: -45px;
-                                right: -130px;
+                                right: -100px;
 
                                 @media (max-width: 767px) {
                                     display: none;
                                 }
                             }
                         }
-                    }
+                    
 
                     .right-content {
 
