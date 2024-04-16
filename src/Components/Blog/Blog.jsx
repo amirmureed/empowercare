@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
 import './Blog.scss';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import blogImg1 from '../../Assets/blogImg1.png';
 import blogImg2 from '../../Assets/blogImg2.png';
 import blogImg3 from '../../Assets/blogImg3.png';
+import axios from 'axios';
 
 const responsive = {
     desktop: {
@@ -25,6 +26,39 @@ const responsive = {
 };
 
 const Blog = () => {
+    const [data,setData]=useState([])
+   
+    const extractTitle = (content) => {
+        if (!content) return ''; 
+        const words = content.split(' ');
+        const firstTenWords = words.slice(0, 5).join(' ');
+        return words.length > 5 ? `${firstTenWords}....` : firstTenWords;
+    };
+    const extractContent = (content) => {
+        if (!content) return ''; 
+        const words = content.split(' ');
+        const firstTenWords = words.slice(0, 6).join(' ');
+        return words.length > 6 ? `${firstTenWords}.....` : firstTenWords;
+    };
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('https://msgstaffing.com/wp-json/empower/staffing/blogs');
+                console.log(response.data)
+                setData(response.data);
+                
+            } catch (err) {
+                
+                console.log(err)
+            } finally {
+                
+                console.log(data)
+            }
+        };
+
+        
+        fetchData();
+    }, [])
     return (
         <div className="blog-sec">
             <div className="blog-container">
@@ -51,39 +85,21 @@ const Blog = () => {
                                 partialVisible={false}
                                 dotListClass="custom-dot-list-style"
                             >
-                                <div className="col-md-12">
+                                {data?.map((blog,index)=>{return(<>
+                                    <div className="col-md-12">
                                     <div className="blog-box">
                                         <div className="blog-img">
-                                            <img src={blogImg1} alt="blogImg1" />
+                                            <img src={blog.thumbnail} alt="blogImg1" />
                                         </div>
                                         <div className="blog-content active">
-                                            <p className="description">11 Best Link in Bio Tools in 2023 <br />You Should Definitely Know.</p>
-                                            <p className='date-time'><span className="date">April 19, 2023</span>-<span className='time'>4 min read</span></p>
+                                            <p className="description"><b>{extractTitle(blog.title)}</b> </p>
+                                            <p className='date-time'> {extractContent(blog.Content)}</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-12">
-                                    <div className="blog-box">
-                                        <div className="blog-img">
-                                            <img src={blogImg2} alt="blogImg2" />
-                                        </div>
-                                        <div className="blog-content">
-                                            <p className="description">11 Best Link in Bio Tools in 2023 <br />You Should Definitely Know.</p>
-                                            <p className='date-time'><span className="date">April 19, 2023</span>-<span className='time'>4 min read</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-12">
-                                    <div className="blog-box">
-                                        <div className="blog-img">
-                                            <img src={blogImg3} alt="blogImg3" />
-                                        </div>
-                                        <div className="blog-content">
-                                            <p className="description">11 Best Link in Bio Tools in 2023 <br />You Should Definitely Know.</p>
-                                            <p className='date-time'><span className="date">April 19, 2023</span>-<span className='time'>4 min read</span></p>
-                                        </div>
-                                    </div>
-                                </div>
+                                
+                                </>)})}
+                                
                             </Carousel>
                         </div>
                     </div>

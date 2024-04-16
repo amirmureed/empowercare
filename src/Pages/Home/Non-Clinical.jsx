@@ -21,6 +21,7 @@ import bannerImg from '../../Assets/Group 581.png';
 import img from '../../Assets/Path51.png'
 import image from '../../Assets/staff.png'
 import empowercareimg from '../../Assets/In the office-amico.png'
+import storiesimg from '../../Assets/guaranty.png';
 const NonClinical = () => {
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -55,7 +56,14 @@ const NonClinical = () => {
         />
         <Approach/>
         <Toptalent/>
-        <Guaranty/>
+        <Guaranty
+        img={storiesimg}
+        heading1={'OUR'}
+        heading2={'GUARANTEES'}
+        btn1 = {'SIGN UP'}
+        btn2 = {'LEARN MORE'}
+        description={'Your satisfaction is our priority. If you are not happy with a placement, we will find a new one for you at no extra charge. We make sure your healthcare staffing needs are met carefully.'}
+        />
         <StaffingServices/>
         <FacilityOperations/>
         <Spotlights/>

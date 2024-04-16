@@ -1,8 +1,9 @@
 import './StaffingProcess.scss'
-import logo from '../../Assets/logo1.png'
+import logo from '../../Assets/consultation_icon02.png'
 import logo2 from '../../Assets/logo2.png'
-import logo3 from '../../Assets/logo3.png'
-import logo4 from '../../Assets/logo4.png'
+import logo3 from '../../Assets/Group 702.png'
+import logo4 from '../../Assets/Group 703.png'
+
 import { FiArrowDownRight } from "react-icons/fi";
 
 const StaffingProcess=()=>{
@@ -15,13 +16,13 @@ const StaffingProcess=()=>{
                     <div className="top-content">
                         {/* <p className="description-sub-heading">LIMITED TIME OFFER</p> */}
                         <h2 className="heading main-heading">
-                            our <span className='span-style'> Temp-to-hire </span> staffing proess
+                            our <span className='span-style'> Temp-to-hire </span> staffing process
                         </h2>
                     </div>
                     <div className='staffing_box'>
                         <div className="start-box">
-                            <b>Empower Your Facility with Effortless Access to Premier Talent</b>
-                            <img src={logo4} />
+                            <b>Empower Your Facility with Effortless Access to Premier Talent <img src={logo} /></b>
+                            
                         </div>
                         <p className="description">Join EmpowerCare for free and partner with our dedicated team to enhance your facility's performance through efficient and excellent staffing solutions.</p>                    
                         <div className="bottom-btns-row">
@@ -36,8 +37,8 @@ const StaffingProcess=()=>{
                                 <div className="job-logo">
                                     <img src={logo3} alt="job1" />
                                 </div>
-                                <h4 className="heading">Flexible Staffing</h4>
-                                <p className="description">We offer temporary, temp-to-hire, permanent, and contract non-clinical staffing solutions to keep things running efficiently.</p><br />
+                                <h4 className="heading">Post Jobs and Find the Perfect Fit, Seamlessly</h4>
+                                <p className="description">Eliminate staffing challenges with our streamlined process, connecting you with qualified candidates promptly.</p><br />
                                 <a href="/">LEARN MORE <FiArrowDownRight/></a>
                             </div>
                         </div>
@@ -46,8 +47,8 @@ const StaffingProcess=()=>{
                                 <div className="job-logo">
                                     <img src={logo4} alt="job1" />
                                 </div>
-                                <h4 className="heading">Special Discounts</h4>
-                                <p className="description">Get special discounts on our non-clinical staffing services. Pay less for high-volume, ongoing needs and get priority access to our most experienced professionals.</p><br />
+                                <h4 className="heading">Access Premier Healthcare Professionals, Cost-Effectively</h4>
+                                <p className="description">Prioritize your budget without compromising on quality, ensuring your facility's capabilities are both financially sustainable and community-transformative.</p><br />
                                 <a href="/">LEARN MORE <FiArrowDownRight/></a>
                             </div>
                         </div> 

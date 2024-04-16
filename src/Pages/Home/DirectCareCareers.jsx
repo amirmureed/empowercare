@@ -21,6 +21,7 @@ import empowercareimg2 from '../../Assets/healthcare-roles.png';
 import './Home.scss';
 import Facilitynetwork from '../../Components/Facilitynetwork/Facilitynetwork';
 import empowercareimg3 from '../../Assets/pledge.png'
+import testimonials from '../../Assets/testimonials.png'
 const DirectCareCareers = () => {
    const content={
       "meta": "Why Choose Us",
@@ -105,7 +106,16 @@ const DirectCareCareers = () => {
         content={content2}
         />
         <StaffingProcess />
-        <Guaranty />
+        <Guaranty
+        img={testimonials}
+        heading1={'SPOTLIGHTS &'}
+        heading2={'TESTIMONIALS'}
+        btn1 = {'QUICK APPLY'}
+        btn2 = {'CONTACT US'}
+        description={'"EmpowerCare temp-to-hire staffing solution has been a game-changer for our healthcare facility.'}
+        description2={'The ability to evaluate potential permanent hires on the job has led to better long-term retention and improved patient care."'}
+        description3={'- Robert, Facility Director'}
+        />
         <AboutEmpower />
         <JoiningForm />
         <CareerSlider />
