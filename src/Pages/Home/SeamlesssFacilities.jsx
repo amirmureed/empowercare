@@ -12,7 +12,7 @@ import Careerpaths from '../../Components/Empowercarefacilities/Careerpaths'
 import FaqAccordian from '../../Components/FaqAccordian/FaqAccordian';
 import bannerImg from '../../Assets/banner1.png';
 import img from '../../Assets/bannerbg1.png'
-
+import empowercareimg from '../../Assets/Resume-amico.png'
 const SeamlesssFacilities = () => {
   const bannerStyles = {
     backgroundImage: `url(${img})`,
@@ -56,7 +56,15 @@ const SeamlesssFacilities = () => {
             description1 = "We believe that every shift is an opportunity to make a difference in people's lives. Our Seamless Pledge ensures that you can focus on what matters most - providing exceptional care and making a lasting impact."
           />
           <PriemerBlack />
-          <Careerpaths />
+          <Careerpaths 
+          heading1={'Be part of our mission for a'}
+          heading2={'Brighter'}
+          heading3={'healthcare future'}
+          description={'By choosing EmpowerCare, you become part of a movement that goesbeyond staffing. Together, we can create a world where every healthcareinstitution experiences seamless operations, and every healthcareprofessional finds fulfilling opportunities.'}
+          description2={'Lets empower each other to transform lives, elevate care, and promotesocietal well-being, one shift at a time.'}
+          img={empowercareimg}  
+          btn1={'QUICK APPLY'} 
+          />
           <FaqAccordian />
           <Userslider />
           <Footer />

@@ -1,8 +1,5 @@
 import React from "react";
 import "./Staffingoptions.scss";
-import job1 from "../../Assets/job1.png";
-import job2 from "../../Assets/job2.png";
-import job3 from "../../Assets/job3.png";
 import downarrow from "../../Assets/down-link-arrow.svg";
 import rightarrow from "../../Assets/right-arrow.png";
 import empowercareimg from "../../Assets/staff-solutions.png";
