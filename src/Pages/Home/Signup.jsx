@@ -13,7 +13,7 @@ const Signup=()=>{
     const description='Join empowercare now to be the part of the biggest staffing agency!'
     const bannerStyles = {
         backgroundImage: `url(${img})`,
-        backgroundPosition: '50%',
+        backgroundPosition: '50% 46%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain',
         marginTop: '-255px',

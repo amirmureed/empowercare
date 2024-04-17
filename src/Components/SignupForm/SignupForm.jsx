@@ -218,25 +218,35 @@ const SignupForm = () => {
                                                     name='confirmPassword'
                                                     onChange={handleChange}
                                                 />
-                                                <select className='rounded-input'>
-                                                    <option value="option1">Option 1</option>
-                                                    <option value="option2">Option 2</option>
-                                                    <option value="option3">Option 3</option>
-                                                </select>
                                             </div>
 
                                             <div className='row-input'>
+                                                <input
+                                                    type="text"
+                                                    placeholder="Lincese Type"
+                                                    className="rounded-input"
+                                                    value="license-type"
+                                                    name='licenseType'
+                                                />
                                                 <select className='rounded-input'>
-                                                    <option value="option1">Option 1</option>
-                                                    <option value="option2">Option 2</option>
-                                                    <option value="option3">Option 3</option>
-                                                </select>
-                                                <select className='rounded-input'>
-                                                    <option value="option1">Option 1</option>
+                                                    <option value="option1">Preffered Work Settings</option>
                                                     <option value="option2">Option 2</option>
                                                     <option value="option3">Option 3</option>
                                                 </select>
                                             </div>
+                                            <div className='row-input'>
+                                                <select className='rounded-input'>
+                                                    <option value="option1">Desired Position</option>
+                                                    <option value="option2">Option 2</option>
+                                                    <option value="option3">Option 3</option>
+                                                </select>
+                                                <select className='rounded-input'>
+                                                    <option value="option1">Work Preferences</option>
+                                                    <option value="option2">Option 2</option>
+                                                    <option value="option3">Option 3</option>
+                                                </select>
+                                            </div>
+                                            
                                         </div>
                                         <div className="btn_gradient">
                                             <button className='btn quick-btn empower_signup_submit' type="submit" >Submit</button>
