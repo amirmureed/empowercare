@@ -27,18 +27,17 @@ const responsive = {
 
 const Blog = () => {
     const [data,setData]=useState([])
-   
     const extractTitle = (content) => {
         if (!content) return ''; 
         const words = content.split(' ');
-        const firstTenWords = words.slice(0, 5).join(' ');
-        return words.length > 5 ? `${firstTenWords}....` : firstTenWords;
+        const title = words.slice(0, 5).join(' ');
+        return words.length > 5 ? `${title}....` : title;
     };
     const extractContent = (content) => {
         if (!content) return ''; 
         const words = content.split(' ');
-        const firstTenWords = words.slice(0, 6).join(' ');
-        return words.length > 6 ? `${firstTenWords}.....` : firstTenWords;
+        const Content = words.slice(0, 6).join(' ');
+        return words.length > 6 ? `${Content}.....` : Content;
     };
     useEffect(() => {
         const fetchData = async () => {
@@ -50,10 +49,7 @@ const Blog = () => {
             } catch (err) {
                 
                 console.log(err)
-            } finally {
-                
-                console.log(data)
-            }
+            } 
         };
 
         
@@ -86,7 +82,7 @@ const Blog = () => {
                                 dotListClass="custom-dot-list-style"
                             >
                                 {data?.map((blog,index)=>{return(<>
-                                    <div className="col-md-12">
+                                    <div className="col-md-12" key={index}>
                                     <div className="blog-box">
                                         <div className="blog-img">
                                             <img src={blog.thumbnail} alt="blogImg1" />

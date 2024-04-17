@@ -5,7 +5,7 @@
     .container {
         .our-history-wrapper {
             background-color: black;
-            padding: 120px;
+            padding: 80px;
             border-radius: 60px;
             @media (max-width:480px) {
                 padding: 20px;
@@ -18,19 +18,20 @@
                         text-align: left;
 
                         .meta {
-                            color: blue;
+                            color: #4EB3E8;
                             font-size: 16px;
                         }
 
                         .heading {
                             color: white;
-                            font-size: 40px;
+                            font-size: 43px;
                             font-weight: bold;
                         }
 
                         .description {
                             color: white;
-                            font-size: 14px;
+                            font-size: 17px;
+                            
                         }
 
                         a.learn_btn {
