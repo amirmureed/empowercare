@@ -14,10 +14,10 @@ const OurHistory=()=>{
                 <div className='col-lg-6'>
                 <div className='content'>
                       <h6 className='meta'>ABOUT US</h6>
-                      <h2 className='heading'>OUR <span className='text_grad_green'>HISTORY</span></h2><br />
-                      <p className='description'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas vel numquam, earum quidem magnam tenetur esse modi quae animi, repellendus iste quam cupiditate enim laborum ex natus commodi nihil inventore?</p>
-                      <p className='description'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas vel numquam, earum quidem magnam tenetur esse modi quae animi, repellendus iste quam cupiditate enim laborum ex natus commodi nihil inventore?</p>
-                      <p className='description'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas vel numquam, earum quidem magnam tenetur esse modi quae animi, repellendus iste quam cupiditate enim laborum ex natus commodi nihil inventore?</p><br />
+                      <h2 className='heading'>OUR <span className='text_grad_green'>HISTORY</span></h2><brLorem ipsum dolor sit  />
+                      <p className='description'>EmpowerCare: Advocating for Direct Care Professionals Since 2005 What started as a mission to support a core group of dedicated direct care professionals has grown into a robust community of over 6,000 compassionate individuals.</p>
+                      <p className='description'>As a leading direct care staffing agency, EmpowerCare has been at the forefront of connecting skilled direct care professionals with meaningful job opportunities that transform lives and communities.</p>
+                      <p className='description'> Our unwavering commitment to the growth, well-being, and success of our direct care professionals sets us apart. Together, we're reshaping the landscape of direct care, one life at a time.</p><br />
                     <a className='learn_btn' href="">Learn More</a><br />
                 </div><br />
                </div>
