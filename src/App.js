@@ -25,6 +25,8 @@ import UnsungHeroes from './Pages/Home/UnsungHeroes';
 import Advantages from './Pages/Home/Advantages';
 import Guide from './Pages/Home/Guide';
 import ProfessionalsCareer from './Pages/Home/ProfessionalsCareer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -57,6 +59,17 @@ function App() {
           <Route path='/professionals/directcare-career' element={<ProfessionalsCareer/>}/>
         </Routes >
       </BrowserRouter>
+      <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
     </>
   );
 }
