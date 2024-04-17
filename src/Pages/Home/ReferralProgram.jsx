@@ -3,15 +3,15 @@ import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import ReferralForm from "../../Components/Resources/ReferralProgram/ReferralForm"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
-import bannerImg from '../../Assets/Group674.png'
-import img from '../../Assets/Path74.png'
+import bannerImg from '../../Assets/resinner.png'
+import img from '../../Assets/Group125.png'
 const ReferralProgram=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
-        backgroundPosition: 'center right',
+        backgroundPosition: '50% 46%',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        marginTop: '-280px',
+        backgroundSize: 'contain',
+        marginTop: '-223px',
         backgroundColor: '#EBE0D3'
     };
     return(<>
