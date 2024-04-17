@@ -14,7 +14,7 @@ import img from '../../Assets/Group579.png'
 const Ceo = () => {
     const bannerStyles = {
         backgroundImage: `url(${img})`,
-        backgroundPosition: 'center right',
+        backgroundPosition: '50%',
         backgroundRepeat: 'no-repeat',
         marginTop: '-265px',
         backgroundColor: '#EBE0D3'

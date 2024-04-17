@@ -13,10 +13,10 @@ import FAQ from "../../Components/FAQ/FAQ"
 const Faqs=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
-        backgroundPosition: 'center right',
+        backgroundPosition: '50% 30%',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        marginTop: '-300px',
+        backgroundSize: 'contain',
+        marginTop: '-237px',
         backgroundColor: '#EBE0D3'
     };
     return(<>

@@ -15,7 +15,7 @@ const Banner10 = (props) => {
           <div className="container">
             <div className="banner-wrapper">
               <div className="row">
-              <div className="col-lg-6 col-md-6">
+                <div className="col-lg-6 col-md-6">
                   <div className="banner-img">
                     <img src={bannerImg} alt="bannerImg" />
                   </div>
@@ -38,7 +38,6 @@ const Banner10 = (props) => {
                     </div>
                   </div>
                 </div>
-                
               </div>
               <div className="selection-row">
                   <div className="selection-wrap">
@@ -62,7 +61,6 @@ const Banner10 = (props) => {
                     </a>
                   </div>
                 </div>
-             
             </div>
           </div>
         </div>
