@@ -15,6 +15,7 @@ import { IconButton, useMediaQuery, useTheme } from '@mui/material';
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { IoMdArrowDropright } from "react-icons/io";
 import PopoverContent from '../Common/PopoverContent';
+import Dropdown from '../Dropdown/Dropdown';
 
 const Header = () => {
     const [openModal, setOpenModal] = useState(false)
@@ -45,7 +46,7 @@ const Header = () => {
                                 <div className='dropdown-professionals'>
                                     <span className='d-span'></span><br />
                                     <div className='dropdown-content'>
-                                        <PopoverContent
+                                        {/* <PopoverContent
                                             route1={'/professionals/seamless'}
                                             name1={'Seamless'}
                                             route2={'/professionals/faqs'}
@@ -58,7 +59,7 @@ const Header = () => {
                                             name5={'Guide to Nursing Careers'}
                                             route6={'/professionals/directcare-career'}
                                             name6={'Direct Care Careers'}
-                                        />
+                                        /> */}
                                     </div>
                                 </div>
                                 {isMobile ? (<> <IconButton onClick={() => setOpenProfessionals(true)} >
@@ -71,13 +72,14 @@ const Header = () => {
                                     <span className='d-span'></span><br />
                                     <div className='dropdown-content'>
                                         <PopoverContent
-                                            route1={'/facilities/directcare-careers'}
-                                            name1={'Careers'}
-                                            route2={'/facilities/staffing-solutions'}
-                                            name2={'Staffing Solutions'}
-                                            route3={'/facilities/seamless'}
-                                            name3={'Seamless'}
+                                            // route1={'/facilities/directcare-careers'}
+                                            // name1={'Careers'}
+                                            // route2={'/facilities/staffing-solutions'}
+                                            // name2={'Staffing Solutions'}
+                                            // route3={'/facilities/seamless'}
+                                            // name3={'Seamless'}
                                         />
+                                        {/* <Dropdown/> */}
                                     </div>
                                 </div>
                                 {isMobile ? (<> <IconButton onClick={() => setOpenFacilities(true)} >
@@ -135,17 +137,17 @@ const Header = () => {
                                 /></>
                             ) : openFacilities ? (<>
                                 <IconButton onClick={() => setOpenFacilities(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
-                                <PopoverContent
+                                {/* <PopoverContent
                                     route1={'/facilities/directcare-careers'}
                                     name1={'Careers'}
                                     route2={'/facilities/staffing-solutions'}
                                     name2={'Staffing Solutions'}
                                     route3={'/facilities/seamless'}
                                     name3={'Seamless'}
-                                />
+                                /> */}
                             </>) : openProfessionals ? (<>
                                 <IconButton onClick={() => setOpenProfessionals(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
-                                <PopoverContent
+                                {/* <PopoverContent
                                     route1={'/professionals/seamless'}
                                     name1={'Seamless'}
                                     route2={'/professionals/faqs'}
@@ -158,7 +160,7 @@ const Header = () => {
                                     name5={'Guide to Nursing Careers'}
                                     route6={'/professionals/directcare-career'}
                                     name6={'Direct Care Careers'}
-                                />
+                                /> */}
                             </>) : (<></>)
                         }
 

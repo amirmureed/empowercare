@@ -16,10 +16,41 @@
 
 .popover-link:hover {
     background: linear-gradient(to right, #76caa3, #f0f0f0);
-    color:white;
+    color:black;
     font-weight: bold;
 }
 
 .arrow-icon {
     color: #007bff; 
+}
+.dropdown-wrapper{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 140px; 
+    .row{
+        .col-lg-4{
+            .box1{
+                width: 63%;
+                .row{
+                    .col-lg-12{
+                        
+
+                        
+                        .card1{
+                            padding: 10px;
+                            background: #71ba32;
+                            background: linear-gradient(-134deg, #4eb3e8 0.00%,#71ba32 100.00%);
+                            p{
+                                color: black;
+                            }
+                            width: 35%;
+                        
+                    }
+                    }
+                }
+            }
+        }
+    }
 }
