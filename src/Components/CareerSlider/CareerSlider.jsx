@@ -2,9 +2,9 @@ import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './CareerSlider.scss';
-import blogImg1 from '../../Assets/blogImg1.png';
-import blogImg2 from '../../Assets/blogImg2.png';
-import blogImg3 from '../../Assets/blogImg3.png';
+import blogImg1 from '../../Assets/careerImg1.png';
+import blogImg2 from '../../Assets/careerImg2.png';
+import blogImg3 from '../../Assets/careerImg3.png';
 
 const responsive = {
     desktop: {

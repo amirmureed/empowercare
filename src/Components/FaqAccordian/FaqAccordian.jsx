@@ -32,17 +32,17 @@ const FaqAccordian = () => {
           <div className="row">
             <div className={ isAccordianOpen == 1 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" } >
               <div className="row">
-                <div className="working_content col-12">
+                <div className="working_content col-12" onClick={() => toggleAccodian(1)}>
                   <div className="reletive">
                     <h3>We Care About You</h3>
-                    <span className="plus-icon" onClick={() => toggleAccodian(1)}>+</span>
+                    <span className="plus-icon" >+</span>
                     
                   </div>
                   <p>
                     We put our employees first, providing the support,
                     resources, and flexibility you need to thrive both
                     professionally and personally. Your well-being is our top
-                    priority.
+                    priority. 
                   </p>
                 </div>
               </div>

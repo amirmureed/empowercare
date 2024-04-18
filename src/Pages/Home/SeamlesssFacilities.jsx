@@ -11,7 +11,7 @@ import OurWorkingGreen from '../../Components/OurWorkingGreen/OurWorkingGreen';
 import Careerpaths from '../../Components/Empowercarefacilities/Careerpaths'
 import FaqAccordian from '../../Components/FaqAccordian/FaqAccordian';
 import bannerImg from '../../Assets/banner1.png';
-import img from '../../Assets/Group707.png'
+import img from '../../Assets/Group707.png' 
 import empowercareimg from '../../Assets/Resume-amico.png'
 const SeamlesssFacilities = () => {
   const bannerStyles = {

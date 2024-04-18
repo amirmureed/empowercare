@@ -19,7 +19,7 @@
                     justify-content: space-between;
                     gap: 20px;
                     padding: 20px;
-                    background-color: black;
+                    background: radial-gradient(farthest-corner at 100% 0%, #5c5e62 0%, #0c0f14 100%);
                     border-radius: 22px;
                     @media (max-width:480px) {
                         padding: 10px;

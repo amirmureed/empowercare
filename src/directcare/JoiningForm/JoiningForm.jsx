@@ -33,22 +33,22 @@ const JoiningForm = () => {
                           <h4>JOIN EMPOWERCARE</h4>
                           <form className='contact_form'>
                             <div className='row-input'>
-                              <input type="text" placeholder="Input 1" className="rounded-input" />
-                              <input type="text" placeholder="Input 2" className="rounded-input" />
+                            <input type="text" placeholder="Full Name" className="rounded-input" />
+                              <input type="text" placeholder="Phone No" className="rounded-input" />
                             </div>
-                            <input type="text" placeholder="Input 3" className="rounded-input" />
+                            <input type="text" placeholder="Email Address" className="rounded-input" />
                             <select>
-                              <option value="option1">Option 1</option>
+                              <option value="option1">Area of speciality</option>
                               <option value="option2">Option 2</option>
                               <option value="option3">Option 3</option>
                             </select>
                             <select>
-                              <option value="option1">Option 1</option>
+                              <option value="option1">Years of experience</option>
                               <option value="option2">Option 2</option>
                               <option value="option3">Option 3</option>
                             </select>
                             <select>
-                              <option value="option1">Option 1</option>
+                              <option value="option1">Preffered Location(s)</option>
                               <option value="option2">Option 2</option>
                               <option value="option3">Option 3</option>
                             </select>

@@ -15,7 +15,7 @@ const Contractjob = () => {
                             <span> Contract </span>
                             Jobs
                         </h2>
-                        <p className="description">At EmpowerCare, we offer a wide range of staffing options to meet your unique needs. Our extensive network of pre-screened healthcare opportunities includes:</p>
+                        <p className="description">Unlock Your Potential with Contract Jobs, Effortlessly</p>
                     </div>
                     <div className="row">
                         <div className="col-md-4">
