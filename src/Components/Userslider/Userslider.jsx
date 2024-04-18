@@ -78,7 +78,7 @@ const userData = [
         btnarrow: rightarrow
     },
 ]
-
+ 
 const Userslider = () => {
     return (
         <div className="user-slider-sec">

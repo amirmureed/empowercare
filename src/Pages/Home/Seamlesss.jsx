@@ -25,8 +25,8 @@ const Seamlesss = () => {
         <>
           <HeaderWhite />
           <Banner1 heading={'Seamless & Impactful'} 
-          description={'Your Gateway to Rewarding Contract Healthcare Careers'}
-          meta={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+          description={'A Seamless and Impactful Alternative to Maxim Healthcare'}
+          meta={'EmpowerCare is revolutionizing the way healthcare professionals find fulfilling job opportunities. We go beyond traditional staffing agencies by offering a seamless and impactful experience that puts your needs and aspirations first.'}
           bannerImg={bannerImg}
           styles={bannerStyles}
           />

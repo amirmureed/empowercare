@@ -1,5 +1,5 @@
 import './Culture.scss'
-import img from '../../../Assets/Image 47.png'
+import img from '../../../Assets/businessimg.png'
 const Culture=()=>{
     return(  <>
          <div className="culture">

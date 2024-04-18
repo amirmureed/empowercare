@@ -30,10 +30,10 @@ const OurWorking = () => {
           <div className="row">
             <div className={ isAccordianOpen == 1 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" } >
               <div className="row">
-                <div className="working_content col-12">
+                <div className="working_content col-12" onClick={() => toggleAccodian(1)}>
                   <div className="reletive">
                     <h3>We Care About You</h3>
-                    <span className="plus-icon" onClick={() => toggleAccodian(1)}>+</span>
+                    <span className="plus-icon">+</span>
                   </div>
                   <p>
                     We put our employees first, providing the support,
@@ -46,10 +46,10 @@ const OurWorking = () => {
             </div>
             <div className={isAccordianOpen == 2 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }>
               <div className="row">
-                <div className="working_content col-12">
+                <div className="working_content col-12" onClick={() => toggleAccodian(2)}>
                   <div className="reletive">
                     <h3>We're Driven by Impact</h3>
-                    <span className="plus-icon" onClick={() => toggleAccodian(2)}>+</span>
+                    <span className="plus-icon">+</span>
                   </div>
                   <p>
                     Every placement, every shift, every interaction is an
@@ -62,10 +62,10 @@ const OurWorking = () => {
             </div>
             <div className={isAccordianOpen == 3 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }>
               <div className="row">
-                <div className="working_content col-12">
+                <div className="working_content col-12" onClick={() => toggleAccodian(3)}>
                   <div className="reletive">
                     <h3>We Embrace Diversity</h3>
-                    <span className="plus-icon" onClick={() => toggleAccodian(3)}>+</span>
+                    <span className="plus-icon">+</span>
                   </div>
                   <p>
                     We celebrate what makes you unique. At EmpowerCare, you can

@@ -32,18 +32,19 @@ const Choose = (props) => {
                                 <div className="right-content">
                                     <div className="content-row">
                                         <div className="content-box active">
-                                            <h5 className="heading">Convenient Staffing:</h5>
-                                            <p className="description">We provide a full range of staffing solutions, covering all aspects of your <br />
-                                            professional requirements, making the process convenient for you</p>
+                                            <h5 className="heading">Convenient Placements:</h5>
+                                            <p className="description">We provide a wide range of job opportunities that match your skills and
+                                                    preferences, making it convenient for you to find the perfect fit.</p>
                                         </div>
                                         <div className="content-box">
-                                            <h5 className="heading">Personable Approach:</h5>
-                                            <p className="description">Our customized staffing plans are designed to align with your unique needs, ensuring 
-                                            the best fit for your career aspirations. We prioritize building strong relationships with our healthcare professionals.</p>
+                                            <h5 className="heading">Personable Support:</h5>
+                                            <p className="description">Our dedicated team is committed to building strong relationships with
+                                                you, providing guidance and support throughout your healthcare journey.</p>
                                         </div>
                                         <div className="content-box">
-                                            <h5 className="heading">Supportive Community:</h5>
-                                            <p className="description">Access a vast network of highly qualified and responsible healthcare professionals who are ready to make a positive impact together.</p>
+                                            <h5 className="heading">Responsive Advocacy:</h5>
+                                            <p className="description">We are always ready to listen to your needs, address your concerns, and
+                                        provide timely solutions to help you thrive in your career.</p>
                                         </div>
                                     </div>
                                 </div>
