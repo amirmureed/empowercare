@@ -250,20 +250,22 @@
             display: block;
             position: absolute; /* Position the dropdown relative to the .nav-link */
             top: 50%; /* Position it below the .nav-link */
-            left: 30px; /* Align it with the left edge of the .nav-link */
+            left: 10px; /* Align it with the left edge of the .nav-link */
             
            
            
-            width: 98%;
+            width: 99%;
             @media (max-width:1355px) {
-                left: 180px;
+                left: 10px;
+                width: 99%;
             }
             @media (max-width:1200px) {
-                left: 450px;
+                left: 5x;
+                width: 99%;
             }
             @media (max-width:1025px) {
-                width: 37%;
-                left: 230px;
+                width: 99%;
+                left: 2px;
             }
          }
          .dropdown-resources .dropdown{
