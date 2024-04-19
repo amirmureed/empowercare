@@ -53,7 +53,7 @@ const Banner = () => {
                     <option value="Select city/state1">Select city/state1</option>
                     <option value="Select city/state2">Select city/state2</option>
                   </select>
-                  <Link className='btn available-btn'>
+                  <Link target="_blank" to="https://msgstaffing.my.salesforce-sites.com/?page=JobListPage&JobSite=default&p=Candidate" className='btn available-btn'>
                     <span>Find available positions</span>
                   </Link>
                 </div>

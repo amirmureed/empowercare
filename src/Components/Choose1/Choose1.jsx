@@ -12,18 +12,16 @@ const Choose1 = (props) => {
                                 <div className="right-content">
                                     <div className="content-row">
                                         <div className="content-box active">
-                                            <h5 className="heading">Convenient Staffing:</h5>
-                                            <p className="description">We provide a full range of staffing solutions, covering all aspects of your <br />
-                                            professional requirements, making the process convenient for you</p>
+                                            <h5 className="heading">Meaningful Work:</h5>
+                                            <p className="description">Every placement is an opportunity to contribute to the greater good,knowing that your efforts are part of a larger movement to transformlives and elevate care.</p>
                                         </div>
                                         <div className="content-box">
-                                            <h5 className="heading">Personable Approach:</h5>
-                                            <p className="description">Our customized staffing plans are designed to align with your unique needs, ensuring 
-                                            the best fit for your career aspirations. We prioritize building strong relationships with our healthcare professionals.</p>
+                                            <h5 className="heading">Reliable Support:</h5>
+                                            <p className="description">Our dedicated team is always by your side, ensuring a smooth and stress-free experience, so you can focus on making a difference with every shift.</p>
                                         </div>
                                         <div className="content-box">
-                                            <h5 className="heading">Supportive Community:</h5>
-                                            <p className="description">Access a vast network of highly qualified and responsible healthcare professionals who are ready to make a positive impact together.</p>
+                                            <h5 className="heading">Empowering Environment:</h5>
+                                            <p className="description">We foster a supportive and empowering environment that recognizes your contributions and helps you grow personally and professionally.</p>
                                         </div>
                                     </div>
                                 </div>

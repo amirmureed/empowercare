@@ -9,7 +9,7 @@ import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import img from '../../Assets/advantages.png'
 import bannerImg from '../../Assets/advantagesImg.png'
-import FAQ from "../../Components/FAQ/FAQ"
+import FAQ from "../../Components/FAQ/FAQ" 
 const Faqs=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
