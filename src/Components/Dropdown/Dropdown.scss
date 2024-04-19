@@ -1,28 +1,27 @@
-.drodpown-wrapper{
-    padding: 10px;
-    .row{
-        .col-lg-4{
-            .box1{
-                .row{
-                    .col-lg-12{
-                        .card1{
-                            padding: 10px;
-                            background: #71ba32;
-                            background: linear-gradient(-134deg, #4eb3e8 0.00%,#71ba32 100.00%);
-                        }
-                        .card2{
-                            padding: 50px;
-                            background: #71ba32;
-                            background: linear-gradient(-134deg, #4eb3e8 0.00%,#71ba32 100.00%);
-                        }
-                        .card3{
-                            padding: 50px;
-                            background: #71ba32;
-                            background: linear-gradient(-134deg, #4eb3e8 0.00%,#71ba32 100.00%);
-                        }
-                    }
-                }
-            }
-        }
+    
+    p{
+        color: black;
     }
-}
+    p.box1-p{
+        color: white;
+    }
+    h4{
+        color: black;
+    }
+    h5{
+        color: black;
+    }
+    h6{
+        color: black;
+    }
+    p.box2-p{
+        font-size: 11px;
+    }
+    p.box3-p{
+        font-size: 10px;
+    }
+    h6.box3-h6{
+        color: black;
+        font-weight: bold;
+        font-size: 23px;
+    }
