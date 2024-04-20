@@ -38,7 +38,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
                     direction={'row'}
                     spacing={3}
                 >
-                    <img src={imgSrc} alt="" />
+                    <img style={{ width: '50px', height: "50px" }} src={imgSrc} alt="" />
                     <Box>
                         <h4>{title}</h4>
                         <p className='box1-p'>{description}</p>
@@ -49,7 +49,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
         };
         
         return (
-            <Box px={2} width={'32%'} >
+            <Box px={2} width={'40%'} >
                 <Stack direction={'column'} spacing={2}>
                 <Cards
                 imgSrc={icon1} 
@@ -96,7 +96,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
             );
         };
         return (
-            <Box width={'22%'}   >
+            <Box width={'28%'}   >
                 <Stack style={{ backgroundColor: '#FCFCFC' }} direction={'column'} spacing={4} px={2} py={2}>
                     <h5 style={{ color: 'black' }}>Staffing Solution</h5>
 
@@ -174,77 +174,64 @@ const Dropdown = ({ professionals, about, facilities }) => {
         return (
             <Box width={Boxwidth} px={px}>
                 <Stack px={2} style={{ backgroundColor: background }} py={3} direction={'column'} spacing={spacing}  >
-                    <h5 style={{ color: 'black' }}>Differentiator</h5>
-            <a className='menu_anchor' href="/resources/shift-makers">    
-                <Box3Stack
-                    imgSrc={ellipse1}
-                    title="Shiftmakers referal program"
-                    description="Shift Maker Referral Program for Nurses"
-            /></a>
-            <a className='menu_anchor' href="/resources/network">
-                <Box3Stack
-                    imgSrc={ellipse1}
-                    title="Unsung Heroes No More"
-                    description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
-            /></a>
-            <a className='menu_anchor' href="/resources/">
-                <Box3Stack
-                    imgSrc={ellipse1}
-                    title="Unsung Heroes No More"
-                    description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
-            /></a>
-            <a className='menu_anchor' href="/resources/benefits">
-                <Box3Stack
-                    imgSrc={ellipse1}
-                    title="Unsung Heroes No More"
-                    description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
-            /></a>
-            <a className='menu_anchor' href="/resources/empowercare-heroes">
-                <Box3Stack
-                    imgSrc={ellipse1}
-                    title="Unsung Heroes No More"
-                    description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
-            /></a>
+                    <h5 style={{ color: 'black' }}>Differentiator</h5><br />
+                    <Box3Stack
+                imgSrc={ellipse1}
+                title="Unsung Heroes No More"
+                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
+            />
+            <Box3Stack
+                imgSrc={ellipse1}
+                title="Unsung Heroes No More"
+                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
+            />
+            <Box3Stack
+                imgSrc={ellipse1}
+                title="Unsung Heroes No More"
+                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
+            />
+            <Box3Stack
+                imgSrc={ellipse1}
+                title="Unsung Heroes No More"
+                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
+            />
+            <Box3Stack
+                imgSrc={ellipse1}
+                title="Unsung Heroes No More"
+                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
+            /> <br />
+
                     {button && (<><a className='btn_green' href="/">Nursing Guide</a></>)}
                 </Stack>
+
             </Box>
         )
     }
     const AboutBox2 = () => {
         return (<>
-            <Box width={'23%'}   >
+            <Box width={'40%'}   >
                 <Stack style={{ backgroundColor: '#FCFCFC' }} direction={'column'} spacing={4} px={2} py={2}>
-                    <h5 style={{ color: 'black' }}>About Empowercare</h5>
-                    <a className='menu_anchor' href="/about">
-                        <Stack direction={'row'} spacing={2}>
-                                <img style={{ width: '27px' }} src={logo1} alt="" />
-                                <h6 className="box3-h6" style={{ color: 'black' }} >About Us</h6>
-                        </Stack>
-                    </a>
-                    <a className='menu_anchor' href="/about/ceo">
-                        <Stack direction={'row'} spacing={2}>
-                                <img style={{ width: '27px' }} src={logo1} alt="" />
-                                <h6 className="box3-h6" style={{ color: 'black' }} >Founder & CEO</h6>
-                        </Stack>
-                    </a>
-                    <a className='menu_anchor' href="/about/community">
-                        <Stack direction={'row'} spacing={2}>
-                                <img style={{ width: '27px' }} src={logo1} alt="" />
-                                <h6 className="box3-h6" style={{ color: 'black' }} >Community</h6>
-                        </Stack>
-                    </a>
-                    <a className='menu_anchor' href="/about/career">
-                        <Stack direction={'row'} spacing={2}>
-                                <img style={{ width: '27px' }} src={logo1} alt="" />
-                                <h6 className="box3-h6" style={{ color: 'black' }} >Careers</h6>
-                        </Stack>
-                    </a>
-                    <a className='menu_anchor' href="/about/leadership">
-                        <Stack direction={'row'} spacing={2}>
-                                <img style={{ width: '27px' }} src={logo1} alt="" />
-                                <h6 className="box3-h6" style={{ color: 'black' }} >Our Leadership</h6>
-                        </Stack>
-                    </a>
+                    <h5 style={{ color: 'black' }}>Staffing Solution</h5>
+                    <Stack direction={'row'} spacing={2}>
+                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <p className='box2-p' style={{ color: 'black' }} >Non-Clinical Healthcare Staffing by EmpowerCare</p>
+                    </Stack>
+                    <Stack direction={'row'} spacing={2}>
+                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <p className='box2-p' style={{ color: 'black' }}>Non-Clinical Healthcare Staffing by EmpowerCare</p>
+                    </Stack>
+                    <Stack direction={'row'} spacing={2}>
+                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <p className='box2-p' style={{ color: 'black' }}>Non-Clinical Healthcare Staffing by EmpowerCare</p>
+                    </Stack>
+                    <Stack direction={'row'} spacing={2}>
+                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <p className='box2-p' style={{ color: 'black' }}>Non-Clinical Healthcare Staffing by EmpowerCare</p>
+                    </Stack>
+                    <Stack direction={'row'} spacing={2}>
+                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <p className='box2-p' style={{ color: 'black' }}>Non-Clinical Healthcare Staffing by EmpowerCare</p>
+                    </Stack>
                 </Stack>
             </Box>
         </>)
@@ -259,7 +246,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
 
                 />
                 <Box3
-                    Boxwidth={'23%'} background={'#FCFCFC'} spacing={7}
+                    Boxwidth={'31%'} background={'#FCFCFC'} spacing={7}
                 />
             </>)
                 : about ? (<>
@@ -270,8 +257,8 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 </>) : (<>
                     <Box1 />
                     <Box2 />
-                    <Box3 Boxwidth={'23%'} px={3} background={'#FCFCFC'} spacing={3} />
-                    <Box3 Boxwidth={'23%'} px={1} spacing={3} button={true} />
+                    <Box3 Boxwidth={'31%'} px={3} background={'#FCFCFC'} spacing={3} />
+                    <Box3 Boxwidth={'31%'} px={1} spacing={3} button={true} />
                 </>)
 
             }
