@@ -193,7 +193,7 @@ const SignupForm = () => {
                                                     onChange={handleChange}
                                                 />
                                                 <input
-                                                    type="text"
+                                                    type="email"
                                                     placeholder="Email"
                                                     className="rounded-input"
                                                     value={formData.email}

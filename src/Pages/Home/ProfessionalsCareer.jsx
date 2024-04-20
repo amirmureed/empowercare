@@ -1,7 +1,7 @@
 import Banner10 from "../../Components/Banner10/Banner10"
 import FaqAccordian from "../../Components/FaqAccordian/FaqAccordian"
 import Footer from "../../Components/Footer/Footer"
-import Header from "../../Components/Header/Header"
+import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import bannerImg from '../../Assets/careerImg.png'
@@ -25,7 +25,7 @@ const ProfessionalsCareer=()=>{
         backgroundColor: '#EBE0D3'
     };
     return(<>
-    <Header/>
+    <HeaderWhite />
     <Banner10
      bannerStyles={bannerStyles}
      bannerImg={bannerImg}
@@ -36,13 +36,13 @@ const ProfessionalsCareer=()=>{
     />
     <Trusted/>
     <TrustedPartner
-    simpleButton={false}
-    anchor={false}
-     button={true}
-     img={empowercareimg}
-     meta={'Who We Are'} 
-     heading1={'LIFE-'} 
-     heading2={'CHANGING'}
+      simpleButton={false}
+      anchor={false}
+      button={true}
+      img={empowercareimg}
+      meta={'Who We Are'} 
+      heading1={'LIFE-'} 
+      heading2={'CHANGING'}
       heading3={'DIRECT CARE JOBS'} 
       description1={'Attention compassionate direct care professionals! Are you ready to make a profound difference in the lives of others while building a fulfilling career?'} 
       description2={'EmpowerCare, your trusted direct care staffing agency, is here to connect      you with meaningful direct care job opportunities that align with your      passion, skills, and career goals.      '}

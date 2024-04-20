@@ -13,7 +13,7 @@
         img {
             position: absolute;
             top: 15px;
-            width: 200px;
+            width: 230px;
             @media (max-width: 480px) {
                 top: 8px;
             }
@@ -216,42 +216,28 @@
          .nav-link:hover .dropdown-facilities{
             display: block;
             position: absolute; /* Position the dropdown relative to the .nav-link */
-            top: 50%; /* Position it below the .nav-link */
+            top: 50px; /* Position it below the .nav-link */
             left: 30px; /* Align it with the left edge of the .nav-link */
             z-index: 999;
-           
-           
-            width: 95%;
-            @media (max-width:1355px) {
-                left: 350px;
-            }
-            @media (max-width:1200px) {
-                left: 650px;
-            }
-            @media (max-width:1025px) {
-                width: 37%;
-                left: 400px;
-            }
+            width: 98%;
          }
          .nav-link:hover .dropdown-professionals{
             display: block;
             position: absolute; /* Position the dropdown relative to the .nav-link */
-            top: 50%; /* Position it below the .nav-link */
-            left: 30px; /* Align it with the left edge of the .nav-link */
-            
-           
-           
+            top: 50px; /* Position it below the .nav-link */
+            left: 20px; /* Align it with the left edge of the .nav-link */
             width: 98%;
-            @media (max-width:1355px) {
-                left: 180px;
-            }
-            @media (max-width:1200px) {
-                left: 450px;
-            }
-            @media (max-width:1025px) {
-                width: 37%;
-                left: 230px;
-            }
+            z-index: 999;
+            // @media (max-width:1355px) {
+            //     left: 180px;
+            // }
+            // @media (max-width:1200px) {
+            //     left: 450px;
+            // }
+            // @media (max-width:1025px) {
+            //     width: 37%;
+            //     left: 230px;
+            // }
          }
          .dropdown-resources .dropdown{
             display: block;
