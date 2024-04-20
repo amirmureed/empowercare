@@ -174,36 +174,39 @@ const Dropdown = ({ professionals, about, facilities }) => {
         return (
             <Box width={Boxwidth} px={px}>
                 <Stack px={2} style={{ backgroundColor: background }} py={3} direction={'column'} spacing={spacing}  >
-                    <h5 style={{ color: 'black' }}>Differentiator</h5><br />
-                    <Box3Stack
-                imgSrc={ellipse1}
-                title="Unsung Heroes No More"
-                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
-            />
-            <Box3Stack
-                imgSrc={ellipse1}
-                title="Unsung Heroes No More"
-                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
-            />
-            <Box3Stack
-                imgSrc={ellipse1}
-                title="Unsung Heroes No More"
-                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
-            />
-            <Box3Stack
-                imgSrc={ellipse1}
-                title="Unsung Heroes No More"
-                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
-            />
-            <Box3Stack
-                imgSrc={ellipse1}
-                title="Unsung Heroes No More"
-                description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
-            /> <br />
-
+                    <h5 style={{ color: 'black' }}>Differentiator</h5>
+            <a className='menu_anchor' href="/resources/shift-makers">    
+                <Box3Stack
+                    imgSrc={ellipse1}
+                    title="Shiftmakers referal program"
+                    description="Shift Maker Referral Program for Nurses"
+            /></a>
+            <a className='menu_anchor' href="/resources/network">
+                <Box3Stack
+                    imgSrc={ellipse1}
+                    title="Unsung Heroes No More"
+                    description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
+            /></a>
+            <a className='menu_anchor' href="/resources/">
+                <Box3Stack
+                    imgSrc={ellipse1}
+                    title="Unsung Heroes No More"
+                    description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
+            /></a>
+            <a className='menu_anchor' href="/resources/benefits">
+                <Box3Stack
+                    imgSrc={ellipse1}
+                    title="Unsung Heroes No More"
+                    description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
+            /></a>
+            <a className='menu_anchor' href="/resources/empowercare-heroes">
+                <Box3Stack
+                    imgSrc={ellipse1}
+                    title="Unsung Heroes No More"
+                    description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
+            /></a>
                     {button && (<><a className='btn_green' href="/">Nursing Guide</a></>)}
                 </Stack>
-
             </Box>
         )
     }
@@ -211,27 +214,37 @@ const Dropdown = ({ professionals, about, facilities }) => {
         return (<>
             <Box width={'23%'}   >
                 <Stack style={{ backgroundColor: '#FCFCFC' }} direction={'column'} spacing={4} px={2} py={2}>
-                    <h5 style={{ color: 'black' }}>Staffing Solution</h5>
-                    <Stack direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
-                        <p className='box2-p' style={{ color: 'black' }} >Non-Clinical Healthcare Staffing by EmpowerCare</p>
-                    </Stack>
-                    <Stack direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
-                        <p className='box2-p' style={{ color: 'black' }}>Non-Clinical Healthcare Staffing by EmpowerCare</p>
-                    </Stack>
-                    <Stack direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
-                        <p className='box2-p' style={{ color: 'black' }}>Non-Clinical Healthcare Staffing by EmpowerCare</p>
-                    </Stack>
-                    <Stack direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
-                        <p className='box2-p' style={{ color: 'black' }}>Non-Clinical Healthcare Staffing by EmpowerCare</p>
-                    </Stack>
-                    <Stack direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
-                        <p className='box2-p' style={{ color: 'black' }}>Non-Clinical Healthcare Staffing by EmpowerCare</p>
-                    </Stack>
+                    <h5 style={{ color: 'black' }}>About Empowercare</h5>
+                    <a className='menu_anchor' href="/about">
+                        <Stack direction={'row'} spacing={2}>
+                                <img style={{ width: '27px' }} src={logo1} alt="" />
+                                <h6 className="box3-h6" style={{ color: 'black' }} >About Us</h6>
+                        </Stack>
+                    </a>
+                    <a className='menu_anchor' href="/about/ceo">
+                        <Stack direction={'row'} spacing={2}>
+                                <img style={{ width: '27px' }} src={logo1} alt="" />
+                                <h6 className="box3-h6" style={{ color: 'black' }} >Founder & CEO</h6>
+                        </Stack>
+                    </a>
+                    <a className='menu_anchor' href="/about/community">
+                        <Stack direction={'row'} spacing={2}>
+                                <img style={{ width: '27px' }} src={logo1} alt="" />
+                                <h6 className="box3-h6" style={{ color: 'black' }} >Community</h6>
+                        </Stack>
+                    </a>
+                    <a className='menu_anchor' href="/about/career">
+                        <Stack direction={'row'} spacing={2}>
+                                <img style={{ width: '27px' }} src={logo1} alt="" />
+                                <h6 className="box3-h6" style={{ color: 'black' }} >Careers</h6>
+                        </Stack>
+                    </a>
+                    <a className='menu_anchor' href="/about/leadership">
+                        <Stack direction={'row'} spacing={2}>
+                                <img style={{ width: '27px' }} src={logo1} alt="" />
+                                <h6 className="box3-h6" style={{ color: 'black' }} >Our Leadership</h6>
+                        </Stack>
+                    </a>
                 </Stack>
             </Box>
         </>)

@@ -74,6 +74,7 @@
                         align-items: center;
                         justify-content: space-between;
                         gap: 20px;
+                        transition: transform 250ms;
 
                         @media (max-width: 767.5px) {
                             padding: 20px 30px;
@@ -129,7 +130,7 @@
                                 border-radius: 50%;
 
                                 img {
-                                    height: 86%;
+                                    height: 100%;
                                     width: 100%;
                                     // border-radius: 50%;
                                 }
@@ -193,11 +194,12 @@
                         }
                     }
 
-                    .approach-box.active {
+                    .approach-box:hover {
                         background: #4eb3e8;
                         background: linear-gradient(-135deg, 
                         #4eb3e8 0.00%, 
                         #71ba32 100.00%);
+                        transform: translateY(-5px);
 
                         .left-sec {
 

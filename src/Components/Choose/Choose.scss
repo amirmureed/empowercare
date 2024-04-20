@@ -168,6 +168,7 @@
                                 border-radius: 22px;
                                 background: #ece0d4;
                                 padding: 20px 32px;
+                                transition: transform 250ms;
 
                                 @media (max-width: 1600px) {
                                     height: 100%;
@@ -193,11 +194,11 @@
                                 }
                             }
 
-                            .content-box.active {
+                            .content-box:hover {
                                 background: linear-gradient(-134deg, 
                                 #4eb3e8 0.00%, 
                                 #71ba32 100.00%);
-                                // background: #4eb3e8;
+                                transform: translateY(-5px);
 
                                 h5.heading {
                                     color: #fff;

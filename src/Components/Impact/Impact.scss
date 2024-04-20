@@ -101,6 +101,7 @@
                         flex-direction: column;
                         padding: 60px 40px;
                         gap: 16px;
+                        transition: transform 250ms;
 
                          @media (max-width: 767.5px) {
                             width: 100%;
@@ -174,11 +175,13 @@
                         }
                     }
 
-                    .job-box.active {
+                    .job-box:hover {
                         background: #71ba32;
                         background: linear-gradient(-135deg, 
                         #71ba32 0.00%, 
                         #4eb3e8 100.00%);
+                        transform: translateY(-5px);
+
 
                         button.impact-btn {
                             background: #fff;
