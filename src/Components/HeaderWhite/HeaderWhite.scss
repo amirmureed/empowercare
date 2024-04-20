@@ -180,23 +180,10 @@
         .nav-link:hover .dropdown{
             display: block;
             position: absolute; /* Position the dropdown relative to the .nav-link */
-            top: 50%; /* Position it below the .nav-link */
+            top: 70%; /* Position it below the .nav-link */
             left: 300px; /* Align it with the left edge of the .nav-link */
             z-index: 999;
-           
-           
             width: 60%;
-            @media (max-width:1355px) {
-                left: 250px;
-            }
-            @media (max-width:1200px) {
-                left: 100px;
-                width: 80%;
-            }
-            @media (max-width:1025px) {
-                width: 75%;
-                left: 70px;
-            }
          }
          .dropdown:hover .dropdown{
             display: block;
@@ -271,9 +258,6 @@
          }
          .dropdown-resources{
             display: none
-         }
-         .dropdown-facilites .dropdown{
-            display: block;
          }
          .dropdown-facilities{
             display: none
