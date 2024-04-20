@@ -100,16 +100,16 @@ const HeaderWhite = () => {
                                 </IconButton></>) : (<></>)}
                             </Link>
 
-                            <Link to="/resources" className='nav-link'>
+                            {/* <Link to="/resources" className='nav-link'>
                                 Resources
 
                                 <div className='dropdown-resources'>
                                     <span className='d-span'></span><br />
                                     <div className='dropdown-content'>
-                                        {/* <PopoverContent
+                                        { <PopoverContent
                                             route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'} route4={'/resources/benefits'} route5={'/resources/empowercare-heroes'}
                                             name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'} name4={'Benefits'} name5={'Heroes'}
-                                        /> */}
+                                        />
                                        
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@ const HeaderWhite = () => {
                                 {isMobile ? (<> <IconButton onClick={() => setOpenResources(true)} >
                                     <IoMdArrowDropright color='black' />
                                 </IconButton></>) : (<></>)}
-                            </Link>
+                            </Link> */}
 
                         </Nav>) : open ? (<>
                             <IconButton onClick={() => setOpen(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
