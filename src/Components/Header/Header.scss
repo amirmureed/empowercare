@@ -170,22 +170,10 @@
         .nav-link:hover .dropdown{
             display: block;
             position: absolute; /* Position the dropdown relative to the .nav-link */
-            top: 50%; /* Position it below the .nav-link */
+            top: 70%; /* Position it below the .nav-link */
             left: 300px; /* Align it with the left edge of the .nav-link */
             z-index: 999;
-           
-           
             width: 60%;
-            @media (max-width:1355px) {
-                left: 450px;
-            }
-            @media (max-width:1200px) {
-                left: 750px;
-            }
-            @media (max-width:1025px) {
-                width: 37%;
-                left: 600px;
-            }
          }
          .dropdown:hover .dropdown{
             display: block;
@@ -216,7 +204,7 @@
          .nav-link:hover .dropdown-facilities{
             display: block;
             position: absolute; /* Position the dropdown relative to the .nav-link */
-            top: 50px; /* Position it below the .nav-link */
+            top: 30px; /* Position it below the .nav-link */
             left: 30px; /* Align it with the left edge of the .nav-link */
             z-index: 999;
             width: 98%;
@@ -244,9 +232,6 @@
          }
          .dropdown-resources{
             display: none
-         }
-         .dropdown-facilites .dropdown{
-            display: block;
          }
          .dropdown-facilities{
             display: none

@@ -294,6 +294,7 @@ ABOUT US DROPDOWN
   margin-top: unset !important;
   margin-bottom: 15px;
   padding: unset !important;
+  align-items: center !important;
 }
 .MuiStack-root.css-1xfqjzd h6 {
   font-size: 14px !important;
