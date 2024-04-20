@@ -150,11 +150,11 @@ a.btn_green{
 
 /*======================================= SITE MEGA MENU ================================ */
 
-.MuiStack-root.css-1u3y44e-MuiStack-root {
-  gap: 10px;
+/* .MuiStack-root.css-1u3y44e-MuiStack-root {
+  gap: 10px !important;
 }
 
-/* FIRST COLUMN */
+FIRST COLUMN
 .MuiBox-root.css-bacvv6 {
   padding-right: unset !important;
 }
@@ -184,7 +184,7 @@ a.btn_green{
   font-size: 12px !important;
 }
 
-/* SECOND COLUMN */
+SECOND COLUMN
 .MuiStack-root.css-1n2ww3t-MuiStack-root {
   margin-top: 16px !important;
   align-items: center;
@@ -197,7 +197,7 @@ a.btn_green{
   margin-left: unset !important;
 }
 
-/* THIRD COLUMN */
+THIRD COLUMN
 .MuiBox-root.css-o4vv92 {
   padding: unset !important;
 }
@@ -214,7 +214,7 @@ a.btn_green{
   text-transform: uppercase;
 }
 
-/* FORTH COLUMN */
+FORTH COLUMN
 .MuiBox-root.css-91qs5s {
   padding: unset !important;
 }
@@ -222,7 +222,7 @@ a.btn_green{
   padding-top: 16px !important;
 }
 
-/* ABOUT US DROPDOWN */
+ABOUT US DROPDOWN
 .dropdown .dropdown-content .MuiBox-root.css-1ki9smg {
   width: 60% !important;
   padding: unset !important;
@@ -232,4 +232,93 @@ a.btn_green{
 }
 .dropdown .dropdown-content .MuiBox-root.css-19yt5vl .MuiStack-root.css-jofsne-MuiStack-root {
   padding-top: 24px !important;
+} */
+
+/*======================================= SITE MEGA MENU ================================ */
+
+.MuiStack-root.css-9c36oh {
+  gap: 10px;
+}
+
+/* FIRST COLUMN */
+.MuiBox-root.css-bacvv6 {
+  padding-right: unset !important;
+}
+.MuiBox-root.css-582nrr {
+  padding-right: unset;
+  padding-left: 16px;
+}
+.MuiStack-root.css-5ykgu0 {
+  gap: 10px;
+  align-items: center;
+  margin-top: 8px !important;
+}
+.MuiStack-root img{
+  width: 20% !important;
+  height: 20% !important;
+}
+.MuiBox-root {
+  margin-left: unset !important;
+}
+.MuiBox-root h4 {
+  font-size: 16px;
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+.MuiBox-root .box1-p {
+  margin-bottom: 5px !important;
+  font-size: 12px !important;
+}
+
+/* SECOND COLUMN */
+.MuiStack-root.css-cgwwkm {
+  margin-top: 16px !important;
+  align-items: center;
+  gap: 10px;
+}
+.MuiStack-root.css-cgwwkm img {
+  width: 22px !important;
+}
+.MuiStack-root.css-cgwwkm p {
+  margin-left: unset !important;
+}
+
+/* THIRD COLUMN */
+.MuiBox-root.css-o4vv92 {
+  padding: unset !important;
+}
+.MuiBox-root.css-o4vv92 .MuiStack-root.css-1dntwlv {
+  padding-top: 16px !important;
+}
+.MuiStack-root.css-1xfqjzd {
+  margin-top: unset !important;
+  margin-bottom: 15px;
+  padding: unset !important;
+}
+.MuiStack-root.css-1xfqjzd h6 {
+  font-size: 14px !important;
+  text-transform: uppercase;
+}
+
+/* FORTH COLUMN */
+.MuiBox-root.css-91qs5s {
+  padding: unset !important;
+}
+.MuiBox-root.css-91qs5s.MuiStack-root.css-1dntwlv {
+  padding-top: 16px !important;
+}
+
+/* ABOUT US DROPDOWN */
+.dropdown .dropdown-content .MuiBox-root.css-1ki9smg {
+  width: 60% !important;
+  padding: unset !important;
+}
+.dropdown .dropdown-content .MuiBox-root.css-1ki9smg .MuiStack-root.css-1dntwlv {
+  padding: 0px 16px !important;
+}
+.dropdown .dropdown-content .MuiBox-root.css-19yt5vl {
+  width: 40% !important;
+}
+.dropdown .dropdown-content .MuiBox-root.css-19yt5vl .MuiStack-root.css-381yf2 {
+  padding: 0px 16px !important;
 }
