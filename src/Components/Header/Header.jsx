@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import logo from '../../Assets/logo.svg';
+import logo from '../../Assets/EmpowerCareLogo.svg';
 import SearchIcon from '@mui/icons-material/Search';
 import './Header.scss';
 import ModalComponent from '../Common/Popover';

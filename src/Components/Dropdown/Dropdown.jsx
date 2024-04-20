@@ -38,7 +38,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
                     direction={'row'}
                     spacing={3}
                 >
-                    <img style={{ width: '50px', height: "50px" }} src={imgSrc} alt="" />
+                    <img src={imgSrc} alt="" />
                     <Box>
                         <h4>{title}</h4>
                         <p className='box1-p'>{description}</p>
@@ -49,7 +49,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
         };
         
         return (
-            <Box px={2} width={'40%'} >
+            <Box px={2} width={'32%'} >
                 <Stack direction={'column'} spacing={2}>
                 <Cards
                 imgSrc={icon1} 
@@ -96,7 +96,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
             );
         };
         return (
-            <Box width={'28%'}   >
+            <Box width={'22%'}   >
                 <Stack style={{ backgroundColor: '#FCFCFC' }} direction={'column'} spacing={4} px={2} py={2}>
                     <h5 style={{ color: 'black' }}>Staffing Solution</h5>
 
@@ -209,7 +209,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
     }
     const AboutBox2 = () => {
         return (<>
-            <Box width={'40%'}   >
+            <Box width={'23%'}   >
                 <Stack style={{ backgroundColor: '#FCFCFC' }} direction={'column'} spacing={4} px={2} py={2}>
                     <h5 style={{ color: 'black' }}>Staffing Solution</h5>
                     <Stack direction={'row'} spacing={2}>
@@ -246,7 +246,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
 
                 />
                 <Box3
-                    Boxwidth={'31%'} background={'#FCFCFC'} spacing={7}
+                    Boxwidth={'23%'} background={'#FCFCFC'} spacing={7}
                 />
             </>)
                 : about ? (<>
@@ -257,8 +257,8 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 </>) : (<>
                     <Box1 />
                     <Box2 />
-                    <Box3 Boxwidth={'31%'} px={3} background={'#FCFCFC'} spacing={3} />
-                    <Box3 Boxwidth={'31%'} px={1} spacing={3} button={true} />
+                    <Box3 Boxwidth={'23%'} px={3} background={'#FCFCFC'} spacing={3} />
+                    <Box3 Boxwidth={'23%'} px={1} spacing={3} button={true} />
                 </>)
 
             }

@@ -14,6 +14,10 @@
         .banner-wrapper {
             padding: 300px 10px 10px;
 
+            @media ( max-width: 480px ) {
+                padding: 180px 10px 10px;
+            }
+
             .row {
                 margin-bottom: 200px;
                 align-items: center;
@@ -68,6 +72,13 @@
                                 -webkit-text-fill-color: transparent;
                                 text-transform: uppercase;
                                 font-weight: bold;
+
+                                @media (max-width: 480px){
+                                    background: unset;
+                                    -webkit-text-fill-color: unset;
+                                    color: #ffffff;
+                                }
+
                             }
                         }
 
@@ -129,13 +140,21 @@
                                 }
                             }
                             .quick-btn {
-                                background: #71ba32;
                                 background: linear-gradient(-130deg, 
                                 #71ba32 0.00%, 
                                 #4eb3e8 100.00%);
 
+                                @media (max-width: 480px) {
+                                    background: unset;
+                                    border: 2px solid black;
+                                }
+
                                 span {
                                     color: #ebe0d3;
+
+                                    @media (max-width: 480px) {
+                                        color: black;
+                                    }
                                 }
                             }
                             .contact-btn {
