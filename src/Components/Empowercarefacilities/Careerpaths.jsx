@@ -1,6 +1,6 @@
 import React from 'react';
 import './Careerpaths.scss';
-import empowercareimg from '../../Assets/Hiring-amico.png';
+import { Link } from 'react-router-dom';
 import activearrow from '../../Assets/active-arrow.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
 
@@ -39,13 +39,13 @@ const Careerpaths = ({ meta,heading1, heading2, heading3, description, descripti
                                 </ul> */}
 
                                 <div className="sec-btns">
-                                    <button className="learn-btn">
+                                    <Link to="/signup" className="learn-btn">
                                         <span>{btn1}</span>
                                         <img src={downarrow} alt="downarrow" />
-                                    </button>
-                                    <button className="btn contact-btn">
+                                    </Link>
+                                    <Link className="btn contact-btn">
                                         Contact Us
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

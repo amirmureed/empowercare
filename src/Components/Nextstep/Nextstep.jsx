@@ -2,6 +2,7 @@ import React from 'react';
 import './Nextstep.scss';
 import nextstepimg from '../../Assets/nextstep-img.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
+import { Link } from 'react-router-dom';
 
 const Nextstep = () => {
     return (
@@ -30,10 +31,10 @@ const Nextstep = () => {
                                     <p className="description">EmpowerCare Can Assist You in Finding Your Dream Healthcare Career, Whether Short-Term or Long-Term.</p>
                                 
                                     <div className="sec-btns">
-                                        <button className="learn-btn">
+                                        <Link target='_blank' to="https://msgstaffing.my.salesforce-sites.com/?page=JobListPage&JobSite=default&p=Candidate" className="learn-btn">
                                             <span>Search Job Openings</span>
                                             <img src={downarrow} alt="downarrow" />
-                                        </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

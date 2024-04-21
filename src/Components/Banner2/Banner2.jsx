@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerImg from '../../Assets/elipse2.png';
+import { Link } from 'react-router-dom';
 import './Banner2.scss';
 
 const Banner2 = (props) => {
@@ -23,12 +24,12 @@ const Banner2 = (props) => {
                       {/* <p className="description">Your Gateway to Rewarding Contract Healthcare Careers</p> */}
                       <span className="meta">{description}</span>
                       <div className="banner-btns">
-                        <button className='btn quick-btn'>
+                        <Link to="/signup" className='btn quick-btn'>
                           <span>Quick Apply</span>
-                        </button>
-                        <button className='btn contact-btn'>
+                        </Link>
+                        <Link to="/" className='btn contact-btn'>
                           <span>Contact us</span>
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </div>

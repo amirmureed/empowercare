@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutEmpower.scss';
 import empower from '../../Assets/empower1.png';
 import empower2 from '../../Assets/empower2.png';
+import { Link } from 'react-router-dom';
 
 const AboutEmpower = () => {
     return (
@@ -22,12 +23,12 @@ const AboutEmpower = () => {
                                     </h2>
                                     <p className="description">EmpowerCare is a leading nursing and healthcare agency specializing in temp-to-hire staffing solutions for healthcare facilities nationwide. With years of experience and a deep understanding of the healthcare industry, we are committed to helping facilities find the perfect long-term fit while maintaining staffing flexibility.</p>
                                     <div className="sec-btns">
-                                        <button className="learn-btn bg-white">
+                                        <Link className="learn-btn bg-white">
                                             <span>Contact Us</span>
-                                        </button>
-                                        <button className="btn-transparent">
+                                        </Link>
+                                        <Link className="btn-transparent">
                                             <span>Learn More</span>
-                                        </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

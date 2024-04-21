@@ -1,5 +1,6 @@
 import image from '../../Assets/staff.png'
 import './SolutionsDesign.scss'
+import { Link } from 'react-router-dom';
 const SolutionsDesign = ({img,meta,heading1,heading2,heading3,bullet1,bullet2,bullet3,bullet4,description1,description2,btn1,btn2}) => {
     
     return (
@@ -31,12 +32,12 @@ const SolutionsDesign = ({img,meta,heading1,heading2,heading3,bullet1,bullet2,bu
                                     </p>
                                     
                                     <div className="sec-btns">
-                                        <button className="learn-btn">
+                                        <Link to="/signup" className="learn-btn">
                                             <span>{btn1}</span>
-                                        </button>
-                                        <button className="signup-btn">
+                                        </Link>
+                                        <Link to="/about" className="signup-btn">
                                             <span>{btn2}</span>
-                                        </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

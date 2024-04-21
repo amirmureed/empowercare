@@ -94,7 +94,7 @@ const Initiative = ({button,mainHeading,heading,heading1,heading2,heading3,headi
                                     
                                 </div>
                                 <div className='butns'>
-                                    <a className='btn_green' href="">Sign Up</a>
+                                    <a className='btn_green' href="/signup">Sign Up</a>
                                     <a  className='learn_more' href="">Learn More</a>
                                 </div><br />
                                

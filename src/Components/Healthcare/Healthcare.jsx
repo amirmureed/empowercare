@@ -1,5 +1,6 @@
 import React from 'react';
 import './Healthcare.scss';
+import { Link } from 'react-router-dom';
 import healthcareimg from '../../Assets/healthcareimg.png';
 import activearrow from '../../Assets/active-arrow.png';
 
@@ -44,9 +45,9 @@ const Healthcare = () => {
                                 </ul>
                             
                                 <div className="sec-btns">
-                                    <button className="learn-btn">
+                                    <Link to="/signup" className="learn-btn">
                                         <span>Sign up</span>
-                                    </button>
+                                    </Link>
                                     <div className="active-img">
                                         <img src={activearrow} alt="activearrow" />
                                     </div>

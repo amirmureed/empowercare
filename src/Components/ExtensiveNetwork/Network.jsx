@@ -3,6 +3,7 @@ import './Network.scss';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import downarrow from '../../Assets/down-link-arrow.svg';
+import { Link } from 'react-router-dom';
 
 const responsive = {
     desktop: {
@@ -40,10 +41,10 @@ const Network = () => {
                                     <p className="description">From single shifts to long-term placements, EmpowerCare delivers <br /> a wide range of healthcare staffing solutions.</p>
                                 
                                     <div className="sec-btns">
-                                        <button className="learn-btn">
+                                        <Link target="_blank" to="https://msgstaffing.my.salesforce-sites.com/?page=JobListPage&JobSite=default&p=Candidate" className="learn-btn">
                                             <span>Search Job Openings</span>
                                             <img src={downarrow} alt="downarrow" />
-                                        </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

@@ -21,7 +21,7 @@ const Content1=()=>{
                             </p>
                             <p>We call this the EmpowerCare Ripple Effect</p><br/>
                                 <div class="priemer-cta">
-                                    <a class="btn_red" href="/">Sign Up</a>
+                                    <a class="btn_red" href="/signup">Sign Up</a>
                                     <div className="active-img">
                                         <img src={activearrow} alt="activearrow" />
                                     </div>

@@ -33,10 +33,11 @@
                 }
     
 
-        button.signup {
+        a.signup {
             width: 196px;
             height: 66px;
             border-radius: 19px;
+            text-decoration: unset;
             background: linear-gradient(-130deg, #ee8d80 0.00%, #e6632a 100.00%);
             display: flex;
             align-items: center;
@@ -67,13 +68,14 @@
                 color: #ebe0d3;
             }
         }
-        button.learnmore{
+        a.learnmore{
             width: 196px;
             height: 66px;
             border-radius: 19px;
             background: inherit;
-        
+            text-decoration: unset;
             display: flex;
+            color: black;
             align-items: center;
             justify-content: center;
             border: 1px solid black;

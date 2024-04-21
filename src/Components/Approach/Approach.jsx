@@ -89,9 +89,9 @@ const Approach = () => {
                             </div>
                         </div>
                         <div className="bottom-btn">
-                            <button className="signup">
+                            <Link to="/signup" className="signup">
                                 <span>Sign up</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

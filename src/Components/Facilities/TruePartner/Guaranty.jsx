@@ -21,7 +21,7 @@ const Guaranty = (props) => {
                                     <p className="description">{description2}</p>
                                     <p className="description">{description3}</p><br />
                                     <div className='buttons'>
-                                        <a href="#" className='btn_green'>{btn1}</a>
+                                        <a href="/signup" className='btn_green'>{btn1}</a>
                                         <a href="#" className='learn_more'>{btn2}</a>
                                     </div>
 
@@ -31,7 +31,6 @@ const Guaranty = (props) => {
                                 <div className="right-content">
                                     <div className="section-img">
                                         <img src={img} alt="storiesimg" />
-
                                     </div>
                                 </div>
                             </div>

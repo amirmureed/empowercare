@@ -144,8 +144,6 @@
                             }
                             
                         }
-                        
-                    
 
                         .job-box.active {
                             background: #a9dbf5;
@@ -209,7 +207,7 @@
                         flex-direction: column;
                     }
 
-                    button {
+                    a {
                         width: 196px;
                         height: 66px;
                         border-radius: 19px;
@@ -240,15 +238,12 @@
                         }
                     }
 
-                    button.signup-btn {
-                        background: #71ba32;
-                        background: linear-gradient(-130deg, 
-                        #71ba32 0.00%, 
-                        #4eb3e8 100.00%);
+                    a.signup-btn {
+                        background: #ffffff;
                         border: none;
 
                         span {
-                            color: #fff;
+                            color: #000000;
                         }
                     }
 

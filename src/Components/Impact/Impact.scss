@@ -212,11 +212,12 @@
                     margin: 30px 20px 20px;
                 }
 
-                button {
+                a {
                     width: 196px;
                     height: 66px;
                     border-radius: 19px;
                     display: flex;
+                    text-decoration: unset;
                     align-items: center;
                     justify-content: center;
 
@@ -240,7 +241,7 @@
                         color: #000000;
                     }
                 }
-                button.signup-btn {
+                a.signup-btn {
                     border-color: #000000;
                     border-width: 2px;
                     border-style: solid;

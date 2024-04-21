@@ -22,7 +22,7 @@ const Unparalleled = () => {
                 </div>
                 <div className='su-btn'>
                     <div className='btn-wrapper'>
-                        <a className='btn_green'>SIGNUP</a>
+                        <a href="/signup" className='btn_green'>SIGNUP</a>
                     </div>
                     <div className='arrow_img'>
                         <img className='arr-img' src={activearrow} alt="arrow" />

@@ -20,7 +20,7 @@ const LeftContentRightImage = () => {
                                 <p className="description">At EmpowerCare, we offer a wide range of staffing options to meet your unique needs. Our extensive network of pre-screened healthcare opportunities includes:</p>
                             
                                 <div class="priemer-cta">
-                                    <a class="btn_red" href="/">Sign Up</a>
+                                    <a class="btn_red" href="/signup">Sign Up</a>
                                     <div className="active-img">
                                         <img src={activearrow} alt="activearrow" />
                                     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Impact.scss';
+import { Link } from 'react-router-dom';
 
 const Impact = (props) => {
     let classnames = props.position == null ? "" : props.position;
@@ -46,9 +47,9 @@ const Impact = (props) => {
                         </div>
                     </div>
                     <div className="bottom-btns-row">
-                        <button className="signup-btn">
+                        <Link to="/signup" className="signup-btn">
                             <span>Sign up</span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
