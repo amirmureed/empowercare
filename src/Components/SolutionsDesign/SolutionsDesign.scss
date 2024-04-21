@@ -9,7 +9,7 @@
         .sd-wrapper {
             padding: 140px 0;
             border-radius: 50px;
-            background: black;
+            background: radial-gradient(farthest-corner at 100% 0,#5c5e62 0,#0c0f14 100%);
 
          .container{
 
@@ -97,7 +97,7 @@
                             align-items: center;
                             gap: 28px;
 
-                            button {
+                            a {
                                 width: 195px !important;
                                 height: 66px;
                                 border-radius: 19px;
@@ -140,12 +140,12 @@
                             }
 
                             .signup-btn {
-                                border-color: #000000;
+                                border-color: #ffffff;
                                 border-width: 2px;
                                 border-style: solid;
-
+                                
                                 span {
-                                    color: #000000;
+                                    color: #ffffff;
                                 }
                             }
                         }
@@ -154,16 +154,15 @@
                     .right-content {
 
                        .image-sec {
-                        
-                        img {
-                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
 }
 
     .choose-sec.black-bg {

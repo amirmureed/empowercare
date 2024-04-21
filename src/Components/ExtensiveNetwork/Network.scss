@@ -120,11 +120,12 @@
                                 margin-top: 30px;
                             }
 
-                            button {
+                            a {
                                 width: 357px;
                                 height: 66px;
                                 border-radius: 19px;
                                 display: flex;
+                                text-decoration: unset;
                                 align-items: center;
                                 justify-content: center;
                                 background: #71ba32;

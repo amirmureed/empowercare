@@ -26,7 +26,7 @@ const Content_With_Button = () => {
 EmpowerCare to transform lives and elevate care.</p>
                         </div>
                         <div className='btn_gradient'>
-                            <a href='/' className="btn quick-btn">Sign Up</a>
+                            <a href='/signup' className="btn quick-btn">Sign Up</a>
                         </div>
                         {/* <div className="trusted-row">
                             <div className="trusted-box">
@@ -66,7 +66,7 @@ EmpowerCare to transform lives and elevate care.</p>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         </>
     )
 }

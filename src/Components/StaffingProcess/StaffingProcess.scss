@@ -161,7 +161,7 @@
                             flex-direction: column;
                         }
     
-                        button {
+                        a {
                             width: 196px;
                             height: 66px;
                             border-radius: 19px;
@@ -192,7 +192,7 @@
                             }
                         }
     
-                        button.signup-btn {
+                        a.signup-btn {
                             background: #71ba32;
                             background: linear-gradient(-130deg, 
                             #71ba32 0.00%, 
@@ -204,7 +204,7 @@
                             }
                         }
     
-                        button.learnmore-btn {
+                        a.learnmore-btn {
     
                             background: linear-gradient(-130deg, #4eb3e8 0.00%, #71ba32 100.00%);
                             span {

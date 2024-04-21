@@ -137,10 +137,10 @@ const Userslider = () => {
                             </Carousel>
                         </div>
                         <div className="bottom-btn">
-                            <button className="apply-btn">
+                            <Link target="_blank" to="/signup" className="apply-btn">
                                 <span>Quick Apply</span>
                                 <img src={downarrow} alt="downarrow" />
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

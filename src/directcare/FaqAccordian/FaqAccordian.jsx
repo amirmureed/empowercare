@@ -26,7 +26,6 @@ const OurWorking = () => {
               Frequently Asked Questions<span> (FAQ) </span>
             </h2>
           </div>
-
           <div className="row">
             <div className={ isAccordianOpen == 1 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" } >
               <div className="row">

@@ -161,7 +161,7 @@
                 gap: 28px;
                 margin: 70px 20px 10px;
 
-                button {
+                a {
                     width: 196px;
                     height: 66px;
                     border-radius: 19px;
@@ -190,20 +190,22 @@
                     }
                 }
 
-                button.signup-btn {
+                a.signup-btn {
                     background: #71ba32;
                     background: linear-gradient(-130deg, 
                     #71ba32 0.00%, 
                     #4eb3e8 100.00%);
+                    text-decoration: unset;
                     border: none;
 
                     span {
                         color: #fff;
                     }
                 }
-                button.learnmore-btn {
+                a.learnmore-btn {
                     border-color: #000000;
                     border-width: 2px;
+                    text-decoration: unset;
                     border-style: solid;
                     background-color: transparent;
 

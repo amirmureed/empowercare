@@ -3,6 +3,7 @@ import './Contractjob.scss';
 import job1 from '../../Assets/job1.png';
 import job2 from '../../Assets/job2.png';
 import job3 from '../../Assets/job3.png';
+import { Link } from 'react-router-dom';
 
 const Contractjob = () => {
     return (
@@ -47,12 +48,12 @@ const Contractjob = () => {
                         </div>
                     </div>
                     <div className="bottom-btns-row">
-                        <button className="signup-btn">
+                        <Link to="/signup" className="signup-btn">
                             <span>Sign up</span>
-                        </button>
-                        <button className="learnmore-btn">
+                        </Link>
+                        <Link to="/" className="learnmore-btn">
                             <span>Learn more</span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

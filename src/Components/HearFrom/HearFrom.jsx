@@ -4,7 +4,6 @@ const HearFrom = () => {
 
     return (
         <div className='hear-from'>
-
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-md-12">
@@ -15,12 +14,12 @@ const HearFrom = () => {
                             </h2>
                             <p className="description">"Choosing EmpowerCare transformed my career. The flexibility and
                                 diversity of work environments have enriched my professional life
-                                immensely." - Sarah, RN</p>
+                                immensely." - Sarah, RN
+                            </p>
                             <p className="description">"Per diem work with EmpowerCare has brought the perfect balance
                                 to my life. The compensation is excellent, and fitting work around my
-                                family has never been easier." - Mark, CNA</p>
-
-
+                                family has never been easier." - Mark, CNA
+                            </p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12">

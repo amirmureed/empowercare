@@ -41,7 +41,7 @@ const Section1=()=>{
       </div>
       <div className='su-btn'>
         <div className='btn-wrapper'>
-          <a className='btn_red'>SIGNUP</a>
+          <a href="/signup" className='btn_red'>SIGNUP</a>
         </div>
         <div className='arrow_img'>
           <img className='arr-img' src={activearrow} alt="arrow" />

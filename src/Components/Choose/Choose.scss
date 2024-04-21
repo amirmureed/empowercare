@@ -99,10 +99,11 @@
                             align-items: center;
                             gap: 28px;
 
-                            button {
+                            a {
                                 width: 195px !important;
                                 height: 66px;
                                 border-radius: 19px;
+                                text-decoration: unset;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;

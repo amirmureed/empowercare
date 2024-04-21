@@ -3,6 +3,7 @@ import logo from '../../Assets/consultation_icon02.png'
 import logo2 from '../../Assets/logo2.png'
 import logo3 from '../../Assets/Group 702.png'
 import logo4 from '../../Assets/Group 703.png'
+import { Link } from 'react-router-dom';
 
 import { FiArrowDownRight } from "react-icons/fi";
 
@@ -22,13 +23,12 @@ const StaffingProcess=()=>{
                     <div className='staffing_box'>
                         <div className="start-box">
                             <b>Empower Your Facility with Effortless Access to Premier Talent <img src={logo} /></b>
-                            
                         </div>
                         <p className="description">Join EmpowerCare for free and partner with our dedicated team to enhance your facility's performance through efficient and excellent staffing solutions.</p>                    
                         <div className="bottom-btns-row">
-                            <button className="learnmore-btn">
+                            <Link to="/signup" className="learnmore-btn">
                                 <span>Signup</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="row">

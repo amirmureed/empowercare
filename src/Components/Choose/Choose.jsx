@@ -1,5 +1,6 @@
 import React from 'react';
 import './Choose.scss';
+import { Link } from 'react-router-dom';
 
 const Choose = (props) => {
     let classnames = props.classes == null ? "" : props.classes;
@@ -19,12 +20,12 @@ const Choose = (props) => {
                                     <p className="description">{props.description2}</p>
                                 
                                     <div className="sec-btns">
-                                        <button className="learn-btn">
+                                        <Link to="/" className="learn-btn">
                                             <span>Learn More</span>
-                                        </button>
-                                        <button className="signup-btn">
+                                        </Link>
+                                        <Link to="/signup" className="signup-btn">
                                             <span>Sign up</span>
-                                        </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

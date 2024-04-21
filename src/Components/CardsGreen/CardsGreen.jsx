@@ -1,5 +1,6 @@
 import approach1 from '../../Assets/approach1.png'
 import './CardsGreen.scss'
+import { Link } from 'react-router-dom';
 const CardsGreen = ({heading1, description1, description2, description3, description4, description5 }) => {
     return (
         <>
@@ -88,7 +89,14 @@ const CardsGreen = ({heading1, description1, description2, description3, descrip
                                 </div> 
                             </div>
                         </div>
-                        <div class="sec-btns"><button class="learn-btn"><span>Learn More</span></button><button class="signup-btn"><span>Sign up</span></button></div>
+                        <div class="sec-btns">
+                            <Link to="/" class="learn-btn">
+                                <span>Learn More</span>
+                            </Link>
+                            <Link to="/signup" class="signup-btn">
+                                <span>Sign up</span>
+                            </Link>
+                        </div>
                     </div>   
                 </div>
             </div>

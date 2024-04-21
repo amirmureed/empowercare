@@ -235,7 +235,7 @@
                     margin: 30px 20px 20px;
                 }
 
-                button.signup {
+                a.signup {
                     width: 196px;
                     height: 66px;
                     border-radius: 19px;
@@ -244,6 +244,7 @@
                     #71ba32 0.00%, 
                     #4eb3e8 100.00%);
                     display: flex;
+                    text-decoration: unset;
                     align-items: center;
                     justify-content: center;
                     border: none;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './TrustedPartner.scss';
-import empowercareimg from '../../../Assets/In the office-amico.png';
+import { Link } from 'react-router-dom';
 import activearrow from '../../../Assets/active-arrow.png';
 import downarrow from '../../../Assets/down-link-arrow.svg';
 import { FiArrowDownRight, FiArrowRight } from 'react-icons/fi';
@@ -28,10 +28,10 @@ const TrustedPartner = (props) => {
                         
                           {button ? (<>
                             <div className="sec-btns">
-                                <button className="learn-btn">
+                                <Link className="learn-btn">
                                     <span>Sign Up</span>
                                     <img src={downarrow} alt="downarrow" />
-                                </button>
+                                </Link>
                                 <div className="active-img">
                                     <img src={activearrow} alt="activearrow" />
                                 </div>

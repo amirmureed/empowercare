@@ -28,7 +28,7 @@ const LeftContentRightImage = () => {
                         </a>
                     </div>
                     <div>
-                        <a class="btn_transparent" href="/">
+                        <a class="btn_transparent" href="/signup">
                             Sign Up
                         </a>
                     </div>

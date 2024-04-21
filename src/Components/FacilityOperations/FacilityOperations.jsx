@@ -1,6 +1,7 @@
 import './FacilityOperations.scss'
 import logo from '../../Assets/logo1.png'
 import logo2 from '../../Assets/logo2.png'
+import { Link } from 'react-router-dom';
 import logo3 from '../../Assets/logo3.png'
 import logo4 from '../../Assets/logo4.png'
 import { FiArrowDownRight } from "react-icons/fi";
@@ -81,11 +82,10 @@ your facility runs smoothly without the stress of finding staff.</p><br />
 operations with EmpowerCare's help.</p></div>
                         
                     </div>
-                    <div className="bottom-btns-row">
-                        
-                        <button className="white-bg-btn">
+                    <div className="bottom-btns-row">   
+                        <Link to="/signup" className="signup-btn">
                             <span>QUICK APPLY</span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
