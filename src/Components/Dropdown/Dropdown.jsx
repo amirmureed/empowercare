@@ -148,11 +148,11 @@ const Dropdown = ({ professionals, about, facilities }) => {
                         imgSrc={professionals? logo21 :logo8}
                         description={professionals?"Empower Your Nursing Specialty: Find Your Perfect Job Now":'Elevate Mental Health Care with EmpowerCare Staffing'}
                     />
-                    <Link to={professionals? "/" : '/professionals/directcare-career'} style={{textDecoration:'none'}}>
+                    
                     <Content
                         imgSrc={professionals? logo22 :logo9}
                         description={professionals?"Elevate Your Advanced Practice Nursing Career":'Elevate Direct Care with EmpowerCare  Professionals'}
-                    /></Link>
+                    />
                     {!professionals && (<>
                         <Content
                         imgSrc={logo10}
