@@ -9,7 +9,7 @@ import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import bannerImg from '../../Assets/Group231.png';
 import img from '../../Assets/Group579.png'
-
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 
 const Ceo = () => {
     const bannerStyles = {
@@ -21,7 +21,9 @@ const Ceo = () => {
     };
     return (
     <>
-        <HeaderWhite/>
+        <HeaderWhite
+          logoImg={logow}
+          />
         <Banner2 heading={'CEO LETTER'} description={'FOR NEARLY TWO DECADES MSG STAFFING HAS HAD A PROFOUND IMPACT ON MY LIFE.'}
         img={bannerImg}
         styles={bannerStyles}

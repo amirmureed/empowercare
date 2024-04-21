@@ -1,16 +1,16 @@
 import Banner1 from "../../Components/Banner1/Banner1"
 import Footer from "../../Components/Footer/Footer"
-import Header from "../../Components/Header/Header"
 import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import bannerImg from '../../Assets/unsung2.png'
 import img from '../../Assets/unsung1.png'
-import Impact from "../../Components/Impact/Impact"
 import Stories from "../../Components/Stories/Stories"
 import FaqAccordian from "../../Components/FaqAccordian/FaqAccordian"
 import Initiative from "../../Components/Initiative/Initiative"
 import ShiftChampions from "../../Components/ShiftChampions/ShiftChampions"
 import Benefits from "../../Components/Benefits/Benefits"
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
+import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 const UnsungHeroes=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -21,7 +21,9 @@ const UnsungHeroes=()=>{
         backgroundColor: '#EBE0D3'
     };
     return(<>
-    <Header/>
+    <HeaderWhite
+          logoImg={logow}
+          />
     <Banner1
     heading={'Unsung Heroes No More'} 
     description={'Unsung Heroes No More: Shift Champions in the Spotlight!'}

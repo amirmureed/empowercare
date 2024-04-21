@@ -8,6 +8,7 @@ import EnjoyBenefits from "../../Components/Resources/Benefits/EnjoyBenefits"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import bannerImg from '../../Assets/Group 673.png'
 import img from '../../Assets/Group125.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const Benefits=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -18,7 +19,9 @@ const Benefits=()=>{
         backgroundColor: '#EBE0D3'
     };
     return(<>
-    <HeaderWhite/>
+    <HeaderWhite
+          logoImg={logow}
+          />
     <Banner2 heading={'BENEFITS AT EMPOWERCARE'} description={'WE CARE ABOUT YOU.'}
     img={bannerImg}
     styles={bannerStyles}

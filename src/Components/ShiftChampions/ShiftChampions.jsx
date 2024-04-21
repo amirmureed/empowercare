@@ -20,7 +20,7 @@ const ShiftChampions=()=>{
                                 <p className="description">●    Your amazing service makes patients happier and healthier, which is a big deal.</p>
                                 <p className="description">●     We set a new standard for valuing and empowering healthcare professionals like you.</p>
                                 <div class="priemer-cta">
-                                    <a class="btn_green" href="/">Sign Up</a>
+                                    <a class="btn_green" href="/signup">Sign Up</a>
                                     <div className="active-img">
                                         <img src={activearrow} alt="activearrow" />
                                     </div>

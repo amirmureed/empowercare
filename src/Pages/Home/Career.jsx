@@ -13,6 +13,7 @@ import Userslider2 from '../../Components/UserSlider2/UserSlider2';
 import Banner2 from '../../Components/Banner2/Banner2';
 import bannerImg from '../../Assets/Group230.png';
 import img from '../../Assets/career.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 
 const Career = () => {
   const bannerStyles = {
@@ -25,7 +26,9 @@ const Career = () => {
 };
     return (
         <>
-          <HeaderWhite />
+          <HeaderWhite
+          logoImg={logow}
+          />
           <Banner2 heading={'HEALTHCARE CAREER'} 
           description={'AT EMPOWERCARE, WE ARE NOT JUST A STAFFING AGENCY, WE ARE A CATALYST FOR CHANGE IN THE HEALTHCARE INDUSTRY.'}
           img={bannerImg}

@@ -22,6 +22,7 @@ import empowercareimg from '../../Assets/Hiring-amico.png';
 import empowercareimg2 from '../../Assets/man_6 copy.png';
 import empowercareimg3 from "../../Assets/staff-solutions.png";
 import './Home.scss';
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
      
 const Home = () => {
   const bannerStyles = {
@@ -56,7 +57,9 @@ const content2={
 }
   return (
     <>
-      <HeaderWhite />
+      <HeaderWhite
+          logoImg={logow}
+          />
       <Banner1 heading={'Elevate Your Facility With Us'} 
           description={'Elevate Your Facility with EmpowerCares Staffing Solutions'}
           meta={'Empowering Healthcare Excellence for Over 18 Years'}

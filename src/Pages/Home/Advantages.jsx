@@ -15,7 +15,8 @@ import AboutEmpowercare from "../../Components/AboutEmpowercare/AboutEmpowercare
 import Opportunities from "../../Components/Opportunities/Opportunities"
 import Unparalleled from "../../Components/Unparalleled/Unparalleled"
 import VisitFAQs from "../../Components/VisitFAQs/VisitFAQs"
-
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
+import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 const Advantages=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -26,7 +27,9 @@ const Advantages=()=>{
         backgroundColor: '#EBE0D3'
     };
     return(<>
-    <Header/>
+    <HeaderWhite
+          logoImg={logow}
+          />
     <Banner1
     heading={'Advantages of Per Diem Work'} 
     description={'Unlock the Advantages of Per Diem Work'}

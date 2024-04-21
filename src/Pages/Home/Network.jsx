@@ -7,6 +7,7 @@ import NetworkSection1 from "../../Components/Resources/Network/NetworkSection1"
 import TermsandConditions from "../../Components/Resources/Network/TermsandConditions"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import img from '../../Assets/Group675.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 
 const Network=()=>{
     const bannerStyles = {
@@ -18,7 +19,9 @@ const Network=()=>{
         backgroundColor: '#EBE0D3'
     };
     return (<>
-    <HeaderWhite/>
+    <HeaderWhite
+          logoImg={logow}
+          />
     <Banner2 heading={'EMPOWER YOUR NETWORK'} description={'TRANSFORM HEALTHCARE.'}
     img={bannerImg}
     styles={bannerStyles}

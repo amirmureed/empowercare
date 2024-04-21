@@ -12,13 +12,13 @@ import logo from '../../Assets/EmpowerCareLogo.svg';
 import SearchIcon from '@mui/icons-material/Search';
 import './HeaderWhite.scss';
 import ModalComponent from '../Common/Popover';
-import { IconButton, useMediaQuery, useTheme } from '@mui/material';
+import { IconButton, Stack, useMediaQuery, useTheme } from '@mui/material';
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { IoMdArrowDropright } from "react-icons/io";
 import PopoverContent from '../Common/PopoverContent';
 import Dropdown from '../Dropdown/Dropdown';
 
-const HeaderWhite = () => {
+const HeaderWhite = ({logoImg}) => {
     const [openModal, setOpenModal] = useState(false)
     const OnMouseEnter = () => { setOpenModal(true) }
     const OnMouseLeave = () => { setOpenModal(false) }
@@ -35,7 +35,7 @@ const HeaderWhite = () => {
                 <Container>
                     <Link to="/">
                         <div className="logo">
-                            <img className='desktop_logo' src={logow} alt="logo" />
+                            <img className='desktop_logo' src={logoImg} alt="logo" />
                             <img className='mobile_logo' src={logo} alt="logo" />
                         </div>
                     </Link>
@@ -43,9 +43,10 @@ const HeaderWhite = () => {
 
                     <Navbar.Collapse id="basic-navbar-nav">
                     {!open && !openResources && !openFacilities && !openProfessionals ? (<Nav className="mr-auto">
+                        <Stack direction={'row'}>
                             <Link to="/professionals" className='nav-link'>
                                 Professionals
-                                <div className='dropdown-professionals'>
+                                {!isMobile && <div className='dropdown-professionals'>
                                     <span className='d-span'></span><br />
                                     <div className='dropdown-content'>
                                         
@@ -54,14 +55,16 @@ const HeaderWhite = () => {
                                         about={false}
                                         />
                                     </div>
-                                </div>
-                                {isMobile ? (<> <IconButton onClick={() => setOpenProfessionals(true)} >
+                                </div>}
+                                
+                               
+                            </Link>  {isMobile ? (<> <IconButton onClick={() => setOpenProfessionals(true)} >
                                     <IoMdArrowDropright color='black' />
-                                </IconButton></>) : (<></>)}
-                            </Link>
+                                </IconButton></>) : (<></>)}</Stack>
+                                <Stack direction={'row'}>
                             <Link to="/facilities" className='nav-link'>
                                 Facilities
-                                <div className='dropdown-facilities'>
+                                {!isMobile && <div className='dropdown-facilities'>
                                     <span className='d-span'></span><br /><br />
                                     <div className='dropdown-content'>
                                        
@@ -71,34 +74,31 @@ const HeaderWhite = () => {
                                         professionals={false}
                                         />
                                     </div>
-                                </div>
-                                {isMobile ? (<> <IconButton onClick={() => setOpenFacilities(true)} >
+                                </div>}
+                                
+
+                            </Link>{isMobile ? (<> <IconButton onClick={() => setOpenFacilities(true)} >
                                     <IoMdArrowDropright color='black' />
-                                </IconButton></>) : (<></>)}
-
-                            </Link>
-
+                                </IconButton></>) : (<></>)}</Stack>
+                            <Stack direction={'row'}>
                             <Link to="/about" className='nav-link' >
                                 About Us
 
-                                <div className='dropdown'>
+                                {!isMobile && <div className='dropdown'>
                                     <span className='d-span'></span><br />
                                     <div className='dropdown-content'>
-                                        {/* <PopoverContent
-                                            route1={'/about/ceo'} route2={'/about/community'} route3={'/about/career'} route4={'/about/leadership'}
-                                            name1={'Ceo'} name2={'Community'} name3={'Career'} name4={'Leadership'}
-                                        /> */}
+                                        
                                         <Dropdown
                                         about={true}
                                         professionals={false}
                                         facilities={false}
                                         />
                                     </div>
-                                </div>
-                                {isMobile ? (<> <IconButton onClick={() => setOpen(true)} >
+                                </div>}
+                                
+                            </Link>{isMobile ? (<> <IconButton onClick={() => setOpen(true)} >
                                     <IoMdArrowDropright color='black' />
-                                </IconButton></>) : (<></>)}
-                            </Link>
+                                </IconButton></>) : (<></>)}</Stack>
 
                             {/* <Link to="/resources" className='nav-link'>
                                 Resources
@@ -119,19 +119,19 @@ const HeaderWhite = () => {
                                 </IconButton></>) : (<></>)}
                             </Link> */}
 
-                        </Nav>) : open ? (<>
+                        </Nav>) : open && isMobile ? (<>
                             <IconButton onClick={() => setOpen(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
                             <PopoverContent
                                 route1={'/about/ceo'} route2={'/about/community'} route3={'/about/career'} route4={'/about/leadership'}
                                 name1={'Ceo'} name2={'Community'} name3={'Career'} name4={'Leadership'}
                             /></>)
-                            : openResources ? (<>
+                            : openResources && isMobile ?  (<>
                                 <IconButton onClick={() => setOpenResources(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
                                 <PopoverContent
                                     route1={'/resources/referral-program'} route2={'/resources/network'} route3={'/resources/shift-makers'} route4={'/resources/benefits'} route5={'/resources/empowercare-heroes'}
                                     name1={'Referral Program'} name2={'Empower your Network'} name3={'Shift Makers'} name4={'Benefits'} name5={'Heroes'}
                                 /></>
-                            ) : openFacilities ? (<>
+                            ) : openFacilities && isMobile ? (<>
                                 <IconButton onClick={() => setOpenFacilities(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
                                 <PopoverContent
                                     route1={'/facilities/directcare-careers'}
@@ -141,7 +141,7 @@ const HeaderWhite = () => {
                                     route3={'/facilities/seamless'}
                                     name3={'Seamless'}
                                 />
-                            </>) : openProfessionals ? (<>
+                            </>) : openProfessionals && isMobile ? (<>
                                 <IconButton onClick={() => setOpenProfessionals(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
                                 <PopoverContent
                                     route1={'/professionals/seamless'}

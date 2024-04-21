@@ -13,6 +13,7 @@ import FaqAccordian from '../../Components/FaqAccordian/FaqAccordian';
 import bannerImg from '../../Assets/banner1.png';
 import img from '../../Assets/Group707.png' 
 import empowercareimg from '../../Assets/Resume-amico.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const SeamlesssFacilities = () => {
   const bannerStyles = {
     backgroundImage: `url(${img})`,
@@ -24,7 +25,9 @@ const SeamlesssFacilities = () => {
 };
     return (
         <>
-          <HeaderWhite />
+          <HeaderWhite
+          logoImg={logow}
+          />
           <Banner1 
           heading={'Seamless & Impactful'} 
           description={'Your Gateway to Rewarding Contract Healthcare Careers'}

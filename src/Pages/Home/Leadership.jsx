@@ -9,6 +9,7 @@ import Footer from "../../Components/Footer/Footer"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import bannerImg from '../../Assets/Group232.png';
 import img from '../../Assets/banner3.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const Leadership=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -22,7 +23,9 @@ const Leadership=()=>{
 
     return(
     <>
-        <HeaderWhite/>
+        <HeaderWhite
+          logoImg={logow}
+          />
         <Banner2 heading={'OUR LEADERSHIP'} description={'EMPOWERING HEALTHCARE PROFESSIONALS AND TRANSFORMING LIVES'}
          img={bannerImg}
          styles={bannerStyles}

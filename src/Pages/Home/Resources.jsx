@@ -7,6 +7,7 @@ import Userslider from "../../Components/Userslider/Userslider"
 import LeftContentRightImage from '../../resources/LeftContentRightImage/LeftContentRightImage';
 import bannerImg from '../../Assets/resinner.png';
 import img from '../../Assets/empowercareresources.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 
 const Resources=()=>{
 
@@ -20,7 +21,9 @@ const Resources=()=>{
     };
     return (
     <>
-        <HeaderWhite/>
+        <HeaderWhite
+          logoImg={logow}
+          />
         <Banner2 heading={'EmpowerCare Resources'} 
         description={"We've got something exciting to share with you – our brand-new Shift Makers Nurses Referral Program!"}
         img={bannerImg}

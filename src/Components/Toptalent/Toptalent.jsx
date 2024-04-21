@@ -49,7 +49,7 @@ const Toptalent = () => {
                         </div>
                     </div>
                     <div className="bottom-btns-row">
-                        <a href="/" className="signup-btn">
+                        <a href="/signup" className="signup-btn">
                             Sign up
                         </a>
                         <a href="/" className="learnmore-btn">

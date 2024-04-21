@@ -1,10 +1,11 @@
 import Banner2 from "../../Components/Banner2/Banner2"
 import Footer from "../../Components/Footer/Footer"
-import Header from "../../Components/Header/Header"
 import ReferralForm from "../../Components/Resources/ReferralProgram/ReferralForm"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import bannerImg from '../../Assets/resinner.png'
 import img from '../../Assets/Group125.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
+import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 const ReferralProgram=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -15,7 +16,9 @@ const ReferralProgram=()=>{
         backgroundColor: '#EBE0D3'
     };
     return(<>
-    <Header/>
+    <HeaderWhite
+          logoImg={logow}
+          />
     <Banner2 heading={'REFERRAL PROGRAM SNIPPET'} description={'REFERRAL PROGRAM.'}
     img={bannerImg}
     styles={bannerStyles}
