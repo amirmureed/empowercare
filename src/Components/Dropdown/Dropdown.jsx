@@ -27,7 +27,21 @@ import logo19 from '../../Assets/Group 631.png'
 import logo20 from '../../Assets/Group 632.png'
 import logo21 from '../../Assets/Group 633.png'
 import logo22 from '../../Assets/Group 634.png'
-import ellipse1 from '../../Assets/Ellipse 49.png'
+import ellipse1 from '../../Assets/navicons/ellipse nav img1.png'
+import ellipse2 from '../../Assets/navicons/ellipse nav img2.png'
+import ellipse3 from '../../Assets/navicons/ellipse nav img3.png'
+import ellipse4 from '../../Assets/navicons/ellipse nav img4.png'
+import ellipse5 from '../../Assets/navicons/ellipse nav img5.png'
+import ellipse6 from '../../Assets/navicons/ellipse nav img6.png'
+import ellipse7 from '../../Assets/navicons/ellipse nav img7.png'
+import ellipse8 from '../../Assets/navicons/ellipse nav img8.png'
+import ellipse9 from '../../Assets/navicons/ellipse nav img9.png'
+import ellipse10 from '../../Assets/navicons/ellipse nav img10.png'
+import about1 from '../../Assets/navicons/Group 612.png'
+import about2 from '../../Assets/aboutusicons/Group 660.png'
+import about3 from '../../Assets/aboutusicons/Group 661.png'
+import about4 from '../../Assets/aboutusicons/Group 663.png'
+import about5 from '../../Assets/aboutusicons/Group 664.png'
 import { ArrowRight } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import NursingDropdown from '../NursingDropdown/NursingDropdown'
@@ -197,35 +211,34 @@ const Dropdown = ({ professionals, about, facilities }) => {
                         <h5 style={{ color: 'black' }}>Professional Landing Pages</h5><br />
                         <Link to={'/resources/shift-makers'} style={{textDecoration:'none'}}>
                     <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse6}
                 title="Shift Makers Referral Program"
                 description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
             /></Link>
             <Link to={'/resources/network'} style={{textDecoration:'none'}}>
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse7}
                 title="Empower Your Network"
                 description="Gain a winning edge with EmpowerCare Academy!"
             /></Link>
              <Link to={'/resources'} style={{textDecoration:'none'}}>
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse8}
                 title="EmpowerCare Resources"
                 description="Finding the Perfect Match Made Easy! Dynamic Squads"
             /></Link>
             <Link to={'/resources/benefits'} style={{textDecoration:'none'}}>
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse9}
                 title="Benefits at EmpowerCare"
                 description="Every Job Helps the World, The Ripple Effect!"
             /></Link>
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse10}
                 title="Benefits That Care for You"
                 description="Easy-to-use healthcare staffing tools, 3Es"
-            /> <br />
-
-                   <div className='dropdown-btn'> <a className='btn_green' href="/">Nursing Guide</a>
+            />
+                <div className='dropdown-btn'> <a className='btn_green' href="/">Nursing Guide</a>
                    <div className='dropdown-nursing'>
                                     <span className='div-span'></span><br />
                                     <span className='div-span'></span><br />
@@ -244,31 +257,31 @@ const Dropdown = ({ professionals, about, facilities }) => {
                    
                     </>):aboutUs ?(<>
                         <Link to={'/resources/shift-makers'} style={{textDecoration:'none'}}>
-                        <Box3Stack
-                imgSrc={ellipse1}
+            <Box3Stack
+                imgSrc={ellipse6}
                 title="Shift Makers Referral Program"
                 description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
             /></Link>
             <Link to={'/resources/network'} style={{textDecoration:'none'}}>
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse7}
                 title="Empower Your Network"
                 description="Gain a winning edge with EmpowerCare Academy!"
             /></Link>
              <Link to={'/resources'} style={{textDecoration:'none'}}>
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse8}
                 title="EmpowerCare Resources"
                 description="Finding the Perfect Match Made Easy! Dynamic Squads"
             /></Link>
             <Link to={'/resources/benefits'} style={{textDecoration:'none'}}>
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse9}
                 title="Benefits at EmpowerCare"
                 description="Every Job Helps the World, The Ripple Effect!"
             /></Link>
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse10}
                 title="Benefits That Care for You"
                 description="Easy-to-use healthcare staffing tools, 3Es"
             /> <br />
@@ -276,30 +289,30 @@ const Dropdown = ({ professionals, about, facilities }) => {
                         <h5 style={{ color: 'black' }}>Differentiator</h5><br />
                         <Link to={'/professionals/unsung-heroes'} style={{textDecoration:'none'}}>
                     <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse7}
                 title="Unsung Heroes No More"
                 description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
             /></Link>
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse8}
                 title="Gain a winning edge"
                 description="Gain a winning edge with EmpowerCare Academy!"
             />
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse9}
                 title="Finding the Perfect Match"
                 description="Finding the Perfect Match Made Easy! Dynamic Squads"
             />
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse10}
                 title="The Ripple Effect!"
                 description="Every Job Helps the World, The Ripple Effect!"
             />
             <Box3Stack
-                imgSrc={ellipse1}
+                imgSrc={ellipse5}
                 title="Easy-to-use, 3Es"
                 description="Easy-to-use healthcare staffing tools, 3Es"
-            /> <br />
+            />
                 
                     </>)}
                     
@@ -310,32 +323,32 @@ const Dropdown = ({ professionals, about, facilities }) => {
     }
     const AboutBox2 = () => {
         return (<>
-            <Box sx={{background:'#FCFCFC'}} width={'23%'}   >
+            <Box sx={{background:'#FCFCFC'}} width={'37%'}   >
                 <Stack style={{ backgroundColor: '#FCFCFC' }} direction={'column'} spacing={4} px={2} py={2}>
                     <h5 style={{ color: 'black' }}>ABOUT EMPOWERCARE</h5>
                     <Link to={'/about'} style={{textDecoration:'none'}}>
                     <Stack sx={Style} direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <img style={{ width: '27px' }} src={about1} alt="" />
                         <p className='box2-p' style={{ color: 'black' }} >ABOUT US</p>
                     </Stack></Link>
                     <Link to={'/about/ceo'} style={{textDecoration:'none'}}>
                     <Stack sx={Style} direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <img style={{ width: '27px' }} src={about2} alt="" />
                         <p className='box2-p' style={{ color: 'black' }}>FOUNDER & CEO</p>
                     </Stack></Link>
                     <Link  to={'/about/community'} style={{textDecoration:'none'}}>
                     <Stack sx={Style} direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <img style={{ width: '27px' }} src={about3} alt="" />
                         <p className='box2-p' style={{ color: 'black' }}>COMMUNITY</p>
                     </Stack></Link>
                     <Link to={'/about/career'} style={{textDecoration:'none'}}>
                     <Stack sx={Style} direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <img style={{ width: '27px' }} src={about4} alt="" />
                         <p className='box2-p' style={{ color: 'black' }}>CAREER</p>
                     </Stack></Link>
                     <Link to={'/about/leadership'} style={{textDecoration:'none'}}>
                     <Stack sx={Style} direction={'row'} spacing={2}>
-                        <img style={{ width: '27px' }} src={logo1} alt="" />
+                        <img style={{ width: '27px' }} src={about5} alt="" />
                         <p className='box2-p' style={{ color: 'black' }}>LEADERSHIP</p>
                     </Stack></Link>
                 </Stack>

@@ -1,6 +1,15 @@
 import { Box, Stack } from "@mui/material"
 import './NursingDropdown.scss'
-import ellipse1 from '../../Assets/Ellipse 49.png'
+import ellipse1 from '../../Assets/nursing/nursing nav img1.png'
+import ellipse2 from '../../Assets/nursing/nursing nav img2.png'
+import ellipse3 from '../../Assets/nursing/nursing nav img3.png'
+import ellipse4 from '../../Assets/nursing/nursing nav img4.png'
+import ellipse5 from '../../Assets/nursing/nursing nav img5.png'
+import ellipse6 from '../../Assets/nursing/nursing nav img6.png'
+import ellipse7 from '../../Assets/nursing/nursing nav img7.png'
+import ellipse8 from '../../Assets/nursing/nursing nav img8.png'
+import ellipse9 from '../../Assets/nursing/nursing nav img9.png'
+
 const NursingDropdown=()=>{
     const Style = {
        
@@ -20,28 +29,28 @@ const NursingDropdown=()=>{
                     </Box>
                 </Stack>
                 <Stack direction={'row'} spacing={2} sx={Style} px={2} py={1}  >
-                    <img style={{ width: '30px', height: '30px' }} src={ellipse1} alt="" />
+                    <img style={{ width: '30px', height: '30px' }} src={ellipse2} alt="" />
                     <Box>
                         <h6 className='box3-h6'>Telemetry Nursing Careers</h6>
                         <p className='box3-p'>Guide for Telemetry Nursing Careers: Pathways & Jobs</p>
                     </Box>
                 </Stack>
                 <Stack direction={'row'} spacing={2} sx={Style} px={2} py={1}  >
-                    <img style={{ width: '30px', height: '30px' }} src={ellipse1} alt="" />
+                    <img style={{ width: '30px', height: '30px' }} src={ellipse3} alt="" />
                     <Box>
                         <h6 className='box3-h6'>Step Down Nurse Careers</h6>
                         <p className='box3-p'>Guide for Step Down Nurse Careers: Pathways & Jobs</p>
                     </Box>
                 </Stack>
                 <Stack direction={'row'} spacing={2} sx={Style} px={2} py={1}  >
-                    <img style={{ width: '30px', height: '30px' }} src={ellipse1} alt="" />
+                    <img style={{ width: '30px', height: '30px' }} src={ellipse4} alt="" />
                     <Box>
                         <h6 className='box3-h6'>Operating Room Nurse Careers</h6>
                         <p className='box3-p'>Guide for Operating Room Nurse Careers: Pathways & Jobs</p>
                     </Box>
                 </Stack>
                 <Stack direction={'row'} spacing={2} sx={Style} px={2} py={1}  >
-                    <img style={{ width: '30px', height: '30px' }} src={ellipse1} alt="" />
+                    <img style={{ width: '30px', height: '30px' }} src={ellipse5} alt="" />
                     <Box>
                         <h6 className='box3-h6'>Medical Surgical Nurse Careers</h6>
                         <p className='box3-p'>Guide for Medical Surgical Nurse Careers: Pathways, Roles, & Jobs</p>
@@ -50,28 +59,28 @@ const NursingDropdown=()=>{
       </Box>
       <Box px={3}>
       <Stack direction={'row'} spacing={2} sx={Style} px={2} py={1}  >
-                    <img style={{ width: '30px', height: '30px' }} src={ellipse1} alt="" />
+                    <img style={{ width: '30px', height: '30px' }} src={ellipse6} alt="" />
                     <Box>
                         <h6 className='box3-h6'>Home Health Nurse Careers</h6>
                         <p className='box3-p'>Guide for Home Health Nurse Careers: Pathways & Jobs</p>
                     </Box>
                 </Stack>
                 <Stack direction={'row'} spacing={2} sx={Style} px={2} py={1}  >
-                    <img style={{ width: '30px', height: '30px' }} src={ellipse1} alt="" />
+                    <img style={{ width: '30px', height: '30px' }} src={ellipse7} alt="" />
                     <Box>
                         <h6 className='box3-h6'>Emergency Room Nurse Careers</h6>
                         <p className='box3-p'>Guide for Emergency Room Nurse Careers: Pathways & Jobs</p>
                     </Box>
                 </Stack>
                 <Stack direction={'row'} spacing={2} sx={Style} px={2} py={1}  >
-                    <img style={{ width: '30px', height: '30px' }} src={ellipse1} alt="" />
+                    <img style={{ width: '30px', height: '30px' }} src={ellipse8} alt="" />
                     <Box>
                         <h6 className='box3-h6'>Critical Care Nurse Careers</h6>
                         <p className='box3-p'>Guide for Critical Care Nurse Careers: Pathways & Jobs</p>
                     </Box>
                 </Stack>
                 <Stack direction={'row'} spacing={2} sx={Style} px={2} py={1}  >
-                    <img style={{ width: '30px', height: '30px' }} src={ellipse1} alt="" />
+                    <img style={{ width: '30px', height: '30px' }} src={ellipse9} alt="" />
                     <Box>
                         <h6 className='box3-h6'>Behavioral and Mental Health Nurse</h6>
                         <p className='box3-p'>Guide for Behavioral and Mental Health Nurse: Pathways & Jobs</p>
