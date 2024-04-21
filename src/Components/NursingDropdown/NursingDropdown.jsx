@@ -85,8 +85,8 @@ const NursingDropdown=()=>{
                         <h6 className='box3-h6'>Behavioral and Mental Health Nurse</h6>
                         <p className='box3-p'>Guide for Behavioral and Mental Health Nurse: Pathways & Jobs</p>
                     </Box>
-                </Stack>
-                <a className="btn_green" href="/professionals" >PROFESSIONALS</a>
+                </Stack><br />
+                <a  className="btn_green" href="/professionals" >PROFESSIONALS</a>
       </Box>
      </Stack>
     

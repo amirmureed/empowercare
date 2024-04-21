@@ -7,6 +7,7 @@ import Banner2 from "../../Components/Banner2/Banner2"
 import Content1 from "../../Components/Community/Content1"
 import bannerImg from '../../Assets/elipse2.png'
 import img from '../../Assets/banner3.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const Signup=()=>{
     
     const heading='SIGN UP FOR FREE NOW!'
@@ -21,7 +22,9 @@ const Signup=()=>{
     };
     return(
     <>
-        <HeaderWhite/>
+        <HeaderWhite
+          logoImg={logow}
+          />
         <Banner2 heading={heading} description={description} img={bannerImg} styles={bannerStyles} 
         
         />

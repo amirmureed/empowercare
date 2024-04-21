@@ -26,7 +26,7 @@ const ReferralForm=()=>{
                           
                           <br />
                           <div className='btns'>
-                              <a class="btn_red" href="/">Sign Up</a>
+                              <a class="btn_red" href="/signup">Sign Up</a>
                               <a class="learn_more" href="/">Learn More</a>
                               </div><br />
                            

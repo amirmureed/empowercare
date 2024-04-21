@@ -15,6 +15,7 @@ import Stories from "../../Components/Stories/Stories"
 import { FaBullseye } from "react-icons/fa"
 import OurHistory from "../../Components/OurHistory/OurHistory"
 import EmpowercarePremier from "../../Components/EmpowercarePremier/EmpowercarePremier"
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const ProfessionalsCareer=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -25,7 +26,9 @@ const ProfessionalsCareer=()=>{
         backgroundColor: '#EBE0D3'
     };
     return(<>
-    <HeaderWhite />
+    <HeaderWhite
+          logoImg={logow}
+          />
     <Banner10
      bannerStyles={bannerStyles}
      bannerImg={bannerImg}

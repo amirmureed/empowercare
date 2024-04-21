@@ -14,6 +14,8 @@ import CareerSlider from "../../Components/CareerSlider/CareerSlider"
 import GuideCards from "../../Components/GuideCards/GuideCards"
 import ResponsibilitiesSlider from "../../Components/ResponsibilitiesSlider/ResponsibilitiesSlider"
 import HowtoBecome from "../../Components/HowtoBecome/HowtoBecome"
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
+import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 const Guide=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -24,7 +26,9 @@ const Guide=()=>{
         backgroundColor: '#EBE0D3'
     };
     return(<>
-    <Header/>
+    <HeaderWhite
+          logoImg={logow}
+          />
     <Banner1 heading={'Guide to General Nursing Careers'} 
           description={'Guide to General Nursing Careers:Pathways, Roles & Jobs'}
           meta={'A general nurse also known as registered nurse (RN) or a staff Nurse, is a healthcare professional who provides comprehensive care to patients in various settings'}

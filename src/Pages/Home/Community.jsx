@@ -9,6 +9,7 @@ import Content1 from "../../Components/Community/Content1"
 import Footer from "../../Components/Footer/Footer"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import img from '../../Assets/Group125.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 
 const Community=()=>{
     const heading='OUR COMMUNITY'
@@ -22,7 +23,9 @@ const Community=()=>{
        backgroundColor: '#EBE0D3'
    };
    return(<>
-    <HeaderWhite/>
+    <HeaderWhite
+          logoImg={logow}
+          />
     <Banner2 heading={heading} description={description} img={bannerImg} styles={bannerStyles}
     
     />

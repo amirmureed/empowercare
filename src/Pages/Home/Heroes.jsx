@@ -11,6 +11,7 @@ import MakingDifference from "../../Components/Resources/EmpowerCare Heroes/Maki
 import OurBenefits from "../../Components/Resources/EmpowerCare Heroes/OurBenefits"
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import img from '../../Assets/heros.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const Heroes=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -21,7 +22,9 @@ const Heroes=()=>{
         backgroundColor: '#EBE0D3'
     };
     return (<>
-    <HeaderWhite/>
+    <HeaderWhite
+          logoImg={logow}
+          />
     <Banner2 heading={'EMPOWERING HEALTHCARE HEROES'} 
     img={bannerImg}
     styles={bannerStyles}

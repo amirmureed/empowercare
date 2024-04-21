@@ -28,7 +28,7 @@ const TrustedPartner = (props) => {
                         
                           {button ? (<>
                             <div className="sec-btns">
-                                <Link className="learn-btn">
+                                <Link to='/signup' className="learn-btn">
                                     <span>Sign Up</span>
                                     <img src={downarrow} alt="downarrow" />
                                 </Link>

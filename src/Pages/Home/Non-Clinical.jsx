@@ -22,6 +22,7 @@ import img from '../../Assets/staffing_banner.png'
 import image from '../../Assets/staff.png'
 import empowercareimg from '../../Assets/In the office-amico.png'
 import storiesimg from '../../Assets/guaranty.png';
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const NonClinical = () => {
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -33,7 +34,9 @@ const NonClinical = () => {
     };
     return(
     <>
-        <HeaderWhite/>
+        <HeaderWhite
+          logoImg={logow}
+          />
         <Banner10
         bannerStyles={bannerStyles}
         bannerImg={bannerImg}

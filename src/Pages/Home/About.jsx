@@ -11,6 +11,7 @@ import Footer from '../../Components/Footer/Footer';
 import bannerImg from '../../Assets/elipse2.png';
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import img from '../../Assets/banner3.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 
 const About = () => {
 
@@ -25,7 +26,9 @@ const About = () => {
 
     return (
         <>
-          <HeaderWhite />
+          <HeaderWhite
+          logoImg={logow}
+          />
           <Banner2 heading={'ABOUT EMPOWERCARE HEALTHCARE'} 
           description={'We ensure that every patient receives exceptional care, aiding in their swift recovery and promoting healthier lives.'}
           img={bannerImg}

@@ -12,6 +12,7 @@ import Userslider from '../../Components/Userslider/Userslider';
 import FaqAccordian from '../../Components/FaqAccordian/FaqAccordian';
 import bannerImg from '../../Assets/seamless_banner_img.png';
 import img from '../../Assets/bannerbg1.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const Seamlesss = () => {
   const bannerStyles = {
     backgroundImage: `url(${img})`,
@@ -23,7 +24,9 @@ const Seamlesss = () => {
 };
     return (
         <>
-          <HeaderWhite />
+          <HeaderWhite
+          logoImg={logow}
+          />
           <Banner1 heading={'Seamless & Impactful'} 
           description={'A Seamless and Impactful Alternative to Maxim Healthcare'}
           meta={'EmpowerCare is revolutionizing the way healthcare professionals find fulfilling job opportunities. We go beyond traditional staffing agencies by offering a seamless and impactful experience that puts your needs and aspirations first.'}

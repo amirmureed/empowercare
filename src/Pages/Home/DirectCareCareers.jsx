@@ -24,7 +24,7 @@ import empowercareimg3 from '../../Assets/pledge.png'
 import testimonials from '../../Assets/testimonials.png'
 import bannerImg from '../../Assets/Group230.png';
 import img from '../../Assets/Group707.png'
-
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const DirectCareCareers = () => {
    const bannerStyles = {
       backgroundImage: `url(${img})`,
@@ -58,7 +58,9 @@ const DirectCareCareers = () => {
     }
   return (
     <>
-        <HeaderWhite />
+        <HeaderWhite
+          logoImg={logow}
+          />
         <Banner2 heading={'TEMP-TO-HIRE STAFFING SOLUTIONS'} 
           description={"Your Trusted Partner for Temp-to-Hire Staffing Solutions Evaluate Talent Before Hiring with EmpowerCare's Temp-to-Hire"}
           img={bannerImg}

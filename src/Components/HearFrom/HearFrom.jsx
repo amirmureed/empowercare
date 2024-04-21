@@ -45,7 +45,7 @@ const HearFrom = () => {
                             </div><br />
                             <div className="sec-btns">
                                 <button className="learn-btn">
-                                    <span>Sign up</span>
+                                    <span> <a href="/signup">Sign up</a></span>
                                 </button>
                                 <button className="signup-btn">
                                     <span>Explore More</span>

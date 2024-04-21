@@ -31,7 +31,7 @@ const RefferalProgram = () => {
 
                 <div class="btns-flex">
                     <div>
-                        <a class="btn_grad" href="/">
+                        <a class="btn_grad" href="/signup">
                             Sign Up
                         </a>
                     </div>

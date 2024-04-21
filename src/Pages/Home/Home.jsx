@@ -21,11 +21,15 @@ import Userslider from '../../Components/Userslider/Userslider';
 import Network from '../../Components/ExtensiveNetwork/Network';
 import './Home.scss';
 import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
+import logo from '../../Assets/EmpowerCareLogo.svg';
+
 
 const Home = () => {
   return (
     <>
-        <Header/>
+       <HeaderWhite
+          logoImg={logo}
+          />
         <Banner />
         <Trusted />
         <Healthcare />

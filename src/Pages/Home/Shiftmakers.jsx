@@ -9,6 +9,7 @@ import RefferalProgram from '../../resources/RefferalProgram/RefferalProgram';
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import bannerImg from '../../Assets/Mask Group 2216.png';
 import img from '../../Assets/elevatebanners.png'
+import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 
 const Shiftmakers=()=>{
     const heading='ELEVATE YOUR FACILITY WITH US'
@@ -24,7 +25,9 @@ const Shiftmakers=()=>{
     return(
         
         <>
-            <HeaderWhite/>
+            <HeaderWhite
+          logoImg={logow}
+          />
             <Banner2 heading={heading} description={description} 
              img={bannerImg}
              styles={bannerStyles}
