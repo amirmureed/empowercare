@@ -20,11 +20,12 @@ import Blog from '../../Components/Blog/Blog';
 import Userslider from '../../Components/Userslider/Userslider';
 import Network from '../../Components/ExtensiveNetwork/Network';
 import './Home.scss';
+import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 
 const Home = () => {
   return (
     <>
-        <Header />
+        <HeaderWhite/>
         <Banner />
         <Trusted />
         <Healthcare />
