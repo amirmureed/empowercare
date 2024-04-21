@@ -25,7 +25,7 @@ import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 const Home = () => {
   return (
     <>
-        <HeaderWhite/>
+        <Header/>
         <Banner />
         <Trusted />
         <Healthcare />
