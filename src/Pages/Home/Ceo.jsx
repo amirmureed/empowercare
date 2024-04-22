@@ -14,9 +14,10 @@ import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const Ceo = () => {
     const bannerStyles = {
         backgroundImage: `url(${img})`,
-        backgroundPosition: '50%',
+        backgroundPosition: '50% 43%',
         backgroundRepeat: 'no-repeat',
         marginTop: '-265px',
+        backgroundSize: 'contain',
         backgroundColor: '#EBE0D3'
     };
     return (

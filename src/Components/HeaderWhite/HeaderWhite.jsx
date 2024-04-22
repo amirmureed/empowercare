@@ -134,12 +134,42 @@ const HeaderWhite = ({logoImg}) => {
                             ) : openFacilities && isMobile ? (<>
                                 <IconButton onClick={() => setOpenFacilities(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>
                                 <PopoverContent
-                                    route1={'/facilities/directcare-careers'}
+                                    route1={'/facilities/seamless'}
                                     name1={'Careers'}
-                                    route2={'/facilities/staffing-solutions'}
-                                    name2={'Staffing Solutions'}
+                                    route2={'/facilities/seamless'}
+                                    name2={'Non-Clinical Healthcare Staffing by EmpowerCare'}
                                     route3={'/facilities/seamless'}
-                                    name3={'Seamless'}
+                                    name3={'Empowering your Community Health Center with Top Talent'}
+                                    route4={'/facilities/seamless'}
+                                    name4={'Empowering Hospitals and Health Systems with Top Talent'}
+                                    route5={'/facilities/seamless'}
+                                    name5={"EmpowerCare Corporate Staffing: Empower Employee Health"}
+                                    route6={'/facilities/seamless'}
+                                    name6={'Elevating Surgical Excellence with EmpowerCare Staff'}
+                                    route7={'/facilities/seamless'}
+                                    name7={'Elevate Student Health: EmpowerCare Education Staffing'}
+                                    route8={'/facilities/seamless'}
+                                    name8={'Elevate Student Health with our School Healthcare Staffing'}
+                                    route9={'/facilities/seamless'}
+                                    name9={'Elevate Mental Health Care with EmpowerCare Staffing'}
+                                    route10={'/facilities/seamless'}
+                                    name510={'Elevate Direct Care with EmpowerCare Professionals'}
+                                    route11={'/facilities/seamless'}
+                                    name11={'Elevate Care: EmpowerCare Advanced Practice Staff'}
+                                    route12={'/facilities/seamless'}
+                                    name12={'Elevate Care with EmpowerCare Allied Health Staffing'}
+                                    route13={'/facilities/seamless'}
+                                    name13={'Elevate Care Quality: EmpowerCare Skilled Nursing Staffing'}
+                                    route14={'/facilities/seamless'}
+                                    name14={'Bridge Leadership Gaps with EmpowerCare Interim Solutions'}
+                                    route15={'/facilities/seamless'}
+                                    name15={'Unsung Heroes No More'}
+                                    route16={'/facilities/seamless'}
+                                    name16={'Gain a winning edge'}
+                                    route17={'/facilities/seamless'}
+                                    name17={'Finding the Perfect Match'}
+                                    route18={'/facilities/seamless'}
+                                    name18={'The Ripple Effect!'}
                                 />
                             </>) : openProfessionals && isMobile ? (<>
                                 <IconButton onClick={() => setOpenProfessionals(false)}><FaArrowCircleLeft></FaArrowCircleLeft> </IconButton>

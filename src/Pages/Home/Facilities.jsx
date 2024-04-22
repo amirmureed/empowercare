@@ -29,6 +29,7 @@ const Home = () => {
     backgroundImage: `url(${img})`,
     backgroundPosition: '50%',
     backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
     marginTop: '-270px',
     backgroundColor: '#EBE0D3'
 };
