@@ -42,7 +42,13 @@ const About = () => {
           <TextImageGroupV2 />
           <TextImageGroup />
           <TextImageGroupV2 />
-          <PriemerBlack />
+          <PriemerBlack 
+          heading1="Join Us in"
+          heading2="Making a"
+          heading3="difference in Healthcare "
+          description="Act Fast! Apply by today is date + 5 to secure your exclusive spot! Seize this rare opportunity to join our prestigious network of Premier Healthcare Professionals within the next 5 days. Gain access to top-tier healthcare jobs, unparalleled support, and career-accelerating benefits. Here is what awaits you:"
+          Redcolor={true}
+          />
           <Form/>
           <Userslider2 />
           <Footer />

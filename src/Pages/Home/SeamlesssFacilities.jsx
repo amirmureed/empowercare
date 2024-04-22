@@ -58,7 +58,13 @@ const SeamlesssFacilities = () => {
             headingafter = "Make an impact with every shift"
             description1 = "We believe that every shift is an opportunity to make a difference in people's lives. Our Seamless Pledge ensures that you can focus on what matters most - providing exceptional care and making a lasting impact."
           />
-          <PriemerBlack />
+          <PriemerBlack 
+           heading1="Elevate Your"
+           heading2="Healthcare Career"
+           heading3="with empowercare"
+           description="Join EmpowerCare and embark on a transformative journey in your healthcare career. Our commitment to personalized excellence, combined with our Dynamic Squads and Seamless Pledge, sets us apart from traditional staffing companies. We empower you to find fulfillment, make a meaningful impact, and achieve your career aspirations."
+          Redcolor={false}
+          />
           <Careerpaths 
           heading1={'Be part of our mission for a'}
           heading2={'Brighter'}

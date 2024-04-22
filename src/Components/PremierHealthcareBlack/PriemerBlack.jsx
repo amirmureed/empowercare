@@ -3,8 +3,9 @@ import './PriemerBlack.scss';
 import "react-multi-carousel/lib/styles.css";
 import empower2img from '../../Assets/services_icon04.png';
 import empower1img from '../../Assets/services_icon02.png';
+import { FiArrowDownRight } from 'react-icons/fi';
 
-const PriemerBlack = () => {
+const PriemerBlack = ({heading1,heading2,heading3,description,Redcolor}) => {
     return (
         <div className="priemer-sec-black">
             <div className="priemer-container">
@@ -19,13 +20,13 @@ const PriemerBlack = () => {
                         <div className="top-content">
                             <span className="meta">Join us now</span>
                             <h2 className="heading">
-                                Join Us in 
-                                <span className='text_grad_red'> Making a </span>
-                                difference in Healthcare 
+                                {heading1}
+                                <span className={Redcolor ?'text_grad_red':"text_grad_green"}> {heading2} </span>
+                                {heading3}
                             </h2>
-                            <p className="description">Act Fast! Apply by today is date + 5 to secure your exclusive spot! Seize this rare opportunity to join our prestigious network of Premier Healthcare Professionals within the next 5 days. Gain access to top-tier healthcare jobs, unparalleled support, and career-accelerating benefits. Here is what awaits you:</p>
+                            <p className="description">{description}</p>
                             <div className='priemer-cta'>
-                                <a className='btn_red' href='/'>Find Your purpose today</a>
+                                <a className={Redcolor ?'btn_red':'btn_green'} href='/'>Find Your purpose today <span ><FiArrowDownRight/></span></a>
                             </div>
                         </div>
                     </div>
