@@ -83,37 +83,37 @@ const SignupForm = () => {
                                         <div className='checkboxes_container'>
                                             <span class="checkbox_one">
                                                 <label>
-                                                    <input type="radio" name="sign-1a" value="long-term" />
+                                                    <input type="checkbox" name="sign-1a" value="long-term" />
                                                     <span class="wpcf7-list-item-label">Long term Care</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_two">
                                                 <label>
-                                                    <input type="radio" name="sign-2a" value="hospital" />
+                                                    <input type="checkbox" name="sign-2a" value="hospital" />
                                                     <span class="wpcf7-list-item-label">Hospital</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_three">
                                                 <label>
-                                                    <input type="radio" name="sign-3a" value="home-health" />
+                                                    <input type="checkbox" name="sign-3a" value="home-health" />
                                                     <span class="wpcf7-list-item-label">Home Health</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_four">
                                                 <label>
-                                                    <input type="radio" name="sign-4a" value="hospice" />
+                                                    <input type="checkbox" name="sign-4a" value="hospice" />
                                                     <span class="wpcf7-list-item-label">Hospice</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_five">
                                                 <label>
-                                                    <input type="radio" name="sign-5a" value="ambulatory-surgical" />
+                                                    <input type="checkbox" name="sign-5a" value="ambulatory-surgical" />
                                                     <span class="wpcf7-list-item-label">Ambulatory/Surgical</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_six">
-                                                <label className='active'>
-                                                    <input type="radio" name="sign-6a" value="urgent-care" />
+                                                <label>
+                                                    <input type="checkbox" name="sign-6a" value="urgent-care" />
                                                     <span class="wpcf7-list-item-label">Urgent Care</span>
                                                 </label>
                                             </span>
@@ -124,25 +124,25 @@ const SignupForm = () => {
                                         <div className='checkboxes_container'>
                                             <span class="checkbox_one">
                                                 <label>
-                                                    <input type="radio" name="sign-1b" value="perdiem-local" />
+                                                    <input type="checkbox" name="sign-1b" value="perdiem-local" />
                                                     <span class="wpcf7-list-item-label">Per Diem/Local Contract</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_two">
                                                 <label>
-                                                    <input type="radio" name="sign-2b" value="permanent-full" />
+                                                    <input type="checkbox" name="sign-2b" value="permanent-full" />
                                                     <span class="wpcf7-list-item-label">Permanent Full-Time</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_three">
-                                                <label className='active'>
-                                                    <input type="radio" name="sign-3b" value="permanent-part" />
+                                                <label>
+                                                    <input type="checkbox" name="sign-3b" value="permanent-part" />
                                                     <span class="wpcf7-list-item-label">Permanent Part-Time</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_four">
                                                 <label>
-                                                    <input type="radio" name="sign-4b" value="travel" />
+                                                    <input type="checkbox" name="sign-4b" value="travel" />
                                                     <span class="wpcf7-list-item-label">Travel</span>
                                                 </label>
                                             </span>

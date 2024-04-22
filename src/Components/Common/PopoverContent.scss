@@ -5,13 +5,29 @@
     width: 140px;
 }
 
-.popover-link {
+.navbar-collapse.show {
+    z-index: 999;
+    .MuiStack-root.css-8ri0v7 {
+        // display: unset !important;
+        // column-count: 2 !important;
+        padding: unset !important;
+    }
+}
 
+.popover-link {
+    margin: unset !important;
     text-decoration: none;
     color: #333;
     transition: all 0.8s ease;
     padding: 3px;
     font-weight: bold;
+
+    .MuiStack-root {
+        align-items: center;
+        .MuiBox-root {
+            padding: unset !important;
+        }
+    }
 }
 
 .dropdown-wrapper {
