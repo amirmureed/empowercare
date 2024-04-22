@@ -5,6 +5,7 @@
     .container {
         .top-content {
             text-align: center;
+            
 
             h2.heading {
                 font-size: 49px;
@@ -75,6 +76,9 @@
 
                 @media (max-width: 480px ){
                     margin-top: 40px;
+                }
+                h3{
+                    font-weight: bold;
                 }
 
             }

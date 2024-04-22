@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import activearrow from '../../Assets/active-arrow.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
 
-const Careerpaths = ({ meta,heading1, heading2, heading3, description, description2, img,btn1 }) => {
+const Careerpaths = ({ meta,heading1, heading2, heading3, description, description2, img,btn1,NoArrow }) => {
     return (
         <div className="empowercare-sec">
             <div className="container">
@@ -41,7 +41,7 @@ const Careerpaths = ({ meta,heading1, heading2, heading3, description, descripti
                                 <div className="sec-btns">
                                     <Link to="/signup" className="learn-btn">
                                         <span>{btn1}</span>
-                                        <img src={downarrow} alt="downarrow" />
+                                        {!NoArrow && <img src={downarrow} alt="downarrow" />}
                                     </Link>
                                     <Link className="btn contact-btn">
                                         Contact Us

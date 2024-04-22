@@ -16,6 +16,7 @@ const Choose = (props) => {
                                     <h2 className="heading">
                                         {props.heading} <span> {props.spantext}</span> {props.headingafter} 
                                     </h2>
+                                    {props.firstDescription && <p className='description'>{props.firstDescription}</p> }
                                     <p className="description">{props.description1}</p>
                                     <p className="description">{props.description2}</p>
                                 
@@ -24,7 +25,10 @@ const Choose = (props) => {
                                             <span>Learn More</span>
                                         </Link>
                                         <Link to="/signup" className="signup-btn">
-                                            <span>Sign up</span>
+                                            <span 
+                                            style={{color: props.facilities ? "white" :"black",
+                                            
+                                        }}>Sign up</span>
                                         </Link>
                                     </div>
                                 </div>
@@ -33,19 +37,16 @@ const Choose = (props) => {
                                 <div className="right-content">
                                     <div className="content-row">
                                         <div className="content-box active">
-                                            <h5 className="heading">Convenient Placements:</h5>
-                                            <p className="description">We provide a wide range of job opportunities that match your skills and
-                                                    preferences, making it convenient for you to find the perfect fit.</p>
+                                            <h5 className="heading">{props.boxHeading1}</h5>
+                                            <p className="description">{props.boxDescription1}</p>
                                         </div>
                                         <div className="content-box">
-                                            <h5 className="heading">Personable Support:</h5>
-                                            <p className="description">Our dedicated team is committed to building strong relationships with
-                                                you, providing guidance and support throughout your healthcare journey.</p>
+                                            <h5 className="heading">{props.boxHeading2}</h5>
+                                            <p className="description">{props.boxDescription2}</p>
                                         </div>
                                         <div className="content-box">
-                                            <h5 className="heading">Responsive Advocacy:</h5>
-                                            <p className="description">We are always ready to listen to your needs, address your concerns, and
-                                        provide timely solutions to help you thrive in your career.</p>
+                                            <h5 className="heading">{props.boxHeading3}</h5>
+                                            <p className="description">{props.boxDescription3}</p>
                                         </div>
                                     </div>
                                 </div>

@@ -70,12 +70,20 @@ const content2={
       <Trusted />
       <BoxesWithIcons />
       <Choose 
+          facilities={true}
+          firstDescription="Finding the Perfect Match Made Easy! Dynamic Squads"
           meta="Dynamic Squads"
-          spantext = "Squads:"
+          spantext = "healthcare"
           heading = "Why"
-          headingafter = "professionals choose empowercare"
-          description1 = "EmpowerCare's Dynamic Squads offer a comprehensive approach to meet all your career needs. Our personalized solutions help you achieve your professional goals while balancing your lifestyle."
-          description2 = "Just like CPR breathes life into critical situations, our Dynamic Squads revitalize your career journey." 
+          headingafter = "facilities choose empowercare"
+          description1 = "EmpowerCare's Dynamic Squads offer a comprehensive approach to meet all your staffing needs. Our personalized solutions help you achieve your patient care goals while optimizing your workforce."
+          description2 = "Just like CPR breathes life into critical situations, our Dynamic Squads revitalize your staffing process." 
+          boxHeading1="Convenient Staffing:"
+            boxDescription1="We provide a full range of staffing solutions, covering all aspects of your professional requirements, making the process convenient for you."
+            boxHeading2="Personable Approach:"
+            boxDescription2="Our customized staffing plans are designed to align with your unique needs, ensuring the best fit for your career aspirations. We prioritize building strong relationships with our healthcare professionals."
+            boxHeading3="Supportive Community:"
+            boxDescription3="Access a vast network of highly qualified and responsible healthcare professionals who are ready to make a positive impact together."
           classes      = "black-bg"
       />
       <Impact position="box-center-aligned" />
