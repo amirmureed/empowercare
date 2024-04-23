@@ -1,6 +1,5 @@
 import AboutEmpowercare from "../../Components/AboutEmpowercare/AboutEmpowercare"
 import Banner1 from "../../Components/Banner1/Banner1"
-import Banner from "../../Components/Banner10/Banner10"
 import FaqAccordian from "../../Components/FaqAccordian/FaqAccordian"
 import Footer from "../../Components/Footer/Footer"
 import Stories from "../../Components/Stories/Stories"
@@ -11,6 +10,7 @@ import bannerImg from '../../Assets/advantagesImg.png'
 import FAQ from "../../Components/FAQ/FAQ" 
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
+import storiesimg from '../../Assets/storiesPic.png';
 const Faqs=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -34,7 +34,13 @@ const Faqs=()=>{
     <Trusted/>
     <FAQ/>
     <AboutEmpowercare/>
-    <Stories/>
+    <Stories
+    img={storiesimg}
+    description={"Are You Ready for Flexible and Rewarding Per Diem Work?"}
+    description2={"Step into the world of per diem opportunities with EmpowerCare and tailor your job to fit your life. Start your journey today with a team that values your flexibility and career aspirations. "}
+    Join={"JOIN US NOW"}
+    btn1={"Apply Now"}
+    />
     <FaqAccordian/>
     <Userslider/>
     <Footer/>

@@ -5,6 +5,8 @@ import imageone from '../../Assets/banner5-rounded.png';
 import imagetwo from '../../Assets/section-image-realimpact-2.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
 
+import Stories from '../Stories/Stories';
+
 const Realstoriesimpact = () => {
     return (
     <div className="real-impact-stories">
@@ -32,6 +34,7 @@ const Realstoriesimpact = () => {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="row emp_row">
                         <div className="col-lg-6 col-md-12">
                             <div className="right-content">

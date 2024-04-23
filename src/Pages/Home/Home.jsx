@@ -22,7 +22,8 @@ import Network from '../../Components/ExtensiveNetwork/Network';
 import './Home.scss';
 import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
 import logo from '../../Assets/EmpowerCareLogo.svg';
-
+import storiesimg from '../../Assets/storiesimg.png';
+import playbtn from '../../Assets/play.svg';
 
 const Home = () => {
   return (
@@ -56,7 +57,10 @@ const Home = () => {
       <Caregivers />
       <HCareer />
       <Priemer />
-      <Stories />
+      <Stories 
+      img={storiesimg}
+      img2={playbtn}
+      />
       <Nextstep />
       <CareerSlider />
       <Blog />

@@ -13,9 +13,38 @@ const SignupForm = () => {
         username: '',
         email: '',
         password: '',
-        confirmPassword: ''
+        confirmPassword: '',
+        licenseType:'',
+        preferredWorkSettings:'',
+        desiredPosition:'',
+        workPreference:''
       });
+      const [selectedSettingCheckboxes, setSelectedSettingCheckboxes] = useState([]);
+      const [selectedWorkCheckboxes, setSelectedWorkCheckboxes] = useState([]);
+
+    const handleCheckboxChangeSetting = (e) => {
+        const { value, checked } = e.target;
+
+        if (checked) {
+            console.log(value)
+            setSelectedSettingCheckboxes(prevState => [...prevState, value]);
+        } else {
+            setSelectedSettingCheckboxes(prevState => prevState.filter(item => item !== value));
+        }
+    };
+    
+    const handleCheckboxChangeWork = (e) => {
+        const { value, checked } = e.target;
+
+        if (checked) {
+            console.log(value)
+            setSelectedWorkCheckboxes(prevState => [...prevState, value]);
+        } else {
+            setSelectedWorkCheckboxes(prevState => prevState.filter(item => item !== value));
+        }
+    };
     const handleChange = (e) => {
+        console.log()
         setFormData({
           ...formData,
           [e.target.name]: e.target.value
@@ -32,8 +61,17 @@ const SignupForm = () => {
             form.append('email', formData.email);
             form.append('password', formData.password);
             form.append('confirmPassword', formData.confirmPassword);
+            form.append('licenseType',formData.licenseType)
+            form.append('preferredWorkSettings',formData.preferredWorkSettings)
+            form.append('desiredPosition',formData.desiredPosition)
+            form.append('workPreference',formData.workPreference)
+            
+
+            
+            form.append('setting', JSON.stringify(selectedSettingCheckboxes));
+            form.append('work', JSON.stringify(selectedWorkCheckboxes));
       
-            const response = await fetch('https://msgstaffing.com/wp-json/empower/staffing/signup', {
+            const response = await fetch('https://empowercare.me/wp-json/empower/staffing/signup', {
               method: 'POST',
               body: form,
             });
@@ -50,7 +88,13 @@ const SignupForm = () => {
                     username: '',
                     email: '',
                     password: '',
-                    confirmPassword: ''
+                    confirmPassword: '',
+                    licenseType:'',
+                    preferredWorkSettings:'',
+                    desiredPosition:'',
+                    workPreference:''
+
+
                 });
               }
             console.log(data);
@@ -83,37 +127,37 @@ const SignupForm = () => {
                                         <div className='checkboxes_container'>
                                             <span class="checkbox_one">
                                                 <label>
-                                                    <input type="checkbox" name="sign-1a" value="long-term" />
+                                                    <input type="checkbox" name="sign-1a" value="long-term" onChange={handleCheckboxChangeSetting} />
                                                     <span class="wpcf7-list-item-label">Long term Care</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_two">
                                                 <label>
-                                                    <input type="checkbox" name="sign-2a" value="hospital" />
+                                                    <input type="checkbox" name="sign-2a" value="hospital" onChange={handleCheckboxChangeSetting} />
                                                     <span class="wpcf7-list-item-label">Hospital</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_three">
                                                 <label>
-                                                    <input type="checkbox" name="sign-3a" value="home-health" />
+                                                    <input type="checkbox" name="sign-3a" value="home-health" onChange={handleCheckboxChangeSetting} />
                                                     <span class="wpcf7-list-item-label">Home Health</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_four">
                                                 <label>
-                                                    <input type="checkbox" name="sign-4a" value="hospice" />
+                                                    <input type="checkbox" name="sign-4a" value="hospice" onChange={handleCheckboxChangeSetting} />
                                                     <span class="wpcf7-list-item-label">Hospice</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_five">
                                                 <label>
-                                                    <input type="checkbox" name="sign-5a" value="ambulatory-surgical" />
+                                                    <input type="checkbox" name="sign-5a" value="ambulatory-surgical" onChange={handleCheckboxChangeSetting} />
                                                     <span class="wpcf7-list-item-label">Ambulatory/Surgical</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_six">
                                                 <label>
-                                                    <input type="checkbox" name="sign-6a" value="urgent-care" />
+                                                    <input type="checkbox" name="sign-6a" value="urgent-care" onChange={handleCheckboxChangeSetting} />
                                                     <span class="wpcf7-list-item-label">Urgent Care</span>
                                                 </label>
                                             </span>
@@ -124,25 +168,25 @@ const SignupForm = () => {
                                         <div className='checkboxes_container'>
                                             <span class="checkbox_one">
                                                 <label>
-                                                    <input type="checkbox" name="sign-1b" value="perdiem-local" />
+                                                    <input type="checkbox" name="sign-1b" value="perdiem-local" onChange={handleCheckboxChangeWork} />
                                                     <span class="wpcf7-list-item-label">Per Diem/Local Contract</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_two">
                                                 <label>
-                                                    <input type="checkbox" name="sign-2b" value="permanent-full" />
+                                                    <input type="checkbox" name="sign-2b" value="permanent-full" onChange={handleCheckboxChangeWork} />
                                                     <span class="wpcf7-list-item-label">Permanent Full-Time</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_three">
                                                 <label>
-                                                    <input type="checkbox" name="sign-3b" value="permanent-part" />
+                                                    <input type="checkbox" name="sign-3b" value="permanent-part" onChange={handleCheckboxChangeWork} />
                                                     <span class="wpcf7-list-item-label">Permanent Part-Time</span>
                                                 </label>
                                             </span>
                                             <span class="checkbox_four">
                                                 <label>
-                                                    <input type="checkbox" name="sign-4b" value="travel" />
+                                                    <input type="checkbox" name="sign-4b" value="travel" onChange={handleCheckboxChangeWork} />
                                                     <span class="wpcf7-list-item-label">Travel</span>
                                                 </label>
                                             </span>
@@ -223,24 +267,35 @@ const SignupForm = () => {
                                             <div className='row-input'>
                                                 <input
                                                     type="text"
-                                                    placeholder="Lincese Type"
+                                                    placeholder="License Type"
                                                     className="rounded-input"
-                                                    value="license-type"
+                                                    value={formData.licenseType}
                                                     name='licenseType'
+                                                    onChange={handleChange}
                                                 />
-                                                <select className='rounded-input'>
+                                                <select className='rounded-input'
+                                                 onChange={handleChange}
+                                                 name='preferredWorkSettings'
+                                                >
                                                     <option value="option1">Preffered Work Settings</option>
                                                     <option value="option2">Option 2</option>
                                                     <option value="option3">Option 3</option>
                                                 </select>
                                             </div>
                                             <div className='row-input'>
-                                                <select className='rounded-input'>
+                                                <select className='rounded-input'
+                                                onChange={handleChange}
+                                                name='desiredPosition'
+                                                
+                                                >
                                                     <option value="option1">Desired Position</option>
                                                     <option value="option2">Option 2</option>
                                                     <option value="option3">Option 3</option>
                                                 </select>
-                                                <select className='rounded-input'>
+                                                <select className='rounded-input'
+                                                 onChange={handleChange}
+                                                 name='workPreference'
+                                                >
                                                     <option value="option1">Work Preferences</option>
                                                     <option value="option2">Option 2</option>
                                                     <option value="option3">Option 3</option>
