@@ -16,6 +16,7 @@ import ResponsibilitiesSlider from "../../Components/ResponsibilitiesSlider/Resp
 import HowtoBecome from "../../Components/HowtoBecome/HowtoBecome"
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
+import storiesimg from '../../Assets/storiesPic.png';
 const Guide=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -43,7 +44,13 @@ const Guide=()=>{
     <FaqAccordian/>
     <DynamicSquads/>
     <AboutEmpowercare/>
-    <Stories/>
+    <Stories
+    img={storiesimg}
+    description={"Are You Ready for Flexible and Rewarding Per Diem Work?"}
+    description2={"Step into the world of per diem opportunities with EmpowerCare and tailor your job to fit your life. Start your journey today with a team that values your flexibility and career aspirations. "}
+    Join={"JOIN US NOW"}
+    btn1={"Apply Now"}
+    />
     <FaqAccordian/>
     <Userslider/>
     <Footer/>

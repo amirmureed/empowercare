@@ -12,10 +12,10 @@ import empowercareimg2 from '../../Assets/Doctor-amico.png'
 import empowercareimg3 from '../../Assets/Artificial intelligence-amico.png'
 import Toptalent from "../../Components/Toptalent/Toptalent"
 import Stories from "../../Components/Stories/Stories"
-import { FaBullseye } from "react-icons/fa"
 import OurHistory from "../../Components/OurHistory/OurHistory"
 import EmpowercarePremier from "../../Components/EmpowercarePremier/EmpowercarePremier"
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
+import storiesimg from '../../Assets/storiesPic.png';
 const ProfessionalsCareer=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -79,7 +79,13 @@ simpleButton={false}
       description2={'EmpowerCare, your trusted direct care staffing agency, is here to connect      you with meaningful direct care job opportunities that align with your      passion, skills, and career goals.      '}
       description3={'This will help you succeed in your career. Positions available include direct      care contracts and overnight support roles.'}
     />
-    <Stories/>
+    <Stories
+    img={storiesimg}
+    description={"A Movement That Goes Beyond Staffing"}
+    description2={"Join our movement today and be part of the transformation in Direct Care!"}
+    Join={"JOIN US NOW"}
+    btn1={"Quick Apply"}
+    />
     <FaqAccordian/>
     <Userslider/>
     <Footer/>

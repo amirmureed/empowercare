@@ -11,6 +11,7 @@ import ShiftChampions from "../../Components/ShiftChampions/ShiftChampions"
 import Benefits from "../../Components/Benefits/Benefits"
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
+import storiesimg from '../../Assets/storiesPic.png';
 const UnsungHeroes=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -46,7 +47,13 @@ const UnsungHeroes=()=>{
     />
     <Benefits/>
     <FaqAccordian/>
-    <Stories/>
+    <Stories
+    img={storiesimg}
+    description={"Join EmpowerCare's Dynamic Squads and become a Shift Champion today. "}
+    description2={"Let us empower you to reach new heights in your healthcare career and make a lasting impact on patient care and satisfaction. Together, we can efficiently redefine healthcare staffing and create a brighter future for healthcare professionals and patients alike."}
+    Join={"JOIN US NOW"}
+    btn1={"Quick Apply"}
+    />
     <Userslider/>
     <Footer/>
 

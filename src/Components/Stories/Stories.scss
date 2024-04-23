@@ -70,6 +70,13 @@
                                 font-weight: bold;
                             }
                         }
+                        .btns{
+                            display: flex;
+                            gap: 10px;
+                            @media (max-width:480px) {
+                                flex-direction: column;
+                            }
+                        }
                         p.description {
                             font-size: 16px;
                             font-weight: normal;
