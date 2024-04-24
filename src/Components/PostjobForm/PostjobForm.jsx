@@ -135,6 +135,31 @@ const PostjobForm = () => {
                                             <div className="row-input">
                                                 <input
                                                     type="text"
+                                                    placeholder="Job Title"
+                                                    className="rounded-input"
+                                                    value={formData.username}
+                                                    name='username'
+                                                    onChange={handleChange}
+                                                />
+                                                <input
+                                                    type="text"
+                                                    placeholder="Job Description"
+                                                    className="rounded-input"
+                                                    value={formData.username}
+                                                    name='username'
+                                                    onChange={handleChange}
+                                                />
+                                                {/* <textarea
+                                                    placeholder="Job Description"
+                                                    className="rounded-input"
+                                                    value={formData.email}
+                                                    name='job_description'
+                                                    onChange={handleChange}
+                                                /> */}
+                                            </div>
+                                            <div className="row-input">
+                                                <input
+                                                    type="text"
                                                     placeholder="Company Name"
                                                     className="rounded-input"
                                                     value={formData.username}

@@ -241,3 +241,14 @@ a.btn_green{
 .dropdown .dropdown-content .MuiBox-root.css-19yt5vl .MuiStack-root.css-381yf2 {
   padding: 0px 16px !important;
 }
+
+/* Facilities Dropdown columns Widths */
+.dropdown-facilities .MuiStack-root.css-9c36oh .MuiBox-root.css-bacvv6 {
+  width: 40% !important;
+}
+.dropdown-facilities .MuiStack-root.css-9c36oh .MuiBox-root.css-n6tkbd {
+  width: 30% !important;
+}
+.dropdown-facilities .MuiStack-root.css-9c36oh .MuiBox-root.css-19yt5vl {
+  width: 30% !important;
+}

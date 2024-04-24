@@ -62,11 +62,10 @@ const Header = () => {
                                 <div className='dropdown-facilities'>
                                     <span className='d-span'></span><br /><br />
                                     <div className='dropdown-content'>
-                                       
                                         <Dropdown
-                                        facilities={true}
-                                        about={false}
-                                        professionals={false}
+                                            facilities={true}
+                                            about={false}
+                                            professionals={false}
                                         />
                                     </div>
                                 </div>

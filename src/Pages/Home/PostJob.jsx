@@ -4,9 +4,9 @@ import Footer from "../../Components/Footer/Footer"
 import PostjobForm from '../../Components/PostjobForm/PostjobForm';
 import OurAccess from '../../Components/OurAccess/OurAccess';
 import Banner2 from "../../Components/Banner2/Banner2"
-import Content1 from "../../Components/Community/Content1"
 import bannerImg from '../../Assets/elipse2.png'
 import img from '../../Assets/Group707.png'
+// import ThreeColumns from '../../Components/ThreeColumns/ThreeColumns';
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 
 const PostJob=()=>{
@@ -31,7 +31,7 @@ const PostJob=()=>{
         />
         <PostjobForm />
         <OurAccess />
-        <Content1/>
+        {/* <ThreeColumns/> */}
         <Userslider/>
         <Footer/>
     </>
