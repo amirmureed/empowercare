@@ -5,6 +5,7 @@ import SeamlesssFacilities from './Pages/Home/SeamlesssFacilities';
 import Facilities from './Pages/Home/Facilities';
 import Career from './Pages/Home/Career';
 import About from './Pages/Home/About';
+import PostJob from './Pages/Home/PostJob';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
@@ -149,7 +150,8 @@ function App() {
           <Route path='/professionals/unsung-heroes' element={<UnsungHeroes/>}/>
           <Route path='/professionals/advantages' element={<Advantages/>}/>
           <Route path='/professionals/guide' element={<Guide/>}/>
-          <Route path='/professionals/directcare-career' element={<ProfessionalsCareer/>}/>
+          <Route path='/professionals/guide' element={<Guide/>}/>
+          <Route path='/post-job' element={<PostJob/>}/>
 
           {/* new route */}
           <Route path='/professionals/Faqcontracts' element={<Faqcontracts/>}/>

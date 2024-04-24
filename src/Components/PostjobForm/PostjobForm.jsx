@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import './SignupForm.scss';
+import './PostjobForm.scss';
 import newsletterarrow from '../../Assets/h3_newsletter_shape0.png';
 import hc1 from '../../Assets/hc1.png';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const SignupForm = () => {
+const PostjobForm = () => {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -314,4 +314,4 @@ const SignupForm = () => {
     )
 }
 
-export default SignupForm
+export default PostjobForm
