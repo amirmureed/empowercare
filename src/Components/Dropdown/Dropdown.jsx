@@ -115,7 +115,6 @@ const Dropdown = ({ professionals, about, facilities }) => {
     }
     const Box2 = ({professionals}) => {
         const Content = ({ imgSrc, description }) => {
-
             return (
                 <Stack direction={'row'} spacing={2} sx={Style} >
                     <img style={{ width: '27px' }} src={imgSrc} alt="" />
