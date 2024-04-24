@@ -6,12 +6,12 @@ import OurAccess from '../../Components/OurAccess/OurAccess';
 import Banner2 from "../../Components/Banner2/Banner2"
 import Content1 from "../../Components/Community/Content1"
 import bannerImg from '../../Assets/elipse2.png'
-import img from '../../Assets/banner3.png'
+import img from '../../Assets/Group707.png'
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 
 const PostJob=()=>{
     
-    const heading='Post a Job FOR FREE NOW!'
+    const heading='Post a Job on Empowercare'
     const description='Join empowercare now to be the part of the biggest staffing agency!'
     const bannerStyles = {
         backgroundImage: `url(${img})`,
