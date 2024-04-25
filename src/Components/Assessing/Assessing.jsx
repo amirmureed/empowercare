@@ -1,5 +1,6 @@
 import './Assessing.scss'
-const Assessing = () => {
+const Assessing = (props) => {
+    const{description}=props
     return (<>
         <div className="assessing-sec">
             <div className="container">
@@ -10,9 +11,7 @@ const Assessing = () => {
                     <h2 className="heading">ASSESSING, PLANNING <span className="text_grad_green">IMPLEMENTING</span>
                         <br />AND EVALUATING PATIENT CARE</h2><br />
                         <div className='description-sec'>
-                    <p className="description">These nurses are skilled in assessing, planning, implementing, and evaluating patient care, collaborating with a multidisciplinary
-                        team to ensure the best possible outcomes. General Nurses are versatile and adaptable, capable of working in a wide range of
-                        specialties and settings.</p></div>
+                    <p className="description">{description}</p></div>
                 </div>
             </div>
         </div>

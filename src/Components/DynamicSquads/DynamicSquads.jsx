@@ -1,6 +1,8 @@
 import './DynamicSquads.scss'
 import empowercareimg from '../../Assets/h2_about_img.png'
-const DynamicSquads = () => {
+const DynamicSquads = (props) => {
+
+    const{ meta, metahd1,  metahd2 ,desc1 ,metahd3 ,heading  ,bullet_text1 ,bullet_text2, bullet_text3 ,bullet_text4 }=props
     return (
         <div className="DynamicSquads">
             <div className="DynamicSquads-container">
@@ -9,25 +11,27 @@ const DynamicSquads = () => {
                         <div className="row">
                             <div className="col-lg-8 col-md-12">
                                 <div className="left-content">
-                                    <span className="meta">DYNAMIC SQUADS</span>
+                                    <span className="meta">{meta}</span>
                                     <h2 className="heading">
-                                        Dynamic <span>Squads:</span><br /> Your Personalized Path to Success.
+                                        {metahd1} <span>{metahd2}</span><br />{metahd3}
                                     </h2>
                                     <p className="description">
-                                        EmpowerCare's Dynamic Squads, you're in control of your career, enjoying the flexibility to choose your schedule and assignment on your terms. Our dedicated support system is always there to help you maximize your earnings and find the perfect opportunities to suit your skills and preferences.
+                                        {desc1}
                                     </p><br />
+
+                                    <h5><b>{heading}</b></h5>
                                     <ul>
                                         <li>
-                                        Partner with Dynamic Squads for success every step of the way
+                                        {bullet_text1}
                                         </li>
                                         <li>
-                                        Enjoy the flexibility to choose your schedule, and assignment
+                                        {bullet_text2}
                                         </li>
                                         <li>
-                                        Leverage our dedicated support system to maximize your earnings
+                                        {bullet_text3}
                                         </li>
                                         <li>
-                                        Find perfect opportunities that suit your skills and preferences
+                                        {bullet_text4}
                                         </li>
                                     </ul>
                                    

@@ -5,7 +5,9 @@ import icon2 from "../../Assets/Group531.png";
 import icon3 from "../../Assets/Group532.png";
 import { IconButton, useMediaQuery, useTheme } from '@mui/material';
 
-const FaqAccordian = () => {
+const FaqAccordian = (props) => {
+  const{faq_head1 ,faq_desc1 ,faq_head2 ,faq_desc2 ,faq_head3, faq_desc3}=props
+
   
   
   const[isAccordianOpen, setIsAccordianOpen] = useState(null);
@@ -34,15 +36,12 @@ const FaqAccordian = () => {
               <div className="row">
                 <div className="working_content col-12" onClick={() => toggleAccodian(1)}>
                   <div className="reletive">
-                    <h3>We Care About You</h3>
+                    <h3>{faq_head1}</h3>
                     <span className="plus-icon" >+</span>
                     
                   </div>
                   <p>
-                    We put our employees first, providing the support,
-                    resources, and flexibility you need to thrive both
-                    professionally and personally. Your well-being is our top
-                    priority. 
+                    {faq_desc1} 
                   </p>
                 </div>
               </div>
@@ -51,15 +50,12 @@ const FaqAccordian = () => {
               <div className="row">
                 <div className="working_content col-12">
                   <div className="reletive">
-                    <h3>We're Driven by Impact</h3>
+                    <h3>{faq_head2}</h3>
                     <span className="plus-icon" onClick={() => toggleAccodian(2)}>+</span>
                     
                   </div>
                   <p>
-                    Every placement, every shift, every interaction is an
-                    opportunity to make a positive impact on patients,
-                    facilities, and communities. We measure our success by the
-                    lives we transform.
+                    {faq_desc2}
                   </p>
                 </div>
               </div>
@@ -68,13 +64,11 @@ const FaqAccordian = () => {
               <div className="row">
                 <div className="working_content col-12">
                   <div className="reletive">
-                    <h3>We Embrace Diversity</h3>
+                    <h3>{faq_head3}</h3>
                     <span className="plus-icon" onClick={() => toggleAccodian(3)}>+</span>
                   </div>
                   <p>
-                    We celebrate what makes you unique. At EmpowerCare, you can
-                    be your authentic self and know that your talents,
-                    strengths, and experiences are valued.
+                    {faq_desc3}
                   </p>
                 </div>
               </div>

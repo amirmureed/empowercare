@@ -22,7 +22,9 @@ const responsive = {
     }
 };
 
-const ResponsibilitiesSlider = () => {
+const ResponsibilitiesSlider = (props) => {
+
+    const{main_head1 ,main_head2 ,main_head3 ,main_head_desc, car_head1 ,car_desc ,car_head2 ,car_desc2 ,car_head3 ,car_desc3 ,car_head4 ,car_desc4 ,car_desc5,car_head5} =props
     return (
         <div className="responsibilities-sec">
             <div className="responsibilities-container">
@@ -31,11 +33,11 @@ const ResponsibilitiesSlider = () => {
                         <div className="top-content">
 
                             <h2 className="heading">
-                                WHAT DOES A  <br />
-                                <span className='text_grad_green'> GENERAL NURSE </span>
-                                DO
+                                {main_head1}<br />
+                                <span className='text_grad_green'>{main_head2}</span>
+                                {main_head3}
                             </h2>
-                            <p className="description">General Nurses have a wide range of responsibilities, including: </p>
+                            <p className="description">{main_head_desc}</p>
                         </div>
                         <div className="row">
                             <Carousel
@@ -52,29 +54,32 @@ const ResponsibilitiesSlider = () => {
                             >
                                 <div className='col-lg-3 col-md-6 col-sm-12'>
                                     <div className='content'>
-                                        <h6>Developing Individualized</h6>
-                                        <p>Assessing patient's health status and developing
-                                            individualized care plans</p>
+                                        <h6>{car_head1}</h6>
+                                        <p>{car_desc}</p>
                                     </div>
                                 </div>
                                 <div className='col-lg-3 col-md-6 col-sm-12'>
                                     <div className='content'>
-                                        <h6>Medications & Treatments</h6>
-                                        <p>Administering medications and treatments as
-                                            prescribed by physicians</p>
+                                        <h6>{car_head2}</h6>
+                                        <p>{car_desc2}</p>
                                     </div>
                                 </div>
                                 <div className='col-lg-3 col-md-6 col-sm-12'>
                                     <div className='content'>
-                                        <h6>Vital Signs and Observing</h6>
-                                        <p>Monitoring patients' vital signs and observing their response to treatment</p>
+                                        <h6>{car_head3}</h6>
+                                        <p>{car_desc3}</p>
                                     </div>
                                 </div>
                                 <div className='col-lg-3 col-md-6 col-sm-12'>
                                     <div className='content'>
-                                        <h6>Wound Care</h6>
-                                        <p>Providing wound care and other bedside
-                                            procedures</p>
+                                        <h6>{car_head4}</h6>
+                                        <p>{car_desc4}</p>
+                                    </div>
+                                </div>
+                                <div className='col-lg-3 col-md-6 col-sm-12'>
+                                    <div className='content'>
+                                        <h6>{car_head5}</h6>
+                                        <p>{car_desc5}</p>
                                     </div>
                                 </div>
                             </Carousel>

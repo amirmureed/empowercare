@@ -128,9 +128,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path='' element={<Home/>}/>
-          <Route exact path='/professionals' element={<Home/>}/>
           <Route path='/about' element={<About/>} />
-          <Route path='professionals/seamless' element={<Seamlesss/>} />
           <Route path='/facilities' element={<Facilities />} />
           <Route path='/facilities/staffing-solutions' element={<NonClinical/>} />
           <Route path='/signup' element={<Signup/>} />
@@ -145,12 +143,14 @@ function App() {
           <Route path='/resources/empowercare-heroes' element={<Heroes/>}/>
           <Route path='/resources' element={<Resources/>}/>
           <Route path='/facilities/directcare-careers' element={<DirectCareCareers/>}/>
-          <Route path='/professionals/faqs' element={<Faqs/>}/>
           <Route path='/facilities/seamless' element={<SeamlesssFacilities/>}/>
+          <Route exact path='/professionals' element={<Home/>}/>
+          <Route path='professionals/seamless' element={<Seamlesss/>} />
           <Route path='/professionals/unsung-heroes' element={<UnsungHeroes/>}/>
           <Route path='/professionals/advantages' element={<Advantages/>}/>
           <Route path='/professionals/guide' element={<Guide/>}/>
-          <Route path='/professionals/guide' element={<Guide/>}/>
+          <Route path='/professionals/directcare-careers' element={<ProfessionalsCareer/>}/>
+          <Route path='/professionals/faqs' element={<Faqs/>}/>
           <Route path='/post-job' element={<PostJob/>}/>
 
           {/* new route */}

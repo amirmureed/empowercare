@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import img from '../../Assets/7228757 copy.png';
 
 const ThreeColumns = (props) => {
+    const{description_1,description_2 ,bx1_head1 ,bx2_head2,bx3_head3 ,bx4_head ,dx4_desc ,dx4_desc2 ,bx5_head ,dx5_desc,dx5_desc2}=props
     let classnames = props.classes == null ? "" : props.classes;
+    
     return (
         <div className="emp_three_columns">
             <div className="choose-container">
@@ -13,14 +15,14 @@ const ThreeColumns = (props) => {
                         <div className="row">
                             <div className="col-lg-4 col-md-12">
                                 <div className="left-content">
-                                    <span className="meta">Dynamic Squads</span>
+                                    <span className="meta">Who Is This For </span>
                                     <h2 className="heading">
-                                    Compassionate <span> Passionate </span> Caregivers and Advocates 
+                                   {bx1_head1}<span>{bx2_head2}</span> {bx3_head3}
                                     </h2>
                                     {props.firstDescription && <p className='description'>{props.firstDescription}</p> }
-                                    <p className="description">Join Direct Care professionals who are embracing the flexibility of contract jobs, per diem jobs, dedicated individuals providing essential overnight support, and leaders who are driving positive change in the Direct Care industry.</p>
+                                    <p className="description">{description_1}</p>
 
-                                    <p className="description">Join the 6,000+ Healthcare professionals who have found their calling through EmpowerCare.</p>
+                                    <p className="description">{description_2}</p>
                                 
                                     <div className="sec-btns">
                                         <Link to="/" className="learn-btn">
@@ -39,9 +41,9 @@ const ThreeColumns = (props) => {
                                 <div className="right-content">
                                     <div className="content-row">
                                         <div className="content-box active">
-                                            <h6>Our Thriving Community</h6>
-                                            <p className="description">Our thriving community consists of over 6,000 healthcare professionals united by their unwavering dedication to improving lives and making a difference</p>
-                                            <p className="description">If you believe in the power of compassion, the importance of dignity, and the desire to empower others, you've found your home.</p>
+                                            <h6><b>{bx4_head}</b></h6>
+                                            <p className="description">{dx4_desc}</p>
+                                            <p className="description">{dx4_desc2}</p>
                                             <div className='mid_img'>
                                                 <img src={img} />
                                             </div>
@@ -53,9 +55,9 @@ const ThreeColumns = (props) => {
                                 <div className="right-content">
                                     <div className="content-row">
                                         <div className="content-box active">
-                                            <h6>Our Thriving Community</h6>
-                                            <p className="description">At EmpowerCare, we don't just match you with direct care jobs; we nurture your passion for making a difference and support your journey toward a fulfilling and impactful career.</p>
-                                            <p className="description">Take the first step today and discover your perfect direct care job with renowned organizations that value your compassion and dedication.</p>
+                                            <h6><b>{bx5_head}</b></h6>
+                                            <p className="description">{dx5_desc}</p>
+                                            <p className="description">{dx5_desc2}</p>
                                         </div>
                                     </div>
                                 </div>

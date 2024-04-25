@@ -30,16 +30,26 @@ const Guidetelemetrynursing=()=>{
           logoImg={logow}
           />
     <Banner1 heading={'Guide to General Nursing Careers'} 
-          description={'Guide to General Nursing Careers:Pathways, Roles & Jobs'}
-          meta={'A general nurse also known as registered nurse (RN) or a staff Nurse, is a healthcare professional who provides comprehensive care to patients in various settings'}
+          description={'Guide for Telemetry Nursing Careers: Pathways & Jobs'}
+          meta={'A Telemetry Nurse, also known as a Progressive Care Unit (PCU) Nurse or Cardiac Monitoring Nurse, is a registered nurse who specializes in monitoring and caring for patients with heart conditions or other critical illnesses that require continuous electronic monitoring.'}
           bannerImg={bannerImg}
           styles={bannerStyles}
           />
     <Trusted/>
-    <Assessing/>
-    <GuideCards/>
-    <HowtoBecome/>
+    <Assessing
+    description={"These skilled professionals work in fast-paced environments, using advanced technology to track patients' vital signs, detect abnormalities, and intervene when necessary to ensure the best possible outcomes."}
+    />
+    
+    <HowtoBecome
+     mhead1={"TELEMETRY NURSE:"}
+     heading1={"Register Telemetry Nurse "}
+     description1={"To become a Telemetry Nurse, you must first earn your registered nurse (RN) license by completing an Associate Degree in Nursing (ADN) or a Bachelor of Science in Nursing (BSN) program and passing the NCLEX-RN exam."}
+     description2={"●PCCN (Progressive Care Certified Nurse)"}
+     description3={"EmpowerCare offers a wide range of opportunities for Telemetry Nurses, including telemetry nurse jobs, PCU nursing positions, cardiac monitoring contract jobs, per diem stepdown nurse jobs, and travel nursing assignments. "}
+     description4={"Our goal is to empower you to find the perfect position that aligns with your skills, experience, and career goals while providing efficient and caring support throughout your journey."}
+    />
     <ResponsibilitiesSlider/>
+    <GuideCards/>
     <FaqAccordian/>
     <DynamicSquads/>
     <AboutEmpowercare/>
