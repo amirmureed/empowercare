@@ -3,15 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
-import logow from "../../Assets/EmpowerCareWhiteLogo.svg";
 import logo from "../../Assets/EmpowerCareLogo.svg";
 import SearchIcon from "@mui/icons-material/Search";
 import "./HeaderWhite.scss";
-import ModalComponent from "../Common/Popover";
 import { IconButton, Stack, useMediaQuery, useTheme } from "@mui/material";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { IoMdArrowDropright } from "react-icons/io";
@@ -20,24 +17,16 @@ import Dropdown from "../Dropdown/Dropdown";
 import $ from "jquery";
 
 const HeaderWhite = ({ logoImg }) => {
-  const [openModal, setOpenModal] = useState(false);
-  const OnMouseEnter = () => {
-    setOpenModal(true);
-  };
-  const OnMouseLeave = () => {
-    setOpenModal(false);
-  };
   const [open, setOpen] = useState(false);
   const [openResources, setOpenResources] = useState(false);
   const [openFacilities, setOpenFacilities] = useState(false);
   const [openProfessionals, setOpenProfessionals] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const SmallView = useMediaQuery(theme.breakpoints.down("xs"));
   const location = useLocation();
   useEffect(() => {
     const { pathname } = location;
-    $(".nav-link").show(); // Show all links initially
+    
     if (!isMobile) {
       if (
         pathname === "/professionals" ||
@@ -48,8 +37,8 @@ const HeaderWhite = ({ logoImg }) => {
         pathname === "/professionals/directcare-career" ||
         pathname === "/professionals/guide"
       ) {
-        $('.nav-link[href="/about"]').hide();
-        $('.nav-link[href="/facilities"]').hide();
+        $('.dropdown-facilities').hide();
+        $('.dropdown').hide();
       } else if (
         pathname === "/about" ||
         pathname === "/about/ceo" ||
@@ -57,16 +46,16 @@ const HeaderWhite = ({ logoImg }) => {
         pathname === "/about/community" ||
         pathname === "/about/leadership"
       ) {
-        $('.nav-link[href="/professionals"]').hide();
-        $('.nav-link[href="/facilities"]').hide();
+        $('.dropdown-facilities').hide();
+        $('.dropdown-professionals').hide();
       } else if (
         pathname === "/facilities" ||
         pathname === "/facilities/directcare-careers" ||
         pathname === "/facilities/seamless" ||
         pathname === "/facilities/staffing-solutions"
       ) {
-        $('.nav-link[href="/professionals"]').hide();
-        $('.nav-link[href="/about"]').hide();
+        $('.dropdown-professionals').hide();
+        $('.dropdown').hide();
       }
     }
   }, [location, isMobile]);
