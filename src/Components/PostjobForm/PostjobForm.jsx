@@ -121,41 +121,55 @@ const PostjobForm = () => {
                                     <div classname='signup_inner_container'>
                                         <img className='form-icon' src={newsletterarrow} alt="" />
                                         <div className='form_fields'>
-                                            <h4>Company Details</h4>
-                                            <div className="row-input job_file">
-                                                <input
-                                                    type="file"
-                                                    placeholder="First Name"
-                                                    className="rounded-input"
-                                                    value={formData.firstName}
-                                                    name='firstName'
-                                                    onChange={handleChange}
-                                                />
-                                            </div>
+                                            <h4>Job Information</h4>
                                             <div className="row-input">
                                                 <input
                                                     type="text"
                                                     placeholder="Job Title"
                                                     className="rounded-input"
-                                                    value={formData.username}
-                                                    name='username'
+                                                    value={formData.password}
+                                                    name='job_title'
                                                     onChange={handleChange}
                                                 />
-                                                <input
-                                                    type="text"
-                                                    placeholder="Job Description"
-                                                    className="rounded-input"
-                                                    value={formData.username}
-                                                    name='username'
+                                                <select className='rounded-input'
                                                     onChange={handleChange}
-                                                />
-                                                {/* <textarea
+                                                    name='desiredPosition'
+                                                >
+                                                    <option value="option1">Job Type</option>
+                                                    <option value="option2">Permanent Full Time</option>
+                                                    <option value="option3">Permanent Part Time</option>
+                                                    <option value="option2">Per Diem / Local Contract</option>
+                                                </select>
+                                            </div>
+                                            <div className='row-input'>
+                                                <select className='rounded-input'
+                                                    onChange={handleChange}
+                                                    name='workPreference'
+                                                >
+                                                    <option value="option1">Category</option>
+                                                    <option value="option2">Scholar</option>
+                                                    <option value="option2">Software Engineer</option>
+                                                    <option value="option3">Doctor</option>
+                                                </select>
+                                                <textarea
+                                                    rows="3" cols="5"
                                                     placeholder="Job Description"
                                                     className="rounded-input"
                                                     value={formData.email}
                                                     name='job_description'
                                                     onChange={handleChange}
-                                                /> */}
+                                                />
+                                            </div>
+                                            <h4>Company Information</h4>
+                                            <div className="row-input job_file">
+                                                <input
+                                                    type="file"
+                                                    placeholder="Logo"
+                                                    className="rounded-input"
+                                                    value={formData.firstName}
+                                                    name='firstName'
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                             <div className="row-input">
                                                 <input
@@ -168,50 +182,70 @@ const PostjobForm = () => {
                                                 />
                                                 <input
                                                     type="text"
-                                                    placeholder="Company Website"
+                                                    placeholder="Contact Email"
                                                     className="rounded-input"
-                                                    value={formData.email}
-                                                    name='email'
+                                                    value={formData.username}
+                                                    name='username'
                                                     onChange={handleChange}
                                                 />
                                             </div>
-                                            <h4>Your Account</h4>
                                             <div className="row-input">
                                                 <input
                                                     type="text"
-                                                    placeholder="Name"
+                                                    placeholder="Website"
                                                     className="rounded-input"
-                                                    value={formData.password}
-                                                    name='password'
-                                                    onChange={handleChange}
-                                                />
-                                                <input
-                                                    type="email"
-                                                    placeholder="Email"
-                                                    className="rounded-input"
-                                                    value={formData.confirmPassword}
-                                                    name='confirmPassword'
+                                                    value={formData.username}
+                                                    name='username'
                                                     onChange={handleChange}
                                                 />
                                             </div>
-
-                                            <div className='row-input'>
+                                            <h4>Location</h4>
+                                            <div className="row-input">
                                                 <input
-                                                    type="password"
-                                                    placeholder="Password"
+                                                    type="text"
+                                                    placeholder="State"
                                                     className="rounded-input"
-                                                    value={formData.licenseType}
-                                                    name='licenseType'
+                                                    value={formData.username}
+                                                    name='username'
                                                     onChange={handleChange}
                                                 />
                                                 <input
-                                                    type="password"
-                                                    placeholder="Confirm Password"
+                                                    type="text"
+                                                    placeholder="Zip-Code"
                                                     className="rounded-input"
-                                                    value={formData.licenseType}
-                                                    name='licenseType'
+                                                    value={formData.username}
+                                                    name='username'
                                                     onChange={handleChange}
                                                 />
+                                            </div>
+                                            <div className="row-input">
+                                                <input
+                                                    type="text"
+                                                    placeholder="City"
+                                                    className="rounded-input"
+                                                    value={formData.username}
+                                                    name='username'
+                                                    onChange={handleChange}
+                                                />
+                                                <input
+                                                    type="text"
+                                                    placeholder="Address"
+                                                    className="rounded-input"
+                                                    value={formData.username}
+                                                    name='username'
+                                                    onChange={handleChange}
+                                                />
+                                            </div>
+                                            <div className="row-input">
+                                                <select className='rounded-input'
+                                                        onChange={handleChange}
+                                                        name='workPreference'
+                                                    >
+                                                        <option value="option1">Country</option>
+                                                        <option value="option2">USA</option>
+                                                        <option value="option2">Pakistan</option>
+                                                        <option value="option3">Turkey</option>
+                                                </select>
                                             </div>
                                             <div className='form_consent'>
                                                 <input 

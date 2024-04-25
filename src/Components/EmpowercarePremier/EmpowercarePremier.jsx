@@ -4,8 +4,10 @@ import logo2 from '../../Assets/logo2.png'
 import logo3 from '../../Assets/logo3.png'
 import logo4 from '../../Assets/logo4.png'
 import consultation from '../../Assets/consultation_icon02.png'
+
 import { FiArrowDownRight } from "react-icons/fi";
-const EmpowercarePremier = () => {
+const EmpowercarePremier = (props) => {
+  const{heading1, heading2 , heading3 , description1 ,card_bx1_heading,card_bx1_description1,card_bx2_heading2,card_bx2_description2,card_bx3_heading3,card_bx3_description3,card_bx4_heading4,card_bx4_description4}=props
   return (
     <>
       <div className="empowercarePremier-sec">
@@ -15,15 +17,15 @@ const EmpowercarePremier = () => {
               <div className="top-content">
                 
                 <h2 className="heading main-heading">
-                  BECOME AN
-                  <span className="text_grad_green"> EMPOWERCARE PREMIER DIRECT</span>{" "}
-                  CARE PROFESSIONAL-LIMITED TIME OFFER
+                  {heading1}
+                  <span className="text_grad_green"> {heading2}</span>{" "}
+                  {heading3}
                 </h2><br />
                 <p className="description2">
                   ACT FAST! APPLY BY (TODAY'S DATE +5) TO SECURE YOUR SPOT
                 </p>
                 <p className="description1">
-                Don't miss this exclusive opportunity to join our prestigious network of Premier Direct Care Professionals within the next 5 days. Unlock access to top-tier Direct Care jobs, unmatched support, and career-boosting benefits. Here's what's in store for you:
+                {description1}
                 </p>
                 
 
@@ -36,11 +38,9 @@ const EmpowercarePremier = () => {
                     <div className="job-logo">
                       <img src={logo} alt="job1" />
                     </div>
-                    <h4 className="heading">Quality Match Guarantee</h4>
+                    <h4 className="heading">{card_bx1_heading}</h4>
                     <p className="description">
-                      Access our best sitters, receptionists, and non-clinical
-                      healthcare professionals. We ensure they fit your
-                      facility's needs perfectly.
+                      {card_bx1_description1}
                     </p>
                     <br />
                     <a href="/">
@@ -54,10 +54,9 @@ const EmpowercarePremier = () => {
                     <div className="job-logo">
                       <img src={logo2} alt="job3" />
                     </div>
-                    <h4 className="heading">Fast Placement</h4>
+                    <h4 className="heading">{card_bx2_heading2}</h4>
                     <p className="description">
-                      We fill your open non-clinical positions with great people
-                      fast, without losing quality.
+                    {card_bx2_description2}
                     </p>
                     <br />
                     <a href="/">
@@ -71,11 +70,9 @@ const EmpowercarePremier = () => {
                     <div className="job-logo">
                       <img src={logo3} alt="job1" />
                     </div>
-                    <h4 className="heading">Flexible Staffing</h4>
+                    <h4 className="heading">{card_bx3_heading3}</h4>
                     <p className="description">
-                      We offer temporary, temp-to-hire, permanent, and contract
-                      non-clinical staffing solutions to keep things running
-                      efficiently.
+                    {card_bx3_description3}
                     </p>
                     <br />
                     <a href="/">
@@ -88,11 +85,9 @@ const EmpowercarePremier = () => {
                     <div className="job-logo">
                       <img src={logo4} alt="job1" />
                     </div>
-                    <h4 className="heading">Special Discounts</h4>
+                    <h4 className="heading">{card_bx4_heading4}</h4>
                     <p className="description">
-                      Get special discounts on our non-clinical staffing
-                      services. Pay less for high-volume, ongoing needs and get
-                      priority access to our most experienced professionals.
+                    {card_bx4_description4}
                     </p>
                     <br />
                     <a href="/">

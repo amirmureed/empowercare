@@ -42,7 +42,7 @@ const Blog = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://msgstaffing.com/wp-json/empower/staffing/blogs');
+                const response = await axios.get('https://empowercare.me/wp-json/empower/staffing/blogs');
                 console.log(response.data)
                 setData(response.data);
                 

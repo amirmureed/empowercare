@@ -4,8 +4,10 @@ import job1 from '../../Assets/job1.png';
 import job2 from '../../Assets/job2.png';
 import job3 from '../../Assets/job3.png';
 import arrow from '../../Assets/anchor-arrow.png';
+import { color } from '@mui/system';
 
-const Toptalent = () => {
+const Toptalent = (props) => {
+    const{heading1 , heading2 , heading3 , heading4,jobcard1 ,jobcard1_des ,jobcard2 ,jobcard2_des ,jobcard3 ,jobcard3_des}=props
     return (
     <div className="toptalent-sec">
         <div className="toptalent-container">    
@@ -14,19 +16,24 @@ const Toptalent = () => {
                     <div className="top-content">
                     <p className="description">Join EmpowerCare for Free</p>
                         <h2 className="heading">
-                            empower 
-                            <span> your Facility </span>
-                            with top talent, effortlessly
-                        </h2>  
+                            {heading1} 
+                            <span> {heading2}  </span>
+                            {heading3} 
+                        </h2> 
+                          <div className='second_sec'>
+                        <h5>{heading4}</h5>
+                        {/* <p>At EmpowerCare, we know that every direct care job is a chance to create positive change in people's lives. By connecting you with opportunities to make a difference, our staffing agency helps you have a lasting impact on the individuals you serve.</p> */}
+                        </div>
                     </div>
+                    
                     <div className="row">
                         <div className="col-md-4">
                             <div className="job-box">
                                 <div className="job-logo">
                                     <img src={job1} alt="job1" />
                                 </div>
-                                <h4 className="heading">Join EmpowerCare <br />For Free</h4>
-                                <p className="description">Sign up at no cost. Connect with our supportive team, explore personalized opportunities, and empower your career in healthcare with efficiency and excellence.</p>
+                                <h4 className="heading">{jobcard1}</h4>
+                                <p className="description">{jobcard1_des}</p>
                             </div>
                         </div>
                         <div className="col-md-4">
@@ -34,8 +41,8 @@ const Toptalent = () => {
                                 <div className="job-logo">
                                     <img src={job2} alt="job2" />
                                 </div>
-                                <h4 className="heading">Discover and Match with Premier <br />Jobs, Effortlessly</h4>
-                                <p className="description">Forget the hassle of job searching. Share your aspirations, and we'll swiftly match you with leading healthcare roles, proving that finding your perfect position can be simple and stress-free.</p>
+                                <h4 className="heading">{jobcard2}</h4>
+                                <p className="description">{jobcard2_des}</p>
                             </div>
                         </div>
                         <div className="col-md-4">
@@ -43,8 +50,8 @@ const Toptalent = () => {
                                 <div className="job-logo">
                                     <img src={job3} alt="job3" />
                                 </div>
-                                <h4 className="heading">Experience Rewarding <br />Healthcare Roles</h4>
-                                <p className="description">Competitive compensation is a given, allowing you to focus on your passion for care. We ensure that advancing in your healthcare career is not only financially rewarding but also deeply meaningful.</p>
+                                <h4 className="heading">{jobcard3}</h4>
+                                <p className="description">{jobcard3_des}</p>
                             </div>
                         </div>
                     </div>

@@ -381,11 +381,6 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 </>)
 
             }
-
-
-
-
-
         </Stack>
 
     </>)

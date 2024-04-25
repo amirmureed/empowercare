@@ -168,11 +168,16 @@
 
                     h4 {
                         text-align: left;
+                        margin-top: 40px;
                     }
 
                     .row-input {
                         display: flex;
                         gap: 10px;
+
+                        textarea {
+                            height: 200px;
+                        }
                     }
 
                     .row-input.job_file {
@@ -190,6 +195,7 @@
                         background: #eeeeee;
                         padding: 12px;
                         width: 50%;
+                        height: 100%;
                     }
                     .form_consent {
                         display: flex;

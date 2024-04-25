@@ -24,11 +24,9 @@ const PostJob=()=>{
     return(
     <>
         <HeaderWhite
-          logoImg={logow}
-          />
-        <Banner2 heading={heading} description={description} img={bannerImg} styles={bannerStyles} 
-        
+            logoImg={logow}
         />
+        <Banner2 heading={heading} description={description} img={bannerImg} styles={bannerStyles} />
         <PostjobForm />
         <OurAccess />
         {/* <ThreeColumns/> */}
