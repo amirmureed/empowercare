@@ -1,5 +1,5 @@
 import './Ally.scss'
-import healthcareimg from '../../Assets/home-img-copyright-1.png';
+import healthcareimg from '../../Assets/ally.png';
 
 
 const Ally=()=>{

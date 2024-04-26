@@ -1,6 +1,6 @@
 import Banner2 from "../../Components/Banner2/Banner2"
 import Footer from "../../Components/Footer/Footer"
-import bannerImg from '../../Assets/resnetwork.png'
+import bannerImg from '../../Assets/network.png'
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 import NetworkForm from "../../Components/Resources/Network/NetworkForm"
 import NetworkSection1 from "../../Components/Resources/Network/NetworkSection1"

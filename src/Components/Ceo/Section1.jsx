@@ -1,5 +1,5 @@
 import './Section1.scss'
-import Ceo from '../../Assets/team3.png'
+import Ceo from '../../Assets/ceoImg.png'
 import activearrow from '../../Assets/active-arrow.png'
 const Section1=()=>{
     return(<>
@@ -13,7 +13,7 @@ const Section1=()=>{
             <b>OUR CEO AND FOUNDER</b>
           </h6>
           <h1>
-            <b>JAMAL <span className='text_grad_red'>MAHIJIBAI</span>
+            <b>JAMAL <span className='text_grad_red'>MAHIJIBHAI</span>
               <br />PRESIDENT & CEO </b>
           </h1>
           <br />

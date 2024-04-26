@@ -17,11 +17,11 @@ import AboutusSnippet from "../../Components/AboutUsSnippet/AboutusSnippet"
 import FacilityOperations from "../../Components/FacilityOperations/FacilityOperations"
 import JoiningForm from "../../directcare/JoiningForm/JoiningForm"
 import Blog from "../../Components/Blog/Blog"
-import bannerImg from '../../Assets/Group 581.png';
+import bannerImg from '../../Assets/staffingSolution.png';
 import img from '../../Assets/staffing_banner.png'
 import image from '../../Assets/staff.png'
 import empowercareimg from '../../Assets/In the office-amico.png'
-import storiesimg from '../../Assets/guaranty.png';
+import storiesimg from '../../Assets/guarantyImg.jpg';
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 const NonClinical = () => {
     const bannerStyles = {

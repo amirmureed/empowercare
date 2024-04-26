@@ -1,5 +1,5 @@
 import HeaderWhite from '../../Components/HeaderWhite/HeaderWhite';
-import bannerImg from '../../Assets/Group2311.png';
+import bannerImg from '../../Assets/communityImg.png';
 import Cards from "../../Components/Community/Cards"
 import BottomButton from "../../Components/Community/BottomButton"
 import RevolutionCard from "../../Components/Community/RevolutionCard"

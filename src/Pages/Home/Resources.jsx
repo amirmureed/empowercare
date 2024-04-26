@@ -5,7 +5,7 @@ import TitleContentButton from "../../Components/TitleContentButton/TitleContent
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 import Userslider from "../../Components/Userslider/Userslider"
 import LeftContentRightImage from '../../resources/LeftContentRightImage/LeftContentRightImage';
-import bannerImg from '../../Assets/resinner.png';
+import bannerImg from '../../Assets/resources.png';
 import img from '../../Assets/empowercareresources.png'
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 

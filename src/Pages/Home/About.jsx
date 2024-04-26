@@ -8,7 +8,7 @@ import TextImageGroupV3 from '../../Components/TextImageGroupV3/TextImageGroupV3
 import PriemerBlack from '../../Components/PremierHealthcareBlack/PriemerBlack';
 import Form from "../../Components/Community/Form"
 import Footer from '../../Components/Footer/Footer';
-import bannerImg from '../../Assets/elipse2.png';
+import bannerImg from '../../Assets/aboutBanner.png';
 import Userslider2 from "../../Components/UserSlider2/UserSlider2"
 import img from '../../Assets/banner3.png'
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';

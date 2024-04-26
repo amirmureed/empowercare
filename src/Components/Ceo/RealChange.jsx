@@ -1,4 +1,4 @@
-import nextstepimg from '../../Assets/nextstep-img.png';
+import nextstepimg from '../../Assets/realChange.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
 import './RealChange.scss'
 const RealChange=()=>{

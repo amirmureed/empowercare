@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nextstep.scss';
-import nextstepimg from '../../Assets/nextstep-img.png';
+import nextstepimg from '../../Assets/nextStep.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
 import { Link } from 'react-router-dom';
 

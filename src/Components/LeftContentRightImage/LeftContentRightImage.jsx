@@ -1,8 +1,7 @@
 import React from 'react';
 import './LeftContentRightImage.scss';
-import empowercareimg from '../../Assets/Image 55.png';
+import empowercareimg from '../../Assets/transform.png';
 import activearrow from '../../Assets/active-arrow.png';
-import downarrow from '../../Assets/down-link-arrow.svg';
 
 const LeftContentRightImage = () => {
     return (
