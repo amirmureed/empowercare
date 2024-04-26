@@ -1,6 +1,6 @@
 import React from 'react';
 import './TextImageGroupV2.scss';
-import secImage from '../../Assets/Image 59.png';
+import secImage from '../../Assets/mission.png';
 import activearrow from '../../Assets/Path 1810.png';
 
 const TextImageGroupV2 = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Healthcare.scss';
 import { Link } from 'react-router-dom';
-import healthcareimg from '../../Assets/healthcareimg.png';
+import healthcareimg from '../../Assets/difference.png';
 import activearrow from '../../Assets/active-arrow.png';
 
 const Healthcare = () => {

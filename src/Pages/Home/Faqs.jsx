@@ -6,7 +6,7 @@ import Stories from "../../Components/Stories/Stories"
 import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import img from '../../Assets/advantages.png'
-import bannerImg from '../../Assets/advantagesImg.png'
+import bannerImg from '../../Assets/faqs.png'
 import FAQ from "../../Components/FAQ/FAQ" 
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"

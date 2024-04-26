@@ -2,7 +2,7 @@ import Banner1 from "../../Components/Banner1/Banner1"
 import Footer from "../../Components/Footer/Footer"
 import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
-import bannerImg from '../../Assets/unsung2.png'
+import bannerImg from '../../Assets/heroes.png'
 import img from '../../Assets/unsung1.png'
 import Stories from "../../Components/Stories/Stories"
 import FaqAccordian from "../../Components/FaqAccordian/FaqAccordian"

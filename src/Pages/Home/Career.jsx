@@ -11,7 +11,7 @@ import Form from "../../Components/Community/Form"
 import OurTeam from "../../Components/OurTeam/OurTeam"
 import Userslider2 from '../../Components/UserSlider2/UserSlider2';
 import Banner2 from '../../Components/Banner2/Banner2';
-import bannerImg from '../../Assets/Group230.png';
+import bannerImg from '../../Assets/careerImage.png';
 import img from '../../Assets/career.png'
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 

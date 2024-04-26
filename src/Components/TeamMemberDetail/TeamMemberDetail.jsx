@@ -1,7 +1,7 @@
 import React from 'react';
 import './TeamMemberDetail.scss';
 // import activearrow from '../../Assets/Path 1810.png';
-import secImage from '../../Assets/team3.png';
+import secImage from '../../Assets/jamal.png';
 
 const TeamMemberDetail = () => {
     return (
@@ -20,7 +20,7 @@ const TeamMemberDetail = () => {
                             {/* <div className="col-lg-8 col-md-6 left-content-container"> */}
                                 <div className="left-content">
                                     <h2 className="heading">
-                                       Sean Paul
+                                       Jamal Mahijibhai
                                     </h2>
                                     <h6>President and CEO</h6>
                                     <p>Jamal Mahijibhai is the President and CEO of EmpowerCare. As a registered nurse, Jamal founded the company nearly two decades ago with a vision to revolutionize healthcare staffing and enhance patient care on a global scale.</p>

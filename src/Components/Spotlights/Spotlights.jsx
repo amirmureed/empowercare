@@ -1,5 +1,5 @@
 import './Spotlights.scss'
-import img from '../../Assets/spotlight.png'
+import img from '../../Assets/imaginations.png'
 const Spotlights=()=>{
     return(<>
     <div className="spotlights-wrapper">
