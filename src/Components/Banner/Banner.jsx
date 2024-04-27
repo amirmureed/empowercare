@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import bannerImg from '../../Assets/home.png';
 import './Banner.scss';
 
 const Banner = () => {
+    const [selectedOption, setSelectedOption] = useState('Select jobtitle');
+
+    const handleSelectChange = (event) => {
+      setSelectedOption(event.target.value);
+    };
     return (
       <>
       <div className='banner_varient'>
@@ -38,9 +43,10 @@ const Banner = () => {
 
               <div className="selection-row">
                 <div className="selection-wrap">
-                <select id="jobtitle">
-                  <option value="Account Manager">Account Manager</option>
-                  <option value="Accounting">Accounting</option>
+                <select id="jobtitle" onChange={handleSelectChange} value={selectedOption}>
+                  <option>Select Job</option>
+                  <option value="doctor">doctor</option>
+                  <option value="nurse">nurse</option>
                   <option value="Account Payable">Account Payable</option>
                   <option value="Acute Care">Acute Care</option>
                   <option value="Adjunct Faculty">Adjunct Faculty</option>
@@ -240,7 +246,8 @@ const Banner = () => {
                   <option value="Select city/state1">Newyork</option>
                   <option value="Select city/state2">England</option>
                 </select>
-                  <Link target="_blank" to="https://msgstaffing.my.salesforce-sites.com/?page=JobListPage&JobSite=default&p=Candidate" className='btn available-btn'>
+                  <Link target="_blank" 
+                  to={`https://empowercare.me/?query=${encodeURIComponent(selectedOption)}&category`} className='btn available-btn'>
                     <span>Find available positions</span>
                   </Link>
                 </div>
