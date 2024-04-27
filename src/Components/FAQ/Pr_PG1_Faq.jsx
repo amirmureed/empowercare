@@ -3,9 +3,9 @@ import "./FAQ.scss";
 import icon1 from "../../Assets/Group530.png";
 import icon2 from "../../Assets/Group531.png";
 import icon3 from "../../Assets/Group532.png";
-import { faqData } from "../../Constants/Constants";
+import { faqData } from "../../Constants/Pr_Pg1_Faq _constant";
 
-const FAQ = () => {
+const Pr_PG1_Faq = () => {
   
   const[isAccordianOpen, setIsAccordianOpen] = useState(null);
 
@@ -57,4 +57,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Pr_PG1_Faq;

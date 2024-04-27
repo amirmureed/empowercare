@@ -54,10 +54,10 @@ const Dropdown = ({ professionals, about, facilities }) => {
         }
     };
 
-    const Box1 = ({facilities }) => {
-        const Cards = ({ imgSrc, title, description, background,}) => {
+    const Box1 = ({facilities }) => { 
+        const Cards = ({ imgSrc, title, description, background,FaqArr}) => {
             return (
-                <Link style={{textDecoration:'none'}} to={'/facilities/staffing-solutions'}>
+                // <Link style={{textDecoration:'none'}} >
                 <Stack
                     px={2}
                     py={2}
@@ -69,45 +69,59 @@ const Dropdown = ({ professionals, about, facilities }) => {
                     <Box>
                         <h4>{title}</h4>
                         <p className='box1-p'>{description}</p>
-                       <Link style={{textDecoration:'none'}} to={'/professionals/faqs'}> <p className='box1-p'><ArrowRight /> FAQ</p></Link>
+                       <p className='box1-p'><ArrowRight /> {FaqArr}</p>
                     </Box>
                 </Stack>
-                </Link>
+                // </Link>
             );
         };
         
         return (
             <Box px={2} width={'32%'} >
                 <Stack direction={'column'} spacing={2}>
+
+
                 <Cards
                 imgSrc={icon1} 
                 title="Contracts"
                 description="Your Trusted Partner for Temp-to-Hire Staffing Solutions"
                 background="linear-gradient(-134deg, #4eb3e8 0.00%,#71ba32 100.00%)"
-            />
-            <Cards
+                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/Faqstemptohire"}>FAQ</Link> }
+              />
+             
+
+            <Cards 
                 imgSrc={icon5}  
                 title={facilities ? "Permanent Staffing" : "Staffing Service Type"}
                 description= { facilities ? "Your Trusted Partner for Permanent Staffing Solutions": "Your Trusted Partner for Temp-to-Hire Staffing Solutions"} 
                 background="#4EB3E8"
+                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/Faqspermanentstaffing"}>FAQ</Link> }
             />
+
             <Cards
                 imgSrc={icon2}  
                 title={facilities ? "Contract Staffing" : "Staffing Service Type"}
                 description={ facilities ? "Your Trusted Partner for Contract Staffing Solutions":"Your Trusted Partner for Temp-to-Hire Staffing Solutions"}
                 background="linear-gradient(-134deg, #71ba32 0.00%,#4eb3e8 100.00%)"
+                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/faqs"}>FAQ</Link> }
             />
-            <Cards
+
+            <Cards 
                 imgSrc={icon4}  
                 title={facilities ? "Per Diem Staffing" : "Staffing Service Type"}
                 description={ "EmpowerCare: A Beacon of Flexibility in Per Diem Staffing"}
                 background="#5F9E29"
+                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/Faqsperdiem"}>FAQ</Link> }
             />
+
+
+
             <Cards
                 imgSrc={icon3}  
                 title="TRAVEL NURSING"
                 description="Your Passport to Unforgettable Travel Nursing Adventures"
                 background="linear-gradient(-130deg, #ee8d80 0.00%,#e6632a 100.00%)"
+                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/Faqstravelnurse"}>FAQ</Link> }
             />
                 </Stack>
             </Box>
@@ -115,6 +129,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
     }
     const Box2 = ({professionals}) => {
         const Content = ({ imgSrc, description }) => {
+
             return (
                 <Stack direction={'row'} spacing={2} sx={Style} >
                     <img style={{ width: '27px' }} src={imgSrc} alt="" />
@@ -127,61 +142,62 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 
                 <Stack style={{ backgroundColor: '#FCFCFC' }} direction={'column'} spacing={4} px={2} py={2}>
                     <h5 style={{ color: 'black' }}>{professionals ? "Professionals Landing Pages" : "Staffing Solution"}</h5>
-                    <Link style={{textDecoration:'none'}} to={professionals? "/professionals/directcare-career" :"/"}>
+                    {/* <Link style={{textDecoration:'none'}} to={professionals? "/professionals/directcare-career" :"/"}> */}
                     <Content
                         imgSrc={professionals? logo14 : logo1}
-                        description={professionals?"Your Pathway to Meaningful Direct Care Careers":'Non-Clinical Healthcare Staffing by EmpowerCare'}
-                    /></Link>
+                        description={professionals?<Link style={{ color:'black'}} to={"/professionals/directcare-careers"}>Your Pathway to Meaningful Direct Care Careers</Link>:<Link style={{ color:'black'}} to={"/facilities/staffing-solutions"}>Non-Clinical Healthcare Staffing by EmpowerCare</Link>}
+                    />
+                    {/* </Link> */}
                     <Content
                         imgSrc={professionals? logo15 :logo2}
-                        description={professionals?"Your Passport to Unforgettable Travel Nursing Adventures":'Empowering your Community Health Center with Top Talent'}
+                        description={professionals?<Link style={{ color:'black'}} to={"/professional/Professionals2passport"}>Your Passport to Unforgettable Travel Nursing Adventures</Link>:<Link style={{ color:'black'}} to={"/facilities/Facilitiesheallthcenter"}>Empowering your Community Health Center with Top Talent</Link>}
                     />
-                    <Content
+                    <Content 
                         imgSrc={professionals? logo16 :logo3}
-                        description={professionals?"Your Gateway to Extraordinary Nursing Opportunities":'Empowering Hospitals and Health Systems with Top Talent'}
+                        description={professionals?<Link style={{ color:'black'}} to={"/professional/Professionals2gatewaynursing"}>Your Gateway to Extraordinary Nursing Opportunities</Link>:<Link style={{ color:'black'}} to={"/facilities/Facilitieshealthsystem"}>Empowering Hospitals and Health Systems with Top Talent</Link>}
                     />
                     <Content
                         imgSrc={professionals? logo17 :logo4}
-                        description={professionals?"Your Gateway to Exciting Allied Health Careers":'EmpowerCare Corporate Staffing: Empower Employee Health'}
+                        description={professionals?<Link style={{ color:'black'}} to={"/professional/Professionals2gatewayexciting"}>Your Gateway to Exciting Allied Health Careers</Link>:<Link style={{ color:'black'}} to={"/facilities/Facilitiescorporatestaffing"}>EmpowerCare Corporate Staffing: Empower Employee Health</Link>}
                     />
                     <Content
                         imgSrc={professionals? logo18 :logo5}
-                        description={professionals?"Your CNA Career Launchpad":'Elevating Surgical Excellence with EmpowerCare Staff'}
+                        description={professionals?<Link style={{ color:'black'}} to={"/professional/Professionals2cnacarrers"}>Your CNA Career Launchpad</Link>:<Link style={{ color:'black'}} to={"/facilities/Facilitiessurgicalexellence"}>Elevating Surgical Excellence with EmpowerCare Staff</Link>}
                     />
 
                     <Content
                         imgSrc={professionals? logo19 :logo6}
-                        description={professionals?"Non-Clinical Healthcare Careers":'Elevate Student Health: EmpowerCare Education Staffing'}
+                        description={professionals?<Link style={{ color:'black'}} to={"/professional/Professionals2gatewaymeaningful"}>Non-Clinical Healthcare Careers</Link>:<Link style={{ color:'black'}} to={"/facilities/Facilitiesstudenthealth"}>Elevate Student Health: EmpowerCare Education Staffing</Link>}
                     />
                     <Content
                         imgSrc={professionals? logo20 :logo7}
-                        description={professionals?"Ignite Your Passion for Mental Health":'Elevate Student Health with our School Healthcare Staffing'}
+                        description={professionals?<Link style={{ color:'black'}} to={"/professional/Professionals2ignitepassion"}>Ignite Your Passion for Mental Health</Link>:<Link style={{ color:'black'}} to={"/facilities/Facilitiesschoolhealth"}>Elevate Student Health with our School Healthcare Staffing</Link>}
                     />
                     <Content
                         imgSrc={professionals? logo21 :logo8}
-                        description={professionals?"Empower Your Nursing Specialty: Find Your Perfect Job Now":'Elevate Mental Health Care with EmpowerCare Staffing'}
+                        description={professionals?<Link style={{ color:'black'}} to={"/professional/Professionals2staffingoppertunities"}>Empower Your Nursing Specialty: Find Your Perfect Job Now</Link>:<Link style={{ color:'black'}} to={"/facilities/Facilitiesmentalhealth"}>Elevate Mental Health Care with EmpowerCare Staffing</Link>}
                     />
                     
                     <Content
                         imgSrc={professionals? logo22 :logo9}
-                        description={professionals?"Elevate Your Advanced Practice Nursing Career":'Elevate Direct Care with EmpowerCare  Professionals'}
+                        description={professionals?<Link style={{ color:'black'}} to={"/professional/Professionals2elevateadvance"}>Elevate Your Advanced Practice Nursing Career</Link>:<Link style={{ color:'black'}} to={"/facilities/Facilitiesellevatedirectcare"}>Elevate Direct Care with EmpowerCare  Professionals</Link>}
                     />
                     {!professionals && (<>
                         <Content
                         imgSrc={logo10}
-                        description={'Elevate Care: EmpowerCare  Advanced Practice Staff'}
+                        description={<Link style={{ color:'black'}} to={"/facilities/Facilitiespracticestaff"}>Elevate Care: EmpowerCare  Advanced Practice Staff</Link>}
                     />
                     <Content
                         imgSrc={logo11}
-                        description={'Elevate Care with EmpowerCare  Allied Health Staffing'}
+                        description={<Link style={{ color:'black'}} to={"/facilities/Facilitiesalliedhealth"}>Elevate Care with EmpowerCare  Allied Health Staffing</Link>}
                     />
                     <Content
                         imgSrc={logo12}
-                        description={'Elevate Care Quality: EmpowerCare Skilled Nursing Staffing'}
+                        description={<Link style={{ color:'black'}} to={"/facilities/Facilitiesskillednursing"}>Elevate Care Quality: EmpowerCare Skilled Nursing Staffing</Link>}
                     />
                     <Content
                         imgSrc={logo13}
-                        description={'Bridge Leadership Gaps with EmpowerCare  Interim Solutions'}
+                        description={<Link style={{ color:'black'}} to={"/facilities/Facilitiesbridgeleadership"}>Bridge Leadership Gaps with EmpowerCare  Interim Solutions</Link>}
                     />
                     </>)}
                     
@@ -285,34 +301,44 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 title="Benefits That Care for You"
                 description="Easy-to-use healthcare staffing tools, 3Es"
             /> <br />
-                    </>):(<>
+                    </>):
+                    // Professional Nav Menu Diffrentiator
+                    (<>
                         <h5 style={{ color: 'black' }}>Differentiator</h5><br />
                         <Link to={'/professionals/unsung-heroes'} style={{textDecoration:'none'}}>
                     <Box3Stack
                 imgSrc={ellipse7}
-                title="Unsung Heroes No More"
+                title="Unsungs Heroes No More"
                 description="Unsung Heroes No More: Shift Champions in the Spotlight!!"
             /></Link>
+            <Link to={'/professional/Professionalgainawinning'} style={{textDecoration:'none'}}>
             <Box3Stack
                 imgSrc={ellipse8}
                 title="Gain a winning edge"
                 description="Gain a winning edge with EmpowerCare Academy!"
             />
+            </Link>
+            <Link to={'/professional/Professionalperfectmatch'} style={{textDecoration:'none'}}>
             <Box3Stack
                 imgSrc={ellipse9}
                 title="Finding the Perfect Match"
                 description="Finding the Perfect Match Made Easy! Dynamic Squads"
             />
+            </Link>
+            <Link to={'/professional/Professionalhelpstheworld'} style={{textDecoration:'none'}}>
             <Box3Stack
                 imgSrc={ellipse10}
                 title="The Ripple Effect!"
                 description="Every Job Helps the World, The Ripple Effect!"
             />
+            </Link>
+            <Link to={'/professional/ProfessionalEasytouse'} style={{textDecoration:'none'}}>
             <Box3Stack
                 imgSrc={ellipse5}
                 title="Easy-to-use, 3Es"
                 description="Easy-to-use healthcare staffing tools, 3Es"
             />
+            </Link>
                 
                     </>)}
                     
@@ -360,7 +386,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
 
         <Stack direction={'row'} spacing={1} py={3}>
             {facilities ? (<>
-                <Box1 facilities={true} />
+                <Box1 facilities={true} /> 
                 <Box2
 
                 />
@@ -381,6 +407,11 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 </>)
 
             }
+
+
+
+
+
         </Stack>
 
     </>)

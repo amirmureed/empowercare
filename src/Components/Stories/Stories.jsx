@@ -3,7 +3,7 @@ import './Stories.scss';
 import storiesimg from '../../Assets/storiesimg.png';
 import playbtn from '../../Assets/play.svg';
 
-const Stories = ({img,description,description2,facility,btn1,Join,video_link}) => {
+const Stories = ({description,description2,facility,btn1,Join,video_link}) => {
     return (
         <div className="stories-sec">
             <div className="container">
@@ -37,7 +37,7 @@ const Stories = ({img,description,description2,facility,btn1,Join,video_link}) =
                         <div className="col-md-6">
                             <div className="right-content">
                                 <div className="section-img">
-                                    <img src={img} alt="storiesimg" />
+                                    <img src={storiesimg} alt="storiesimg" />
                                    <a target='blank' href={video_link}><img src={playbtn} alt="playbtn" className='play-btn' /></a>
                                 </div>
                             </div>

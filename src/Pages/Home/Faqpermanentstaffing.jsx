@@ -12,7 +12,7 @@ import FAQ from "../../Components/FAQ/FAQ"
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 const Faqpermanentstaffing=()=>{
-    const bannerStyles = {
+    const bannerStyles = { 
         backgroundImage: `url(${img})`,
         backgroundPosition: '50% 30%',
         backgroundRepeat: 'no-repeat',

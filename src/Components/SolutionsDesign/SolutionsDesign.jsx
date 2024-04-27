@@ -1,7 +1,7 @@
 import image from '../../Assets/staff.png'
 import './SolutionsDesign.scss'
 import { Link } from 'react-router-dom';
-const SolutionsDesign = ({img,meta,heading1,heading2,heading3,bullet1,bullet2,bullet3,bullet4,description1,description2,btn1,btn2}) => {
+const SolutionsDesign = ({img,meta,heading1,heading2,heading3,bullet1,bullet2,bullet3,bullet4, bullet5,description1,description2,btn1,btn2}) => {
     
     return (
         <div className="sd-sec">
@@ -17,12 +17,14 @@ const SolutionsDesign = ({img,meta,heading1,heading2,heading3,bullet1,bullet2,bu
                                      {heading3 && (<>{heading3}</>)}  
                                     </h2>
                                     <p className="description">
-                                        {bullet1 && bullet2 && bullet3 && bullet4 ?(<>
+                                        {bullet1 && bullet2 && bullet3 ?(<>
                                             <ul>
                                             <li>{bullet1}</li>
                                             <li>{bullet2}</li>
                                             <li>{bullet3}</li>
                                             <li>{bullet4}</li>
+                                            <li>{bullet5}</li>
+
                                         </ul>
                                         </>):(<>
                                         <p className='description1'>{description1}</p> <br />

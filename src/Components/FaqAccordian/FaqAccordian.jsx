@@ -6,7 +6,7 @@ import icon3 from "../../Assets/Group532.png";
 import { IconButton, useMediaQuery, useTheme } from '@mui/material';
 
 const FaqAccordian = (props) => {
-  const{faq_head1 ,faq_desc1 ,faq_head2 ,faq_desc2 ,faq_head3, faq_desc3}=props
+  const{faq_head1 ,faq_desc1 ,faq_head2 ,faq_desc2 ,faq_head3, faq_desc3,faq_head4,faq_desc4,faq_head5,faq_desc5}=props
 
   
   
@@ -69,6 +69,32 @@ const FaqAccordian = (props) => {
                   </div>
                   <p>
                     {faq_desc3}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={isAccordianOpen == 4 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }>
+              <div className="row">
+                <div className="working_content col-12">
+                  <div className="reletive">
+                    <h3>{faq_head4}</h3>
+                    <span className="plus-icon" onClick={() => toggleAccodian(4)}>+</span>
+                  </div>
+                  <p>
+                    {faq_desc4}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={isAccordianOpen == 4 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }>
+              <div className="row">
+                <div className="working_content col-12">
+                  <div className="reletive">
+                    <h3>{faq_head5}</h3>
+                    <span className="plus-icon" onClick={() => toggleAccodian(5)}>+</span>
+                  </div>
+                  <p>
+                    {faq_desc5}
                   </p>
                 </div>
               </div>

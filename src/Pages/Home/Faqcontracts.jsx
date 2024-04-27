@@ -11,7 +11,7 @@ import bannerImg from '../../Assets/advantagesImg.png'
 import FAQ from "../../Components/FAQ/FAQ" 
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
-const Faqcontracts=()=>{
+const Faqcontracts=()=>{ 
     const bannerStyles = {
         backgroundImage: `url(${img})`,
         backgroundPosition: '50% 30%',

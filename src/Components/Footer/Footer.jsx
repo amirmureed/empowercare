@@ -16,7 +16,7 @@ const Footer = () => {
               <div className="footer-wrapper">
                 <div className="top-footer">
                   <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                       <div className="contents">
                         <div className="footer-logo">
                           <img src={logo} alt="logo" />
@@ -51,7 +51,7 @@ const Footer = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                       <div className="contents">
                         <h4 className="footer-title">Quick Links</h4>
                         <ul className="list-items">
@@ -88,7 +88,85 @@ const Footer = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className="col-md-3">
+
+                    <div className="col-md-2">
+                      <div className="contents">
+                        <h4 className="footer-title">Professionals</h4>
+                        <ul className="list-items">
+                          <li className="list-item">
+                            <Link to='professionals/seamless'>
+                              <span>vsP.Maxim Healthcare</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/professional/Prseamlesssarborassociates'>
+                              <span>vsP.Arbor Associates</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/professional/Prseamlesssayahealthcare'>
+                              <span>vsP.Aya Healthcare</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/professional/Prseamlesssimpactfull'>
+                              <span>vsP.Healthcare Staffing</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/professional/Prseamlesssintelycare'>
+                              <span>vsP.Intely Care</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/professional/Prseamlesssmasmedical'>
+                              <span>vsP.MAS Medical</span>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="col-md-2">
+                      <div className="contents">
+                        <h4 className="footer-title">Facilities</h4>
+                        <ul className="list-items">
+                          <li className="list-item">
+                            <Link to='/facilities/seamless'>
+                              <span>vsP.Maxim Healthcare</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/facilities/Facilitiesarborassociates'>
+                              <span>vsP.Arbor Associates</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/facilities/Facilitiesayahealthcare'>
+                              <span>vsP.Aya Healthcare</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/facilities/Facilitiesfavriouthealthcarestaffing'>
+                              <span>vsP.Healthcare Staffing</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/facilities/Facilitiesintelycarefornurses'>
+                              <span>vsP.Intely Care</span>
+                            </Link>
+                          </li>
+                          <li className="list-item">
+                            <Link to='/facilities/Facilitiesmasmedicalstaffing'>
+                              <span>vsP.MAS Medical</span>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                    <div className="col-md-2">
                       <div className="contents">
                         <h4 className="footer-title">Contact</h4>
                         <p className="address">562 LincoIn St. Warcester, MA 01605</p>
@@ -102,7 +180,7 @@ const Footer = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                       <div className="contents">
                         <h4 className="footer-title">Stay Connected</h4>
                         <form action="" className='footer-form'>

@@ -1,5 +1,5 @@
 import './PartneringBenefits.scss'
-const PartneringBenefits=()=>{
+const PartneringBenefits=({heading1,heading2,heading3,heading4,description1,description2,description3,description4})=>{
     return(<>
     <div className="benefits-div">
         <div className="container">
@@ -10,26 +10,26 @@ const PartneringBenefits=()=>{
             <div className="row">
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                     <div className='content'>
-                        <h6>Skilled and Reliable</h6>
-                        <p>Access to a wide pool of skilled, reliable non-clinical professionals</p>
+                        <h6>{heading1}</h6>
+                        <p>{description1}</p>
                     </div>
                 </div>
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                     <div className='content'>
-                        <h6>Time-of-Fill</h6>
-                        <p>Reduced time-to-fill for open positions</p>
+                        <h6>{heading2}</h6>
+                        <p>{description2}</p>
                     </div>
                 </div>
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                     <div className='content'>
-                        <h6>Patient Satisfaction</h6>
-                        <p>Improved operational efficiency and patient satisfaction</p>
+                        <h6>{heading3}</h6>
+                        <p>{description3}</p>
                     </div>
                 </div>
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                     <div className='content'>
-                    <h6>High-Quality Care</h6>
-                        <p>More time to focus on delivering high-quality care</p>
+                    <h6>{heading4}</h6>
+                        <p>{description4}</p>
                     </div>
                 </div>
             </div>

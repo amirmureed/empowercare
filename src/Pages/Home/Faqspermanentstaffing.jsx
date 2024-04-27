@@ -8,7 +8,7 @@ import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import img from '../../Assets/advantages.png'
 import bannerImg from '../../Assets/advantagesImg.png'
-import FAQ from "../../Components/FAQ/FAQ" 
+import Pr_PG3_Faq3 from "../../Components/FAQ/Pr_PG3_Faq3" 
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 const Faqspermanentstaffing=()=>{
@@ -18,7 +18,7 @@ const Faqspermanentstaffing=()=>{
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain',
         marginTop: '-237px',
-        backgroundColor: '#EBE0D3'
+        backgroundColor: '#EBE0D3' 
     };
     return(<>
     <HeaderWhite
@@ -32,10 +32,9 @@ const Faqspermanentstaffing=()=>{
     styles={bannerStyles}
     />
     <Trusted/>
-    <FAQ/>
+    <Pr_PG3_Faq3/>
     <AboutEmpowercare/>
     <Stories/>
-    <FaqAccordian/>
     <Userslider/>
     <Footer/>
 

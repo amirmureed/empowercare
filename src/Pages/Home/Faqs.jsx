@@ -15,7 +15,7 @@ const Faqs=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
         backgroundPosition: '50% 30%',
-        backgroundRepeat: 'no-repeat',
+        backgroundRepeat: 'no-repeat', 
         backgroundSize: 'contain',
         marginTop: '-237px',
         backgroundColor: '#EBE0D3'
@@ -41,7 +41,7 @@ const Faqs=()=>{
     Join={"JOIN US NOW"}
     btn1={"Apply Now"}
     />
-    <FaqAccordian/>
+    {/* <FaqAccordian/> */}
     <Userslider/>
     <Footer/>
 

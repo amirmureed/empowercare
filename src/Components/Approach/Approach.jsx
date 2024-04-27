@@ -6,7 +6,8 @@ import circle2 from '../../Assets/circle2.png';
 import circle3 from '../../Assets/circle3.png';
 import circle4 from '../../Assets/circle4.png';
 
-const Approach = () => {
+const Approach = ({heading1,description1,heading2,description2,heading3,description3,heading4,description4,heading5,description5}) => {
+    
     return (
         <>
             <div className="approach-sec">
@@ -28,8 +29,8 @@ const Approach = () => {
                                             <img src={circle1} alt="approach1" />
                                         </div>
                                         <div className="text-area">
-                                            <h3 className="heading">Every Job Helps the World</h3>
-                                            <p className="description">The Ripple Effect: Making Big Waves with Every Job</p>
+                                            <h3 className="heading">{heading1}</h3>
+                                            <p className="description">{description1}</p>
                                         </div>
                                     </div>
                                     <div className="right-sec">
@@ -44,8 +45,8 @@ const Approach = () => {
                                             <img src={circle2} alt="approach2" />
                                         </div>
                                         <div className="text-area">
-                                            <h3 className="heading">Finding the Perfect Match Made Easy! Dynamic Squads</h3>
-                                            <p className="description">EmpowerCare’s Dynamic Squads aren’t just teams; they’re the future of personalized,<br/> responsive healthcare staffing, redefining convenience in every match.</p>
+                                            <h3 className="heading">{heading2}</h3>
+                                            <p className="description">{description2}</p>
                                         </div>
                                     </div>
                                     <div className="right-sec">
@@ -60,8 +61,8 @@ const Approach = () => {
                                             <img src={circle3} alt="approach1" />
                                         </div>
                                         <div className="text-area">
-                                            <h3 className="heading">Gain a Winning Edge: Excel with EmpowerCare Academy!</h3>
-                                            <p className="description">Unlock Your Potential and Land Your Dream Healthcare Role Effortlessly</p>
+                                        <h3 className="heading">{heading3}</h3>
+                                            <p className="description">{description3}</p>
                                         </div>
                                     </div>
                                     <div className="right-sec">
@@ -76,8 +77,8 @@ const Approach = () => {
                                             <img src={circle4} alt="approach1" />
                                         </div>
                                         <div className="text-area">
-                                            <h3 className="heading">Unsung Heroes No More: in the Spotlight! Shift Champions</h3>
-                                            <p className="description">Celebrate Your Exceptional Contributions to Healthcare</p>
+                                        <h3 className="heading">{heading4}</h3>
+                                            <p className="description">{description4}</p>
                                         </div>
                                     </div>
                                     <div className="right-sec">
@@ -86,6 +87,24 @@ const Approach = () => {
                                         </button>
                                     </div>
                                 </div>
+                                {heading5 && heading5.trim() !== '' && (
+                                    <div className="approach-box">
+                                        <div className="left-sec">
+                                            <div className="sec-img">
+                                                <img src={circle4} alt="approach1" />
+                                            </div>
+                                            <div className="text-area">
+                                            <h3 className="heading">{heading5}</h3>
+                                                <p className="description">{description5}</p>
+                                            </div>
+                                        </div>
+                                        <div className="right-sec">
+                                            <button className='approach-btn'>
+                                                <span>Learn More</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                         <div className="bottom-btn">

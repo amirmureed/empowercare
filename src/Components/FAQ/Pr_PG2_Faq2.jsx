@@ -3,9 +3,9 @@ import "./FAQ.scss";
 import icon1 from "../../Assets/Group530.png";
 import icon2 from "../../Assets/Group531.png";
 import icon3 from "../../Assets/Group532.png";
-import { faqData } from "../../Constants/Constants";
+import { faqData2 } from "../../Constants/Pr_Pg2_Faq2 _constant.js";
 
-const FAQ = () => {
+const Pr_PG2_Faq2 = () => {
   
   const[isAccordianOpen, setIsAccordianOpen] = useState(null);
 
@@ -29,7 +29,7 @@ const FAQ = () => {
           </div>
 
           <div className="row">
-            {faqData.map((faq, index) => (
+            {faqData2.map((faq, index) => (
               <div
                 key={index}
                 className={ isAccordianOpen === index+1 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }
@@ -57,4 +57,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Pr_PG2_Faq2;

@@ -17,7 +17,6 @@ import HowtoBecome from "../../Components/HowtoBecome/HowtoBecome"
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 import storiesimg from '../../Assets/storiesPic.png';
-import GeneralNursing from "../../Components/GeneralNursing/GeneralNursing"
 const Guide=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -41,12 +40,6 @@ const Guide=()=>{
     <Assessing
      description={"These nurses are skilled in assessing, planning, implementing, and evaluating patient care, collaborating with a multidisciplinary team to ensure the best possible outcomes. General Nurses are versatile and adaptable, capable of working in a wide range of specialties and settings."}
     />
-    <GeneralNursing
-    text1={"Registered Nurse (RN)"}
-    text2={"Staff Nurse"}
-    text3={"Floor Nurse"}
-    text4={"Bedside Nurse"}
-    />
     
     <HowtoBecome
      mhead1={"GENERAL NURSE:"}
@@ -59,7 +52,7 @@ const Guide=()=>{
     <ResponsibilitiesSlider
     
     main_head1={"What Does a "}
-    main_head2={"General Nurse "}
+    main_head2={"General Nurse"}
     main_head3={"Do"}
     main_head_desc={"General Nurses have a wide range of responsibilities, including"}
 
@@ -120,6 +113,7 @@ const Guide=()=>{
     description2={"Step into the world of per diem opportunities with EmpowerCare and tailor your job to fit your life. Start your journey today with a team that values your flexibility and career aspirations. "}
     Join={"JOIN US NOW"}
     btn1={"Apply Now"}
+    video_link={"https://www.youtube.com/shorts/X5DhrVv-hk4"}
     />
     <Userslider/>
     <Footer/>
