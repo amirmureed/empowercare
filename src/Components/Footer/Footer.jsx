@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../Assets/logo.png';
+// import logo from '../../Assets/logo.png';
+import logo from "../../Assets/EmpowerCareLogo.svg";
 import instagram from '../../Assets/icons/instagram.svg';
 import tiktok from '../../Assets/icons/tiktok.svg';
 import facebook from '../../Assets/icons/facebook-f.svg';
@@ -16,7 +17,7 @@ const Footer = () => {
               <div className="footer-wrapper">
                 <div className="top-footer">
                   <div className="row">
-                    <div className="col-md-2">
+                    <div className="col-md-4">
                       <div className="contents">
                         <div className="footer-logo">
                           <img src={logo} alt="logo" />
@@ -50,6 +51,17 @@ const Footer = () => {
                           </li>
                         </ul>
                       </div>
+               
+                      <div className="contents">
+                        <h4 className="footer-title">Stay Connected</h4>
+                        <form action="" className='footer-form'>
+                          <input type="email" placeholder='Email' />
+                          <button type="submit" className='submit-btn'>
+                            <span>Submit</span>
+                          </button>
+                        </form>
+                      </div>
+                  
                     </div>
                     <div className="col-md-2">
                       <div className="contents">
@@ -165,7 +177,6 @@ const Footer = () => {
                       </div>
                     </div>
 
-
                     <div className="col-md-2">
                       <div className="contents">
                         <h4 className="footer-title">Contact</h4>
@@ -180,17 +191,7 @@ const Footer = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className="col-md-2">
-                      <div className="contents">
-                        <h4 className="footer-title">Stay Connected</h4>
-                        <form action="" className='footer-form'>
-                          <input type="email" placeholder='Email' />
-                          <button type="submit" className='submit-btn'>
-                            <span>Submit</span>
-                          </button>
-                        </form>
-                      </div>
-                    </div>
+  
                   </div>
                 </div>
                 <div className="bottom-footer">
