@@ -8,98 +8,91 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const PostjobForm = () => {
     const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        username: '',
-        email: '',
-        password: '',
-        confirmPassword: '',
-        licenseType:'',
-        preferredWorkSettings:'',
-        desiredPosition:'',
-        workPreference:''
-      });
-      const [selectedSettingCheckboxes, setSelectedSettingCheckboxes] = useState([]);
-      const [selectedWorkCheckboxes, setSelectedWorkCheckboxes] = useState([]);
+        jobTitle: '',
+        jobType: '',
+        category: '',
+        jobDescription: '',
+        jobFile: '',
+        companyName: '',
+        companyEmail: '',
+        website: '',
+        state: '',
+        zipCode: '',
+        city: '',
+        Address: '',
+        Country: '',
+        consent: 0
+    });
 
-    const handleCheckboxChangeSetting = (e) => {
-        const { value, checked } = e.target;
-
-        if (checked) {
-            console.log(value)
-            setSelectedSettingCheckboxes(prevState => [...prevState, value]);
-        } else {
-            setSelectedSettingCheckboxes(prevState => prevState.filter(item => item !== value));
-        }
-    };
-    
-    const handleCheckboxChangeWork = (e) => {
-        const { value, checked } = e.target;
-
-        if (checked) {
-            console.log(value)
-            setSelectedWorkCheckboxes(prevState => [...prevState, value]);
-        } else {
-            setSelectedWorkCheckboxes(prevState => prevState.filter(item => item !== value));
-        }
-    };
     const handleChange = (e) => {
-        console.log()
+        const { name, value, type, checked } = e.target;
+        const newValue = type === 'checkbox' ? (checked ? 1 : 0) : value;
         setFormData({
-          ...formData,
-          [e.target.name]: e.target.value
+            ...formData,
+            [e.target.name]: newValue
         });
-      };
+
+    };
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log(formData)
+        if (formData.consent === 0) {
+            toast.error("Please comply to our terms in order to post the job")
+            return;
+        }
 
         try {
             const form = new FormData();
-            form.append('username', formData.username);
-            form.append('firstName', formData.firstName);
-            form.append('lastName', formData.lastName);
-            form.append('email', formData.email);
-            form.append('password', formData.password);
-            form.append('confirmPassword', formData.confirmPassword);
-            form.append('licenseType',formData.licenseType)
-            form.append('preferredWorkSettings',formData.preferredWorkSettings)
-            form.append('desiredPosition',formData.desiredPosition)
-            form.append('workPreference',formData.workPreference)
-            form.append('setting', JSON.stringify(selectedSettingCheckboxes));
-            form.append('work', JSON.stringify(selectedWorkCheckboxes));
-      
-            const response = await fetch('https://empowercare.me/wp-json/empower/staffing/signup', {
-              method: 'POST',
-              body: form,
+            form.append('jobTitle', formData.jobTitle);
+            form.append('jobType', formData.jobType);
+            form.append('category', formData.category);
+            form.append('jobDescription', formData.jobDescription);
+            form.append('jobFile', formData.jobFile);
+            form.append('companyName', formData.companyName);
+            form.append('companyEmail', formData.companyEmail);
+            form.append('website', formData.website);
+            form.append('state', formData.state);
+            form.append('zipCode', formData.zipCode);
+            form.append('city', formData.city);
+            form.append('Address', formData.Address);
+            form.append('Country', formData.Country);
+            form.append('consent', formData.consent);
+
+            console.log(form)
+            const response = await fetch('https://empowercare.me/wp-json/empower/staffing/postjob', {
+                method: 'POST',
+                body: form,
             });
-           
-           
+
+
             const data = await response.json();
             if (!response.ok) {
                 toast.error(data.data.message)
-              }else{
-                toast.success("Signup Successfull")
+            } else {
+                toast.success("Job successfully posted")
                 setFormData({
-                    firstName: '',
-                    lastName: '',
-                    username: '',
-                    email: '',
-                    password: '',
-                    confirmPassword: '',
-                    licenseType:'',
-                    preferredWorkSettings:'',
-                    desiredPosition:'',
-                    workPreference:''
-
-
+                    jobTitle: '',
+                    jobType: '',
+                    category: '',
+                    jobDescription: '',
+                    jobFile: '',
+                    companyName: '',
+                    companyEmail: '',
+                    website: '',
+                    state: '',
+                    zipCode: '',
+                    city: '',
+                    Address: '',
+                    Country: '',
+                    consent: 0
                 });
-              }
+            }
             console.log(data);
-           
-          } catch (error) {
+
+        } catch (error) {
             console.error('Error:', error);
-          }
-        
+        }
+
     };
     return (
         <>
@@ -127,36 +120,38 @@ const PostjobForm = () => {
                                                     type="text"
                                                     placeholder="Job Title"
                                                     className="rounded-input"
-                                                    value={formData.password}
-                                                    name='job_title'
+                                                    value={formData.jobTitle}
+                                                    name='jobTitle'
                                                     onChange={handleChange}
                                                 />
                                                 <select className='rounded-input'
                                                     onChange={handleChange}
-                                                    name='desiredPosition'
+                                                    name='jobType'
+                                                    value={formData.jobType}
                                                 >
-                                                    <option value="option1">Job Type</option>
-                                                    <option value="option2">Permanent Full Time</option>
-                                                    <option value="option3">Permanent Part Time</option>
-                                                    <option value="option2">Per Diem / Local Contract</option>
+                                                    <option value="Job Type">Job Type</option>
+                                                    <option value="Permanent Full Time">Permanent Full Time</option>
+                                                    <option value="Permanent Part Time">Permanent Part Time</option>
+                                                    <option value="Local Contract">Per Diem / Local Contract</option>
                                                 </select>
                                             </div>
                                             <div className='row-input'>
                                                 <select className='rounded-input'
                                                     onChange={handleChange}
-                                                    name='workPreference'
+                                                    name='category'
+                                                    value={formData.category}
                                                 >
-                                                    <option value="option1">Category</option>
-                                                    <option value="option2">Scholar</option>
-                                                    <option value="option2">Software Engineer</option>
-                                                    <option value="option3">Doctor</option>
+                                                    <option value="Category">Category</option>
+                                                    <option value="Scholar">Scholar</option>
+                                                    <option value="Software Engineer">Software Engineer</option>
+                                                    <option value="Doctor">Doctor</option>
                                                 </select>
                                                 <textarea
                                                     rows="3" cols="5"
                                                     placeholder="Job Description"
                                                     className="rounded-input"
-                                                    value={formData.email}
-                                                    name='job_description'
+                                                    value={formData.jobDescription}
+                                                    name='jobDescription'
                                                     onChange={handleChange}
                                                 />
                                             </div>
@@ -166,8 +161,8 @@ const PostjobForm = () => {
                                                     type="file"
                                                     placeholder="Logo"
                                                     className="rounded-input"
-                                                    value={formData.firstName}
-                                                    name='firstName'
+                                                    value={formData.jobFile}
+                                                    name='jobFile'
                                                     onChange={handleChange}
                                                 />
                                             </div>
@@ -176,16 +171,16 @@ const PostjobForm = () => {
                                                     type="text"
                                                     placeholder="Company Name"
                                                     className="rounded-input"
-                                                    value={formData.username}
-                                                    name='username'
+                                                    value={formData.companyName}
+                                                    name='companyName'
                                                     onChange={handleChange}
                                                 />
                                                 <input
                                                     type="text"
                                                     placeholder="Contact Email"
                                                     className="rounded-input"
-                                                    value={formData.username}
-                                                    name='username'
+                                                    value={formData.companyEmail}
+                                                    name='companyEmail'
                                                     onChange={handleChange}
                                                 />
                                             </div>
@@ -194,8 +189,8 @@ const PostjobForm = () => {
                                                     type="text"
                                                     placeholder="Website"
                                                     className="rounded-input"
-                                                    value={formData.username}
-                                                    name='username'
+                                                    value={formData.website}
+                                                    name='website'
                                                     onChange={handleChange}
                                                 />
                                             </div>
@@ -205,16 +200,16 @@ const PostjobForm = () => {
                                                     type="text"
                                                     placeholder="State"
                                                     className="rounded-input"
-                                                    value={formData.username}
-                                                    name='username'
+                                                    value={formData.state}
+                                                    name='state'
                                                     onChange={handleChange}
                                                 />
                                                 <input
                                                     type="text"
                                                     placeholder="Zip-Code"
                                                     className="rounded-input"
-                                                    value={formData.username}
-                                                    name='username'
+                                                    value={formData.zipCode}
+                                                    name='zipCode'
                                                     onChange={handleChange}
                                                 />
                                             </div>
@@ -223,36 +218,39 @@ const PostjobForm = () => {
                                                     type="text"
                                                     placeholder="City"
                                                     className="rounded-input"
-                                                    value={formData.username}
-                                                    name='username'
+                                                    value={formData.city}
+                                                    name='city'
                                                     onChange={handleChange}
                                                 />
                                                 <input
                                                     type="text"
                                                     placeholder="Address"
                                                     className="rounded-input"
-                                                    value={formData.username}
-                                                    name='username'
+                                                    value={formData.Address}
+                                                    name='Address'
                                                     onChange={handleChange}
                                                 />
                                             </div>
                                             <div className="row-input">
                                                 <select className='rounded-input'
-                                                        onChange={handleChange}
-                                                        name='workPreference'
-                                                    >
-                                                        <option value="option1">Country</option>
-                                                        <option value="option2">USA</option>
-                                                        <option value="option2">Pakistan</option>
-                                                        <option value="option3">Turkey</option>
+                                                    onChange={handleChange}
+                                                    name='Country'
+                                                    value={formData.Country}
+                                                >
+                                                    <option value="Country">Country</option>
+                                                    <option value="USA">USA</option>
+                                                    <option value="Pakistan">Pakistan</option>
+                                                    <option value="Turkey">Turkey</option>
                                                 </select>
                                             </div>
                                             <div className='form_consent'>
-                                                <input 
+                                                <input
                                                     type="checkbox"
                                                     className='emp_checkbox'
+                                                    checked={formData.consent == 1}
                                                     value={formData.consent}
                                                     onChange={handleChange}
+                                                    name='consent'
                                                 />
                                                 <p>By registering, you are agreeing to our Terms of Use and Privacy Policy, as well as additional Terms that apply specifically to self-serve job postings.</p>
                                             </div>
