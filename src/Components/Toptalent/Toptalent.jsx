@@ -1,20 +1,17 @@
 import React from 'react';
 import './Toptalent.scss';
-import job1 from '../../Assets/job1.png';
-import job2 from '../../Assets/job2.png';
-import job3 from '../../Assets/job3.png';
 import arrow from '../../Assets/anchor-arrow.png';
-import { color } from '@mui/system';
+
 
 const Toptalent = (props) => {
-    const{heading1 , heading2 , heading3 , heading4,jobcard1 ,jobcard1_des ,jobcard2 ,jobcard2_des ,jobcard3 ,jobcard3_des}=props
+    const{facilities,heading1 , heading2 , heading3 , heading4,jobcard1 ,jobcard1_des ,jobcard2 ,jobcard2_des ,jobcard3 ,jobcard3_des,job1,job2,job3,btn2}=props
     return (
     <div className="toptalent-sec">
         <div className="toptalent-container">    
             <div className="contractjob-wrapper">
                 <div className="container">
                     <div className="top-content">
-                    <p className="description">Join EmpowerCare for Free</p>
+                   { facilities && <p className="description">Join EmpowerCare for Free</p>}
                         <h2 className="heading">
                             {heading1} 
                             <span> {heading2}  </span>
@@ -60,7 +57,7 @@ const Toptalent = (props) => {
                             Sign up
                         </a>
                         <a href="/" className="learnmore-btn">
-                            Lean more how to find talent
+                            {btn2}
                             <img src={arrow} />
                         </a>
                     </div>

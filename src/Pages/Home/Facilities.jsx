@@ -23,6 +23,9 @@ import empowercareimg2 from '../../Assets/man_6 copy.png';
 import empowercareimg3 from "../../Assets/staff-solutions.png";
 import './Home.scss';
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
+import job1 from '../../Assets/Group 128.png';
+import job2 from '../../Assets/Group 129.png';
+import job3 from '../../Assets/Group 130.png';
      
 const Home = () => {
   const bannerStyles = {
@@ -97,7 +100,24 @@ const content2={
       img={empowercareimg}  
       btn1={'SIGNUP TO ELEVATE CARE WITH US'}    
             />
-      <Toptalent />
+      <Toptalent
+      facilities={true}
+       heading1={"Empower "}
+       heading2={"Your Facility "}
+       heading3={"With top talent, effortlessly"}
+      job1={job1}
+      job2={job2}
+      job3={job3}
+       jobcard1={"Join EmpowerCare For Free"}
+          jobcard1_des={"Sign up at no cost. Connect with our supportive team, explore personalized opportunities, and empower your career in healthcare with efficiency and excellence."}
+          
+          jobcard2={"Discover and Match with Premier Jobs, Effortlessly"}
+          jobcard2_des={"Forget the hassle of job searching. Share your aspirations, and we'll swiftly match you with leading healthcare roles, proving that finding your perfect position can be simple and stress-free."}
+    
+          jobcard3={"Experience Rewarding Healthcare Roles"}
+          jobcard3_des={"Competitive compensation is a given, allowing you to focus on your passion for care. We ensure that advancing in your healthcare career is not only financially rewarding but also deeply meaningful."}
+          btn2={"Lean more how to find Talent"}
+      />
       <Facilitynetwork 
       content={content}
       button = {true}
