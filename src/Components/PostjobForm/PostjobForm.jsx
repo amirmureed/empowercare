@@ -35,63 +35,33 @@ const PostjobForm = () => {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formData)
+
         if (formData.consent === 0) {
             toast.error("Please comply to our terms in order to post the job")
             return;
         }
 
-        try {
-            const form = new FormData();
-            form.append('jobTitle', formData.jobTitle);
-            form.append('jobType', formData.jobType);
-            form.append('category', formData.category);
-            form.append('jobDescription', formData.jobDescription);
-            form.append('jobFile', formData.jobFile);
-            form.append('companyName', formData.companyName);
-            form.append('companyEmail', formData.companyEmail);
-            form.append('website', formData.website);
-            form.append('state', formData.state);
-            form.append('zipCode', formData.zipCode);
-            form.append('city', formData.city);
-            form.append('Address', formData.Address);
-            form.append('Country', formData.Country);
-            form.append('consent', formData.consent);
-
-            console.log(form)
-            const response = await fetch('https://empowercare.me/wp-json/empower/staffing/postjob', {
-                method: 'POST',
-                body: form,
-            });
+        const myHeaders = new Headers();
+        myHeaders.append("X-Authorization", "624a616a4e777470795267784268364f57554c63376f7339557370596a633859476275327a2b436e4375756e4d4d435472355035576b46364c48634a50584e45");
 
 
-            const data = await response.json();
-            if (!response.ok) {
-                toast.error(data.data.message)
-            } else {
-                toast.success("Job successfully posted")
-                setFormData({
-                    jobTitle: '',
-                    jobType: '',
-                    category: '',
-                    jobDescription: '',
-                    jobFile: '',
-                    companyName: '',
-                    companyEmail: '',
-                    website: '',
-                    state: '',
-                    zipCode: '',
-                    city: '',
-                    Address: '',
-                    Country: '',
-                    consent: 0
-                });
-            }
-            console.log(data);
+        const formdata = new FormData();
+        formdata.append("wpjb-job[job_title]", "laravel");
 
-        } catch (error) {
-            console.error('Error:', error);
-        }
+        const requestOptions = {
+            method: "POST",
+            headers: myHeaders,
+            body: formdata,
+            redirect: "follow"
+        };
+
+        fetch("https://empowercare.me/wpjobboard/api/jobs/", requestOptions)
+            .then((response) => response.text())
+            .then((result) => console.log(result))
+            .catch((error) => console.error(error));
+
+
+
 
     };
     return (
