@@ -13,7 +13,7 @@ import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 const Faqperdiem=()=>{
     const bannerStyles = {
-        backgroundImage: `url(${img})`,
+        backgroundImage: `url(${img})`, 
         backgroundPosition: '50% 30%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain',

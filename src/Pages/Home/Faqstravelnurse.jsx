@@ -8,16 +8,16 @@ import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import img from '../../Assets/advantages.png'
 import bannerImg from '../../Assets/advantagesImg.png'
-import FAQ from "../../Components/FAQ/FAQ" 
+import FAQ5 from "../../Components/FAQ/Pr_PG5_Faq5" 
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
-import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
+import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite" 
 const Faqstravelnurse=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
         backgroundPosition: '50% 30%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain',
-        marginTop: '-237px',
+        marginTop: '-237px', 
         backgroundColor: '#EBE0D3'
     };
     return(<>
@@ -25,17 +25,16 @@ const Faqstravelnurse=()=>{
           logoImg={logow}
           />
     <Banner1
-    heading={'Advantages of Per Diem Work'} 
-    description={'Unlock the Advantages of Per Diem Work'}
-    meta={'Enjoy Unparalleled Flexibility with EmpowerCares Per Diem Jobs'}
+    heading={'FAQ Guide'} 
+    description={'A GUIDE TO TRAVEL NURSE ASSIGNMENTS'}
+    meta={'TOP FAQS ANSWERED'}
     bannerImg={bannerImg}
     styles={bannerStyles}
     />
     <Trusted/>
-    <FAQ/>
+    <FAQ5/>
     <AboutEmpowercare/>
     <Stories/>
-    <FaqAccordian/>
     <Userslider/>
     <Footer/>
 

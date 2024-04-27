@@ -34,7 +34,16 @@ const Home = () => {
       <Banner />
       <Trusted />
       <Healthcare />
-      <Approach />
+      <Approach
+        heading1={"Every Job Helps the World"}
+        description1={"The Ripple Effect: Making Big Waves with Every Job"}
+        heading2={"Finding the Perfect Match Made Easy! Dynamic Squads"}
+        description2={"EmpowerCare’s Dynamic Squads aren’t just teams; they’re the future of personalized, responsive healthcare staffing, redefining convenience in every match."}
+        heading3={"Gain a Winning Edge: Excel with EmpowerCare Academy!"}
+        description3={"Unlock Your Potential and Land Your Dream Healthcare Role Effortlessly"}
+        heading4={"Unsung Heroes No More: in the Spotlight! Shift Champions"}
+        description4={"Celebrate Your Exceptional Contributions to Healthcare"}    
+      />
       <Choose
         meta="Dynamic Squads"
         spantext="Squads:"

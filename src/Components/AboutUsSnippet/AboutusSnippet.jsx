@@ -1,6 +1,6 @@
 import './AboutusSnippet.scss'
 import activearrow from '../../Assets/active-arrow.png'
-const AboutusSnippet = () => {
+const AboutusSnippet = ({description,btn1,btn2}) => {
     return (<>
         <div className="about-us-snippet">
             <div className="container">
@@ -9,13 +9,13 @@ const AboutusSnippet = () => {
                         ABOUT US
                     </h6>
                     <h2 className="heading"><span className="text_grad_green">ABOUT</span> US SNIPPET</h2><br />
-                    <p className="description">EmpowerCare has been a leader in non-clinical healthcare staffing for over 18 years. Our commitment to excellence, personalized service, and innovation sets us apart as the go-to partner for healthcare facilities seeking to streamline operations with skilled non-clinical professionals.</p>
+                    <p className="description">{description}</p>
                     <div className='arrow_img'>
                         <img className='arr-img' src={activearrow} alt="arrow" />
                     </div>
                     <div className="butns">
-                        <a className='btn_green' href="">CONTACT US</a><br />
-                        <a href="/about" className='learn_more'>LEARN MORE</a>
+                        <a className='btn_green' href="">{btn1}</a><br />
+                        <a href="/about" className='learn_more'>{btn2}</a>
                     </div>
                    
                 </div>

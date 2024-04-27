@@ -3,7 +3,7 @@ import downarrow from '../../Assets/down-link-arrow.svg';
 import newsletterarrow from '../../Assets/h3_newsletter_shape0.png';
 import './JoiningForm.scss';
 
-const JoiningForm = () => {
+const JoiningForm = ({description, heading}) => {
   return ( 
     <>
     <div className="joining-form-sec">
@@ -16,7 +16,10 @@ const JoiningForm = () => {
                           <h2 className="heading">
                               Enhance Your <span>Efficiency</span>
                           </h2>
-                          <p className="description">At EmpowerCare, we offer a wide range of staffing options to meet your unique needs. Our extensive network of pre-screened healthcare opportunities includes:</p>
+                          <h2 style={{fontSize:'22px', fontWeight:'bold'}}>
+                            {heading}
+                          </h2>
+                          <p className="description">{description}</p>
                       
                           <div class="join-now-btn-container">
                               <button className='contact-submit-btn' type="submit">

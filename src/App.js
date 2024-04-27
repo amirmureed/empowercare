@@ -150,15 +150,10 @@ function App() {
           <Route path='/professionals/advantages' element={<Advantages/>}/>
           <Route path='/professionals/guide' element={<Guide/>}/>
           <Route path='/professionals/directcare-careers' element={<ProfessionalsCareer/>}/>
-          <Route path='/professionals/faqs' element={<Faqs/>}/>
+          
           <Route path='/post-job' element={<PostJob/>}/>
 
-          {/* new route */}
-          <Route path='/professionals/Faqcontracts' element={<Faqcontracts/>}/>
-          <Route path='/professionals/Faqlocalcontracts' element={<Faqlocalcontracts/>}/>
-          <Route path='/professionals/Faqperdiem' element={<Faqperdiem/>}/>
-          <Route path='/professionals/Faqpermanentstaffing' element={<Faqpermanentstaffing/>}/>
-          <Route path='/professionals/Faqstravelnursing' element={<Faqstravelnursing/>}/>
+          
 
           {/* next folder route */}
 
@@ -197,24 +192,32 @@ function App() {
           <Route path='/professional/Professionalperfectmatch' element={<Professionalperfectmatch/>}/>
           <Route path='/professional/Professionalgainawinning' element={<Professionalgainawinning/>}/>
 
-          {/* Professional Pages Nav Folder 2 Faq  */}
 
-          <Route path='/professional/Faqsperdiem' element={<Faqsperdiem/>}/>
-          <Route path='/professional/Faqstemptohire' element={<Faqstemptohire/>}/>
-          <Route path='/professional/Faqstravelnurse' element={<Faqstravelnurse/>}/>
-          <Route path='/professional/Faqspermanentstaffing' element={<Faqspermanentstaffing/>}/>
+          {/* facilities nav faq link */}
+          <Route path='/facilities/Faqcontracts' element={<Faqcontracts/>}/>
+          <Route path='/facilities/Faqlocalcontracts' element={<Faqlocalcontracts/>}/>
+          <Route path='/facilities/Faqperdiem' element={<Faqperdiem/>}/>
+          <Route path='/facilities/Faqpermanentstaffing' element={<Faqpermanentstaffing/>}/>
+          <Route path='/facilities/Faqstravelnursing' element={<Faqstravelnursing/>}/>
+
+          {/* Professional Pages Nav Folder 2 Faq  */}
+          <Route path='/professionals/faqs' element={<Faqs/>}/>
+          <Route path='/professionals/Faqsperdiem' element={<Faqsperdiem/>}/> 
+          <Route path='/professionals/Faqstemptohire' element={<Faqstemptohire/>}/>
+          <Route path='/professionals/Faqstravelnurse' element={<Faqstravelnurse/>}/>
+          <Route path='/professionals/Faqspermanentstaffing' element={<Faqspermanentstaffing/>}/>
 
 
           {/* Professional Pages Nav Folder 3 guide  */}
 
-          <Route path='/professional/Guideforbehavioral' element={<Guideforbehavioral/>}/>
-          <Route path='/professional/Guidecrictalcare' element={<Guidecrictalcare/>}/>
-          <Route path='/professional/Guideemergencyroom' element={<Guideemergencyroom/>}/>
-          <Route path='/professional/Guidehomehealth' element={<Guidehomehealth/>}/>
-          <Route path='/professional/Guidemedicalsurgical' element={<Guidemedicalsurgical/>}/>
-          <Route path='/professional/Guideoperatingroom' element={<Guideoperatingroom/>}/>
-          <Route path='/professional/Guidestepdown' element={<Guidestepdown/>}/>
-          <Route path='/professional/Guidetelemetrynursing' element={<Guidetelemetrynursing/>}/>
+          <Route path='/guide/Guideforbehavioral' element={<Guideforbehavioral/>}/>
+          <Route path='/guide/Guidecrictalcare' element={<Guidecrictalcare/>}/>
+          <Route path='/guide/Guideemergencyroom' element={<Guideemergencyroom/>}/>
+          <Route path='/guide/Guidehomehealth' element={<Guidehomehealth/>}/>
+          <Route path='/guide/Guidemedicalsurgical' element={<Guidemedicalsurgical/>}/>
+          <Route path='/guide/Guideoperatingroom' element={<Guideoperatingroom/>}/>
+          <Route path='/guide/Guidestepdown' element={<Guidestepdown/>}/>
+          <Route path='/guide/Guidetelemetrynursing' element={<Guidetelemetrynursing/>}/>
 
 
           {/* Professional Pages Nav Folder 4 jobs options PRN  */}

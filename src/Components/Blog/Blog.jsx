@@ -67,7 +67,6 @@ const Blog = () => {
                                 <span> News </span>
                                 & Blog Feed
                             </h2>
-                            <p className="description">Lorem Ipsum is simply dummy text of the printing <br /> and typesetting industry.</p>
                         </div>
                         <div className="row">
                             <Carousel

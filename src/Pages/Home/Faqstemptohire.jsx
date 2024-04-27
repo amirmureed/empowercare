@@ -8,14 +8,15 @@ import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import img from '../../Assets/advantages.png'
 import bannerImg from '../../Assets/advantagesImg.png'
-import FAQ from "../../Components/FAQ/FAQ" 
+import FAQ2 from "../../Components/FAQ/Pr_PG2_Faq2" 
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
-const Faqstemptohire=()=>{
+import storiesimg from '../../Assets/storiesimg.png';
+const Faqstemptohire=()=>{ 
     const bannerStyles = {
         backgroundImage: `url(${img})`,
         backgroundPosition: '50% 30%',
-        backgroundRepeat: 'no-repeat',
+        backgroundRepeat: 'no-repeat', 
         backgroundSize: 'contain',
         marginTop: '-237px',
         backgroundColor: '#EBE0D3'
@@ -25,17 +26,19 @@ const Faqstemptohire=()=>{
           logoImg={logow}
           />
     <Banner1
-    heading={'Advantages of Per Diem Work'} 
-    description={'Unlock the Advantages of Per Diem Work'}
+    heading={'FAQ Guide '} 
+    description={'FAQ GUIDE FOR TEMP-TO-HIRE/CONTRACT-TO-HIRE OPPORTUNITIES'}
     meta={'Enjoy Unparalleled Flexibility with EmpowerCares Per Diem Jobs'}
     bannerImg={bannerImg}
     styles={bannerStyles}
     />
     <Trusted/>
-    <FAQ/>
+    <FAQ2/>
     <AboutEmpowercare/>
-    <Stories/>
-    <FaqAccordian/>
+    <Stories
+  
+    video_link="https://www.youtube.com/shorts/X5DhrVv-hk4?feature=share"
+    />
     <Userslider/>
     <Footer/>
 

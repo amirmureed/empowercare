@@ -1,6 +1,6 @@
 import './Spotlights.scss'
 import img from '../../Assets/imaginations.png'
-const Spotlights=()=>{
+const Spotlights=({headingclr,headingblack, description,btn1,btn2})=>{
     return(<>
     <div className="spotlights-wrapper">
       <div className="container">
@@ -17,17 +17,16 @@ const Spotlights=()=>{
               <div className="left-content">
                 
                 <h2 className="heading">
-                  <span className="text_grad_green">SPOTLIGHTS</span> IMAGINATIONS
+                  <span className="text_grad_green">{headingclr}</span> {headingblack}
                 </h2>
                 <p className="description">
-                Imagine your healthcare facility running seamlessly, with skilled non- clinical professionals ensuring efficient operations and exceptional patient experiences. With EmpowerCare, you can focus on delivering high-quality care while we handle your non-clinical staffing needs.
-                </p> <br />
+{description}                </p> <br />
                 <div className="btns-flex">
                   <a className="btn_green" href="/signup">
-                      SIGN UP
+                      {btn1}
                   </a>
                   <a className="learn_more" href="/">
-                      LEARN MORE
+                      {btn2}
                   </a>
                 </div>
               </div>
