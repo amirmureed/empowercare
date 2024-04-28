@@ -45,8 +45,8 @@ const Facilitiesheallthcenter = () => {
         bannerImg={bannerImg}
         heading={'HEALTHCARE'}
         heading2={'STAFFING BY US'}
-        description={'NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE'}
-        span={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+        description={'Empowering your Community Health Center with Top Talent'}
+        span={'Elevating Care in Community Health Centers and Group Homes'}
         />
         <TrustedPartner
          simpleButton={false}

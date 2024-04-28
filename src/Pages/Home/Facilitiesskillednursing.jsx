@@ -45,8 +45,8 @@ const Facilitiesskillednursing = () => {
         bannerImg={bannerImg}
         heading={'HEALTHCARE'}
         heading2={'STAFFING BY US'}
-        description={'NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE'}
-        span={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+        description={'Elevate Care Quality: EmpowerCare Skilled Nursing Staffing'}
+        span={'Empowering Skilled Nursing and Assisted Living Facilities with Exceptional Talent'}
         />
         <TrustedPartner
          simpleButton={false}

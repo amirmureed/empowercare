@@ -64,6 +64,7 @@ const FacilityOperations=({subheading,whiteheading1,whiteheading2,blackheading,o
                                 <a href="/">LEARN MORE <FiArrowDownRight/></a>
                             </div><br />
                         </div>
+                        {option5 && option5.trim() !== '' && (
                         <div className="col-lg-6 col-md-12">
                             <div className="job-box">
                                 <div className="job-logo">
@@ -74,6 +75,7 @@ const FacilityOperations=({subheading,whiteheading1,whiteheading2,blackheading,o
                                 <a href="/">LEARN MORE <FiArrowDownRight/></a>
                             </div><br />
                         </div>  
+                        )}
                         { bullet1 ? 
  <div className="start-box">
  <br />

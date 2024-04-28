@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Approach from "../../Components/Approach/Approach"
 import Banner10 from "../../Components/Banner10/Banner10"
 import Guaranty from "../../Components/Facilities/TruePartner/Guaranty"
@@ -46,7 +47,7 @@ const NonClinical = () => {
                 heading={'HEALTHCARE'}
                 heading2={'STAFFING BY US'}
                 description={'NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE'}
-                span={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+                span={'Enhancing Your Facility Efficiency with Skilled Non-Clinical Professionals'}
             />
             <TrustedPartner
                 simpleButton={false}
@@ -69,9 +70,15 @@ const NonClinical = () => {
             heading3={'Seamless Pledge: Hassle-free staffing! Guaranteed  '}
             description3 = {''}
             heading4={'Healthcare Expertise'}
-            description4 = {''}
+            description4 = {'18+ years of industry experience'}
             heading5={'Rapid, ideal candidate matches, reduced time-to-hire'}
-            description5 = {''}
+            description5 = {'Empower Your Facility with Top Talent, Effortlessly'}
+
+            link1= {'/professional/Professionalhelpstheworld'}
+            link2= {'/resources'}
+            link3= {'/facilities'}
+            link4= {'#'}
+            link5= {'#'}
             />
             <Toptalent
                 heading1={"EmpowerCare's"}
@@ -107,6 +114,7 @@ const NonClinical = () => {
             option4= {'Medical Billing and Coding Specialists for Revenue Cycle Management'}
             option5= {'Medical Scribes for Electronic Health Record Documentation'}
             option6= {'Patient Navigators and Care Coordinators for Care Continuity'}/>
+           
             <FacilityOperations
             subheading={'Limited-Time Offer'}
             whiteheading1={'Get Top Talent to '}
