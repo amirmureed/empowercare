@@ -3,7 +3,7 @@ import './TextImageGroup.scss';
 import secImage from '../../Assets/Image 58.png';
 import activearrow from '../../Assets/Path 1810.png';
 
-const TextImageGroup = () => {
+const TextImageGroup = ({heading,heading2,descr1,descr2,img}) => {
     return (
         <div className='text_image_group'>
             <div className="healthcare-sec">
@@ -13,18 +13,18 @@ const TextImageGroup = () => {
                             <div className="col-lg-6 col-md-12">
                                 <div className="right-content">
                                     <div className="section-img">
-                                        <img src={secImage} alt="healthcareimg" />
+                                        <img src={img} alt="healthcareimg" />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-12 left-content-container">
                                 <div className="left-content">
                                     <h2 className="heading">
-                                       Our Vision
+                                      {heading}
                                     </h2>
-                                    <h6>Seamless Healthcare, Empowered Professionals</h6>
-                                    <p>Imagine a world where healthcare institutions operate flawlessly, supported by top-tier staffing solutions. In this world, every healthcare professional finds fulfilling opportunities, leading to happiness and growth in their careers.</p>
-                                    <p>This vision guides us at EmpowerCare, motivating us to empower healthcare professionals and institutions alike, ensuring seamless operations and fulfilled careers.</p>
+                                    <h6>{heading2}</h6>
+                                    <p>{descr1}</p>
+                                    <p>{descr2}</p>
                                     <div className="btn_cta">
                                         <a href='/'>READ MORE</a>
                                         <div className="active-img">

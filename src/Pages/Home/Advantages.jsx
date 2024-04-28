@@ -17,6 +17,7 @@ import VisitFAQs from "../../Components/VisitFAQs/VisitFAQs"
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 import storiesimg from '../../Assets/storiesPic.png';
+import GeneralNursing from "../../Components/GeneralNursing/GeneralNursing"
 const Advantages=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -80,6 +81,13 @@ const Advantages=()=>{
     <Opportunities/>
     <WorkForce/>
     <HearFrom/>
+    <GeneralNursing
+    guide={false}
+    heading1={'WHY'}
+    heading2={'EMPOWERCARE'}
+    heading3={' STANDS OUT'}
+    
+    />
     <AboutEmpowercare/>
     <Stories
     img={storiesimg}

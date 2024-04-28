@@ -3,7 +3,7 @@ import './TextImageGroupV2.scss';
 import secImage from '../../Assets/mission.png';
 import activearrow from '../../Assets/Path 1810.png';
 
-const TextImageGroupV2 = () => {
+const TextImageGroupV2 = ({heading,heading2,descr1,descr2,img}) => {
     return (
         <div className='text_image_group_v2'>
             <div className="healthcare-sec1">
@@ -13,12 +13,12 @@ const TextImageGroupV2 = () => {
                             <div className="col-lg-6 col-md-12 left-content-container">
                                 <div className='test'>
                                     <div className="left-content">
-                                        <h2 className="heading">
-                                        Mission
-                                        </h2>
-                                        <h6>Transformative Healthcare Staffing</h6>
-                                        <p>Our mission is to empower healthcare institutions and professionals with hassle-free staffing solutions. Through EmpowerCare Academy and innovative tools like Dynamic Squad CPR, Dynamic Schedules, and Sign Hero, we make staffing effortless and efficient.</p>
-                                        <p> We're dedicated to transforming lives and elevating care with every shift, contributing to societal wellbeing through improved healthcare outcomes and enhanced patient care. Our unique Ripple Effect ensures that every dollar earned from each shift has a lasting impact on the community.</p>
+                                    <h2 className="heading">
+                                      {heading}
+                                    </h2><br />
+                                    <h6>{heading2}</h6>
+                                    <p>{descr1}</p><br />
+                                    <p>{descr2}</p><br />
                                         <div className="btn_cta">
                                             <a href='/'>READ MORE</a>
                                             <div className="active-img">
@@ -31,7 +31,7 @@ const TextImageGroupV2 = () => {
                             <div className="col-lg-6 col-md-12">
                                 <div className="right-content">
                                     <div className="section-img">
-                                        <img src={secImage} alt="healthcareimg" />
+                                        <img src={img} alt="healthcareimg" />
                                     </div>
                                 </div>
                             </div>
