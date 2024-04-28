@@ -43,22 +43,48 @@ const PostjobForm = () => {
 
         const myHeaders = new Headers();
         myHeaders.append("X-Authorization", "624a616a4e777470795267784268364f57554c63376f7339557370596a633859476275327a2b436e4375756e4d4d435472355035576b46364c48634a50584e45");
+        const jobData = new FormData();
+        jobData.append("job_title", formData.jobTitle);
+        jobData.append("job_description", formData.jobDescription);
+        jobData.append("job_slug", formData.jobTitle); 
+        jobData.append("job_created_at", new Date().toISOString().split('T')[0]);
+        jobData.append("job_expires_at", new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]);
+        jobData.append("is_approved", 0);
+        jobData.append("is_active", 0);
+        jobData.append("job_file", formData.jobFile);
+        jobData.append("job_category", formData.category);
+        jobData.append("job_type", formData.jobType);
+        jobData.append("job_country", formData.Country);
+        jobData.append("job_state", formData.state);
+        jobData.append("job_zip_code", formData.zipCode);
+        jobData.append("job_city", formData.city);
+        jobData.append("job_address", formData.Address);
+        jobData.append("company_name", formData.companyName);
+        jobData.append("company_url", formData.website);
+        jobData.append("company_email", formData.companyEmail);
+        jobData.append("consent", formData.consent);
 
-
-        const formdata = new FormData();
-        formdata.append("wpjb-job[job_title]", "laravel");
 
         const requestOptions = {
             method: "POST",
             headers: myHeaders,
-            body: formdata,
+            body: jobData,
             redirect: "follow"
         };
 
-        fetch("https://empowercare.me/wpjobboard/api/jobs/", requestOptions)
-            .then((response) => response.text())
-            .then((result) => console.log(result))
-            .catch((error) => console.error(error));
+        fetch("https://empowercare.me/wp-json/empower/staffing/postjob", requestOptions)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.text();
+  })
+  .then((result) => {
+    console.log(result);
+    
+    toast.success("Job post successfully sent.");
+  })
+  .catch((error) => toast.error("An error occurred while posting the job. Please try again later."));;
 
 
 
