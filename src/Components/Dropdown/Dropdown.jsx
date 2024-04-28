@@ -197,7 +197,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
                     />
                     <Content
                         imgSrc={logo13}
-                        description={<Link style={{ color:'black'}} to={"/facilities/Facilitiesbridgeleadership"}>Bridge Leadership Gaps with EmpowerCare  Interim Solutions</Link>}
+                        description={<Link style={{ color:'black'}} to={"/facilitiesbridgeleadership"}>Bridge Leadership Gaps with EmpowerCare  Interim Solutions</Link>}
                     />
                     </>)}
                     

@@ -45,8 +45,8 @@ const Facilitiesschoolhealth = () => {
         bannerImg={bannerImg}
         heading={'HEALTHCARE'}
         heading2={'STAFFING BY US'}
-        description={'NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE'}
-        span={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+        description={'Elevate Student Health with our School Healthcare Staffing'}
+        span={'Empowering Schools with Exceptional Healthcare Professionals'}
         />
         <TrustedPartner
          simpleButton={false}

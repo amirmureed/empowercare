@@ -45,8 +45,8 @@ const Facilitiesmentalhealth = () => {
         bannerImg={bannerImg}
         heading={'HEALTHCARE'}
         heading2={'STAFFING BY US'}
-        description={'NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE'}
-        span={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+        description={'Elevate Mental Health Care with EmpowerCare Staffing'}
+        span={'Transforming Mental Health Facilities with Top Talent'}
         />
         <TrustedPartner
          simpleButton={false}

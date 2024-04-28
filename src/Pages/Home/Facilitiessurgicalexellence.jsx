@@ -45,8 +45,8 @@ const Facilitiessurgicalexellence = () => {
         bannerImg={bannerImg}
         heading={'HEALTHCARE'}
         heading2={'STAFFING BY US'}
-        description={'NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE'}
-        span={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+        description={'Elevating Surgical Excellence with EmpowerCare Staff'}
+        span={'Empowering Surgical Centers with Top-Tier Talent'}
         />
         <TrustedPartner
          simpleButton={false}

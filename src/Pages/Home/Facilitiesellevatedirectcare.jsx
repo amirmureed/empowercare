@@ -45,8 +45,8 @@ const Facilitiesellevatedirectcare = () => {
         bannerImg={bannerImg}
         heading={'HEALTHCARE'}
         heading2={'STAFFING BY US'}
-        description={'NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE'}
-        span={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+        description={'Elevate Direct Care with EmpowerCare Professionals'}
+        span={'Delivering Exceptional Care with Skilled Direct Care Staff'}
         />
         <TrustedPartner
          simpleButton={false}

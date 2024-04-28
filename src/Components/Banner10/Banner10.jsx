@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import bannerImg from '../../Assets/Group 581.png';
 import './Banner10.scss';
 
 const Banner10 = (props) => {
-  const {bannerImg,heading,heading2,description,span,bannerStyles}=props
+  const [selectedOption, setSelectedOption] = useState('Select jobtitle');
+
+    const handleSelectChange = (event) => {
+      setSelectedOption(event.target.value);
+    };
+  const {bannerImg,heading,heading2,description,span,bannerStyles ,job_link}=props
 
     return (
       <>
@@ -41,7 +46,8 @@ const Banner10 = (props) => {
               </div>
               <div className="selection-row">
                 <div className="selection-wrap">
-                <select id="jobtitle">
+                <select id="jobtitle" onChange={handleSelectChange} value={selectedOption}>
+                <option value="doctor">doctor</option>
                   <option value="Account Manager">Account Manager</option>
                   <option value="Accounting">Accounting</option>
                   <option value="Account Payable">Account Payable</option>
@@ -240,10 +246,8 @@ const Banner10 = (props) => {
                 </select>
                 <select id="city/state">
                   <option value="Select city/state">United Estates</option>
-                  <option value="Select city/state1">Newyork</option>
-                  <option value="Select city/state2">England</option>
                 </select>
-                  <Link target="_blank" to="https://msgstaffing.my.salesforce-sites.com/?page=JobListPage&JobSite=default&p=Candidate" className='btn available-btn'>
+                  <Link target="_blank" to={`https://empowercare.me/?query=${encodeURIComponent(selectedOption)}&category`} className='btn available-btn'>
                     <span>Find available positions</span>
                   </Link>
                 </div>

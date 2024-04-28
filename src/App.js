@@ -163,7 +163,7 @@ function App() {
           <Route path='/facilities/Trustedpartnertemp' element={<Trustedpartnertemp/>}/>
 
           {/* folder 3 */}
-          <Route path='Facilitiesbridgeleadership' element={<Facilitiesbridgeleadership/>}/>
+          <Route path='/facilitiesbridgeleadership' element={<Facilitiesbridgeleadership/>}/>
           <Route path='/facilities/Facilitiespracticestaff' element={<Facilitiespracticestaff/>}/>
           <Route path='/facilities/Facilitiesskillednursing' element={<Facilitiesskillednursing/>}/>
           <Route path='/facilities/Facilitiesalliedhealth' element={<Facilitiesalliedhealth/>}/>
