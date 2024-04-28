@@ -252,3 +252,6 @@ a.btn_green{
 .dropdown-facilities .MuiStack-root.css-9c36oh .MuiBox-root.css-19yt5vl {
   width: 30% !important;
 }
+.dropdown-facilities .MuiStack-root.css-9c36oh .MuiBox-root.css-19yt5vl .css-wz6c18 a {
+  margin-top: 10px !important;
+}

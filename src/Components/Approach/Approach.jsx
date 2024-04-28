@@ -34,9 +34,9 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                         </div>
                                     </div>
                                     <div className="right-sec">
-                                        <button className='approach-btn'>
-                                           <a href={link1}> <span>Learn More</span></a>
-                                        </button>
+                                        <a className='approach-btn' href={link1}> 
+                                            <span>Learn More</span>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="approach-box active">
@@ -50,9 +50,9 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                         </div>
                                     </div>
                                     <div className="right-sec">
-                                        <button className='approach-btn'>
-                                            <a href={link2}><span>Learn More</span></a>
-                                        </button>
+                                        <a className='approach-btn' href={link2}> 
+                                            <span>Learn More</span>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="approach-box">
@@ -66,9 +66,9 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                         </div>
                                     </div>
                                     <div className="right-sec">
-                                        <button className='approach-btn'>
-                                        <a href={link3}><span>Learn More</span></a>
-                                        </button>
+                                        <a className='approach-btn' href={link3}> 
+                                            <span>Learn More</span>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="approach-box">
@@ -82,9 +82,9 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                         </div>
                                     </div>
                                     <div className="right-sec">
-                                        <button className='approach-btn'>
-                                        <a href={link4}><span>Learn More</span></a>
-                                        </button>
+                                        <a className='approach-btn' href={link4}> 
+                                            <span>Learn More</span>
+                                        </a>
                                     </div>
                                 </div>
                                 {heading5 && heading5.trim() !== '' && (
@@ -99,9 +99,9 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                             </div>
                                         </div>
                                         <div className="right-sec">
-                                            <button className='approach-btn'>
-                                              <a href={link5}>  <span>Learn More</span></a>
-                                            </button>
+                                            <a className='approach-btn' href={link5}> 
+                                                <span>Learn More</span>
+                                            </a>
                                         </div>
                                     </div>
                                 )}
