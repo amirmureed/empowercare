@@ -113,7 +113,7 @@ import Professionals2gatewaynursing from './Pages/Home/Professionals2gatewaynurs
 import Professionals2gatewaymeaningful from './Pages/Home/Professionals2gatewaymeaningful';
 import Professionals2passport from './Pages/Home/Professionals2passport'
 
-// Professional Pages Nav Folder 6 seamless
+// Professional Pages footer seamless
   
 import Prseamlesssarborassociates from './Pages/Home/Prseamlesssarborassociates';
 import Prseamlesssayahealthcare from './Pages/Home/Prseamlesssayahealthcare';

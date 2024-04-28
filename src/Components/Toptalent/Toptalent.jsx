@@ -24,16 +24,23 @@ const Toptalent = (props) => {
                     </div>
                     
                     <div className="row">
+                        
                         <div className="col-md-4">
+                        <a href={props.crd_link1}>
                             <div className="job-box">
                                 <div className="job-logo">
                                     <img src={job1} alt="job1" />
                                 </div>
+                                
                                 <h4 className="heading">{jobcard1}</h4>
                                 <p className="description">{jobcard1_des}</p>
+                                
                             </div>
+                            </a>
                         </div>
+                        
                         <div className="col-md-4">
+                        <a href={props.crd_link2}>
                             <div className="job-box">
                                 <div className="job-logo">
                                     <img src={job2} alt="job2" />
@@ -41,8 +48,10 @@ const Toptalent = (props) => {
                                 <h4 className="heading">{jobcard2}</h4>
                                 <p className="description">{jobcard2_des}</p>
                             </div>
+                            </a>
                         </div>
                         <div className="col-md-4">
+                        <a href={props.crd_link3}>
                             <div className="job-box active">
                                 <div className="job-logo">
                                     <img src={job3} alt="job3" />
@@ -50,6 +59,7 @@ const Toptalent = (props) => {
                                 <h4 className="heading">{jobcard3}</h4>
                                 <p className="description">{jobcard3_des}</p>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div className="bottom-btns-row">

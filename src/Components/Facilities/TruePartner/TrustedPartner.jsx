@@ -38,7 +38,7 @@ const TrustedPartner = (props) => {
                             </div>
                           </>): anchor ?(
                             <>
-                            <a className='anchor' href="">TAKE THE FIRST STEP TODAY! <FiArrowRight/></a>
+                            <a className='anchor' href="/signup">TAKE THE FIRST STEP TODAY! <FiArrowRight/></a>
                             </>
                           ):simpleButton?(<>
                           <br />

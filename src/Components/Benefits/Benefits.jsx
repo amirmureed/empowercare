@@ -4,7 +4,7 @@ import icon3 from '../../Assets/icon3.png'
 import icon4 from '../../Assets/icon4.png'
 import icon5 from '../../Assets/icon5.png'
 import './Benefits.scss'
-const Benefits=()=>{
+const Benefits=()=>{ 
 
     const Box=({img,description})=>{
         return(<>

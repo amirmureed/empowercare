@@ -13,16 +13,16 @@ const Choose1 = (props) => {
                                 <div className="right-content">
                                     <div className="content-row">
                                         <div className="content-box active">
-                                            <h5 className="heading">Meaningful Work:</h5>
-                                            <p className="description">Every placement is an opportunity to contribute to the greater good,knowing that your efforts are part of a larger movement to transformlives and elevate care.</p>
+                                            <h5 className="heading">{props.crHead1}</h5>
+                                            <p className="description">{props.crdesc1}</p>
                                         </div>
                                         <div className="content-box">
-                                            <h5 className="heading">Reliable Support:</h5>
-                                            <p className="description">Our dedicated team is always by your side, ensuring a smooth and stress-free experience, so you can focus on making a difference with every shift.</p>
+                                            <h5 className="heading">{props.crHead2}</h5>
+                                            <p className="description">{props.crdesc2}</p>
                                         </div>
                                         <div className="content-box">
-                                            <h5 className="heading">Empowering Environment:</h5>
-                                            <p className="description">We foster a supportive and empowering environment that recognizes your contributions and helps you grow personally and professionally.</p>
+                                            <h5 className="heading">{props.crHead3}</h5>
+                                            <p className="description">{props.crdesc3}</p>
                                         </div>
                                     </div>
                                 </div>

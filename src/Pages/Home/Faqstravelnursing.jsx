@@ -8,7 +8,7 @@ import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import img from '../../Assets/advantages.png'
 import bannerImg from '../../Assets/advantagesImg.png'
-import FAQ from "../../Components/FAQ/FAQ" 
+import FAQ from "../../Components/FAQ/Fc_PG5_Faq5" 
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 const Faqstravelnursing=()=>{ 
@@ -25,9 +25,9 @@ const Faqstravelnursing=()=>{
           logoImg={logow}
           />
     <Banner1
-    heading={'Advantages of Per Diem Work'} 
-    description={'Unlock the Advantages of Per Diem Work'}
-    meta={'Enjoy Unparalleled Flexibility with EmpowerCares Per Diem Jobs'}
+    heading={'Travel Nursing FAQ Guide '} 
+    description={'FAQ Guide for Travel Nurse Staffing Solutions'}
+    meta={''}
     bannerImg={bannerImg}
     styles={bannerStyles}
     />
@@ -35,7 +35,6 @@ const Faqstravelnursing=()=>{
     <FAQ/>
     <AboutEmpowercare/>
     <Stories/>
-    <FaqAccordian/>
     <Userslider/>
     <Footer/>
 

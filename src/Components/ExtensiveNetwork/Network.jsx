@@ -23,7 +23,7 @@ const responsive = {
     }
 };
 
-const Network = () => {
+const Network = (props) => {
     return (
         <div className="network-sec">
             <div className="network-sec-bg">
@@ -41,10 +41,10 @@ const Network = () => {
                                     <p className="description">From single shifts to long-term placements, EmpowerCare delivers <br /> a wide range of healthcare staffing solutions.</p>
                                 
                                     <div className="sec-btns">
-                                        <Link target="_blank" to="https://msgstaffing.my.salesforce-sites.com/?page=JobListPage&JobSite=default&p=Candidate" className="learn-btn">
+                                         <a href={props.link} className="learn-btn"> 
                                             <span>Search Job Openings</span>
                                             <img src={downarrow} alt="downarrow" />
-                                        </Link>
+                                            </a>
                                     </div>
                                 </div>
                             </div>

@@ -23,7 +23,7 @@ const Impact = (props) => {
                                 <h4 className="heading">Meaningful Work</h4>
                                 <p className="description">Every job matters, and we ensure that each placement contributes to the EmpowerCare ripple effect of transforming lives and elevating care.</p>
                                 <button className='impact-btn'>
-                                    <span>Learn More</span>
+                                  <a href={props.link1}><span>Learn More</span></a>  
                                 </button>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ const Impact = (props) => {
                                 <h4 className="heading">Reliable Support</h4>
                                 <p className="description">Our dedicated team is always ready to assist you, ensuring a smooth and stress-free staffing experience, so you can focus on making a meaningful impact.</p>
                                 <button className='impact-btn'>
-                                    <span>Learn More</span>
+                                   <a href={props.link2}><span>Learn More</span></a> 
                                 </button>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ const Impact = (props) => {
                                 <h4 className="heading">Quality Assurance</h4>
                                 <p className="description">We stand behind the quality of our placements, providing you with peace of mind and confidence that you're making a difference with every shift.</p>
                                 <button className='impact-btn'>
-                                    <span>Learn More</span>
+                                   <a href={props.link3}><span>Learn More</span></a> 
                                 </button>
                             </div>
                         </div>

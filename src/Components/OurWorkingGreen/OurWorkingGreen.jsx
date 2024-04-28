@@ -4,14 +4,15 @@ import icon1 from '../../Assets/Group 209.png';
 import icon2 from '../../Assets/Group 210.png';
 import icon3 from '../../Assets/Group 211.png';
 
-const OurWorkingGreen = () => {
+const OurWorkingGreen = (props) => {
+    const{m_head1 ,m_head2 ,m_head3 ,crd_head1 ,crd_desc1 ,crd_head2 , crd_desc2 ,crd_head3, crd_desc3}=props
     return (
         <div className="our-working_green">
             <div className='container'>
                 <div class="top-content">
-                    <h2 class="heading">our
-                    <span> promise </span>
-                        to you
+                    <h2 class="heading">{m_head1}
+                    <span> {m_head2} </span>
+                        {m_head3}
                     </h2>
                 </div>
                 <div className="working-wrapper">
@@ -22,9 +23,8 @@ const OurWorkingGreen = () => {
                                     <img src={icon1} />
                                 </div>
                                 <div className='working_content col-lg-8 col-md-8 col-sm-12'>
-                                    <h3>1. Transformative Placements:</h3>
-                                    <p>Each EmpowerCare placement helps improve healthcare, change lives, and enhance the quality of care,
-making a meaningful impact.</p>
+                                    <h3>{crd_head1}</h3>
+                                    <p>{crd_desc1}</p>
                                 </div>
                             </div>
                         </div>
@@ -34,9 +34,8 @@ making a meaningful impact.</p>
                                     <img src={icon2} />
                                 </div>
                                 <div className='working_content col-lg-8 col-md-8 col-sm-12'>
-                                    <h3>2. Commitment to Community</h3>
-                                    <p>We donate $1 towards community health initiatives for every shift worked by our healthcare professionals,
-making a positive impact beyond the walls of healthcare facilities.</p>
+                                    <h3>{crd_head2}</h3>
+                                    <p>{crd_desc2}</p>
                                 </div>
                             </div>
                         </div>
@@ -46,9 +45,8 @@ making a positive impact beyond the walls of healthcare facilities.</p>
                                     <img src={icon3} />
                                 </div>
                                 <div className='working_content col-lg-8 col-md-8 col-sm-12'>
-                                    <h3>3. Personalized Excellence through CPR</h3>
-                                    <p>We provide a Convenient, Personable, and Responsive staffing experience, ensuring the right match
-between healthcare facilities and professionals while offering dedicated support and timely solutions.</p>
+                                    <h3>{crd_head3}</h3>
+                                    <p>{crd_desc3}</p>
                                 </div>
                             </div>
                         </div>

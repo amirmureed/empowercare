@@ -70,6 +70,10 @@ const ProfessionalsCareer = () => {
       jobcard3={"Unsung Heroes No More: Direct Care Pros in the Spotlight!"}
       jobcard3_des={"As an EmpowerCare direct care professional, you're not just another employee – you're a Shift Champion. We believe in celebrating your amazing contributions to healthcare and putting you in the spotlight."}
       btn2={"LEARN MORE"}
+
+      crd_link1={"#"}
+      crd_link2={"/professional/Professionalgainawinning"}
+      crd_link3={"/professionals/unsung-heroes"}
     />
 
     <TrustedPartner
@@ -122,6 +126,8 @@ const ProfessionalsCareer = () => {
       dx5_desc={"Picture a world where finding your dream direct care job is as easy as a few clicks - a world where your compassion, skills, and career goals line up perfectly with the right opportunity."}
       dx5_desc2={"That's the world we're creating at EmpowerCare direct care agencies."}
 
+      lrn_link={"/about"}
+
     />
     <OurHistory />
     <TrustedPartner
@@ -144,7 +150,6 @@ const ProfessionalsCareer = () => {
       btn1={"Quick Apply"}
       video_link={"https://youtube.com/shorts/X5DhrVv-hk4?feature=share"}
     />
-    <FaqAccordian />
     <Userslider />
     <Footer />
   </>)
