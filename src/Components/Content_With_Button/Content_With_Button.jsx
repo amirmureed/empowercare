@@ -6,7 +6,7 @@ import hc2 from '../../Assets/hc2.png';
 import hc3 from '../../Assets/hc3.png';
 import googleImg from '../../Assets/google-img.png';
 
-const Content_With_Button = () => {
+const Content_With_Button = (props) => {
     return (
         <>
         <div className="content_with_button">
@@ -22,8 +22,7 @@ const Content_With_Button = () => {
                             </h2>
                         </div>
                         <div className="content">
-                            <p>Over 500,000 shifts filled by healthcare professionals and facilities partnering with
-EmpowerCare to transform lives and elevate care.</p>
+                            <p>{props.desc}</p>
                         </div>
                         <div className='btn_gradient'>
                             <a href='/signup' className="btn quick-btn">Sign Up</a>

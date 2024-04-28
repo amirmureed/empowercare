@@ -108,7 +108,7 @@ Professional. Act fast before spots fill up!
                   </p>
                   <br />
                   <div className="end-btn">
-                    <a className="btn_green" href="/">QUICK APPLY</a><br />
+                    <a className="btn_green" href="/signup">QUICK APPLY</a><br />
                   </div>
                 </div>
                

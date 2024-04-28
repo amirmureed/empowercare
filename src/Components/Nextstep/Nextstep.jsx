@@ -31,7 +31,7 @@ const Nextstep = () => {
                                     <p className="description">EmpowerCare Can Assist You in Finding Your Dream Healthcare Career, Whether Short-Term or Long-Term.</p>
                                 
                                     <div className="sec-btns">
-                                        <Link target='_blank' to="https://msgstaffing.my.salesforce-sites.com/?page=JobListPage&JobSite=default&p=Candidate" className="learn-btn">
+                                        <Link  to="https://empowercare.me/" className="learn-btn">
                                             <span>Search Job Openings</span>
                                             <img src={downarrow} alt="downarrow" />
                                         </Link>

@@ -8,7 +8,7 @@ import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import img from '../../Assets/advantages.png'
 import bannerImg from '../../Assets/advantagesImg.png'
-import FAQ from "../../Components/FAQ/FAQ" 
+import FAQ9 from "../../Components/FAQ/Fc_PG4_Faq4" 
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 const Faqperdiem=()=>{
@@ -25,17 +25,16 @@ const Faqperdiem=()=>{
           logoImg={logow}
           />
     <Banner1
-    heading={'Advantages of Per Diem Work'} 
-    description={'Unlock the Advantages of Per Diem Work'}
-    meta={'Enjoy Unparalleled Flexibility with EmpowerCares Per Diem Jobs'}
+    heading={'Per Diem Staffing Solutions'} 
+    description={'FAQ Guide for per diem staffing solutions'}
+    meta={''}
     bannerImg={bannerImg}
     styles={bannerStyles}
     />
     <Trusted/>
-    <FAQ/>
+    <FAQ9/>
     <AboutEmpowercare/>
     <Stories/>
-    <FaqAccordian/>
     <Userslider/>
     <Footer/>
 

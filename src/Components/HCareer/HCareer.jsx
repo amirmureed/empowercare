@@ -3,7 +3,7 @@ import './HCareer.scss';
 import HCarreImg from '../../Assets/HCareerimg.png';
 import dropdownarrow from '../../Assets/dropdown.svg';
 
-const HCareer = () => {
+const HCareer = (props) => {
     return (
         <div className="hcareer-sec">
             <div className="container">
@@ -56,9 +56,11 @@ const HCareer = () => {
                                             </div>
                                         </div>
                                         <div className="bottom-btn">
+                                            <a href={props.link}>
                                             <button className="job-btn">
                                                 <span>Find contract nursing jobs</span>
                                             </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

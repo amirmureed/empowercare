@@ -5,7 +5,7 @@ import job2 from '../../Assets/job2.png';
 import job3 from '../../Assets/job3.png';
 import { Link } from 'react-router-dom';
 
-const Contractjob = () => {
+const Contractjob = (props) => {
     return (
         <div className="contractjob-sec">
             <div className="container">
@@ -51,9 +51,9 @@ const Contractjob = () => {
                         <Link to="/signup" className="signup-btn">
                             <span>Sign up</span>
                         </Link>
-                        <Link to="/" className="learnmore-btn">
+                        <a href={props.link} className="learnmore-btn">
                             <span>Learn more</span>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

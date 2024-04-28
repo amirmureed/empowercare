@@ -6,7 +6,7 @@ import circle2 from '../../Assets/circle2.png';
 import circle3 from '../../Assets/circle3.png';
 import circle4 from '../../Assets/circle4.png';
 
-const Approach = ({heading1,description1,heading2,description2,heading3,description3,heading4,description4,heading5,description5}) => {
+const Approach = ({heading1,description1,heading2,description2,heading3,description3,heading4,description4,heading5,description5,link1,link2,link3,link4,link5}) => {
     
     return (
         <>
@@ -35,7 +35,7 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                     </div>
                                     <div className="right-sec">
                                         <button className='approach-btn'>
-                                            <span>Learn More</span>
+                                           <a href={link1}> <span>Learn More</span></a>
                                         </button>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                     </div>
                                     <div className="right-sec">
                                         <button className='approach-btn'>
-                                            <span>Learn More</span>
+                                            <a href={link2}><span>Learn More</span></a>
                                         </button>
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                     </div>
                                     <div className="right-sec">
                                         <button className='approach-btn'>
-                                            <span>Learn More</span>
+                                        <a href={link3}><span>Learn More</span></a>
                                         </button>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                     </div>
                                     <div className="right-sec">
                                         <button className='approach-btn'>
-                                            <span>Learn More</span>
+                                        <a href={link4}><span>Learn More</span></a>
                                         </button>
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@ const Approach = ({heading1,description1,heading2,description2,heading3,descript
                                         </div>
                                         <div className="right-sec">
                                             <button className='approach-btn'>
-                                                <span>Learn More</span>
+                                              <a href={link5}>  <span>Learn More</span></a>
                                             </button>
                                         </div>
                                     </div>

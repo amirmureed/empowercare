@@ -86,16 +86,16 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 title="Contracts"
                 description="Your Trusted Partner for Temp-to-Hire Staffing Solutions"
                 background="linear-gradient(-134deg, #4eb3e8 0.00%,#71ba32 100.00%)"
-                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/Faqstemptohire"}>FAQ</Link> }
+                FaqArr = {facilities ? <Link style={{ color:'white'}} to={"/facilities/Faqcontracts"} >FAQ</Link> : <Link style={{ color:'white'}} to={"/professionals/Faqstemptohire"}>FAQ</Link> }
               />
              
 
             <Cards 
                 imgSrc={icon5}  
                 title={facilities ? "Permanent Staffing" : "Staffing Service Type"}
-                description= { facilities ? "Your Trusted Partner for Permanent Staffing Solutions": "Your Trusted Partner for Temp-to-Hire Staffing Solutions"} 
+                 description= { facilities ? "Your Trusted Partner for Permanent Staffing Solutions": "Your Trusted Partner for Temp-to-Hire Staffing Solutions"} 
                 background="#4EB3E8"
-                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/Faqspermanentstaffing"}>FAQ</Link> }
+                FaqArr = {facilities ? <Link style={{ color:'white'}} to={"/facilities/Faqpermanentstaffing"}>FAQ</Link> : <Link style={{ color:'white'}} to={"/professionals/Faqspermanentstaffing"}>FAQ</Link> }
             />
 
             <Cards
@@ -103,7 +103,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 title={facilities ? "Contract Staffing" : "Staffing Service Type"}
                 description={ facilities ? "Your Trusted Partner for Contract Staffing Solutions":"Your Trusted Partner for Temp-to-Hire Staffing Solutions"}
                 background="linear-gradient(-134deg, #71ba32 0.00%,#4eb3e8 100.00%)"
-                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/faqs"}>FAQ</Link> }
+                FaqArr = {facilities ? <Link style={{ color:'white'}} to={"/facilities/Faqlocalcontracts"}>FAQ</Link> : <Link style={{ color:'white'}} to={"/professionals/faqs"}>FAQ</Link> }
             />
 
             <Cards 
@@ -111,7 +111,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 title={facilities ? "Per Diem Staffing" : "Staffing Service Type"}
                 description={ "EmpowerCare: A Beacon of Flexibility in Per Diem Staffing"}
                 background="#5F9E29"
-                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/Faqsperdiem"}>FAQ</Link> }
+                FaqArr = {facilities ? <Link style={{ color:'white'}} to={"/facilities/Faqperdiem"}>FAQ</Link> : <Link style={{ color:'white'}} to={"/professionals/Faqsperdiem"}>FAQ</Link> }
             />
 
 
@@ -121,7 +121,7 @@ const Dropdown = ({ professionals, about, facilities }) => {
                 title="TRAVEL NURSING"
                 description="Your Passport to Unforgettable Travel Nursing Adventures"
                 background="linear-gradient(-130deg, #ee8d80 0.00%,#e6632a 100.00%)"
-                FaqArr = {facilities ? <Link to={""}>FAQ</Link> : <Link to={"/professionals/Faqstravelnurse"}>FAQ</Link> }
+                FaqArr = {facilities ? <Link style={{ color:'white'}} to={"/facilities/Faqstravelnursing"}>FAQ</Link> : <Link style={{ color:'white'}} to={"/professionals/Faqstravelnurse"}>FAQ</Link> }
             />
                 </Stack>
             </Box>

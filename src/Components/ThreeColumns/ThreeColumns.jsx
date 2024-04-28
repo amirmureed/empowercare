@@ -25,9 +25,9 @@ const ThreeColumns = (props) => {
                                     <p className="description">{description_2}</p>
                                 
                                     <div className="sec-btns">
-                                        <Link to="/" className="learn-btn">
+                                        <a href={props.lrn_link} className="learn-btn">
                                             <span>Learn More</span>
-                                        </Link>
+                                        </a>
                                         <Link to="/signup" className="signup-btn">
                                             <span 
                                             style={{color: props.facilities ? "white" :"black",

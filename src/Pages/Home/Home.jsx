@@ -43,6 +43,12 @@ const Home = () => {
         description3={"Unlock Your Potential and Land Your Dream Healthcare Role Effortlessly"}
         heading4={"Unsung Heroes No More: in the Spotlight! Shift Champions"}
         description4={"Celebrate Your Exceptional Contributions to Healthcare"}    
+
+        link1={"/professional/Professionalhelpstheworld"}
+        link2={"/professional/Professionalperfectmatch"}
+        link3={"/professional/Professionalgainawinning"}
+        link4={"/professionals/unsung-heroes"}
+        
       />
       <Choose
         meta="Dynamic Squads"
@@ -58,17 +64,37 @@ const Home = () => {
         boxHeading3="Supportive Community:"
         boxDescription3="Access a vast network of highly qualified and responsible healthcare professionals who are ready to make a positive impact together."
       />
-      <Impact />
-      <Opportunity />
-      <Contractjob />
-      <Empowercare />
-      <Network />
+      <Impact 
+      link1={"/professional/Professionalhelpstheworld"}
+      link2={"/professional/Professionalhelpstheworld"}
+      link3={"/professional/Professionalhelpstheworld"}
+      
+      />
+      <Opportunity
+      
+      link_btn={"/signup"}
+      
+      />
+      <Contractjob 
+      
+      link={"/professionals/Faqstemptohire"}
+      
+      />
+      <Empowercare 
+      link={"/signup"}
+      />
+      <Network 
+      link={"https://empowercare.me/"}
+      />
       <Caregivers />
-      <HCareer />
+      <HCareer
+      link={"https://empowercare.me/"}
+      />
       <Priemer />
       <Stories 
       img={storiesimg}
       img2={playbtn}
+      video_link={"https://www.youtube.com/shorts/X5DhrVv-hk4"}
       />
       <Nextstep />
       <CareerSlider />

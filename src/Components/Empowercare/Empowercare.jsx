@@ -4,7 +4,7 @@ import empowercareimg from '../../Assets/empowercareimg.png';
 import activearrow from '../../Assets/active-arrow.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
 
-const Empowercare = () => {
+const Empowercare = (props) => {
     return (
         <div className="empowercare-sec">
             <div className="container">
@@ -39,7 +39,7 @@ const Empowercare = () => {
                             
                                 <div className="sec-btns">
                                     <button className="learn-btn">
-                                        <span>Explore Career Path Options</span>
+                                       <a href={props.link}> <span>Explore Career Path Options</span></a>
                                         <img src={downarrow} alt="downarrow" />
                                     </button>
                                     <div className="active-img">

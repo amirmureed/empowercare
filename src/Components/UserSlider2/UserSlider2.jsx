@@ -3,9 +3,15 @@ import { Link } from 'react-router-dom';
 import './UserSlider2.scss';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import blogImg1 from '../../Assets/blogImg1.png';
-import blogImg2 from '../../Assets/blogImg2.png';
-import blogImg3 from '../../Assets/blogImg3.png';
+import reviewImg1 from '../../Assets/reviewImg1.jpg';
+import reviewImg2 from '../../Assets/reviewImg2.jpg';
+import reviewImg3 from '../../Assets/reviewImg3.jpg';
+import reviewImg4 from '../../Assets/reviewImg4.jpg';
+import reviewImg5 from '../../Assets/reviewImg5.jpg';
+import reviewImg6 from '../../Assets/reviewImg6.jpg';
+import reviewImg7 from '../../Assets/reviewImg7.jpg';
+import reviewImg8 from '../../Assets/reviewImg8.jpg';
+import reviewImg9 from '../../Assets/reviewImg9.jpg';
 import rightarrow from '../../Assets/right-arrow.svg';
 import downarrow from '../../Assets/down-link-arrow.svg';
 import StarIcon from '@mui/icons-material/Star';
@@ -30,50 +36,77 @@ const responsive = {
 
 const userData = [
     {
-        userImg: blogImg1,
-        userName: "Stepphane R",
+        userImg: reviewImg1,
+        userName: "Pamela C",
         userMeta: "Industry Standard",
-        userMessage: "This is a great company and they do their best to accomodate your needs I'm happy to be a part of this company",
+        userMessage: "Very nice staff who are willing to help you with everything. Lacy is really cool keeping me updated with information.",
         btnText: "READ MORE",
         btnarrow: rightarrow
     },
     {
-        userImg: blogImg2,
-        userName: "Denea H",
+        userImg: reviewImg2,
+        userName: "Vanessa B",
         userMeta: "Industry Standard",
-        userMessage: "This is a great company and they do their best to accomodate your needs I'm happy to be a part of this company",
+        userMessage: "My experience with Lacy at msg staffing was amazing she helped me so much through my entire application",
         btnText: "READ MORE",
         btnarrow: rightarrow
     },
     {
-        userImg: blogImg3,
-        userName: "Gail M",
+        userImg: reviewImg3,
+        userName: "Jamie C",
         userMeta: "Industry Standard",
-        userMessage: "This is a great company and they do their best to accomodate your needs I'm happy to be a part of this company",
+        userMessage: "As a local traveler, I have had no problem securing good contracts in a timely manner.  ",
         btnText: "READ MORE",
         btnarrow: rightarrow
     },
     {
-        userImg: blogImg1,
-        userName: "Stepphane R",
+        userImg: reviewImg4,
+        userName: "UMass CT",
         userMeta: "Industry Standard",
-        userMessage: "This is a great company and they do their best to accomodate your needs I'm happy to be a part of this company",
+        userMessage: "The MSG Staffing nurses that have worked in the Emergency Department have been excellent.",
         btnText: "READ MORE",
         btnarrow: rightarrow
     },
     {
-        userImg: blogImg2,
-        userName: "Denea H",
+        userImg: reviewImg5,
+        userName: "Victoria G",
         userMeta: "Industry Standard",
-        userMessage: "This is a great company and they do their best to accomodate your needs I'm happy to be a part of this company",
+        userMessage: "MSG is a great place to work. The staff are really nice and helpful ",
         btnText: "READ MORE",
         btnarrow: rightarrow
     },
     {
-        userImg: blogImg3,
-        userName: "Gail M",
+        userImg: reviewImg6,
+        userName: "Bernice B",
         userMeta: "Industry Standard",
-        userMessage: "This is a great company and they do their best to accomodate your needs I'm happy to be a part of this company",
+        userMessage: "It has been a great opportunity to work with msg I have got a lot of experience! Thanks to MSG ",
+        btnText: "READ MORE",
+        btnarrow: rightarrow
+    },
+
+    {
+        userImg: reviewImg7,
+        userName: "Theodore R",
+        userMeta: "Industry Standard",
+        userMessage: "MSG has provided staff who are committed and qualified resulting in positive program outcomes ",
+        btnText: "READ MORE",
+        btnarrow: rightarrow
+    },
+
+    {
+        userImg: reviewImg8,
+        userName: "Keiran K",
+        userMeta: "Industry Standard",
+        userMessage: "The staff working for MSG made it easy and helpful to start working. Great people working for this company.",
+        btnText: "READ MORE",
+        btnarrow: rightarrow
+    },
+
+    {
+        userImg: reviewImg9,
+        userName: "Annie M",
+        userMeta: "Industry Standard",
+        userMessage: "MSG Staffing have been a great company to work for there is plenty of work available,",
         btnText: "READ MORE",
         btnarrow: rightarrow
     },
