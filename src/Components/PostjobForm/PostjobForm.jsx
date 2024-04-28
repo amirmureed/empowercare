@@ -41,8 +41,7 @@ const PostjobForm = () => {
             return;
         }
 
-        const myHeaders = new Headers();
-        myHeaders.append("X-Authorization", "624a616a4e777470795267784268364f57554c63376f7339557370596a633859476275327a2b436e4375756e4d4d435472355035576b46364c48634a50584e45");
+        
         const jobData = new FormData();
         jobData.append("job_title", formData.jobTitle);
         jobData.append("job_description", formData.jobDescription);
@@ -67,9 +66,7 @@ const PostjobForm = () => {
 
         const requestOptions = {
             method: "POST",
-            headers: myHeaders,
             body: jobData,
-            redirect: "follow"
         };
 
         fetch("https://empowercare.me/wp-json/empower/staffing/postjob", requestOptions)
