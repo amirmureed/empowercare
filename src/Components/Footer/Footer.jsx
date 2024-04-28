@@ -107,32 +107,32 @@ const Footer = () => {
                         <ul className="list-items">
                           <li className="list-item">
                           <a href="/professionals/seamless">
-                              <span>vsP.Maxim Healthcare</span>
+                              <span>Maxim Healthcare</span>
                               </a>
                           </li>
                           <li className="list-item">
                             <a href='/professional/Prseamlesssarborassociates'>
-                              <span>vsP.Arbor Associates</span>
+                              <span>Arbor Associates</span>
                             </a>
                           </li>
                           <li className="list-item">
                             <a href='/professional/Prseamlesssayahealthcare'>
-                              <span>vsP.Aya Healthcare</span>
+                              <span>Aya Healthcare</span>
                             </a>
                           </li>
                           <li className="list-item">
                             <a href='/professional/Prseamlesssimpactfull'>
-                              <span>vsP.Healthcare Staffing</span>
+                              <span>Healthcare Staffing</span>
                             </a>
                           </li>
                           <li className="list-item">
                             <a href='/professional/Prseamlesssintelycare'>
-                              <span>vsP.Intely Care</span>
+                              <span>Intely Care</span>
                             </a>
                           </li>
                           <li className="list-item">
                             <a href='/professional/Prseamlesssmasmedical'>
-                              <span>vsP.MAS Medical</span>
+                              <span>MAS Medical</span>
                             </a>
                           </li>
                         </ul>
@@ -145,32 +145,32 @@ const Footer = () => {
                         <ul className="list-items">
                           <li className="list-item">
                             <a href='/facilities/seamless'>
-                              <span>vsP.Maxim Healthcare</span>
+                              <span>Maxim Healthcare</span>
                             </a>
                           </li>
                           <li className="list-item">
                             <a href='/facilities/Facilitiesarborassociates'>
-                              <span>vsP.Arbor Associates</span>
+                              <span>Arbor Associates</span>
                             </a>
                           </li>
                           <li className="list-item">
                             <a href='/facilities/Facilitiesayahealthcare'>
-                              <span>vsP.Aya Healthcare</span>
+                              <span>Aya Healthcare</span>
                             </a>
                           </li>
                           <li className="list-item">
                             <a href='/facilities/Facilitiesfavriouthealthcarestaffing'>
-                              <span>vsP.Healthcare Staffing</span>
+                              <span>Healthcare Staffing</span>
                             </a>
                           </li>
                           <li className="list-item">
                             <a href='/facilities/Facilitiesintelycarefornurses'>
-                              <span>vsP.Intely Care</span>
+                              <span>Intely Care</span>
                             </a>
                           </li>
                           <li className="list-item">
                             <a href='/facilities/Facilitiesmasmedicalstaffing'>
-                              <span>vsP.MAS Medical</span>
+                              <span>MAS Medical</span>
                             </a>
                           </li>
                         </ul>
