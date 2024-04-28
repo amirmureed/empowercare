@@ -17,7 +17,7 @@ import Careerpaths from '../../Components/Empowercarefacilities/Careerpaths';
 import empowercareimg from '../../Assets/Resume-amico.png'
 import OurWorkingGreen from '../../Components/OurWorkingGreen/OurWorkingGreen';
 
-const Prseamlesssintelycare  = () => {
+const Prseamlesssintelycare  = () => { 
   const bannerStyles = {
     backgroundImage: `url(${img})`,
     backgroundPosition: '50% 30%',
@@ -32,19 +32,34 @@ const Prseamlesssintelycare  = () => {
         logoImg={logow}
       />
       <Banner1 heading={'Seamless & Impactful'}
-        description={'A Seamless and Impactful Alternative to Maxim Healthcare'}
+        description={'A Seamless and Impactful Alternative to IntelyCare for Nurses'}
         meta={'EmpowerCare is revolutionizing the way healthcare professionals find fulfilling job opportunities. We go beyond traditional staffing agencies by offering a seamless and impactful experience that puts your needs and aspirations first.'}
         bannerImg={bannerImg}
         styles={bannerStyles}
       />
       <Trusted />
-      <OurWorkingGreen/>
-      <Content_With_Button />
+      <Content_With_Button 
+      desc={"With over 500,000 shifts filled, EmpowerCare has empowered healthcare professionals and facilities to transform lives and elevate care through our personalized, impactful approach."}
+      
+      />
+      <OurWorkingGreen
+      m_head1={"Our "}
+      m_head2={"Promise "}
+      m_head3={"to You"}
+      crd_head1={"Transformative Placements"}
+      crd_desc1={"Each EmpowerCare placement empowers you to grow professionally, change lives, and enhance the quality of care you provide, making a meaningful impact on your career and the lives of others."}
+      crd_head2={"Commitment to Community"}
+      crd_desc2={"We donate $1 towards community health initiatives for every shift you work, amplifying the positive impact of your efforts beyond the walls of healthcare facilities."}
+      crd_head3={"Personalized Excellence through CPR"}
+      crd_desc3={"We go beyond finding you a job. We match you with healthcare facilities that align with your skills, preferences, pay expectations, and career goals, ensuring a satisfying and successful placement"}
+    
+      />
+      
       <Choose
         meta="Why Choose Us"
         spantext="Squads:"
         heading="Dynamic"
-        headingafter="Your cpr dynamic solution"
+        headingafter="Your CPR Staffing Solution"
         description1="EmpowerCare's Dynamic Squads offer a comprehensive approach to meet all your career needs. Our personalized solutions help you achieve your professional goals while making a meaningful impact in the lives of patients."
         description2=""
         boxHeading1="Convenient Placements:"
@@ -58,8 +73,17 @@ const Prseamlesssintelycare  = () => {
         meta="Why Choose Us"
         spantext="Pledge:"
         heading="Seamless"
-        headingafter="Make an impact with every shift"
+        headingafter="Meaningful Impact with Every Shift"
         description1="We believe that every shift is an opportunity to make a difference in people's lives. Our Seamless Pledge ensures that you can focus on what matters most - providing exceptional care and making a lasting impact."
+
+        crHead1={"Meaningful Work:"}
+        crdesc1={"Every placement is an opportunity to contribute to the greater good, knowing that your efforts are part of a larger movement to transform lives and elevate care."}
+
+        crHead2={"Reliable Support:"}
+        crdesc2={"Our dedicated team is always by your side, ensuring a smooth and stress-free experience, so you can focus on making a difference with every shift."}
+
+        crHead3={"Empowering Environment:"}
+        crdesc3={"We foster a supportive and empowering environment that recognizes your contributions and helps you grow personally and professionally."}
       />
       <PriemerBlack 
           heading1="Elevate Your"
@@ -78,7 +102,6 @@ const Prseamlesssintelycare  = () => {
         img={empowercareimg}
         btn1={'QUICK APPLY'}
       />
-      <FaqAccordian />
       <Userslider />
       <Footer />
     </>

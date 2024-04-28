@@ -10,7 +10,7 @@ import twitter from '../../Assets/icons/twitter.svg';
 import './Footer.scss';
 
 const Footer = () => {
-    return (
+    return ( 
         <>
           <footer className="footer">
             <div className="container">
@@ -106,34 +106,34 @@ const Footer = () => {
                         <h4 className="footer-title">Professionals</h4>
                         <ul className="list-items">
                           <li className="list-item">
-                            <Link to='professionals/seamless'>
+                          <a href="/professionals/seamless">
                               <span>vsP.Maxim Healthcare</span>
-                            </Link>
+                              </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/professional/Prseamlesssarborassociates'>
+                            <a href='/professional/Prseamlesssarborassociates'>
                               <span>vsP.Arbor Associates</span>
-                            </Link>
+                            </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/professional/Prseamlesssayahealthcare'>
+                            <a href='/professional/Prseamlesssayahealthcare'>
                               <span>vsP.Aya Healthcare</span>
-                            </Link>
+                            </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/professional/Prseamlesssimpactfull'>
+                            <a href='/professional/Prseamlesssimpactfull'>
                               <span>vsP.Healthcare Staffing</span>
-                            </Link>
+                            </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/professional/Prseamlesssintelycare'>
+                            <a href='/professional/Prseamlesssintelycare'>
                               <span>vsP.Intely Care</span>
-                            </Link>
+                            </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/professional/Prseamlesssmasmedical'>
+                            <a href='/professional/Prseamlesssmasmedical'>
                               <span>vsP.MAS Medical</span>
-                            </Link>
+                            </a>
                           </li>
                         </ul>
                       </div>
@@ -144,34 +144,34 @@ const Footer = () => {
                         <h4 className="footer-title">Facilities</h4>
                         <ul className="list-items">
                           <li className="list-item">
-                            <Link to='/facilities/seamless'>
+                            <a href='/facilities/seamless'>
                               <span>vsP.Maxim Healthcare</span>
-                            </Link>
+                            </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/facilities/Facilitiesarborassociates'>
+                            <a href='/facilities/Facilitiesarborassociates'>
                               <span>vsP.Arbor Associates</span>
-                            </Link>
+                            </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/facilities/Facilitiesayahealthcare'>
+                            <a href='/facilities/Facilitiesayahealthcare'>
                               <span>vsP.Aya Healthcare</span>
-                            </Link>
+                            </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/facilities/Facilitiesfavriouthealthcarestaffing'>
+                            <a href='/facilities/Facilitiesfavriouthealthcarestaffing'>
                               <span>vsP.Healthcare Staffing</span>
-                            </Link>
+                            </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/facilities/Facilitiesintelycarefornurses'>
+                            <a href='/facilities/Facilitiesintelycarefornurses'>
                               <span>vsP.Intely Care</span>
-                            </Link>
+                            </a>
                           </li>
                           <li className="list-item">
-                            <Link to='/facilities/Facilitiesmasmedicalstaffing'>
+                            <a href='/facilities/Facilitiesmasmedicalstaffing'>
                               <span>vsP.MAS Medical</span>
-                            </Link>
+                            </a>
                           </li>
                         </ul>
                       </div>

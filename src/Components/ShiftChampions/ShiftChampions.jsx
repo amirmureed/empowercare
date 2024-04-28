@@ -2,7 +2,8 @@ import './ShiftChampions.scss'
 import img from '../../Assets/champions.png';
 import activearrow from '../../Assets/active-arrow.png';
 
-const ShiftChampions=()=>{
+const ShiftChampions=(props)=>{
+    const{head1,head2 ,head3,head4 ,desc1 ,desc2, desc3 ,desc4}=props
     return(  <>
          <div className="shift-champions">
             <div className="container">
@@ -10,15 +11,15 @@ const ShiftChampions=()=>{
                     <div className="row">
                         <div className="col-md-6">
                             <div className="left-content">
-                                <span className="meta">WHY IT MATTERS</span>
+                                <span className="meta">{head1}</span>
                                 <h2 className="heading">
-                                    WHY
-                                    <span className='text_grad_green'> THE SHIFT CHAMPIONS </span> INITIATIVE MATTERS TO YOU
+                                    {head2}
+                                    <span className='text_grad_green'>{head3}</span>{head4}
                                 </h2><br />
-                                <p className="description">●    We recognize your great work, which makes you feel good and want to do even better.</p>
-                                <p className="description">●    You become part of a group of healthcare professionals who are appreciated for their hard work</p>
-                                <p className="description">●    Your amazing service makes patients happier and healthier, which is a big deal.</p>
-                                <p className="description">●     We set a new standard for valuing and empowering healthcare professionals like you.</p>
+                                <p className="description">● {desc1}</p>
+                                <p className="description">● {desc2}</p>
+                                <p className="description">● {desc3}</p>
+                                <p className="description">● {desc4}</p>
                                 <div class="priemer-cta">
                                     <a class="btn_green" href="/signup">Sign Up</a>
                                     <div className="active-img">
@@ -40,4 +41,5 @@ const ShiftChampions=()=>{
         </div>
         </>)
 }
+
 export default ShiftChampions

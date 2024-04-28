@@ -6,7 +6,7 @@ import icon3 from "../../Assets/Group532.png";
 import { IconButton, useMediaQuery, useTheme } from '@mui/material';
 
 const FaqAccordian = (props) => {
-  const{faq_head1 ,faq_desc1 ,faq_head2 ,faq_desc2 ,faq_head3, faq_desc3,faq_head4,faq_desc4,faq_head5,faq_desc5}=props
+  const{faq,faq_head1 ,faq_desc1 ,faq_head2 ,faq_desc2 ,faq_head3, faq_desc3,faq_head4,faq_desc4,faq_head5,faq_desc5 ,faq_head6,faq_desc6,faq_head7,faq_desc7,faq_head8,faq_desc8,faq_head9,faq_desc9}=props
 
   
   
@@ -27,7 +27,7 @@ const FaqAccordian = (props) => {
         <div className="working-wrapper">
           <div class="top-content">
             <h2 class="heading">
-              Frequently Asked Questions<span class="text_grad_green"> (FAQ) </span>
+              {faq}<span class="text_grad_green"> (FAQ) </span>
             </h2>
           </div>
 
@@ -86,6 +86,7 @@ const FaqAccordian = (props) => {
                 </div>
               </div>
             </div>
+            {faq_head5 && faq_head5.trim() !== '' && (
             <div className={isAccordianOpen == 4 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }>
               <div className="row">
                 <div className="working_content col-12">
@@ -99,6 +100,68 @@ const FaqAccordian = (props) => {
                 </div>
               </div>
             </div>
+            )}
+
+{faq_head6 && faq_head6.trim() !== '' && (
+            <div className={isAccordianOpen == 4 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }>
+              <div className="row">
+                <div className="working_content col-12">
+                  <div className="reletive">
+                    <h3>{faq_head6}</h3>
+                    <span className="plus-icon" onClick={() => toggleAccodian(5)}>+</span>
+                  </div>
+                  <p>
+                    {faq_desc6}
+                  </p>
+                </div>
+              </div>
+            </div>
+            )}
+            {faq_head7 && faq_head7.trim() !== '' && (
+            <div className={isAccordianOpen == 4 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }>
+              <div className="row">
+                <div className="working_content col-12">
+                  <div className="reletive">
+                    <h3>{faq_head7}</h3>
+                    <span className="plus-icon" onClick={() => toggleAccodian(5)}>+</span>
+                  </div>
+                  <p>
+                    {faq_desc7}
+                  </p>
+                </div>
+              </div>
+            </div>
+            )}
+            {faq_head8 && faq_head8.trim() !== '' && (
+            <div className={isAccordianOpen == 4 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }>
+              <div className="row">
+                <div className="working_content col-12">
+                  <div className="reletive">
+                    <h3>{faq_head8}</h3>
+                    <span className="plus-icon" onClick={() => toggleAccodian(5)}>+</span>
+                  </div>
+                  <p>
+                    {faq_desc8}
+                  </p>
+                </div>
+              </div>
+            </div>
+            )}
+            {faq_head9 && faq_head9.trim() !== '' && (
+            <div className={isAccordianOpen == 4 ? "working-col col-12 accordian-open" : "working-col col-12 accordian-closed" }>
+              <div className="row">
+                <div className="working_content col-12">
+                  <div className="reletive">
+                    <h3>{faq_head9}</h3>
+                    <span className="plus-icon" onClick={() => toggleAccodian(5)}>+</span>
+                  </div>
+                  <p>
+                    {faq_desc9}
+                  </p>
+                </div>
+              </div>
+            </div>
+            )}
           </div>
         </div>
       </div>

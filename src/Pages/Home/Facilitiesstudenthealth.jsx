@@ -42,8 +42,8 @@ const Facilitiesalliedhealth = () => {
         bannerImg={bannerImg}
         heading={'HEALTHCARE'}
         heading2={'STAFFING BY US'}
-        description={'NON CLINICAL HEALTHCARE STAFFING BY EMPOWERCARE'}
-        span={'Unlock Fulfilling Contract and Per Diem Opportunities That Go Beyond the Job Description'}
+        description={'Elevate Student Health: EmpowerCare Education Staffing'}
+        span={'Empowering Educational Institutions with Top Healthcare Talent'}
         />
         <TrustedPartner
          simpleButton={false}

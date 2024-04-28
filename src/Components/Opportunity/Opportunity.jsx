@@ -3,7 +3,7 @@ import './Opportunity.scss';
 import opportunityimg from '../../Assets/opportunity-img.png';
 import downarrow from '../../Assets/down-link-arrow.svg';
 
-const Opportunity = () => {
+const Opportunity = (props) => {
     return (
         <div className="opportunity-sec">
             <div className="opportunity-container">
@@ -23,7 +23,7 @@ const Opportunity = () => {
                                 
                                     <div className="sec-btns">
                                         <button className="learn-btn">
-                                            <span>Lets promote well-being</span>
+                                          <a href={props.link_btn}> <span>Lets promote well-being</span></a> 
                                             <img src={downarrow} alt="downarrow" />
                                         </button>
                                     </div>

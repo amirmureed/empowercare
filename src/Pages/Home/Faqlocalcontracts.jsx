@@ -8,10 +8,10 @@ import Trusted from "../../Components/Trusted/Trusted"
 import Userslider from "../../Components/Userslider/Userslider"
 import img from '../../Assets/advantages.png'
 import bannerImg from '../../Assets/advantagesImg.png'
-import FAQ from "../../Components/FAQ/FAQ" 
+import FAQ8 from "../../Components/FAQ/Fc_PG3_Faq3" 
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite" 
-const Faqlocalcontracts=()=>{
+const Faqlocalcontracts=()=>{ 
     const bannerStyles = {
         backgroundImage: `url(${img})`,
         backgroundPosition: '50% 30%',
@@ -25,17 +25,16 @@ const Faqlocalcontracts=()=>{
           logoImg={logow}
           />
     <Banner1
-    heading={'Advantages of Per Diem Work'} 
-    description={'Unlock the Advantages of Per Diem Work'}
-    meta={'Enjoy Unparalleled Flexibility with EmpowerCares Per Diem Jobs'}
+    heading={'LOCAL CONTRACT STAFFING '} 
+    description={'FAQ Guide for local contract staffing Solutions'}
+    meta={''}
     bannerImg={bannerImg}
     styles={bannerStyles}
     />
     <Trusted/>
-    <FAQ/>
+    <FAQ8/>
     <AboutEmpowercare/>
     <Stories/>
-    <FaqAccordian/>
     <Userslider/>
     <Footer/>
 
