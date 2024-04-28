@@ -169,7 +169,7 @@ const PostjobForm = () => {
                                                     name='category'
                                                     value={formData.category}
                                                 >
-                                                    <option value="">--None--</option>
+                                                    <option value="">--Job Category--</option>
                                                     <option value="Advanced Practice">Advanced Practice</option>
                                                     <option value="Behavioral Health">Behavioral Health</option>
                                                     <option value="Bilingual">Bilingual</option>
