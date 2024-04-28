@@ -56,6 +56,9 @@ const HeaderWhite = ({ logoImg }) => {
       ) {
         $('.dropdown-professionals').hide();
         $('.dropdown').hide();
+      } else if( pathname=== "/"){
+        $('.dropdown-facilities').hide();
+        $('.dropdown').hide();
       }
     }
   }, [location, isMobile]);
