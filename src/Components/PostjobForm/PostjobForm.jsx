@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './PostjobForm.scss';
 import newsletterarrow from '../../Assets/h3_newsletter_shape0.png';
 import hc1 from '../../Assets/hc1.png';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 const PostjobForm = () => {
@@ -12,7 +14,7 @@ const PostjobForm = () => {
         jobType: '',
         category: '',
         jobDescription: '',
-        jobFile: '',
+        jobFile: null,
         companyName: '',
         companyEmail: '',
         website: '',
@@ -20,18 +22,36 @@ const PostjobForm = () => {
         zipCode: '',
         city: '',
         Address: '',
-        Country: '',
+        country: '',
         consent: 0
     });
+    
+    
+
 
     const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
-        const newValue = type === 'checkbox' ? (checked ? 1 : 0) : value;
-        setFormData({
-            ...formData,
-            [e.target.name]: newValue
-        });
+        const { name, value, type, checked, files } = e.target;
+        if (type === 'file') {
+            convertToBase64(files[0]);
+        } else {
+            const newValue = type === 'checkbox' ? (checked ? 1 : 0) : value;
+            setFormData({
+                ...formData,
+                [e.target.name]: newValue
+            });
+        }
 
+    };
+    const convertToBase64 = (file) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+            const base64String = reader.result;
+            setFormData({
+                ...formData,
+                jobFile: base64String
+            });
+        };
+        reader.readAsDataURL(file);
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -41,11 +61,11 @@ const PostjobForm = () => {
             return;
         }
 
-        
+
         const jobData = new FormData();
         jobData.append("job_title", formData.jobTitle);
         jobData.append("job_description", formData.jobDescription);
-        jobData.append("job_slug", formData.jobTitle); 
+        jobData.append("job_slug", formData.jobTitle);
         jobData.append("job_created_at", new Date().toISOString().split('T')[0]);
         jobData.append("job_expires_at", new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]);
         jobData.append("is_approved", 0);
@@ -70,18 +90,33 @@ const PostjobForm = () => {
         };
 
         fetch("https://empowercare.me/wp-json/empower/staffing/postjob", requestOptions)
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    return response.text();
-  })
-  .then((result) => {
-    console.log(result);
-    
-    toast.success("Job post successfully sent.");
-  })
-  .catch((error) => toast.error("An error occurred while posting the job. Please try again later."));;
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.text();
+            })
+            .then((result) => {
+
+                toast.success("Job post has been successfully sent to admin for approval.");
+                setFormData({
+                    jobTitle: '',
+                    jobType: '',
+                    category: '',
+                    jobDescription: '',
+                    jobFile: '',
+                    companyName: '',
+                    companyEmail: '',
+                    website: '',
+                    state: '',
+                    zipCode: '',
+                    city: '',
+                    Address: '',
+                    Country: '',
+                    consent: 0
+                })
+            })
+            .catch((error) => toast.error("An error occurred while posting the job. Please try again later."));;
 
 
 
@@ -134,10 +169,20 @@ const PostjobForm = () => {
                                                     name='category'
                                                     value={formData.category}
                                                 >
-                                                    <option value="Category">Category</option>
-                                                    <option value="Scholar">Scholar</option>
-                                                    <option value="Software Engineer">Software Engineer</option>
-                                                    <option value="Doctor">Doctor</option>
+                                                    <option value="">--None--</option>
+                                                    <option value="Advanced Practice">Advanced Practice</option>
+                                                    <option value="Behavioral Health">Behavioral Health</option>
+                                                    <option value="Bilingual">Bilingual</option>
+                                                    <option value="Direct Hire">Direct Hire</option>
+                                                    <option value="Educator">Educator</option>
+                                                    <option value="Gerontology">Gerontology</option>
+                                                    <option value="Manager">Manager</option>
+                                                    <option value="Mental Health">Mental Health</option>
+                                                    <option value="New Grad">New Grad</option>
+                                                    <option value="Pediatric">Pediatric</option>
+                                                    <option value="Psychiatry">Psychiatry</option>
+                                                    <option value="Substance Abuse">Substance Abuse</option>
+                                                    <option value="Supervisor">Supervisor</option>
                                                 </select>
                                                 <textarea
                                                     rows="3" cols="5"
@@ -154,7 +199,7 @@ const PostjobForm = () => {
                                                     type="file"
                                                     placeholder="Logo"
                                                     className="rounded-input"
-                                                    value={formData.jobFile}
+
                                                     name='jobFile'
                                                     onChange={handleChange}
                                                 />

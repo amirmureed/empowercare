@@ -17,6 +17,7 @@ import HowtoBecome from "../../Components/HowtoBecome/HowtoBecome"
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import HeaderWhite from "../../Components/HeaderWhite/HeaderWhite"
 import storiesimg from '../../Assets/storiesPic.png';
+import GeneralNursing from "../../Components/GeneralNursing/GeneralNursing"
 const Guide=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
@@ -39,6 +40,16 @@ const Guide=()=>{
     <Trusted/>
     <Assessing
      description={"These nurses are skilled in assessing, planning, implementing, and evaluating patient care, collaborating with a multidisciplinary team to ensure the best possible outcomes. General Nurses are versatile and adaptable, capable of working in a wide range of specialties and settings."}
+    />
+    <GeneralNursing
+    guide={true}
+    heading1={'GENERAL'}
+    heading2={'NURSING '}
+    heading3={'ALSO KNOWN AS'}
+    text1={'Registered Nurse (RN)'}
+    text2={'Staff Nurse'}
+    text3={' Floor Nurse'}
+    text4={'Bedside Nurse'}
     />
     
     <HowtoBecome
