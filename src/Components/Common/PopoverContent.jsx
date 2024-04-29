@@ -11,7 +11,7 @@ const PopoverContent=(props)=>{
     const {route1,route2,route3,route4,route5,route6,name1,name2,name3,name4,name5,name6,route7,route8,route9,route10,route11,route12,name7,name8,name9,name10,name11,name12,route13,route14,route15,route16,route17,route18,name13,name14,name15,name16,name17,name18,  }=props
     return(
 
-        <Stack classname="popover" direction={'column'} px={4} spacing={4} marginTop={'5%'} py={3}>
+        <Stack classname="popover" direction={'column'} px={2} spacing={2} marginTop={'1%'} py={1}>
 
             {route1 && name1 ?(<>
                 <Link className="popover-link"  to={route1}>
