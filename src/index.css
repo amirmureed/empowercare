@@ -175,6 +175,12 @@ a.btn_green{
   width: 20% !important;
   height: 20% !important;
 }
+@media (max-width: 480px){
+  .MuiStack-root img{
+    width: 10% !important;
+    height: 10% !important;
+  }
+}
 .MuiBox-root {
   margin-left: unset !important;
 }

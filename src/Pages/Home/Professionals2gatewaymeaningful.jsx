@@ -17,12 +17,15 @@ import EmpowercarePremier from "../../Components/EmpowercarePremier/EmpowercareP
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import storiesimg from '../../Assets/storiesPic.png';
 import ThreeColumns from '../../Components/ThreeColumns/ThreeColumns';
+import job1 from '../../Assets/Group 234.png';
+import job2 from '../../Assets/Group 235.png';
+import job3 from '../../Assets/Group 236.png';
 const ProfessionalsCareer=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
         backgroundPosition: '50%',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'auto',
+        backgroundSize: 'cover',
         marginTop: '-245px',
         backgroundColor: '#EBE0D3'
     };
@@ -60,13 +63,18 @@ const ProfessionalsCareer=()=>{
    heading={"The Ripple Effect: Making Big Waves with Every Non-Clinical Healthcare Job"}
 
    jobcard1={"Finding the Perfect Non-Clinical Healthcare Job Match is Easy with Our Dynamic Squads"}
-      jobcard1_des={"Our Dynamic Squads are way better than your typical healthcare staffing agencies. They give you personalized service and make sure you find the perfect fit for your skills and goals. With our high-tech matching system and one-on-one support, finding your dream non-clinical nursing job, non-clinical physician job, or non-clinical physical therapy position has never been simpler."}
+      jobcard1_des={"Our Dynamic Squads are way better than your typical healthcare staffing agencies. They give you personalized service and make sure you find the perfect fit for your skills and goals. With our high-tech matching system and one-on-one support."}
       
       jobcard2={"Gain a Winning Edge: Excel with EmpowerCare Academy!"}
       jobcard2_des={"Through EmpowerCare Academy, you'll get a leg up on the competition and land your ideal non-clinical healthcare job. Unlock your potential and easily navigate the path to career success with our top-notch training."}
 
       jobcard3={"Unsung Heroes No More: Non-Clinical Healthcare Pros in the Spotlight!"}
       jobcard3_des={"As an EmpowerCare non-clinical healthcare professional, you're not just another employee – you're a Shift Champion. We believe in celebrating your amazing contributions to healthcare and putting you in the spotlight."}
+
+      btn2={"Learn More"}
+      job1={job1}
+      job2={job2}
+      job3={job3}
    
 />
 
@@ -142,7 +150,6 @@ bx3_head3={"HEALTHCARE LEADERS"}
     btn1={"Quick Apply"}
     video_link={"https://youtube.com/shorts/X5DhrVv-hk4?feature=share"}
     />
-    <FaqAccordian/>
     <Userslider/>
     <Footer/>
     </>)

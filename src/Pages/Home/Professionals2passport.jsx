@@ -17,12 +17,15 @@ import EmpowercarePremier from "../../Components/EmpowercarePremier/EmpowercareP
 import logow from '../../Assets/EmpowerCareWhiteLogo.svg';
 import storiesimg from '../../Assets/storiesPic.png';
 import ThreeColumns from '../../Components/ThreeColumns/ThreeColumns';
+import job1 from '../../Assets/Group 234.png';
+import job2 from '../../Assets/Group 235.png';
+import job3 from '../../Assets/Group 236.png';
 const ProfessionalsCareer=()=>{
     const bannerStyles = {
         backgroundImage: `url(${img})`,
         backgroundPosition: '50%',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'auto',
+        backgroundSize: 'cover',
         marginTop: '-245px',
         backgroundColor: '#EBE0D3'
     };
@@ -66,6 +69,12 @@ const ProfessionalsCareer=()=>{
 
       jobcard3={"Unsung Heroes No More: Direct Care Pros in the Spotlight!"}
       jobcard3_des={"As an EmpowerCare direct care professional, you're not just another employee – you're a Shift Champion. We believe in celebrating your amazing contributions to healthcare and putting you in the spotlight."}
+
+
+      btn2={"Learn More"}
+      job1={job1}
+      job2={job2}
+      job3={job3}
    
 />
 
@@ -141,7 +150,6 @@ simpleButton={false}
     btn1={"Quick Apply"}
     video_link={"https://youtube.com/shorts/X5DhrVv-hk4?feature=share"}
     />
-    <FaqAccordian/>
     <Userslider/>
     <Footer/>
     </>)
