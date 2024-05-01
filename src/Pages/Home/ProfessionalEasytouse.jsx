@@ -91,7 +91,7 @@ const ProfessionalEasytouse=()=>{
         description2={"Let us empower you to reach new heights in your healthcare career and make a lasting impact on patient care and satisfaction. Together, we can efficiently redefine healthcare staffing and create a brighter future for healthcare professionals and patients alike."}
         Join={"JOIN US NOW"}
         btn1={"Quick Apply"}
-        video_link={"video_link"}
+        video_link={"https://www.youtube.com/shorts/X5DhrVv-hk4"}
         />
         <Userslider/>
         <Footer/>

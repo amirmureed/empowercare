@@ -66,6 +66,8 @@ const UnsungHeroes=()=>{
     faq_desc3={"Becoming a Shift Champion is straightforward - simply excel at your healthcare role! Our staffing agencies are constantly on the lookout for outstanding performers making a real difference in patient satisfaction. Go above and beyond in your medical center, health system, or care setting, and your hard work will be recognized"}
     faq_head4={"Why choose EmpowerCare over other per diem nursing agencies and CNA staffing agencies? "}
     faq_desc4={"What sets EmpowerCare apart is our committed focus on empowering and celebrating exceptional allied health professionals like you. The Shift Champions Initiative, combined with our responsive, personalized approach to healthcare staffing solutions, helps you unlock your full potential while positively impacting national health outcomes."}
+
+    faq={"Frequently Asked Question"}
     
     />
     <Stories
@@ -74,7 +76,7 @@ const UnsungHeroes=()=>{
     description2={"Let us empower you to reach new heights in your healthcare career and make a lasting impact on patient care and satisfaction. Together, we can efficiently redefine healthcare staffing and create a brighter future for healthcare professionals and patients alike."}
     Join={"JOIN US NOW"}
     btn1={"Quick Apply"}
-    video_link={"video_link"}
+    video_link={"https://www.youtube.com/shorts/X5DhrVv-hk4"}
     />
     <Userslider/>
     <Footer/>

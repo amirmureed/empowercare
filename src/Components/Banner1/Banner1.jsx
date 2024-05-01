@@ -22,8 +22,8 @@ const Banner1 = (props) => {
                       <p className="description">{description}</p>
                       <span className="meta">{meta}</span>
                       <div className="banner-btns">
-                        <Link to="/signup" className='btn quick-btn'>
-                          <span>Quick Apply</span>
+                        <Link to="/post-job" className='btn quick-btn'>
+                          <span>Request Staffing</span>
                         </Link>
                         <Link to="/" className='btn contact-btn'>
                           <span>Contact us</span>
@@ -38,7 +38,7 @@ const Banner1 = (props) => {
                   </div>
                 </div>
 
-                <div className="selection-row">
+                {/* <div className="selection-row">
                 <div className="selection-wrap">
                 <select id="jobtitle">
                   <option value="Account Manager">Account Manager</option>
@@ -246,7 +246,7 @@ const Banner1 = (props) => {
                     <span>Find available positions</span>
                   </Link>
                 </div>
-              </div>
+              </div> */}
               </div>
             </div>
           </div>

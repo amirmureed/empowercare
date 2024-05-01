@@ -65,6 +65,8 @@ const Professionalgainawinning=()=>{
         faq_desc3={"EmpowerCare Academy takes a holistic approach perfectly suited for those passionate about long-term career growth. Our wide range of tailored learning pathways, exclusive credentialing, job placement assistance, and ongoing coaching empower you to elevate your expertise while achieving personal and professional fulfillment."}
         faq_head4={"Can EmpowerCare Academy support healthcare human resources needs for roles like CNA jobs, LPN jobs, travel nursing, and more? "}
         faq_desc4={"Absolutely. As a comprehensive healthcare staffing solution, EmpowerCare Academy recruits and upskills talented professionals across the full spectrum - from CNAs and LPNs to registered nurses, therapists, and allied health specialists. We work closely with leading healthcare agencies and per diem nursing agencies to identify and develop top talent."}
+
+        faq={"Frequently Asked Question"}
         
         />
         <Stories
@@ -73,7 +75,7 @@ const Professionalgainawinning=()=>{
         description2={"Let us empower you to reach new heights in your healthcare career and make a lasting impact on patient care and satisfaction. Together, we can efficiently redefine healthcare staffing and create a brighter future for healthcare professionals and patients alike."}
         Join={"JOIN US NOW"}
         btn1={"Quick Apply"}
-        video_link={"video_link"}
+        video_link={"https://www.youtube.com/shorts/X5DhrVv-hk4"}
         />
         <Userslider/>
         <Footer/>

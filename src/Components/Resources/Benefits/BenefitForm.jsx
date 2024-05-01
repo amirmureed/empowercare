@@ -37,19 +37,19 @@ const BenefitForm=()=>{
                             </div>
                             <input type="text" placeholder="Email Address" className="rounded-input" />
                             <select>
-                              <option value="option1">Option 1</option>
-                              <option value="option2">Option 2</option>
-                              <option value="option3">Option 3</option>
+                              <option value="option1">Area of Speciality</option>
+                              <option value="option2">Area of Speciality</option>
+                              <option value="option3">Area of Speciality</option>
                             </select>
                             <select>
-                              <option value="option1">Option 1</option>
-                              <option value="option2">Option 2</option>
-                              <option value="option3">Option 3</option>
+                              <option value="option1">Years of Experience</option>
+                              <option value="option2">Years of Experience</option>
+                              <option value="option3">Years of Experience</option>
                             </select>
                             <select>
-                              <option value="option1">Option 1</option>
-                              <option value="option2">Option 2</option>
-                              <option value="option3">Option 3</option>
+                              <option value="option1">Preffered Location</option>
+                              <option value="option2">Preffered Location</option>
+                              <option value="option3">Preffered Location</option>
                             </select>
                             <button className='contact-submit-btn' type="submit">JOIN NOW</button>
                           </form>

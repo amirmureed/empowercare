@@ -15,10 +15,11 @@ const Challenges=()=>{
         </div>
         <div className='challanges_list'>
           <ul>
-            <li>● Hassle-free Staffing Solutions: Unlock Your Potential, Effortlessly</li>
-            <li>● Hassle-free Staffing Solutions: Unlock Your Potential, Effortlessly</li>
-            <li className='active'>● Hassle-free Staffing Solutions: Unlock Your Potential, Effortlessly</li>
-            <li>● Hassle-free Staffing Solutions: Unlock Your Potential, Effortlessly</li>
+           <a href="/facilities"> <li>● Hassle-free Staffing Solutions: Unlock Your Potential, Effortlessly</li></a>
+           <a href="/professional/Professionalperfectmatch"> <li>● Finding the Perfect Match Made Easy! Dynamic Squads CPR</li></a>
+           <a href="/professionals/unsung-heroes"> <li className='active'>● Spotlight! Shift Champions, Unsung Heroes No More</li></a>
+          <a href="/professional/Professionalhelpstheworld"> <li>● Seamless Pledge: Make a Meaningful Impact with Every Shift</li></a>
+           <a href="/professional/Professionalgainawinning"><li>● EmpowerCare Academy! Elevate Your Healthcare Career</li></a>
           </ul>
         </div>
         <div class="bottom_content">

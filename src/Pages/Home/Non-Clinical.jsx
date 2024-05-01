@@ -32,7 +32,7 @@ const NonClinical = () => {
         backgroundImage: `url(${img})`,
         backgroundPosition: '50%',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'auto',
+        backgroundSize: 'cover',
         marginTop: '-190px',
         backgroundColor: '#EBE0D3'
     };
