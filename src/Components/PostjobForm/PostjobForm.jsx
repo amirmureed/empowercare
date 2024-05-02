@@ -184,6 +184,47 @@ const PostjobForm = () => {
                                                     <option value="Substance Abuse">Substance Abuse</option>
                                                     <option value="Supervisor">Supervisor</option>
                                                 </select>
+                                                <select className='rounded-input'
+                                                    onChange={handleChange}
+                                                    name='discipline'
+                                                    value={formData.category}
+                                                >
+                                                    <option value="">-- Discipline --</option>
+                                                    <option value="Lab Specialist">Lab Specialist</option>
+                                                    <option value="Certified Nurse Aide (CNA)">Certified Nurse Aide (CNA)</option>
+                                                    <option value="Registered Nurse (RN)">Registered Nurse (RN)</option>
+                                                    <option value="Medical Technologist">Medical Technologist</option>
+                                                    <option value="Surgical Tech">Surgical Tech</option>
+                                                    <option value="LPN / LVN">LPN / LVN</option>
+                                                    <option value="Social Worker (SW)">Social Worker (SW)</option>
+                                                    <option value="Respiratory Therapist (RRT)">Respiratory Therapist (RRT)</option>
+                                                    <option value="Medical Assistant">Medical Assistant</option>
+                                                    <option value="Patient Care Tech">Patient Care Tech</option>
+                                                    <option value="Pharmacist">Pharmacist</option>
+                                                    <option value="Phlebotomist">Phlebotomist</option>
+                                                    <option value="EVS / Janitorial">EVS / Janitorial</option>
+                                                    <option value="Administrative / Professional">Administrative / Professional</option>
+                                                </select>
+                                            </div>
+                                            <div className='row-input'>
+                                                <input
+                                                    type="text"
+                                                    placeholder="Estimated Weekly Salary"
+                                                    className="rounded-input"
+                                                    value={formData.companyName}
+                                                    name='estimated_weekly_pay'
+                                                    onChange={handleChange}
+                                                />
+                                                <input
+                                                    type="text"
+                                                    placeholder="speciality"
+                                                    className="rounded-input"
+                                                    value={formData.companyName}
+                                                    name='speciality'
+                                                    onChange={handleChange}
+                                                />
+                                            </div>
+                                            <div className='row-input'>
                                                 <textarea
                                                     rows="3" cols="5"
                                                     placeholder="Job Description"
