@@ -13,6 +13,9 @@ const PostjobForm = () => {
         jobTitle: '',
         jobType: '',
         category: '',
+        discipline: '',
+        estimated_weekly_pay: '',
+        jobSpeciality: '',
         jobDescription: '',
         jobFile: null,
         companyName: '',
@@ -22,11 +25,11 @@ const PostjobForm = () => {
         zipCode: '',
         city: '',
         Address: '',
-        country: '',
+        Country: '',
         consent: 0
     });
-    
-    
+
+
 
 
     const handleChange = (e) => {
@@ -72,6 +75,9 @@ const PostjobForm = () => {
         jobData.append("is_active", 0);
         jobData.append("job_file", formData.jobFile);
         jobData.append("job_category", formData.category);
+        jobData.append("job_discipline", formData.discipline)
+        jobData.append("estimated_weekly_pay", formData.estimated_weekly_pay)
+        jobData.append("job_speciality", formData.jobSpeciality)
         jobData.append("job_type", formData.jobType);
         jobData.append("job_country", formData.Country);
         jobData.append("job_state", formData.state);
@@ -103,8 +109,11 @@ const PostjobForm = () => {
                     jobTitle: '',
                     jobType: '',
                     category: '',
+                    discipline: '',
+                    estimated_weekly_pay: '',
+                    jobSpeciality: '',
                     jobDescription: '',
-                    jobFile: '',
+                    jobFile: null,
                     companyName: '',
                     companyEmail: '',
                     website: '',
@@ -187,7 +196,7 @@ const PostjobForm = () => {
                                                 <select className='rounded-input'
                                                     onChange={handleChange}
                                                     name='discipline'
-                                                    value={formData.category}
+                                                    value={formData.discipline}
                                                 >
                                                     <option value="">-- Discipline --</option>
                                                     <option value="Lab Specialist">Lab Specialist</option>
@@ -211,7 +220,7 @@ const PostjobForm = () => {
                                                     type="text"
                                                     placeholder="Estimated Weekly Salary"
                                                     className="rounded-input"
-                                                    value={formData.companyName}
+                                                    value={formData.estimated_weekly_pay}
                                                     name='estimated_weekly_pay'
                                                     onChange={handleChange}
                                                 />
@@ -219,8 +228,8 @@ const PostjobForm = () => {
                                                     type="text"
                                                     placeholder="speciality"
                                                     className="rounded-input"
-                                                    value={formData.companyName}
-                                                    name='speciality'
+                                                    value={formData.jobSpeciality}
+                                                    name='jobSpeciality'
                                                     onChange={handleChange}
                                                 />
                                             </div>
